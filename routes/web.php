@@ -26,6 +26,12 @@ Route::get('/about', function () {
     return view('front.page.about');
 })->name("about");
 
+Route::get('/call-for-applications-2026', function () {
+    return view('front.page.call-for-applications-2026');
+})->name("call-for-applications-2026");
+
+
+
 
 
 Route::prefix('gb-members')->group(function () {

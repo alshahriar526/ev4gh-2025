@@ -6,6 +6,7 @@
     --color-default-lite: #ffa1a1;
     --color-white: #ffffff;
     --color-ev4gh-gray: #dcdcdc;  
+    --text-font: "Helvetica", Roboto;
 }
 
 /* Font and text */
@@ -16,7 +17,7 @@
 
 
 a{
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 /* -----------------------

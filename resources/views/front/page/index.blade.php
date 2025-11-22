@@ -2,20 +2,17 @@
 @section('styles')
 <style>
         @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Salsa&display=swap");
-
         .swiper-container {
             width: 100%;
             height: 100vh;
             overflow: hidden;
             background: var(--color-default);
         }
-
         .swiper-slide {
             position: relative;
             width: 100%;
             height: 100vh;
         }
-
         /* content */
         #main-slider-section .content {
             position: absolute;
@@ -32,14 +29,12 @@
             opacity: 0;
             z-index: 2;
         }
-
         #main-slider-section .content h1 {
             font-family: "Salsa", cursive;
             font-size: clamp(1.5rem, 2.5vw, 4.5rem);
             margin-bottom: 20px;
             opacity: 0;
         }
-
         #main-slider-section .content p {
             font-family: inherit;
             font-size: 1.2rem;
@@ -47,32 +42,26 @@
             font-weight: 500;
             opacity: 0;
         }
-
         #main-slider-section .swiper-slide-active .content {
             opacity: 1;
         }
-
         #main-slider-section .swiper-slide-active .content h1 {
             animation: moveDown 0.8s ease-in forwards;
         }
-
         #main-slider-section .swiper-slide-active .content p {
             animation: moveDown 1s ease-in forwards;
             animation-delay: 1s;
         }
-
         @keyframes moveDown {
             0% {
                 transform: translateY(-20px);
                 opacity: 0;
             }
-
             100% {
                 transform: translateY(0);
                 opacity: 1;
             }
         }
-
         /* background */
         /* #main-slider-section .background[data-item="one"] {
             background-position: 50% 40%;
@@ -90,23 +79,19 @@
             background-size: cover !important;
             background-repeat: no-repeat !important;
         }
-
         #main-slider-section .animation {
             animation: resizeClipPath 3s ease-in-out forwards;
         }
-
         @keyframes resizeClipPath {
             0% {
                 clip-path: circle(5%);
                 opacity: 0;
             }
-
             100% {
                 clip-path: circle(71%);
                 opacity: 1;
             }
         }
-
         /* pagination bullet */
         #main-slider-section .swiper-pagination-bullet {
             width: 16px;
@@ -115,13 +100,11 @@
             border-radius: 50%;
             transition: all 0.6s ease-in-out;
         }
-
         #main-slider-section .swiper-pagination-bullet-active {
             height: 32px;
             background-image: linear-gradient(180deg, var(--color-support1) 0%, var(--color-default) 100%);
             border-radius: 14px;
         }
-
         /* footer */
         #main-slider-section .footer {
             position: absolute;
@@ -143,26 +126,21 @@
             backdrop-filter: blur(20px);
             z-index: 2;
         }
-
         #main-slider-section .feature {
             display: flex;
             align-items: center;
             column-gap: 12px;
         }
-
         #main-slider-section .feature i {
             font-size: 1.4rem;
         }
-
         #main-slider-section .feature a {
             color: #f0f8ff;
             font-size: 1.4rem;
         }
-
         #main-slider-section .feature p {
             font-weight: 700;
         }
-
         #main-slider-section .btn {
             display: block;
             font-weight: 700;
@@ -184,111 +162,88 @@
             touch-action: manipulation;
             transition: 0.5s;
         }
-
         #main-slider-section .btn:hover {
             background-position: right center;
         }
-
         #main-slider-section .btn:active {
             transform: scale(0.95);
         }
-
         #main-slider-section .ytb-logo {
             position: fixed;
             right: 0px;
             bottom: 0px;
             z-index: 10;
         }
-
         #main-slider-section .ytb-logo img {
             width: 110px;
             filter: drop-shadow(5px 6px 6px #000000);
         }
-
         @media (max-width: 890px) {
             #main-slider-section .ytb-logo {
                 right: -10px;
                 bottom: -20px;
             }
-
             #main-slider-section .ytb-logo img {
                 width: 80px;
             }
         }
-
         /* media queries */
         @media (max-width: 1200px) {
             #main-slider-section .content {
                 top: 18%;
             }
-
             #main-slider-section .content[data-content="two"],
             #main-slider-section .content[data-content="three"] {
                 top: 5%;
                 width: 50%;
             }
         }
-
         @media (max-width: 900px) {
-
             #main-slider-section .content,
             #main-slider-section .content[data-content="three"] {
                 top: 55%;
                 left: 2%;
                 width: 60%;
             }
-
             #main-slider-section .content[data-content="two"] {
                 top: 10%;
             }
-
             #main-slider-section .content h1 {
                 margin-bottom: 14px;
             }
-
             #main-slider-section .content p {
                 font-size: 1rem;
                 line-height: 1.4;
             }
-
             #main-slider-section .feature i {
                 font-size: 1.3rem;
             }
-
             #main-slider-section .feature p {
                 font-size: 1rem;
             }
-
             #main-slider-section .btn {
                 padding: 8px 16px;
             }
         }
-
         @media (max-width: 790px) {
             #main-slider-section .footer {
                 column-gap: 10px;
             }
-
             #main-slider-section .feature i {
                 font-size: 1.1rem;
             }
-
             #main-slider-section .feature p {
                 font-size: 0.9rem;
             }
-
             #main-slider-section .feature small {
                 font-size: 0.8rem;
             }
-
             #main-slider-section .btn {
                 font-size: 0.8rem;
                 padding: 8px 12px;
             }
         }
-
         @media (max-width: 660px) {
-
             #main-slider-section .content,
             #main-slider-section .content[data-content="two"],
             #main-slider-section .content[data-content="three"] {
@@ -297,25 +252,20 @@
                 bottom: 3%;
                 width: 80%;
             }
-
             #main-slider-section .content p {
                 font-size: 0.9rem;
                 line-height: 1.2;
             }
-
             #main-slider-section .background[data-item="two"] {
                 background-position: 40% 50%;
             }
-
             #main-slider-section .swiper-pagination-bullet {
                 width: 12px;
                 height: 12px;
             }
-
             #main-slider-section .swiper-pagination-bullet-active {
                 height: 24px;
             }
-
             #main-slider-section .footer {
                 column-gap: 0;
                 left: unset;
@@ -330,7 +280,6 @@
                 -webkit-backdrop-filter: blur(0);
                 backdrop-filter: blur(0);
             }
-
             #main-slider-section .feature,
             hr {
                 display: none;
@@ -339,12 +288,11 @@
     </style>
 @endsection
 @section('content')
-
 <main id="main">
         <section id="main-slider-section" class="main-slider-section">
             <div class="swiper-container main-slider">
                 <div class="swiper-wrapper">
-                    <!-- <div class="swiper-slide">
+                    <div class="swiper-slide">
                         <div class="content">
                             <h1 style="color: var(--color-support1);">Congratulations to the 41 Emerging Voices from 27
                                 countries participating in the EV4GH
@@ -352,19 +300,18 @@
                             <p></p>
                         </div>
                         <div class="background"
-                            style="background: url(/assets/images/index/slider/Ev-slider-map-1.jpg);">
+                            style="background: url(assets/images/index/slider/Ev-slider-map-1.jpg);">
                         </div>
-                    </div> -->
+                    </div>
                     <div class="swiper-slide">
                         <div class="content">
                             <!-- Optional content -->
                         </div>
-
                         <div class="background"
                             style="background-image: url('assets/images/index/slider/call-for-application-red.jpg'); 
-               background-size: cover;
-               background-position: center;
-               background-repeat: no-repeat;">
+                                background-size: cover;
+                                background-position: center;
+                                background-repeat: no-repeat;">
                         </div>
                     </div>
                     <div class="swiper-slide">
@@ -483,7 +430,6 @@
                                 <ul class="splide__list">
                                     <li class="splide__slide">
                                         <div class="card">
-                                            
                                             <div class="card-body">
                                                 <h5 class="card-title">Card title</h5>
                                                 <p class="card-text">Some quick example text to build on the card title
@@ -494,7 +440,6 @@
                                     </li>
                                     <li class="splide__slide">
                                         <div class="card">
-                                            
                                             <div class="card-body">
                                                 <h5 class="card-title">Card title</h5>
                                                 <p class="card-text">Some quick example text to build on the card title
@@ -505,7 +450,6 @@
                                     </li>
                                     <li class="splide__slide">
                                         <div class="card">
-                                            
                                             <div class="card-body">
                                                 <h5 class="card-title">Card title</h5>
                                                 <p class="card-text">Some quick example text to build on the card title
@@ -516,7 +460,6 @@
                                     </li>
                                     <li class="splide__slide">
                                         <div class="card">
-                                            
                                             <div class="card-body">
                                                 <h5 class="card-title">Card title</h5>
                                                 <p class="card-text">Some quick example text to build on the card title
@@ -527,7 +470,6 @@
                                     </li>
                                     <li class="splide__slide">
                                         <div class="card">
-                                            
                                             <div class="card-body">
                                                 <h5 class="card-title">Card title</h5>
                                                 <p class="card-text">Some quick example text to build on the card title
@@ -548,7 +490,6 @@
                 <div class="row g-0">
                     <div class="col-md-6">
                         <div class="ev4gh-text-card">
-                            
                             <img class="ten-anniversary-logo" src="assets/images/10th-Anniversary.png"
                                 alt="">
                             <p class="ev4gh-section-text-para">Emerging Voices for Global Health (EV4GH) celebrates its
@@ -563,7 +504,6 @@
                             <video controls="">
                                 <source type="video/mp4" src="assets/videos/Emerging Voices 10th Anniversary.mp4">
                             </video>
-
                         </div>
                     </div>
                 </div>
@@ -715,33 +655,26 @@
             </div>
         </section>
     </main>
-
         <!-- Image Popup Modal -->
     <div class="modal fade" id="imagePopup" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-md">
             <div class="modal-content border-0 bg-transparent">
-
                 <!-- Close Button (top-right) -->
                 <button type="button" class="btn btn-light position-absolute"
                     style="top:10px; right:10px; z-index: 10; border-radius:50%;" data-bs-dismiss="modal">
                     ✕
                 </button>
-
                 <!-- Image Card -->
                 <div class="card shadow-lg border-0">
                     <a target="_blank" href="">
                         <img src="assets/images/popup.jpg" class="card-img-top" alt="Popup Image">
                     </a>
-
                 </div>
-
             </div>
         </div>
     </div>
-
 @endsection
 @section('scripts')
-
  <script type="module">
         const swiper = new Swiper(".main-slider", {
             direction: "vertical",
@@ -795,7 +728,6 @@
             }).mount();
         }
     </script>
-
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             var popup = new bootstrap.Modal(document.getElementById('imagePopup'));

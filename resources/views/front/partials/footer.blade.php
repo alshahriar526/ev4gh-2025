@@ -1,2 +1,2 @@
-@include('front.partials.top-inc')
+@include('front.partials.bottom-inc')
 @yield('scripts')
