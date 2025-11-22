@@ -15,6 +15,7 @@
             background-position: center;
             position: relative;
         }
+
         /* Particles background */
         #particles-js {
             position: absolute;
@@ -24,21 +25,25 @@
             left: 0;
             z-index: 1;
         }
+
         /* Content must stay above particles */
         .header-content {
             position: relative;
             z-index: 2;
         }
+
         .about-text {
             padding-right: 50px;
             text-align: justify;
         }
+
         .about-sec-title {
             font-size: 24px;
             color: var(--color-default);
             font-family: 'nerissemibold';
             margin-bottom: 20px;
         }
+
         .about-text p {
             font-family: var(--text-font);
             font-size: 18px !important;
@@ -46,29 +51,36 @@
             line-height: 30px;
             color: #6a6f78;
         }
-.ev-check-list {
-    list-style: none;
-    padding-left: 0;
-}
-.ev-check-list li {
-    display: flex;            /* Align icon and text properly */
-    align-items: flex-start;  /* Align icon with the top of the text block */
-    font-size: 16px;
-    line-height: 26px;
-    font-weight: 300;
-    color: #6a6f78;
-    margin-bottom: 20px;
-}
-.ev-check-list li i,
-.ev-check-list li svg {
-    flex-shrink: 0;          /* Prevent icon from shrinking */
-    width: 20px;
-    height: 20px;
-    margin-right: 10px;
-    /* color: #6a6f78; */
-    color: var(--color-default);
-    margin-top: 3px;         /* Small adjustment to align with text */
-}
+
+        .ev-check-list {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .ev-check-list li {
+            display: flex;
+            /* Align icon and text properly */
+            align-items: flex-start;
+            /* Align icon with the top of the text block */
+            font-size: 16px;
+            line-height: 26px;
+            font-weight: 300;
+            color: #6a6f78;
+            margin-bottom: 20px;
+        }
+
+        .ev-check-list li i,
+        .ev-check-list li svg {
+            flex-shrink: 0;
+            /* Prevent icon from shrinking */
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+            /* color: #6a6f78; */
+            color: var(--color-default);
+            margin-top: 3px;
+            /* Small adjustment to align with text */
+        }
     </style>
 @endsection
 @section('content')
@@ -287,29 +299,128 @@
                     <div class="col-md-12">
                         <div class="about-text">
                             <h2 class="about-sec-title">Who is eligible to apply?</h2>
-                            <p>The 2026 venture will accept applications through two application tracks: - </p>
+                            <p>The 2026 venture will accept applications through two application tracks: -</p>
                             <ul class="ev-check-list">
                                 <li><i class="fa fa-check-circle"></i>Track 1) Researchers involved in health policy and
-                                    systems research (researchers track),
-                                    and
-                                </li>
+                                    systems research (researchers track), and</li>
                                 <li><i class="fa fa-check-circle"></i>Track 2) Health professionals, activists,
-                                    policymakers, knowledge brokers, health
-                                    journalists, and other health system actors (other health system professional track).
-                                </li>
+                                    policymakers, knowledge brokers, health journalists, and other health system actors
+                                    (other health system professional track).</li>
                             </ul>
                             <p>Applicants may apply to only one track. Either the researcher track or the non-research
-                                health
-                                professional track. This helps ensure that each cohort reflects distinct yet complementary
-                                perspectives.
-                            </p>
-                            <p>In addition, all applicants must have been born on or after 1st January 1986.
-                            </p>
+                                health professional track. This helps ensure that each cohort reflects distinct yet
+                                complementary perspectives.</p>
+                            <p>In addition, all applicants must have been born on or after 1st January 1986.</p>
+                            <h3>Application Track 1: Researchers’ track</h3>
+                            <p>This track aims to attract applications from emerging researchers involved in health policy
+                                and systems research. Applicants must also submit an abstract for the 9th Global Symposium
+                                on Health Systems Research, Dubai, United Arab Emirates (UAE) and have the following:</p>
+                            <ul class="ev-check-list">
+                                <li><i class="fa fa-check-circle"></i>Early (2-5 years work experience) to Mid (5-10 years
+                                    work experience) career professionals</li>
+                                <li><i class="fa fa-check-circle"></i>A Master’s degree in health or a health-related field,
+                                    or be enrolled in a doctoral-level program in health or a health-related field</li>
+                                <li><i class="fa fa-check-circle"></i>Demonstrate active involvement in health policy and
+                                    systems research at the local, national, or global level</li>
+                            </ul>
+                            <h3>Application Track 2: Other health system professionals track</h3>
+                            <p>This track targets other emerging health professionals, activists, policymakers, knowledge
+                                brokers, health journalists, and other professionals working in health systems. Applicants
+                                must fulfill all of the following:</p>
+                            <ul class="ev-check-list">
+                                <li><i class="fa fa-check-circle"></i>Early (2-5 years work experience) or mid (5-10 years
+                                    work experience) career professionals</li>
+                                <li><i class="fa fa-check-circle"></i>A bachelor’s degree</li>
+                                <li><i class="fa fa-check-circle"></i>One of the following:
+                                    <ul class="ev-check-list">
+                                        <li><i class="fa fa-check-circle"></i>Demonstrate active involvement in an
+                                            implementation or practitioner or advocacy or decision-making role within health
+                                            services or a health system, OR</li>
+                                        <li><i class="fa fa-check-circle"></i>Have experience in strengthening health
+                                            systems within their local/national health systems as an activist, health
+                                            journalist, or patient advocate or otherwise be involved in advancing health
+                                            systems strengthening, health equity and social justice in their setting</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <h3>Note::</h3>
+                            <ul class="ev-check-list">
+                                <li><i class="fa fa-check-circle"></i>The EV4GH venture is in English. Participants need to
+                                    have a reasonable command of the English language (written and spoken) to participate.
+                                    All documents needed for the application should be in English (or have English
+                                    translation (see below)).</li>
+                                <li><i class="fa fa-check-circle"></i>Focus will be on applicants from low- and
+                                    middle-income countries (LMICs). Candidates from high-income countries are also welcome
+                                    to apply if they have demonstrable relevant experience in LMICs, or are currently
+                                    working with marginalized groups on health equity issues in any country. Please see
+                                        the Scholarship details at the end of the call.</li>
+                                <li><i class="fa fa-check-circle"></i>Accepted participants should be able to participate in
+                                    the training program in full. This includes participation and presence in both the
+                                    distance e-learning phase and the face-to-face phase in Dubai, United Arab Emirates.
+                                    Applicants who cannot participate in full and can undertake only part of the program
+                                    will not be eligible to participate.</li>
+                                <li><i class="fa fa-check-circle"></i>For this venture, we encourage participants from the
+                                    Eastern Mediterranean region (EMRO) and countries underrepresented in the EV network to
+                                    apply.</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+        <!-- ======= Application Materials Section ======= -->
+<!-- ======= Application Materials, Selection, and Scholarship Section ======= -->
+<section id="application-materials" class="our-history-section">
+    <div class="container p-5">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="about-text">
+
+                    <h2 class="about-sec-title">Application materials and process</h2>
+
+                    <h3>Application submission materials for track 1: Researchers’ track</h3>
+                    <p>Abstract: Please follow the HSR2026 abstract submission guidelines. If you submit multiple abstracts to HSR2026, please add only one to the EV2026 application.</p>
+                    <p>Short portfolio: The portfolio should include,</p>
+                    <ul class="ev-check-list">
+                        <li><i class="fa fa-check-circle"></i>A short CV: Personal details, Education, Relevant professional experience. If you are submitting a written document, the CV should not be more than two pages.</li>
+                        <li><i class="fa fa-check-circle"></i>A short motivation statement: Explanation of what the EV program means to you and how it will contribute to your professional development. If you are submitting a written document, the motivation letter should be no more than 250 words.</li>
+                        <li><i class="fa fa-check-circle"></i>A short concept note: What global health problem are you more interested in (linked to the EV2026 themes) and how do you envision addressing it? If you are submitting a written document, it should be within 500 words.</li>
+                    </ul>
+                    <p>We encourage you to be innovative in presenting your portfolio. For example, you could present it as a website, a short 3-minute video, PowerPoint slides, or any other creative visual materials.</p>
+                    <p>Submission: After uploading the abstract on the 9th Global Symposium on Health Systems Research website and receiving acknowledgement, please use the button below to complete your application for the EV4GH 2026 researchers’ track. Please note that you will need the unique ID from the 9th Global Symposium on Health Systems Research abstract submission for completing this application</p>
+                    <p><strong>[TRACK 1 APPLICATION]</strong></p>
+
+                    <h3>Application Track 2: Other health system professionals’ track</h3>
+                    <p>Short portfolio: The portfolio should include,</p>
+                    <ul class="ev-check-list">
+                        <li><i class="fa fa-check-circle"></i>A short CV: Personal details, Education, Relevant professional experience. If you are submitting a written document, the CV should not be more than two pages.</li>
+                        <li><i class="fa fa-check-circle"></i>A short motivation statement: Explanation of what the EV program means to you and how it will contribute to your professional development. If you are submitting a written document, the motivation letter should not be more than 250 words.</li>
+                        <li><i class="fa fa-check-circle"></i>A short concept note: What global health problem are you more interested in addressing (linked to the EV2026 themes) and how do you envision addressing that? If you are submitting a written document, it should be within 500 words.</li>
+                    </ul>
+                    <p>We encourage you to be innovative in presenting your portfolio. For example, you could present it as a website, a short 3-minute video, PowerPoint slides, or any other creative visual materials at your disposal.</p>
+                    <p>Submission: For the Other health system professionals’ track, please use the button below to complete your application for the EV4GH 2026, keeping the above documents ready.</p>
+                    <p><strong>[TRACK 2 APPLICATION]</strong></p>
+
+                    <p><strong>Application Submission Deadline:</strong> All the above should be completed by 20 March 2026 (11 pm GMT+6) at the latest. If you have any queries/ questions, please contact the EV4GH Secretariat at <a href="mailto:ev_secretariat@bracu.ac.bd">ev_secretariat@bracu.ac.bd</a>.</p>
+
+                     <h2 class="about-sec-title">Selection process</h2>
+                    <p>A selection committee consisting of the EV governance board members, independent EV4GH peer reviewers, representatives from partner institutes and funders, and EV Secretariat will facilitate the selection process, taking into account various funding criteria, regional representation in the EV network, gender and ethnicity.</p>
+
+                    
+                     <h2 class="about-sec-title">What does the EV2026 scholarship include?</h2>
+                    <p>A limited number of full and partial scholarships will be awarded to successful applicants. The full scholarship will cover participation in the face to face program, including participants’ airfares to and from Dubai, shared accommodation, meals, and materials, as well as participation in the 9th Global Symposium on Health Systems Research in Dubai. Partial scholarships shall fund only some aspects of the above. Scholarships shall prioritize low- and middle-income country participants. Participants from or based in high-income countries, if selected, are expected to raise their own funds to cover all costs of participation in the EV4GH program and are considered self-funded. Please reach out to the EV Secretariat (<a href="mailto:ev_secretariat@bracu.ac.bd">ev_secretariat@bracu.ac.bd</a>) for details about self-funding.</p>
+
+                    <p><strong>Please note:</strong> As part of the EV venture, accommodation for all EVs in Dubai will be on a twin-share basis, whether selected for a scholarship or self-funded. Successful EV selection cannot guarantee a successful and timely visa process, so if selected, we encourage participants to start visa applications as soon as possible.</p>
+
+                    <p>Theme for 9th Global Symposium on Health Systems Research: Future-Focused Health Systems in a Changing World. Please see the details of the themes of the 2026 symposium at the <a href="https://healthsystemsglobal.org/global-symposia/hsr2024/8th-global-symposium-on-health-systems-research-2024-theme/">HSG website</a>.</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
     </main>
 @endsection
 @section('scripts')

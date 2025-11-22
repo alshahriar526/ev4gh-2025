@@ -8,7 +8,7 @@
 
 <link rel="icon" href="{{asset('assets/front/images/favicon.ico')}}">
 
-<title>BRAC James P Grant School of Public Health</title>
+<title>EV4GH</title>
 
 
 @include('front.partials.top-inc')
