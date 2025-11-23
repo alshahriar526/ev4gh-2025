@@ -1,40 +1,46 @@
 @extends('front.layout.front-master')
 @section('styles')
-<style>
+    <style>
         @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Salsa&display=swap");
+
         .swiper-container {
             width: 100%;
             height: 100vh;
             overflow: hidden;
             background: var(--color-default);
         }
+
         .swiper-slide {
             position: relative;
             width: 100%;
             height: 100vh;
         }
+
         /* content */
         #main-slider-section .content {
             position: absolute;
             display: flex;
             flex-direction: column;
-            align-items: center;
+            align-items: flex-start;
             top: 30%;
-            left: 3%;
+            /* left: 3%; */
             width: 40%;
             height: max-content;
             color: #f2f2f2;
             text-align: center;
-            padding: 20px;
+            padding-top: 20px;
+            padding-bottom: 20px;
             opacity: 0;
             z-index: 2;
         }
+
         #main-slider-section .content h1 {
             font-family: "Salsa", cursive;
             font-size: clamp(1.5rem, 2.5vw, 4.5rem);
             margin-bottom: 20px;
             opacity: 0;
         }
+
         #main-slider-section .content p {
             font-family: inherit;
             font-size: 1.2rem;
@@ -42,30 +48,36 @@
             font-weight: 500;
             opacity: 0;
         }
+
         #main-slider-section .swiper-slide-active .content {
             opacity: 1;
         }
+
         #main-slider-section .swiper-slide-active .content h1 {
             animation: moveDown 0.8s ease-in forwards;
         }
+
         #main-slider-section .swiper-slide-active .content p {
             animation: moveDown 1s ease-in forwards;
             animation-delay: 1s;
         }
+
         @keyframes moveDown {
             0% {
                 transform: translateY(-20px);
                 opacity: 0;
             }
+
             100% {
                 transform: translateY(0);
                 opacity: 1;
             }
         }
+
         /* background */
         /* #main-slider-section .background[data-item="one"] {
-            background-position: 50% 40%;
-        } */
+                            background-position: 50% 40%;
+                        } */
         #main-slider-section .background {
             position: absolute;
             inset: 0;
@@ -79,19 +91,23 @@
             background-size: cover !important;
             background-repeat: no-repeat !important;
         }
+
         #main-slider-section .animation {
             animation: resizeClipPath 3s ease-in-out forwards;
         }
+
         @keyframes resizeClipPath {
             0% {
                 clip-path: circle(5%);
                 opacity: 0;
             }
+
             100% {
                 clip-path: circle(71%);
                 opacity: 1;
             }
         }
+
         /* pagination bullet */
         #main-slider-section .swiper-pagination-bullet {
             width: 16px;
@@ -100,11 +116,13 @@
             border-radius: 50%;
             transition: all 0.6s ease-in-out;
         }
+
         #main-slider-section .swiper-pagination-bullet-active {
             height: 32px;
             background-image: linear-gradient(180deg, var(--color-support1) 0%, var(--color-default) 100%);
             border-radius: 14px;
         }
+
         /* footer */
         #main-slider-section .footer {
             position: absolute;
@@ -126,21 +144,26 @@
             backdrop-filter: blur(20px);
             z-index: 2;
         }
+
         #main-slider-section .feature {
             display: flex;
             align-items: center;
             column-gap: 12px;
         }
+
         #main-slider-section .feature i {
             font-size: 1.4rem;
         }
+
         #main-slider-section .feature a {
             color: #f0f8ff;
             font-size: 1.4rem;
         }
+
         #main-slider-section .feature p {
             font-weight: 700;
         }
+
         #main-slider-section .btn {
             display: block;
             font-weight: 700;
@@ -162,88 +185,111 @@
             touch-action: manipulation;
             transition: 0.5s;
         }
+
         #main-slider-section .btn:hover {
             background-position: right center;
         }
+
         #main-slider-section .btn:active {
             transform: scale(0.95);
         }
+
         #main-slider-section .ytb-logo {
             position: fixed;
             right: 0px;
             bottom: 0px;
             z-index: 10;
         }
+
         #main-slider-section .ytb-logo img {
             width: 110px;
             filter: drop-shadow(5px 6px 6px #000000);
         }
+
         @media (max-width: 890px) {
             #main-slider-section .ytb-logo {
                 right: -10px;
                 bottom: -20px;
             }
+
             #main-slider-section .ytb-logo img {
                 width: 80px;
             }
         }
+
         /* media queries */
         @media (max-width: 1200px) {
             #main-slider-section .content {
                 top: 18%;
             }
+
             #main-slider-section .content[data-content="two"],
             #main-slider-section .content[data-content="three"] {
                 top: 5%;
                 width: 50%;
             }
         }
+
         @media (max-width: 900px) {
+
             #main-slider-section .content,
             #main-slider-section .content[data-content="three"] {
                 top: 55%;
                 left: 2%;
                 width: 60%;
             }
+
             #main-slider-section .content[data-content="two"] {
                 top: 10%;
             }
+
             #main-slider-section .content h1 {
                 margin-bottom: 14px;
             }
+
             #main-slider-section .content p {
                 font-size: 1rem;
                 line-height: 1.4;
             }
+
             #main-slider-section .feature i {
                 font-size: 1.3rem;
             }
+
             #main-slider-section .feature p {
                 font-size: 1rem;
             }
+
             #main-slider-section .btn {
                 padding: 8px 16px;
             }
         }
+
         @media (max-width: 790px) {
             #main-slider-section .footer {
                 column-gap: 10px;
             }
+
             #main-slider-section .feature i {
                 font-size: 1.1rem;
             }
+
             #main-slider-section .feature p {
                 font-size: 0.9rem;
             }
+
             #main-slider-section .feature small {
                 font-size: 0.8rem;
             }
+
             #main-slider-section .btn {
                 font-size: 0.8rem;
                 padding: 8px 12px;
             }
         }
+
         @media (max-width: 660px) {
+
             #main-slider-section .content,
             #main-slider-section .content[data-content="two"],
             #main-slider-section .content[data-content="three"] {
@@ -252,20 +298,25 @@
                 bottom: 3%;
                 width: 80%;
             }
+
             #main-slider-section .content p {
                 font-size: 0.9rem;
                 line-height: 1.2;
             }
+
             #main-slider-section .background[data-item="two"] {
                 background-position: 40% 50%;
             }
+
             #main-slider-section .swiper-pagination-bullet {
                 width: 12px;
                 height: 12px;
             }
+
             #main-slider-section .swiper-pagination-bullet-active {
                 height: 24px;
             }
+
             #main-slider-section .footer {
                 column-gap: 0;
                 left: unset;
@@ -280,27 +331,67 @@
                 -webkit-backdrop-filter: blur(0);
                 backdrop-filter: blur(0);
             }
+
             #main-slider-section .feature,
             hr {
                 display: none;
             }
         }
+
+        .call-for-application-slider {}
+
+        .call-for-application-slider h1 {
+            font-size: 50px !important;
+            color: var(--color-default);
+            text-align: left;
+            font-weight: 900;
+            font-family: Poppins, sans-serif !important;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 0 #bcbcbc, 4px 4px 0 #9c9c9c;
+        }
+
+        .call-for-application-slider h5 {
+            font-size: 30px !important;
+            color: #000000;
+            text-align: left;
+            font-weight: 500;
+            font-family: Poppins, sans-serif !important;
+            margin-bottom: 30px;
+        }
+
+        .call-for-application-slider p {
+            font-size: 25px !important;
+            color: var(--color-support);
+            text-align: left;
+            font-weight: 900 !important;
+            font-family: Poppins, sans-serif !important;
+            margin-bottom: 30px;
+        }
     </style>
 @endsection
 @section('content')
-<main id="main">
+    <main id="main">
         <section id="main-slider-section" class="main-slider-section">
             <div class="swiper-container main-slider">
                 <div class="swiper-wrapper">
+                    <div class="swiper-slide call-for-application-slider">
 
-                    <div class="swiper-slide">
-                        <a href="{{ route("call-for-applications-2026")}}">
-                            <div class="content">
-                                <!-- Optional content -->
 
-                                    
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="content">
+                                        <h1>CALL FOR <br> APPLICATIONS</h1>
+                                        <h5>Emerging Voices for <br> Global Health (EV4GH) 2026</h5>
+                                        <p><i class="fa-thin fa-location-dot fa-beat me-2"></i> DUBAI, UAE</p>
+                                        <a class="btn" target="_blank"
+                                            href="{{ route('call-for-applications-2026') }}">Apply Now</a>
+                                    </div>
+                                </div>
                             </div>
-                        </a>
+                        </div>
+
+
                         <div class="background"
                             style="background-image: url('assets/images/index/slider/call-for-application-red.jpg'); 
                                 background-size: cover;
@@ -308,7 +399,6 @@
                                 background-repeat: no-repeat;">
                         </div>
                     </div>
-
                     <div class="swiper-slide">
                         <div class="content">
                             <h1 style="color: var(--color-support1);">Congratulations to the 41 Emerging Voices from 27
@@ -316,11 +406,9 @@
                                 2024 programme</h1>
                             <p></p>
                         </div>
-                        <div class="background"
-                            style="background: url(assets/images/index/slider/Ev-slider-map-1.jpg);">
+                        <div class="background" style="background: url(assets/images/index/slider/Ev-slider-map-1.jpg);">
                         </div>
                     </div>
-                    
                     <div class="swiper-slide">
                         <div class="content">
                             <h1>EV4GH releases a statement on the destruction of Gaza’s health system and ongoing
@@ -339,15 +427,16 @@
             </div>
             <div class="footer">
                 <div class="feature">
-                    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                    <a target="_blank" href="https://www.facebook.com/EV4GH/"><i class="fa-brands fa-facebook-f"></i></a>
                 </div>
                 <hr />
                 <div class="feature">
-                    <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                    <a target="_blank" href=""><i class="fa-brands fa-x-twitter"></i></a>
                 </div>
                 <hr />
                 <div class="feature">
-                    <a href=""><i class="fa-solid fa-house"></i></a>
+                    <a target="_blank" href="https://www.linkedin.com/company/ev4gh"><i
+                            class="fa-brands fa-linkedin"></i></a>
                 </div>
             </div>
             <a href="https://www.youtube.com/@ev4ghsecretariat298" target="_blank" class="ytb-logo"><img
@@ -364,10 +453,10 @@
                             </h1>
                             <!-- <h4>XX XX XXXXXXXX</h4> -->
                             <!-- <div class="hero-other">
-                                <span class="hero-span">PHP | Laravel</span>
-                                <span class="hero-span">HTML | CSS | BOOTSTRAP | JS</span>
-                                <span class="hero-span">DevOps</span>
-                            </div> -->
+                                                <span class="hero-span">PHP | Laravel</span>
+                                                <span class="hero-span">HTML | CSS | BOOTSTRAP | JS</span>
+                                                <span class="hero-span">DevOps</span>
+                                            </div> -->
                         </article>
                     </div>
                 </div>
@@ -377,7 +466,7 @@
             <div class="container-fluid p-0">
                 <div class="row g-0">
                     <div class="col-md-6">
-                        <div class="ev4gh-text-card">
+                        <div class="ev4gh-text-card" style="    display: flex; flex-direction: column; align-items: flex-start; justify-content: center;">
                             <h3 class="ev4gh-section-title">Be the next Global Health Changemaker.</h3>
                             <p class="ev4gh-section-text-para">Emerging Voices for Global Health (EV4GH) is an
                                 innovative multi-partner blended training program that includes face-to-face training
@@ -393,7 +482,7 @@
                             <img class="img-fluid" src="assets/images/index/2.jpg" alt="">
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    {{-- <div class="col-md-6">
                         <div class="ev4gh-img-card ">
                             <img class="img-fluid" src="assets/images/index/Liverpool-2018-43-of-82-scaled.jpg"
                                 alt="">
@@ -417,117 +506,117 @@
                                 in Bangladesh.
                             </p>
                         </div>
-                    </div>
+                    </div> --}}
                 </div>
             </div>
         </section>
         <!-- <section id="ev4gh-section-news-blogs" class="ev4gh-section ev4gh-section-news-blogs">
-            <div class="container">
-                <div class="row mb-5">
-                    <div class="col-md-12 justify-item-center">
-                        <div class="section-heading">
-                            <h1>News <span>&</span> Blogs</h1>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <section class="splide" aria-label="Splide Basic HTML Example">
-                            <div class="splide__track">
-                                <ul class="splide__list">
-                                    <li class="splide__slide">
-                                        <div class="card">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Card title</h5>
-                                                <p class="card-text">Some quick example text to build on the card title
-                                                    and make up the bulk of the card's content.</p>
-                                                <a href="#" class="btn ev4gh-btn-1">Learn more ></a></a>
-                                            </div>
+                            <div class="container">
+                                <div class="row mb-5">
+                                    <div class="col-md-12 justify-item-center">
+                                        <div class="section-heading">
+                                            <h1>News <span>&</span> Blogs</h1>
                                         </div>
-                                    </li>
-                                    <li class="splide__slide">
-                                        <div class="card">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Card title</h5>
-                                                <p class="card-text">Some quick example text to build on the card title
-                                                    and make up the bulk of the card's content.</p>
-                                                <a href="#" class="btn ev4gh-btn-1">Learn more ></a></a>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <section class="splide" aria-label="Splide Basic HTML Example">
+                                            <div class="splide__track">
+                                                <ul class="splide__list">
+                                                    <li class="splide__slide">
+                                                        <div class="card">
+                                                            <div class="card-body">
+                                                                <h5 class="card-title">Card title</h5>
+                                                                <p class="card-text">Some quick example text to build on the card title
+                                                                    and make up the bulk of the card's content.</p>
+                                                                <a href="#" class="btn ev4gh-btn-1">Learn more ></a></a>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="splide__slide">
+                                                        <div class="card">
+                                                            <div class="card-body">
+                                                                <h5 class="card-title">Card title</h5>
+                                                                <p class="card-text">Some quick example text to build on the card title
+                                                                    and make up the bulk of the card's content.</p>
+                                                                <a href="#" class="btn ev4gh-btn-1">Learn more ></a></a>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="splide__slide">
+                                                        <div class="card">
+                                                            <div class="card-body">
+                                                                <h5 class="card-title">Card title</h5>
+                                                                <p class="card-text">Some quick example text to build on the card title
+                                                                    and make up the bulk of the card's content.</p>
+                                                                <a href="#" class="btn ev4gh-btn-1">Learn more ></a></a>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="splide__slide">
+                                                        <div class="card">
+                                                            <div class="card-body">
+                                                                <h5 class="card-title">Card title</h5>
+                                                                <p class="card-text">Some quick example text to build on the card title
+                                                                    and make up the bulk of the card's content.</p>
+                                                                <a href="#" class="btn ev4gh-btn-1">Learn more ></a></a>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="splide__slide">
+                                                        <div class="card">
+                                                            <div class="card-body">
+                                                                <h5 class="card-title">Card title</h5>
+                                                                <p class="card-text">Some quick example text to build on the card title
+                                                                    and make up the bulk of the card's content.</p>
+                                                                <a href="#" class="btn ev4gh-btn-1">Learn more ></a></a>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
                                             </div>
-                                        </div>
-                                    </li>
-                                    <li class="splide__slide">
-                                        <div class="card">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Card title</h5>
-                                                <p class="card-text">Some quick example text to build on the card title
-                                                    and make up the bulk of the card's content.</p>
-                                                <a href="#" class="btn ev4gh-btn-1">Learn more ></a></a>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="splide__slide">
-                                        <div class="card">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Card title</h5>
-                                                <p class="card-text">Some quick example text to build on the card title
-                                                    and make up the bulk of the card's content.</p>
-                                                <a href="#" class="btn ev4gh-btn-1">Learn more ></a></a>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="splide__slide">
-                                        <div class="card">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Card title</h5>
-                                                <p class="card-text">Some quick example text to build on the card title
-                                                    and make up the bulk of the card's content.</p>
-                                                <a href="#" class="btn ev4gh-btn-1">Learn more ></a></a>
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul>
+                                        </section>
+                                    </div>
+                                </div>
                             </div>
-                        </section>
-                    </div>
-                </div>
-            </div>
-        </section> -->
+                        </section> -->
         <!-- <section id="ev4gh-section-video" class="ev4gh-section left ev4gh-section-video ">
-            <div class="container-fluid">
-                <div class="row g-0">
-                    <div class="col-md-6">
-                        <div class="ev4gh-text-card">
-                            <img class="ten-anniversary-logo" src="assets/images/10th-Anniversary.png"
-                                alt="">
-                            <p class="ev4gh-section-text-para">Emerging Voices for Global Health (EV4GH) celebrates its
-                                10th anniversary. Here is a glimpse at the decade past. 6 ventures of EV4Gh have been
-                                successfully conducted so far. We look forward to the upcoming EV 2020 venture and many
-                                more to come.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="ev4gh-video-card">
-                            <video controls="">
-                                <source type="video/mp4" src="assets/videos/Emerging Voices 10th Anniversary.mp4">
-                            </video>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> -->
+                            <div class="container-fluid">
+                                <div class="row g-0">
+                                    <div class="col-md-6">
+                                        <div class="ev4gh-text-card">
+                                            <img class="ten-anniversary-logo" src="assets/images/10th-Anniversary.png"
+                                                alt="">
+                                            <p class="ev4gh-section-text-para">Emerging Voices for Global Health (EV4GH) celebrates its
+                                                10th anniversary. Here is a glimpse at the decade past. 6 ventures of EV4Gh have been
+                                                successfully conducted so far. We look forward to the upcoming EV 2020 venture and many
+                                                more to come.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="ev4gh-video-card">
+                                            <video controls="">
+                                                <source type="video/mp4" src="assets/videos/Emerging Voices 10th Anniversary.mp4">
+                                            </video>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section> -->
         <hr>
         <section id="ev4gh-section-latest" class="ev4gh-section ev4gh-section-latest" style="  background: #e8e8e8; ">
             <div class="container">
                 <div class="row mb-5">
                     <div class="col-md-12 justify-item-center">
                         <div class="section-heading">
-                            <h1>Latest <span>updates</span></h1>
+                            <h1>News <span>&</span> Events</h1>
                         </div>
                     </div>
                 </div>
                 <div class="row justify-content-center">
-                    <div class="col-md-4">
+                    <div class="col-md-6">
                         <div class="fb-page" data-href="https://www.facebook.com/EV4GH/" data-tabs="timeline"
                             data-width="500" data-height="600" data-small-header="true"
                             data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
@@ -536,7 +625,7 @@
                             </blockquote>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-6">
                         <div class="card h-100 ev4gh-newsletter-card">
                             <div class="card-body">
                                 <img src="assets/images/newsletter-svgrepo-com.svg" class="card-img-top"
@@ -548,10 +637,10 @@
                         </div>
                     </div>
                     <!-- <div class="col-md-4">
-                        <a class="twitter-timeline" data-width="500" data-height="600"
-                            href="https://twitter.com/ev4gh?ref_src=twsrc%5Etfw">Tweets by ev4gh</a>
-                        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                    </div> -->
+                                        <a class="twitter-timeline" data-width="500" data-height="600"
+                                            href="https://twitter.com/ev4gh?ref_src=twsrc%5Etfw">Tweets by ev4gh</a>
+                                        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                                    </div> -->
                 </div>
             </div>
         </section>
@@ -662,7 +751,7 @@
             </div>
         </section>
     </main>
-        <!-- Image Popup Modal -->
+    <!-- Image Popup Modal -->
     <div class="modal fade" id="imagePopup" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-md">
             <div class="modal-content border-0 bg-transparent">
@@ -673,7 +762,7 @@
                 </button>
                 <!-- Image Card -->
                 <div class="card shadow-lg border-0">
-                    <a target="_blank" href="{{ route("call-for-applications-2026")}}">
+                    <a target="_blank" href="{{ route('call-for-applications-2026') }}">
                         <img src="assets/images/popup.jpg" class="card-img-top" alt="Popup Image">
                     </a>
                 </div>
@@ -682,7 +771,7 @@
     </div>
 @endsection
 @section('scripts')
- <script type="module">
+    <script type="module">
         const swiper = new Swiper(".main-slider", {
             direction: "vertical",
             effect: "fade",

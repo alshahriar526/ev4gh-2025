@@ -117,7 +117,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="about-text">
-                            <h2 class="about-sec-title">Whatis the Emerging Voices for Global Health program? </h2>
+                            <h2 class="about-sec-title">What is the Emerging Voices for Global Health program? </h2>
                             <p>Emerging Voices for Global Health (EV4GH) is an innovative multi-partner blended training
                                 program
                                 for promising and emerging health policy & systems researchers, decision-makers,
@@ -388,7 +388,9 @@
                     </ul>
                     <p>We encourage you to be innovative in presenting your portfolio. For example, you could present it as a website, a short 3-minute video, PowerPoint slides, or any other creative visual materials.</p>
                     <p>Submission: After uploading the abstract on the 9th Global Symposium on Health Systems Research website and receiving acknowledgement, please use the button below to complete your application for the EV4GH 2026 researchers’ track. Please note that you will need the unique ID from the 9th Global Symposium on Health Systems Research abstract submission for completing this application</p>
-                    <p><strong>[TRACK 1 APPLICATION]</strong></p>
+
+
+                    <a class="btn ev-btn-1" href="">TRACK 1 APPLICATION</a>
 
                     <h3>Application Track 2: Other health system professionals’ track</h3>
                     <p>Short portfolio: The portfolio should include,</p>
@@ -399,7 +401,7 @@
                     </ul>
                     <p>We encourage you to be innovative in presenting your portfolio. For example, you could present it as a website, a short 3-minute video, PowerPoint slides, or any other creative visual materials at your disposal.</p>
                     <p>Submission: For the Other health system professionals’ track, please use the button below to complete your application for the EV4GH 2026, keeping the above documents ready.</p>
-                    <p><strong>[TRACK 2 APPLICATION]</strong></p>
+                    <a class="btn ev-btn-1" href="">TRACK 2 APPLICATION</a>
 
                     <p><strong>Application Submission Deadline:</strong> All the above should be completed by 20 March 2026 (11 pm GMT+6) at the latest. If you have any queries/ questions, please contact the EV4GH Secretariat at <a href="mailto:ev_secretariat@bracu.ac.bd">ev_secretariat@bracu.ac.bd</a>.</p>
 
