@@ -292,6 +292,23 @@
         <section id="main-slider-section" class="main-slider-section">
             <div class="swiper-container main-slider">
                 <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <a href="{{ route("call-for-applications-2026")}}">
+                            <div class="content">
+                                <!-- Optional content -->
+
+                                    
+                            </div>
+                        </a>
+                        <div class="background"
+                            style="background-image: url('assets/images/index/slider/call-for-application-red.jpg'); 
+                                background-size: cover;
+                                background-position: center;
+                                background-repeat: no-repeat;">
+                        </div>
+                    </div>
+
                     <div class="swiper-slide">
                         <div class="content">
                             <h1 style="color: var(--color-support1);">Congratulations to the 41 Emerging Voices from 27
@@ -303,17 +320,7 @@
                             style="background: url(assets/images/index/slider/Ev-slider-map-1.jpg);">
                         </div>
                     </div>
-                    <div class="swiper-slide">
-                        <div class="content">
-                            <!-- Optional content -->
-                        </div>
-                        <div class="background"
-                            style="background-image: url('assets/images/index/slider/call-for-application-red.jpg'); 
-                                background-size: cover;
-                                background-position: center;
-                                background-repeat: no-repeat;">
-                        </div>
-                    </div>
+                    
                     <div class="swiper-slide">
                         <div class="content">
                             <h1>EV4GH releases a statement on the destruction of Gaza’s health system and ongoing
@@ -666,7 +673,7 @@
                 </button>
                 <!-- Image Card -->
                 <div class="card shadow-lg border-0">
-                    <a target="_blank" href="">
+                    <a target="_blank" href="{{ route("call-for-applications-2026")}}">
                         <img src="assets/images/popup.jpg" class="card-img-top" alt="Popup Image">
                     </a>
                 </div>
