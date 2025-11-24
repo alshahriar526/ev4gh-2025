@@ -81,6 +81,91 @@
             margin-top: 3px;
             /* Small adjustment to align with text */
         }
+
+
+        .call-for-application-hero {}
+
+        .call-for-application-hero h5 {
+            font-size: 25px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .call-for-application-hero span {
+            font-size: 20px;
+            color: #003651;
+        }
+    </style>
+
+    <style>
+        /* Top-level list */
+        .ev-check-list {
+            list-style: none;
+            padding-left: 0;
+            margin: 0;
+        }
+
+        /* Each top-level item is a flex row: icon + content */
+        .ev-check-list>li {
+            display: flex;
+            gap: 12px;
+            align-items: flex-start;
+            /* align icon with top of multi-line text */
+            margin-bottom: 14px;
+            font-size: 16px;
+            line-height: 1.6;
+            color: #333;
+            padding-left: 0;
+        }
+
+        /* Icon (left) */
+        .ev-check-list>li>.ev-icon {
+            flex: 0 0 22px;
+            color: #3ba4d7;
+            /* primary color */
+            font-size: 18px;
+            margin-top: 4px;
+            /* small nudge to align with first text line */
+        }
+
+        /* Content wrapper so nested lists sit under the text, not under the icon */
+        .ev-check-list>li>.ev-content {
+            flex: 1 1 auto;
+        }
+
+        /* Nested sublist (disc bullets) */
+        .ev-check-list .ev-sub-list {
+            list-style: disc;
+            margin: 10px 0 0 22px;
+            /* indent from the start of the text */
+            padding-left: 18px;
+            /* ensure discs align nicely */
+        }
+
+        /* Sublist items */
+        .ev-check-list .ev-sub-list li {
+            margin-bottom: 8px;
+            font-size: 15px;
+            color: #444;
+            line-height: 1.5;
+        }
+
+        /* If there are deeper nested lists, keep them tidy */
+        .ev-check-list .ev-sub-list .ev-sub-list {
+            margin-left: 18px;
+            padding-left: 12px;
+        }
+
+        /* Small screen tweaks */
+        @media (max-width: 576px) {
+            .ev-check-list>li {
+                font-size: 15px;
+            }
+
+            .ev-check-list>li>.ev-icon {
+                margin-top: 3px;
+            }
+        }
     </style>
 @endsection
 @section('content')
@@ -93,11 +178,16 @@
                 <div class="container position-relative header-content">
                     <div class="row d-flex justify-content-center">
                         <div class="col-lg-8 text-center">
-                            <h2>Call for Applications</h2>
-                            <p>Emerging Voices for Global Health (EV4GH) 2026</p>
-                            <span>Linked to the 9th Global Health Symposium on Health Systems Research (HSR 2026) in</span>
-                            <br>
-                            <span>Dubai, UAE, November 2026</span>
+                            <div class="call-for-application-hero">
+                                <h5>Emerging Voices for Global Health (EV4GH) 2026</h5>
+                                <h2>Call for Applications</h2>
+
+                                <span>Linked to the 9th Global Health Symposium on Health Systems Research (HSR 2026)
+                                    in</span>
+                                <br>
+                                <span><i class="fa-thin fa-location-dot fa-beat me-2"></i> Dubai, UAE, November 2026</span>
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -116,6 +206,10 @@
             <div class="container p-5">
                 <div class="row">
                     <div class="col-md-12">
+
+
+
+
                         <div class="about-text">
                             <h2 class="about-sec-title">What is the Emerging Voices for Global Health program? </h2>
                             <p>Emerging Voices for Global Health (EV4GH) is an innovative multi-partner blended training
@@ -166,7 +260,7 @@
         <section id="our-history-section" class="our-history-section" style="background:#f0f6f8">
             <div class="container p-5">
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-md-9">
                         <div class="about-text">
                             <h2 class="about-sec-title">What is the EV4GH 2026 venture?</h2>
                             <p>The EV4GH 2026 venture aims to expand the global network with new Emerging Voices from across
@@ -199,16 +293,21 @@
                                 thematic working group and can then join other thematic working groups of HSG.</p>
                         </div>
                     </div>
+                    <div class="col-md-3"></div>
                 </div>
             </div>
         </section>
-        <section id="our-history-section" class="our-history-section">
+        <section id="our-history-section" class="our-history-section" style="background:#fdf1e5">
             <div class="container p-5">
                 <div class="row">
-                    <div class="col-md-4">
-                        <img src="{{ asset('assets/images/EV4GH-2026-Timeline.png') }}" class="img-fluid" alt="...">
+                    <div class="col-md-12">
+                        <div class="about-text">
+                            <h2 class="about-sec-title">The EV4GH 2026 Venture: <br><b>Timeline</b></h2>
+                            <img src="{{ asset('assets/images/EV4GH-2026-Timeline-in-Landscape.png') }}" class="img-fluid"
+                                alt="...">
+                        </div>
                     </div>
-                    <div class="col-md-8">
+                    {{-- <div class="col-md-8">
                         <div class="about-text ms-5">
                             <h2 class="about-sec-title">Stages of EV4GH 2026 venture (dates may be subject to change )</h2>
                             <ul class="ev-check-list">
@@ -252,14 +351,15 @@
                                 </li>
                             </ul>
                         </div>
-                    </div>
+                    </div> --}}
                 </div>
             </div>
         </section>
         <section id="our-history-section" class="our-history-section" style="background:#f0f6f8">
             <div class="container p-5">
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-9">
                         <div class="about-text">
                             <h2 class="about-sec-title">What does the EV2026 venture offer to participants?</h2>
                             <ul class="ev-check-list">
@@ -328,21 +428,40 @@
                                 brokers, health journalists, and other professionals working in health systems. Applicants
                                 must fulfill all of the following:</p>
                             <ul class="ev-check-list">
-                                <li><i class="fa fa-check-circle"></i>Early (2-5 years work experience) or mid (5-10 years
-                                    work experience) career professionals</li>
-                                <li><i class="fa fa-check-circle"></i>A bachelor’s degree</li>
-                                <li><i class="fa fa-check-circle"></i>One of the following:
-                                    <ul class="ev-check-list">
-                                        <li><i class="fa fa-check-circle"></i>Demonstrate active involvement in an
-                                            implementation or practitioner or advocacy or decision-making role within health
-                                            services or a health system, OR</li>
-                                        <li><i class="fa fa-check-circle"></i>Have experience in strengthening health
-                                            systems within their local/national health systems as an activist, health
-                                            journalist, or patient advocate or otherwise be involved in advancing health
-                                            systems strengthening, health equity and social justice in their setting</li>
-                                    </ul>
+                                <li>
+                                    <span class="ev-icon"><i class="fa fa-check-circle" aria-hidden="true"></i></span>
+                                    <div class="ev-content">
+                                        Early (2-5 years work experience) or mid (5-10 years work experience) career
+                                        professionals
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <span class="ev-icon"><i class="fa fa-check-circle" aria-hidden="true"></i></span>
+                                    <div class="ev-content">A bachelor’s degree</div>
+                                </li>
+
+                                <li>
+                                    <span class="ev-icon"><i class="fa fa-check-circle" aria-hidden="true"></i></span>
+                                    <div class="ev-content">
+                                        One of the following:
+                                        <ul class="ev-sub-list">
+                                            <li><i class="fa fa-check-circle" aria-hidden="true"></i> Demonstrate active
+                                                involvement in an implementation or practitioner or advocacy or
+                                                decision-making role within health services or a health system, OR</li>
+                                            <li> <i class="fa fa-check-circle" aria-hidden="true"></i>Have experience in
+                                                strengthening health systems within their local/national health systems as
+                                                an activist, health journalist, or patient advocate or otherwise be involved
+                                                in advancing health systems strengthening, health equity and social justice
+                                                in their setting</li>
+                                        </ul>
+                                    </div>
                                 </li>
                             </ul>
+
+
+
+
                             <h3>Note::</h3>
                             <ul class="ev-check-list">
                                 <li><i class="fa fa-check-circle"></i>The EV4GH venture is in English. Participants need to
@@ -353,7 +472,7 @@
                                     middle-income countries (LMICs). Candidates from high-income countries are also welcome
                                     to apply if they have demonstrable relevant experience in LMICs, or are currently
                                     working with marginalized groups on health equity issues in any country. Please see
-                                        the Scholarship details at the end of the call.</li>
+                                    the Scholarship details at the end of the call.</li>
                                 <li><i class="fa fa-check-circle"></i>Accepted participants should be able to participate in
                                     the training program in full. This includes participation and presence in both the
                                     distance e-learning phase and the face-to-face phase in Dubai, United Arab Emirates.
@@ -369,58 +488,109 @@
             </div>
         </section>
         <!-- ======= Application Materials Section ======= -->
-<!-- ======= Application Materials, Selection, and Scholarship Section ======= -->
-<section id="application-materials" class="our-history-section">
-    <div class="container p-5">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="about-text">
+        <!-- ======= Application Materials, Selection, and Scholarship Section ======= -->
+        <section id="application-materials" class="our-history-section">
+            <div class="container p-5">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="about-text">
 
-                    <h2 class="about-sec-title">Application materials and process</h2>
+                            <h2 class="about-sec-title">Application materials and process</h2>
 
-                    <h3>Application submission materials for track 1: Researchers’ track</h3>
-                    <p>Abstract: Please follow the HSR2026 abstract submission guidelines. If you submit multiple abstracts to HSR2026, please add only one to the EV2026 application.</p>
-                    <p>Short portfolio: The portfolio should include,</p>
-                    <ul class="ev-check-list">
-                        <li><i class="fa fa-check-circle"></i>A short CV: Personal details, Education, Relevant professional experience. If you are submitting a written document, the CV should not be more than two pages.</li>
-                        <li><i class="fa fa-check-circle"></i>A short motivation statement: Explanation of what the EV program means to you and how it will contribute to your professional development. If you are submitting a written document, the motivation letter should be no more than 250 words.</li>
-                        <li><i class="fa fa-check-circle"></i>A short concept note: What global health problem are you more interested in (linked to the EV2026 themes) and how do you envision addressing it? If you are submitting a written document, it should be within 500 words.</li>
-                    </ul>
-                    <p>We encourage you to be innovative in presenting your portfolio. For example, you could present it as a website, a short 3-minute video, PowerPoint slides, or any other creative visual materials.</p>
-                    <p>Submission: After uploading the abstract on the 9th Global Symposium on Health Systems Research website and receiving acknowledgement, please use the button below to complete your application for the EV4GH 2026 researchers’ track. Please note that you will need the unique ID from the 9th Global Symposium on Health Systems Research abstract submission for completing this application</p>
+                            <h3>Application submission materials for track 1: Researchers’ track</h3>
+                            <p>Abstract: Please follow the HSR2026 abstract submission guidelines. If you submit multiple
+                                abstracts to HSR2026, please add only one to the EV2026 application.</p>
+                            <p>Short portfolio: The portfolio should include,</p>
+                            <ul class="ev-check-list">
+                                <li><i class="fa fa-check-circle"></i>A short CV: Personal details, Education, Relevant
+                                    professional experience. If you are submitting a written document, the CV should not be
+                                    more than two pages.</li>
+                                <li><i class="fa fa-check-circle"></i>A short motivation statement: Explanation of what the
+                                    EV program means to you and how it will contribute to your professional development. If
+                                    you are submitting a written document, the motivation letter should be no more than 250
+                                    words.</li>
+                                <li><i class="fa fa-check-circle"></i>A short concept note: What global health problem are
+                                    you more interested in (linked to the EV2026 themes) and how do you envision addressing
+                                    it? If you are submitting a written document, it should be within 500 words.</li>
+                            </ul>
+                            <p>We encourage you to be innovative in presenting your portfolio. For example, you could
+                                present it as a website, a short 3-minute video, PowerPoint slides, or any other creative
+                                visual materials.</p>
+                            <p>Submission: After uploading the abstract on the 9th Global Symposium on Health Systems
+                                Research website and receiving acknowledgement, please use the button below to complete your
+                                application for the EV4GH 2026 researchers’ track. Please note that you will need the unique
+                                ID from the 9th Global Symposium on Health Systems Research abstract submission for
+                                completing this application</p>
 
 
-                    <a class="btn ev-btn-1" href="">TRACK 1 APPLICATION</a>
+                            <a class="btn ev-btn-1" target="_blank"
+                                href="https://docs.google.com/forms/d/e/1FAIpQLSfSvRsCISajZV7wjQyuqvJR_rJtvse_1yz1R7C9AJKRJIgahA/viewform?usp=header">TRACK
+                                1 APPLICATION</a>
 
-                    <h3>Application Track 2: Other health system professionals’ track</h3>
-                    <p>Short portfolio: The portfolio should include,</p>
-                    <ul class="ev-check-list">
-                        <li><i class="fa fa-check-circle"></i>A short CV: Personal details, Education, Relevant professional experience. If you are submitting a written document, the CV should not be more than two pages.</li>
-                        <li><i class="fa fa-check-circle"></i>A short motivation statement: Explanation of what the EV program means to you and how it will contribute to your professional development. If you are submitting a written document, the motivation letter should not be more than 250 words.</li>
-                        <li><i class="fa fa-check-circle"></i>A short concept note: What global health problem are you more interested in addressing (linked to the EV2026 themes) and how do you envision addressing that? If you are submitting a written document, it should be within 500 words.</li>
-                    </ul>
-                    <p>We encourage you to be innovative in presenting your portfolio. For example, you could present it as a website, a short 3-minute video, PowerPoint slides, or any other creative visual materials at your disposal.</p>
-                    <p>Submission: For the Other health system professionals’ track, please use the button below to complete your application for the EV4GH 2026, keeping the above documents ready.</p>
-                    <a class="btn ev-btn-1" href="">TRACK 2 APPLICATION</a>
+                            <h3>Application Track 2: Other health system professionals’ track</h3>
+                            <p>Short portfolio: The portfolio should include,</p>
+                            <ul class="ev-check-list">
+                                <li><i class="fa fa-check-circle"></i>A short CV: Personal details, Education, Relevant
+                                    professional experience. If you are submitting a written document, the CV should not be
+                                    more than two pages.</li>
+                                <li><i class="fa fa-check-circle"></i>A short motivation statement: Explanation of what the
+                                    EV program means to you and how it will contribute to your professional development. If
+                                    you are submitting a written document, the motivation letter should not be more than 250
+                                    words.</li>
+                                <li><i class="fa fa-check-circle"></i>A short concept note: What global health problem are
+                                    you more interested in addressing (linked to the EV2026 themes) and how do you envision
+                                    addressing that? If you are submitting a written document, it should be within 500
+                                    words.</li>
+                            </ul>
+                            <p>We encourage you to be innovative in presenting your portfolio. For example, you could
+                                present it as a website, a short 3-minute video, PowerPoint slides, or any other creative
+                                visual materials at your disposal.</p>
+                            <p>Submission: For the Other health system professionals’ track, please use the button below to
+                                complete your application for the EV4GH 2026, keeping the above documents ready.</p>
+                            <a class="btn ev-btn-1" target="_blank"
+                                href="https://docs.google.com/forms/d/e/1FAIpQLSc_NWVY08d6WrKZdmhmg6vE1TcQv265_Pjt4V3-eR9oUXWXog/viewform?usp=header">TRACK
+                                2 APPLICATION</a>
 
-                    <p><strong>Application Submission Deadline:</strong> All the above should be completed by 20 March 2026 (11 pm GMT+6) at the latest. If you have any queries/ questions, please contact the EV4GH Secretariat at <a href="mailto:ev_secretariat@bracu.ac.bd">ev_secretariat@bracu.ac.bd</a>.</p>
+                            <p><strong>Application Submission Deadline:</strong> All the above should be completed by 20
+                                March 2026 (11 pm GMT+6) at the latest. If you have any queries/ questions, please contact
+                                the EV4GH Secretariat at <a
+                                    href="mailto:ev_secretariat@bracu.ac.bd">ev_secretariat@bracu.ac.bd</a>.</p>
 
-                     <h2 class="about-sec-title">Selection process</h2>
-                    <p>A selection committee consisting of the EV governance board members, independent EV4GH peer reviewers, representatives from partner institutes and funders, and EV Secretariat will facilitate the selection process, taking into account various funding criteria, regional representation in the EV network, gender and ethnicity.</p>
+                            <h2 class="about-sec-title">Selection process</h2>
+                            <p>A selection committee consisting of the EV governance board members, independent EV4GH peer
+                                reviewers, representatives from partner institutes and funders, and EV Secretariat will
+                                facilitate the selection process, taking into account various funding criteria, regional
+                                representation in the EV network, gender and ethnicity.</p>
 
-                    
-                     <h2 class="about-sec-title">What does the EV2026 scholarship include?</h2>
-                    <p>A limited number of full and partial scholarships will be awarded to successful applicants. The full scholarship will cover participation in the face to face program, including participants’ airfares to and from Dubai, shared accommodation, meals, and materials, as well as participation in the 9th Global Symposium on Health Systems Research in Dubai. Partial scholarships shall fund only some aspects of the above. Scholarships shall prioritize low- and middle-income country participants. Participants from or based in high-income countries, if selected, are expected to raise their own funds to cover all costs of participation in the EV4GH program and are considered self-funded. Please reach out to the EV Secretariat (<a href="mailto:ev_secretariat@bracu.ac.bd">ev_secretariat@bracu.ac.bd</a>) for details about self-funding.</p>
 
-                    <p><strong>Please note:</strong> As part of the EV venture, accommodation for all EVs in Dubai will be on a twin-share basis, whether selected for a scholarship or self-funded. Successful EV selection cannot guarantee a successful and timely visa process, so if selected, we encourage participants to start visa applications as soon as possible.</p>
+                            <h2 class="about-sec-title">What does the EV2026 scholarship include?</h2>
+                            <p>A limited number of full and partial scholarships will be awarded to successful applicants.
+                                The full scholarship will cover participation in the face to face program, including
+                                participants’ airfares to and from Dubai, shared accommodation, meals, and materials, as
+                                well as participation in the 9th Global Symposium on Health Systems Research in Dubai.
+                                Partial scholarships shall fund only some aspects of the above. Scholarships shall
+                                prioritize low- and middle-income country participants. Participants from or based in
+                                high-income countries, if selected, are expected to raise their own funds to cover all costs
+                                of participation in the EV4GH program and are considered self-funded. Please reach out to
+                                the EV Secretariat (<a
+                                    href="mailto:ev_secretariat@bracu.ac.bd">ev_secretariat@bracu.ac.bd</a>) for details
+                                about self-funding.</p>
 
-                    <p>Theme for 9th Global Symposium on Health Systems Research: Future-Focused Health Systems in a Changing World. Please see the details of the themes of the 2026 symposium at the <a href="https://healthsystemsglobal.org/global-symposia/hsr2024/8th-global-symposium-on-health-systems-research-2024-theme/">HSG website</a>.</p>
+                            <p><strong>Please note:</strong> As part of the EV venture, accommodation for all EVs in Dubai
+                                will be on a twin-share basis, whether selected for a scholarship or self-funded. Successful
+                                EV selection cannot guarantee a successful and timely visa process, so if selected, we
+                                encourage participants to start visa applications as soon as possible.</p>
 
+                            <p>Theme for 9th Global Symposium on Health Systems Research: Future-Focused Health Systems in a
+                                Changing World. Please see the details of the themes of the 2026 symposium at the <a
+                                    href="https://healthsystemsglobal.org/global-symposia/hsr2024/8th-global-symposium-on-health-systems-research-2024-theme/">HSG
+                                    website</a>.</p>
+
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-</section>
+        </section>
 
 
     </main>
