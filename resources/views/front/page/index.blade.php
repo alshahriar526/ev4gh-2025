@@ -76,8 +76,8 @@
 
         /* background */
         /* #main-slider-section .background[data-item="one"] {
-                            background-position: 50% 40%;
-                        } */
+                                    background-position: 50% 40%;
+                                } */
         #main-slider-section .background {
             position: absolute;
             inset: 0;
@@ -367,6 +367,61 @@
             font-family: Poppins, sans-serif !important;
             margin-bottom: 30px;
         }
+
+
+        .index-page-img-1 img {
+            max-height: 500px;
+            min-height: 500px;
+            max-width: 500px;
+            min-width: 500px;
+        }
+
+        .ev4gh-text-card .ev-btn-1 {
+            margin-top: 10px !important;
+            margin-bottom: 10px !important;
+        }
+    </style>
+
+
+    <style>
+        .fb-wrapper {
+            width: 100%;
+            background: #fff;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Force FB iframe to scale responsively */
+        .fb_iframe_widget,
+        .fb_iframe_widget span,
+        .fb_iframe_widget iframe {
+            width: 100% !important;
+        }
+
+        .ev4gh-newsletter-card {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+
+        .news-card {
+
+            display: flex;
+            flex-direction: column;
+            padding: 30px;
+            background: rgb(228 2 0 / 3%);
+            border-radius: 18px;
+            border: 1px solid #eee;
+            transition: .3s;
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.10);
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 15px;
+
+        }
     </style>
 @endsection
 @section('content')
@@ -453,20 +508,21 @@
                             </h1>
                             <!-- <h4>XX XX XXXXXXXX</h4> -->
                             <!-- <div class="hero-other">
-                                                <span class="hero-span">PHP | Laravel</span>
-                                                <span class="hero-span">HTML | CSS | BOOTSTRAP | JS</span>
-                                                <span class="hero-span">DevOps</span>
-                                            </div> -->
+                                                        <span class="hero-span">PHP | Laravel</span>
+                                                        <span class="hero-span">HTML | CSS | BOOTSTRAP | JS</span>
+                                                        <span class="hero-span">DevOps</span>
+                                                    </div> -->
                         </article>
                     </div>
                 </div>
             </div>
         </section>
         <section id="ev4gh-section-1" class="ev4gh-section ev4gh-section-1">
-            <div class="container-fluid p-0">
-                <div class="row g-0">
-                    <div class="col-md-6">
-                        <div class="ev4gh-text-card" style="    display: flex; flex-direction: column; align-items: flex-start; justify-content: center;">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-md-7">
+                        <div class="ev4gh-text-card"
+                            style="    display: flex; flex-direction: column; align-items: flex-start; justify-content: center;">
                             <h3 class="ev4gh-section-title">Be the next Global Health Changemaker.</h3>
                             <p class="ev4gh-section-text-para">Emerging Voices for Global Health (EV4GH) is an
                                 innovative multi-partner blended training program that includes face-to-face training
@@ -475,11 +531,14 @@
                                 interest in becoming influential global health voices and/or local change makers,
                                 particularly in LMIC.
                             </p>
+
+                            <a class="btn ev-btn-1" href="{{ route('about') }}">Learn more</a>
+
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <div class="ev4gh-img-card">
-                            <img class="img-fluid" src="assets/images/index/2.jpg" alt="">
+                    <div class="col-md-5">
+                        <div class="ev4gh-img-card index-page-img-1 ">
+                            <img class="rounded-pill" src="assets/images/index/2.jpg" alt="">
                         </div>
                     </div>
                     {{-- <div class="col-md-6">
@@ -511,101 +570,101 @@
             </div>
         </section>
         <!-- <section id="ev4gh-section-news-blogs" class="ev4gh-section ev4gh-section-news-blogs">
-                            <div class="container">
-                                <div class="row mb-5">
-                                    <div class="col-md-12 justify-item-center">
-                                        <div class="section-heading">
-                                            <h1>News <span>&</span> Blogs</h1>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <section class="splide" aria-label="Splide Basic HTML Example">
-                                            <div class="splide__track">
-                                                <ul class="splide__list">
-                                                    <li class="splide__slide">
-                                                        <div class="card">
-                                                            <div class="card-body">
-                                                                <h5 class="card-title">Card title</h5>
-                                                                <p class="card-text">Some quick example text to build on the card title
-                                                                    and make up the bulk of the card's content.</p>
-                                                                <a href="#" class="btn ev4gh-btn-1">Learn more ></a></a>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                    <li class="splide__slide">
-                                                        <div class="card">
-                                                            <div class="card-body">
-                                                                <h5 class="card-title">Card title</h5>
-                                                                <p class="card-text">Some quick example text to build on the card title
-                                                                    and make up the bulk of the card's content.</p>
-                                                                <a href="#" class="btn ev4gh-btn-1">Learn more ></a></a>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                    <li class="splide__slide">
-                                                        <div class="card">
-                                                            <div class="card-body">
-                                                                <h5 class="card-title">Card title</h5>
-                                                                <p class="card-text">Some quick example text to build on the card title
-                                                                    and make up the bulk of the card's content.</p>
-                                                                <a href="#" class="btn ev4gh-btn-1">Learn more ></a></a>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                    <li class="splide__slide">
-                                                        <div class="card">
-                                                            <div class="card-body">
-                                                                <h5 class="card-title">Card title</h5>
-                                                                <p class="card-text">Some quick example text to build on the card title
-                                                                    and make up the bulk of the card's content.</p>
-                                                                <a href="#" class="btn ev4gh-btn-1">Learn more ></a></a>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                    <li class="splide__slide">
-                                                        <div class="card">
-                                                            <div class="card-body">
-                                                                <h5 class="card-title">Card title</h5>
-                                                                <p class="card-text">Some quick example text to build on the card title
-                                                                    and make up the bulk of the card's content.</p>
-                                                                <a href="#" class="btn ev4gh-btn-1">Learn more ></a></a>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                </ul>
+                                    <div class="container">
+                                        <div class="row mb-5">
+                                            <div class="col-md-12 justify-item-center">
+                                                <div class="section-heading">
+                                                    <h1>News <span>&</span> Blogs</h1>
+                                                </div>
                                             </div>
-                                        </section>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <section class="splide" aria-label="Splide Basic HTML Example">
+                                                    <div class="splide__track">
+                                                        <ul class="splide__list">
+                                                            <li class="splide__slide">
+                                                                <div class="card">
+                                                                    <div class="card-body">
+                                                                        <h5 class="card-title">Card title</h5>
+                                                                        <p class="card-text">Some quick example text to build on the card title
+                                                                            and make up the bulk of the card's content.</p>
+                                                                        <a href="#" class="btn ev4gh-btn-1">Learn more ></a></a>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li class="splide__slide">
+                                                                <div class="card">
+                                                                    <div class="card-body">
+                                                                        <h5 class="card-title">Card title</h5>
+                                                                        <p class="card-text">Some quick example text to build on the card title
+                                                                            and make up the bulk of the card's content.</p>
+                                                                        <a href="#" class="btn ev4gh-btn-1">Learn more ></a></a>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li class="splide__slide">
+                                                                <div class="card">
+                                                                    <div class="card-body">
+                                                                        <h5 class="card-title">Card title</h5>
+                                                                        <p class="card-text">Some quick example text to build on the card title
+                                                                            and make up the bulk of the card's content.</p>
+                                                                        <a href="#" class="btn ev4gh-btn-1">Learn more ></a></a>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li class="splide__slide">
+                                                                <div class="card">
+                                                                    <div class="card-body">
+                                                                        <h5 class="card-title">Card title</h5>
+                                                                        <p class="card-text">Some quick example text to build on the card title
+                                                                            and make up the bulk of the card's content.</p>
+                                                                        <a href="#" class="btn ev4gh-btn-1">Learn more ></a></a>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li class="splide__slide">
+                                                                <div class="card">
+                                                                    <div class="card-body">
+                                                                        <h5 class="card-title">Card title</h5>
+                                                                        <p class="card-text">Some quick example text to build on the card title
+                                                                            and make up the bulk of the card's content.</p>
+                                                                        <a href="#" class="btn ev4gh-btn-1">Learn more ></a></a>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </section>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                        </section> -->
+                                </section> -->
         <!-- <section id="ev4gh-section-video" class="ev4gh-section left ev4gh-section-video ">
-                            <div class="container-fluid">
-                                <div class="row g-0">
-                                    <div class="col-md-6">
-                                        <div class="ev4gh-text-card">
-                                            <img class="ten-anniversary-logo" src="assets/images/10th-Anniversary.png"
-                                                alt="">
-                                            <p class="ev4gh-section-text-para">Emerging Voices for Global Health (EV4GH) celebrates its
-                                                10th anniversary. Here is a glimpse at the decade past. 6 ventures of EV4Gh have been
-                                                successfully conducted so far. We look forward to the upcoming EV 2020 venture and many
-                                                more to come.
-                                            </p>
+                                    <div class="container-fluid">
+                                        <div class="row g-0">
+                                            <div class="col-md-6">
+                                                <div class="ev4gh-text-card">
+                                                    <img class="ten-anniversary-logo" src="assets/images/10th-Anniversary.png"
+                                                        alt="">
+                                                    <p class="ev4gh-section-text-para">Emerging Voices for Global Health (EV4GH) celebrates its
+                                                        10th anniversary. Here is a glimpse at the decade past. 6 ventures of EV4Gh have been
+                                                        successfully conducted so far. We look forward to the upcoming EV 2020 venture and many
+                                                        more to come.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="ev4gh-video-card">
+                                                    <video controls="">
+                                                        <source type="video/mp4" src="assets/videos/Emerging Voices 10th Anniversary.mp4">
+                                                    </video>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-6">
-                                        <div class="ev4gh-video-card">
-                                            <video controls="">
-                                                <source type="video/mp4" src="assets/videos/Emerging Voices 10th Anniversary.mp4">
-                                            </video>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section> -->
-        <hr>
+                                </section> -->
+
         <section id="ev4gh-section-latest" class="ev4gh-section ev4gh-section-latest" style="  background: #e8e8e8; ">
             <div class="container">
                 <div class="row mb-5">
@@ -616,31 +675,52 @@
                     </div>
                 </div>
                 <div class="row justify-content-center">
-                    <div class="col-md-6">
-                        <div class="fb-page" data-href="https://www.facebook.com/EV4GH/" data-tabs="timeline"
-                            data-width="500" data-height="600" data-small-header="true"
-                            data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
-                            <blockquote cite="https://www.facebook.com/EV4GH/" class="fb-xfbml-parse-ignore"><a
-                                    href="https://www.facebook.com/EV4GH/">Emerging Voices 4 Global Health</a>
-                            </blockquote>
+                    <div class="col-md-4 ">
+                        <div class="fb-wrapper h-100">
+                            <div class="fb-page" data-href="https://www.facebook.com/EV4GH/" data-tabs="timeline"
+                                data-width="380" data-height="" data-small-header="true"
+                                data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <div class="card h-100 ev4gh-newsletter-card">
+
+                    <div class="col-md-4">
+                        <div class="card h-100 ev4gh-newsletter-card ">
                             <div class="card-body">
                                 <img src="assets/images/newsletter-svgrepo-com.svg" class="card-img-top"
                                     alt="newsletter svg">
                                 <h5 class="card-title">Read Our Latest Newsletter:</h5>
                                 <p class="card-text">EV Newsletter January 2023</p>
-                                <a href="#" class="btn ev4gh-btn-2">Learn more ></a></a>
+                                <a target="_blank" href="https://www.facebook.com/EV4GH/posts/pfbid0Au8if2q9tPqkqLgEUFow4FWKePKeShvh2ky3XSCT1m7BHBFZR6vZ33PSHCsyY37El" class="btn ev4gh-btn-2">Learn more ></a></a>
                             </div>
                         </div>
                     </div>
+
+                    <!-- News Cards -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card mb-3 news-card">
+                            <div class="card-body">
+                                <h5 class="card-title">From EV4GH to Global Recognition: Soe Yu Naing Wins Distinguished
+                                    Award</h5>
+                                <p class="card-text">EV Newsletter January 2023</p>
+                                <a href="#" class="read-more-btn mt-auto">Learn more ></a>
+                            </div>
+                        </div>
+
+                        <div class="card news-card">
+                            <div class="card-body ">
+                                <h5 class="card-title">Meet our EV4GH alumna: the BMJ Global Health Grant winner</h5>
+                                <p class="card-text">EV Newsletter January 2023</p>
+                                <a target="https://gh.bmj.com/pages/bmj-global-health-grant-winners?utm_campaign=usage&utm_content=tbmj_sprout&utm_id=BMJ005&utm_medium=social&utm_source=facebook,twitter&fbclid=IwY2xjawOSJstleHRuA2FlbQIxMABicmlkETFYQ2VnSlQzSThGRjJVZzBCc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHn-SrqIt11a7fkEwNwzzQLBdNeXo4jBF1bj7sz2GMGsknYHX8TyS1DWSpBbc_aem_HL2ZDHJ7jpu-dcbTi0em7A" href="https://gh.bmj.com/pages/bmj-global-health-grant-winners?utm_campaign=usage&utm_content=tbmj_sprout&utm_id=BMJ005&utm_medium=social&utm_source=facebook,twitter&fbclid=IwY2xjawOSJstleHRuA2FlbQIxMABicmlkETFYQ2VnSlQzSThGRjJVZzBCc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHn-SrqIt11a7fkEwNwzzQLBdNeXo4jBF1bj7sz2GMGsknYHX8TyS1DWSpBbc_aem_HL2ZDHJ7jpu-dcbTi0em7A" class="read-more-btn mt-auto">Learn more ></a>
+                            </div>
+                        </div>
+                    </div>
+
                     <!-- <div class="col-md-4">
-                                        <a class="twitter-timeline" data-width="500" data-height="600"
-                                            href="https://twitter.com/ev4gh?ref_src=twsrc%5Etfw">Tweets by ev4gh</a>
-                                        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                                    </div> -->
+                                                <a class="twitter-timeline" data-width="500" data-height="600"
+                                                    href="https://twitter.com/ev4gh?ref_src=twsrc%5Etfw">Tweets by ev4gh</a>
+                                                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                                            </div> -->
                 </div>
             </div>
         </section>

@@ -522,10 +522,20 @@
     }
 
 
-    /*--------------------------------------------------------------
+    /*--------------------------------------------------------------P
     # Breadcrumbs
     --------------------------------------------------------------*/
-    .breadcrumbs .page-header {
+
+.breadcrumbs .page-header{
+    padding: 60px 0 60px 0;
+    height: 40vh;
+    min-height: 40vh;
+    position: relative;
+    background-color: var(--color-default);
+
+    }
+
+    .breadcrumbs .page-header.call-for-applicarion-header {
     padding: 60px 0 60px 0;
     height: 60vh;
     min-height: 60vh;
@@ -699,18 +709,15 @@
 
     .ev4gh-section-1 .ev4gh-text-card{
     display: block;
-    width: 600px;
-    max-width: 600px;
-    margin-left: auto;
-    padding: 60px;
+    
     }
     .ev4gh-section-1 .ev4gh-text-card.right{
     display: block;
-    width: 600px;
+    /* width: 600px;
     max-width: 600px;
     margin-right: auto !important;
     margin-left: 0 !important;
-    padding: 60px;
+    padding: 60px; */
     }
 
 
