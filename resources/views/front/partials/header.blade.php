@@ -1,5 +1,7 @@
 <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between h-100">
+
+        
         <a href="{{url('/')}}" class="logo d-flex align-items-center h-100">
             <img src="assets/images/logo/EV4GH-NEW-Logo.png" alt="Ev4gh logo" />
         </a>
@@ -11,7 +13,7 @@
                     <!-- <li><a href="about.php">About us</a></li> -->
                     <li><a href="{{url('/about')}}">Our History</a></li>
                     <li><a href="{{route('gb_members.index')}}">Governance Board Members</a></li>
-                    <li><a href="our-partners.php">Our Partners</a></li>
+                    <li><a href="{{route('our-funders-and-partners')}}">Our funders and partners</a></li>
                 </ul>
             </li>
             <li><a href="{{route('call-for-applications-2026')}}"><span>Call for Applications 2026</span></a></li>

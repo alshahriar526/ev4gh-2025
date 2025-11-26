@@ -1,4 +1,6 @@
-<footer class="ev-footer">
+
+
+<footer class="ev-footer" id="ev-footer">
     <div class="container py-5">
         <div class="row">
 
@@ -14,8 +16,8 @@
                             class="fab fa-linkedin-in"></i></a>
                     <a target="_blank" href="https://www.facebook.com/EV4GH/" class="social-icon"><i
                             class="fab fa-facebook-f"></i></a>
-                    <a target="_blank" href="http://localhost:8000/" class="social-icon"><i
-                            class="fab fa-x-twitter"></i></a>
+                    {{-- <a target="_blank" href="https://x.com/ev4gh" class="social-icon"><i
+                            class="fab fa-x-twitter"></i></a> --}}
                     <a target="_blank" href="https://assets.codepen.io/9868786/youtube.webp" class="social-icon"><i
                             class="fab fa-youtube"></i></a>
                 </div>
@@ -35,7 +37,7 @@
 
         </div>
         <div class="footer-bottom text-center pt-3">
-            <p class="mb-0">BRAC James P Grant School of Public Health, BRAC University serves as our secretariat</p>
+            <p class="mb-0" style="text-align: center!important">BRAC James P Grant School of Public Health, BRAC University serves as our secretariat</p>
         </div>
     </div>
 </footer>

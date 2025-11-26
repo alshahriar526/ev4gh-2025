@@ -4,8 +4,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         /*--------------------------------------------------------------
-            # our History
-            --------------------------------------------------------------*/
+                # our History
+                --------------------------------------------------------------*/
         .main-timeline {
             position: relative
         }
@@ -273,6 +273,17 @@
             }
         }
 
+
+
+        .ev4gh-section .ev4gh-text-card {
+            display: block;
+            width: 800px;
+            max-width: 800px;
+            margin-left: auto;
+            padding: 60px;
+            height: 100%;
+        }
+
         /*  Our histroy 2 */
         .our-history-section-2 {
             background: #e4f0ff;
@@ -382,8 +393,8 @@
             }
 
             /* .bsb-timeline-7 .timeline>.timeline-item .timeline-content {
-                    padding: 2.5rem
-                } */
+                        padding: 2.5rem
+                    } */
             .bsb-timeline-7 .timeline>.timeline-item .timeline-indicator {
                 position: relative
             }
@@ -834,154 +845,157 @@
                             </div>
                         </div>
                         <div class="timeline-content">
-                            <p class="description">The 9th edition of the EV4GH program, EV4GH 2024, was held in Nagasaki, Japan; in sync with the 8th Global Symposium on Health Systems Research (HSR 2024) in nagasaki, Japan (18 to 22 November 2024). Around 60 people, including participants and facilitators of 31 different nationalities, attended and facilitated the program.
-</p>
+                            <p class="description">The 9th edition of the EV4GH program, EV4GH 2024, was held in Nagasaki,
+                                Japan; in sync with the 8th Global Symposium on Health Systems Research (HSR 2024) in
+                                nagasaki, Japan (18 to 22 November 2024). Around 60 people, including participants and
+                                facilitators of 31 different nationalities, attended and facilitated the program.
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
         <!-- <section class=" our-history-section-2 bsb-timeline-7  py-3 py-md-5 py-xl-8">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-md-12">
-                            <ul class="timeline">
-                                <li class="timeline-item">
-                                    <div class="timeline-body">
-                                        <div class="timeline-meta">
-                                            <div class="d-inline-flex flex-column px-2 py-1   text-md-end">
-                                                <span>EV</span>
-                                                <span class="fw-bold">2010</span>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-md-12">
+                                <ul class="timeline">
+                                    <li class="timeline-item">
+                                        <div class="timeline-body">
+                                            <div class="timeline-meta">
+                                                <div class="d-inline-flex flex-column px-2 py-1   text-md-end">
+                                                    <span>EV</span>
+                                                    <span class="fw-bold">2010</span>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="timeline-content timeline-indicator">
-                                            <div class="card border-0 shadow">
-                                                <div class="card-body p-xl-4">
-                                                    <p class="card-text m-0">To give people from the Global South the
-                                                        chance to present their research and policy agenda on the global
-                                                        scene, ITM decided to encourage them to have their voices heard.
-                                                        Through an essay competition 50 Emerging Voices were selected to
-                                                        present their ideas on how to progress towards universal health
-                                                        coverage (UHC), the topic of the 1st Global Symposium.</p>
+                                            <div class="timeline-content timeline-indicator">
+                                                <div class="card border-0 shadow">
+                                                    <div class="card-body p-xl-4">
+                                                        <p class="card-text m-0">To give people from the Global South the
+                                                            chance to present their research and policy agenda on the global
+                                                            scene, ITM decided to encourage them to have their voices heard.
+                                                            Through an essay competition 50 Emerging Voices were selected to
+                                                            present their ideas on how to progress towards universal health
+                                                            coverage (UHC), the topic of the 1st Global Symposium.</p>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </li>
-                                <li class="timeline-item">
-                                    <div class="timeline-body">
-                                        <div class="timeline-meta">
-                                            <div class="d-inline-flex flex-column px-2 py-1   text-md-end">
-                                                <span>EV</span>
-                                                <span class="fw-bold">2012</span>
+                                    </li>
+                                    <li class="timeline-item">
+                                        <div class="timeline-body">
+                                            <div class="timeline-meta">
+                                                <div class="d-inline-flex flex-column px-2 py-1   text-md-end">
+                                                    <span>EV</span>
+                                                    <span class="fw-bold">2012</span>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="timeline-content timeline-indicator">
-                                            <div class="card border-0 shadow">
-                                                <div class="card-body p-xl-4">
-                                                    <p class="card-text m-0">The WHO Alliance of Health Policy and Systems
-                                                        Research encouraged an Emerging Voices 2012 track (EV2012) in view
-                                                        of the success of EV2010. The selection process, which was
-                                                        integrated in the Second Global Symposium on Health Systems Research
-                                                        calls for abstracts. We received 300 applications, of which 50 EV
-                                                        2012s were selected.</p>
+                                            <div class="timeline-content timeline-indicator">
+                                                <div class="card border-0 shadow">
+                                                    <div class="card-body p-xl-4">
+                                                        <p class="card-text m-0">The WHO Alliance of Health Policy and Systems
+                                                            Research encouraged an Emerging Voices 2012 track (EV2012) in view
+                                                            of the success of EV2010. The selection process, which was
+                                                            integrated in the Second Global Symposium on Health Systems Research
+                                                            calls for abstracts. We received 300 applications, of which 50 EV
+                                                            2012s were selected.</p>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </li>
-                                <li class="timeline-item">
-                                    <div class="timeline-body">
-                                        <div class="timeline-meta">
-                                            <div class="d-inline-flex flex-column px-2 py-1   text-md-end">
-                                                <span>EV</span>
-                                                <span class="fw-bold">2013</span>
+                                    </li>
+                                    <li class="timeline-item">
+                                        <div class="timeline-body">
+                                            <div class="timeline-meta">
+                                                <div class="d-inline-flex flex-column px-2 py-1   text-md-end">
+                                                    <span>EV</span>
+                                                    <span class="fw-bold">2013</span>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="timeline-content timeline-indicator">
-                                            <div class="card border-0 shadow">
-                                                <div class="card-body p-xl-4">
-                                                    <p class="card-text m-0">The EV4GH 2013 edition was linked to the AIDS
-                                                        in Africa Conference (ICASA), ‘Now more than ever: targeting zero’
-                                                        in Cape Town, South Africa, from 7 to 11 December 2013; it was
-                                                        hosted by the School of Public Health, and Centre for Research in
-                                                        HIV and AIDS at the University of the Western Cape, South Africa.
-                                                    </p>
+                                            <div class="timeline-content timeline-indicator">
+                                                <div class="card border-0 shadow">
+                                                    <div class="card-body p-xl-4">
+                                                        <p class="card-text m-0">The EV4GH 2013 edition was linked to the AIDS
+                                                            in Africa Conference (ICASA), ‘Now more than ever: targeting zero’
+                                                            in Cape Town, South Africa, from 7 to 11 December 2013; it was
+                                                            hosted by the School of Public Health, and Centre for Research in
+                                                            HIV and AIDS at the University of the Western Cape, South Africa.
+                                                        </p>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </li>
-                                <li class="timeline-item">
-                                    <div class="timeline-body">
-                                        <div class="timeline-meta">
-                                            <div class="d-inline-flex flex-column px-2 py-1   text-md-end">
-                                                <span>EV</span>
-                                                <span class="fw-bold">2014</span>
+                                    </li>
+                                    <li class="timeline-item">
+                                        <div class="timeline-body">
+                                            <div class="timeline-meta">
+                                                <div class="d-inline-flex flex-column px-2 py-1   text-md-end">
+                                                    <span>EV</span>
+                                                    <span class="fw-bold">2014</span>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="timeline-content timeline-indicator">
-                                            <div class="card border-0 shadow">
-                                                <div class="card-body p-xl-4">
-                                                    <p class="card-text m-0">The EV4GH 2014 track linked up with the Third
-                                                        Global Health Symposium on Health Systems Research, Science and
-                                                        Practice of people-centered health systems, in Cape Town, South
-                                                        Africa, from mid-September to 3 October 2014.</p>
+                                            <div class="timeline-content timeline-indicator">
+                                                <div class="card border-0 shadow">
+                                                    <div class="card-body p-xl-4">
+                                                        <p class="card-text m-0">The EV4GH 2014 track linked up with the Third
+                                                            Global Health Symposium on Health Systems Research, Science and
+                                                            Practice of people-centered health systems, in Cape Town, South
+                                                            Africa, from mid-September to 3 October 2014.</p>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </li>
-                                <li class="timeline-item">
-                                    <div class="timeline-body">
-                                        <div class="timeline-meta">
-                                            <div class="d-inline-flex flex-column px-2 py-1   text-md-end">
-                                                <span>EV</span>
-                                                <span class="fw-bold">2016</span>
+                                    </li>
+                                    <li class="timeline-item">
+                                        <div class="timeline-body">
+                                            <div class="timeline-meta">
+                                                <div class="d-inline-flex flex-column px-2 py-1   text-md-end">
+                                                    <span>EV</span>
+                                                    <span class="fw-bold">2016</span>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="timeline-content timeline-indicator">
-                                            <div class="card border-0 shadow">
-                                                <div class="card-body p-xl-4">
-                                                    <p class="card-text m-0">EV2016 was held in close association and
-                                                        partnership with the fourth global symposium on health systems
-                                                        research, 14-18 November 2016 in Vancouver, themed, ‘Resilient and
-                                                        responsive health systems for a changing world.’</p>
+                                            <div class="timeline-content timeline-indicator">
+                                                <div class="card border-0 shadow">
+                                                    <div class="card-body p-xl-4">
+                                                        <p class="card-text m-0">EV2016 was held in close association and
+                                                            partnership with the fourth global symposium on health systems
+                                                            research, 14-18 November 2016 in Vancouver, themed, ‘Resilient and
+                                                            responsive health systems for a changing world.’</p>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </li>
-                                <li class="timeline-item">
-                                    <div class="timeline-body">
-                                        <div class="timeline-meta">
-                                            <div class="d-inline-flex flex-column px-2 py-1   text-md-end">
-                                                <span>EV</span>
-                                                <span class="fw-bold">2018</span>
+                                    </li>
+                                    <li class="timeline-item">
+                                        <div class="timeline-body">
+                                            <div class="timeline-meta">
+                                                <div class="d-inline-flex flex-column px-2 py-1   text-md-end">
+                                                    <span>EV</span>
+                                                    <span class="fw-bold">2018</span>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="timeline-content timeline-indicator">
-                                            <div class="card border-0 shadow">
-                                                <div class="card-body p-xl-4">
-                                                    <p class="card-text m-0">EV2018 was held in Liverpool, in close
-                                                        association and partnership with the fifth global symposium on
-                                                        health systems research from 8 – 12 October 2018. The theme for the
-                                                        symposium was ‘Advancing Health Systems for all in the SDG era’. For
-                                                        the EV2018 venture, there were two tracks one for researchers
-                                                        involved in health policy and system research (researcher track) and
-                                                        the other for health professionals, health journalists, activists,
-                                                        decision or policy-makers, and/or other health systems actors (the
-                                                        ‘change agents’ track).</p>
+                                            <div class="timeline-content timeline-indicator">
+                                                <div class="card border-0 shadow">
+                                                    <div class="card-body p-xl-4">
+                                                        <p class="card-text m-0">EV2018 was held in Liverpool, in close
+                                                            association and partnership with the fifth global symposium on
+                                                            health systems research from 8 – 12 October 2018. The theme for the
+                                                            symposium was ‘Advancing Health Systems for all in the SDG era’. For
+                                                            the EV2018 venture, there were two tracks one for researchers
+                                                            involved in health policy and system research (researcher track) and
+                                                            the other for health professionals, health journalists, activists,
+                                                            decision or policy-makers, and/or other health systems actors (the
+                                                            ‘change agents’ track).</p>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </li>
-                            </ul>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </section> -->
+                </section> -->
 
         <section id="ev4gh-section-video" class="ev4gh-section left ev4gh-section-video ">
             <div class="container-fluid">

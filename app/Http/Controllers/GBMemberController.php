@@ -12,7 +12,8 @@ class GBMemberController extends Controller
      */
     public function index()
     {
-        $members = GBMember::latest()->paginate(20);
+        $members = GBMember::orderByRaw("full_name = 'Bachera Aktar, PhD' DESC")->orderBy('full_name', 'ASC')->get();
+
         return view('front.page.gb_members.index', compact('members'));
     }
 

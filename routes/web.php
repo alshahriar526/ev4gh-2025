@@ -26,6 +26,13 @@ Route::get('/about', function () {
     return view('front.page.about');
 })->name("about");
 
+
+// Our funders and partners
+
+Route::get('/our-funders-and-partners', function () {
+    return view('front.page.our-funders-and-partners');
+})->name("our-funders-and-partners");
+
 Route::get('/call-for-applications-2026', function () {
     return view('front.page.call-for-applications-2026');
 })->name("call-for-applications-2026");

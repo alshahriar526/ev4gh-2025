@@ -370,10 +370,10 @@
 
 
         .index-page-img-1 img {
-            max-height: 500px;
-            min-height: 500px;
-            max-width: 500px;
-            min-width: 500px;
+            max-height: 400px;
+            min-height: 400px;
+            max-width: 400px;
+            min-width: 400px;
         }
 
         .ev4gh-text-card .ev-btn-1 {
@@ -486,13 +486,15 @@
                 </div>
                 <hr />
                 <div class="feature">
-                    <a target="_blank" href=""><i class="fa-brands fa-x-twitter"></i></a>
-                </div>
-                <hr />
-                <div class="feature">
                     <a target="_blank" href="https://www.linkedin.com/company/ev4gh"><i
                             class="fa-brands fa-linkedin"></i></a>
                 </div>
+                <hr />
+                <div class="feature">
+                    <a href="#ev-footer"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+                
+                
             </div>
             <a href="https://www.youtube.com/@ev4ghsecretariat298" target="_blank" class="ytb-logo"><img
                     src="https://assets.codepen.io/9868786/youtube.webp" alt="HTML tutorial"></a>
@@ -718,7 +720,8 @@
 
                     <!-- <div class="col-md-4">
                                                 <a class="twitter-timeline" data-width="500" data-height="600"
-                                                    href="https://twitter.com/ev4gh?ref_src=twsrc%5Etfw">Tweets by ev4gh</a>
+                                                    href="https://t
+                                                    witter.com/ev4gh?ref_src=twsrc%5Etfw">Tweets by ev4gh</a>
                                                 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                                             </div> -->
                 </div>
