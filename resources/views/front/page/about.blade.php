@@ -991,7 +991,7 @@
                             <!-- <h3 class="ev4gh-section-title">10th Anniversary of EV4GH</h3> -->
                             <img class="ten-anniversary-logo" src="assets/images/10th-Anniversary.png" alt="">
                             <p class="ev4gh-section-text-para">Emerging Voices for Global Health (EV4GH) celebrates its
-                                10th anniversary. Here is a glimpse at the decade past. 6 ventures of EV4Gh have been
+                                10th anniversary. Here is a glimpse at the decade past. 6 ventures of EV4GH have been
                                 successfully conducted so far. We look forward to the upcoming EV 2020 venture and many
                                 more to come.
                             </p>

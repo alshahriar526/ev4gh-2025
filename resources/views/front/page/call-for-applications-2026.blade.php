@@ -346,7 +346,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="about-text">
-                            <h2 class="about-sec-title">The EV4GH 2026 Venture: <br><b>Timeline</b></h2>
+                            <h2 class="about-sec-title" style="color:black">The EV4GH 2026 Venture: Timeline</h2>
                             <img src="{{ asset('assets/images/EV4GH-2026-Timeline-in-Landscape.png') }}" class="img-fluid"
                                 alt="...">
                         </div>
@@ -454,10 +454,10 @@
                                 <p>The 2026 venture will accept applications through two application tracks: -</p>
 
                                 <ul class="ev-check-list">
-                                    <li><i class="fa fa-check-circle"></i>Track 1) Researchers involved in health policy and
+                                    <li><i class="fa fa-check-circle"></i>Track 1: Researchers involved in health policy and
                                         systems research (researchers track), and</li>
 
-                                    <li><i class="fa fa-check-circle"></i>Track 2) Health professionals, activists,
+                                    <li><i class="fa fa-check-circle"></i>Track 2: Health professionals, activists,
                                         policymakers, knowledge brokers, health journalists, and other health system actors
                                         (other health system professional track).</li>
                                 </ul>
