@@ -43,7 +43,7 @@
             <!-- <li><a href="#contact">Contact</a></li> -->
             </ul>
         </nav><!-- .navbar -->
-        <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
-        <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+        <i class="mobile-nav-toggle mobile-nav-show bi bi-list">rrr</i>
+        <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x">rrr</i>
     </div>
 </header>

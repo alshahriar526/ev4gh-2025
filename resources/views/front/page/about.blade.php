@@ -684,7 +684,7 @@
             </nav>
         </div>
         <section id="our-history-section" class="our-history-section">
-            <div class="container-fluid p-5">
+            <div class="container-fluid p-md-5">
                 <div class="row mb-5">
                     <div class="col-md-12 justify-item-center">
                         <div class="section-heading">
@@ -1229,7 +1229,7 @@
         </section>
         <section id="future-directions-section" class="future-directions-section py-5">
             <div class="container p-4">
-                <div class="row ">
+                <div class="row mb-4">
                     <div class="col-md-12 justify-item-center">
                         <div class="section-heading">
                             <h1>Future <span>Directions</span></h1>
