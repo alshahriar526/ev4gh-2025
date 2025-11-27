@@ -1009,6 +1009,8 @@
                                 successfully conducted so far. We look forward to the upcoming EV 2020 venture and many
                                 more to come.
                             </p>
+
+                             <a class="btn ev-btn-1 mt-2" target="_blank" href="https://www.itg.be/en/attachment/fc42699d-5e8e-4ca0-b178-cc1860af1c3c/ev4gh-evaluation-report.pdf">Learn more</a>
                         </div>
                     </div>
                     <div class="col-md-6">

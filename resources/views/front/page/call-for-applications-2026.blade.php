@@ -754,10 +754,7 @@
                             EV selection cannot guarantee a successful and timely visa process, so if selected, we
                             encourage participants to start visa applications as soon as possible.</p>
 
-                        <p>Theme for 9th Global Symposium on Health Systems Research: Future-Focused Health Systems in a
-                            Changing World. Please see the details of the themes of the 2026 symposium at the <a
-                                href="https://healthsystemsglobal.org/global-symposia/hsr2024/8th-global-symposium-on-health-systems-research-2024-theme/">HSG
-                                website</a>.</p>
+                        <p>Theme for 9th Global Symposium on Health Systems Research : Future-Focused Health Systems in a Changing World . Please see the details of the themes of <a target="_blank" href="https://hsr2026.healthsystemsresearch.org/">HSR 2026</a> at the<a target="_blank" href="https://hsr2026.healthsystemsresearch.org/"> HSG website</a></p>
 
                     </div>
 

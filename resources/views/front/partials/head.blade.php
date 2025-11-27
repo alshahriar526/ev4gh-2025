@@ -6,7 +6,7 @@
 <meta name="description"  content="BRAC James P Grant School of Public Health, BRAC University was founded in 2004 in Dhaka, Bangladesh to address the unmet public health challenges particular to Asia, Africa and South America.
 ">
 
-<link rel="icon" href="{{asset('assets/front/images/favicon.ico')}}">
+<link rel="icon" href="{{asset('assets/images/favicon_io/favicon-32x32.png')}}">
 
 <title>EV4GH</title>
 

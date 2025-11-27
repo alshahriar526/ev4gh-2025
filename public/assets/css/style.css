@@ -556,14 +556,14 @@
     }
 
     .breadcrumbs .page-header h2 {
-        font-size: 56px;
+        font-size: 40px;
         font-weight: 500;
         color: #fff;
         font-family: var(--font-secondary);
         text-transform: uppercase;
         letter-spacing: 6px;
         margin-bottom: 20px;
-        word-spacing: 6px;
+        word-spacing: 2px;
     }
 
 
