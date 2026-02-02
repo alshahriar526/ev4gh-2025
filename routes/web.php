@@ -27,6 +27,10 @@ Route::get('/about', function () {
 })->name("about");
 
 
+Route::get('/newsletter', function () {
+    return view('front.page.newsletter');
+})->name("newsletter");
+
 // Our funders and partners
 
 Route::get('/our-funders-and-partners', function () {

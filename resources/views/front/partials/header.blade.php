@@ -26,8 +26,8 @@
                     <li><a href="https://old.ev4gh.net/wp-content/uploads/2021/05/EV4GH-Evaluation-Report-FINAL_optimize.pdf">EV External Evaluation- Full report</a></li>
                 </ul>
             </li> -->
-            <!-- <li><a href="testimonial.php">Governance Board Members</a></li> -->
-            <li class="dropdown"><a href="#"><span>Newsletter</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+             <li><a href="{{route('newsletter')}}"><span>Newsletter</span></a></li>
+            {{-- <li class="dropdown"><a href="#"><span>Newsletter</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
                 <ul>
                 <li><a class="dropdown-item" href="https://old.ev4gh.net/wp-content/uploads/2023/07/EV4GH-Newsletter-January-2023.pdf">EV4GH Newsletter January 2023</a></li>
                             <li><a href="https://old.ev4gh.net/wp-content/uploads/2022/05/EV4GH-Newsletter-May-Edition-2022-1.pdf">EV4GH Newsletter May Edition 2022</a></li>
@@ -39,7 +39,7 @@
                             <li><a href="https://old.ev4gh.net/wp-content/uploads/2018/04/Newsletter_EV2_April2018-2.pdf">EV4GH Newsletter-2</a></li>
                             <li><a href="https://old.ev4gh.net/wp-content/uploads/2017/12/EV4GH_Newsletter_Issue_1.pdf">EV4GH Newsletter-1</a></li>
                 </ul>
-            </li>
+            </li> --}}
             <!-- <li><a href="#contact">Contact</a></li> -->
             </ul>
         </nav><!-- .navbar -->
