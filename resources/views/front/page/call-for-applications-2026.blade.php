@@ -505,7 +505,7 @@
                     <div class="col-md-6">
                         <div class="ev-box">
                             <div class="about-text">
-                                <h3 class="about-sec-title-h3">Application Track 2: Other health system professionals track
+                                <h3 class="about-sec-title-h3">Application Track 2: Other health system professionals' track
                                 </h3>
                                 <p>This track targets other emerging health professionals, activists, policymakers,
                                     knowledge
