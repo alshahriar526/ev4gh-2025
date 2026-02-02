@@ -298,8 +298,8 @@
                             <div class="card-body text-center p-5 d-flex flex-column">
                                 <div>
                                     <div class="icon-box">
-                                        <i class="fa-regular fa-file-pdf env-icon env-closed"></i>
-                                        <i class="fa-solid fa-file-arrow-down env-icon env-open"></i>
+                                        <i class="fa-regular fa-envelope env-icon env-closed"></i>
+                                        <i class="fa-solid fa-envelope-open-text env-icon env-open"></i>
                                     </div>
                                     <h5 class="card-title">Newsletter Issue 1</h5>
                                    
@@ -322,8 +322,8 @@
                             <div class="card-body text-center p-5 d-flex flex-column">
                                 <div>
                                     <div class="icon-box">
-                                        <i class="fa-regular fa-file-pdf env-icon env-closed"></i>
-                                        <i class="fa-solid fa-file-arrow-down env-icon env-open"></i>
+                                        <i class="fa-regular fa-envelope env-icon env-closed"></i>
+                                        <i class="fa-solid fa-envelope-open-text env-icon env-open"></i>
                                     </div>
                                     <h5 class="card-title">Newsletter Issue 2</h5>
                                    
@@ -346,8 +346,8 @@
                             <div class="card-body text-center p-5 d-flex flex-column">
                                 <div>
                                     <div class="icon-box">
-                                        <i class="fa-regular fa-file-pdf env-icon env-closed"></i>
-                                        <i class="fa-solid fa-file-arrow-down env-icon env-open"></i>
+                                        <i class="fa-regular fa-envelope env-icon env-closed"></i>
+                                        <i class="fa-solid fa-envelope-open-text env-icon env-open"></i>
                                     </div>
                                     <h5 class="card-title">Newsletter Issue 3</h5>
                                    
@@ -370,8 +370,8 @@
                             <div class="card-body text-center p-5 d-flex flex-column">
                                 <div>
                                     <div class="icon-box">
-                                        <i class="fa-regular fa-file-pdf env-icon env-closed"></i>
-                                        <i class="fa-solid fa-file-arrow-down env-icon env-open"></i>
+                                        <i class="fa-regular fa-envelope env-icon env-closed"></i>
+                                        <i class="fa-solid fa-envelope-open-text env-icon env-open"></i>
                                     </div>
                                     <h5 class="card-title">Newsletter Issue 4</h5>
                                     
@@ -394,8 +394,8 @@
                             <div class="card-body text-center p-5 d-flex flex-column">
                                 <div>
                                     <div class="icon-box">
-                                        <i class="fa-regular fa-file-pdf env-icon env-closed"></i>
-                                        <i class="fa-solid fa-file-arrow-down env-icon env-open"></i>
+                                        <i class="fa-regular fa-envelope env-icon env-closed"></i>
+                                        <i class="fa-solid fa-envelope-open-text env-icon env-open"></i>
                                     </div>
                                     <h5 class="card-title">Newsletter Issue 5</h5>
                                    
@@ -418,8 +418,8 @@
                             <div class="card-body text-center p-5 d-flex flex-column">
                                 <div>
                                     <div class="icon-box">
-                                        <i class="fa-regular fa-file-pdf env-icon env-closed"></i>
-                                        <i class="fa-solid fa-file-arrow-down env-icon env-open"></i>
+                                        <i class="fa-regular fa-envelope env-icon env-closed"></i>
+                                        <i class="fa-solid fa-envelope-open-text env-icon env-open"></i>
                                     </div>
                                     <h5 class="card-title">Newsletter Issue 6</h5>
                                     <p class="text-muted small mb-4">Archive: July 2020</p>
