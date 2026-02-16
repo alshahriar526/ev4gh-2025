@@ -633,7 +633,7 @@
                                         words.</li>
                                     <li><i class="fa fa-check-circle"></i>A short concept note: What global health
                                         problem are
-                                        you more interested in (linked to the EV2026 themes) and how do you envision
+                                        you more interested in <a style="display: contents;" target="_blank" href="https://hsr2026.healthsystemsresearch.org/theme-for-hsr-2026/">linked to the HSR 2026 Themes</a> and how do you envision
                                         addressing
                                         it? If you are submitting a written document, it should be within 500 words.
                                     </li>
@@ -687,7 +687,7 @@
                                         words.</li>
                                     <li><i class="fa fa-check-circle"></i>A short concept note: What global health
                                         problem are
-                                        you more interested in addressing (linked to the EV2026 themes) and how do you
+                                        you more interested in addressing <a style="display: contents;" target="_blank" href="https://hsr2026.healthsystemsresearch.org/theme-for-hsr-2026/">linked to the HSR 2026 Themes</a> and how do you
                                         envision
                                         addressing that? If you are submitting a written document, it should be within
                                         500
