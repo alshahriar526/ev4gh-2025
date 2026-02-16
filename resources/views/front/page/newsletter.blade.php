@@ -422,7 +422,7 @@
                                         <i class="fa-solid fa-envelope-open-text env-icon env-open"></i>
                                     </div>
                                     <h5 class="card-title">Newsletter Issue 6</h5>
-                                    <p class="text-muted small mb-4">Archive: July 2020</p>
+                                    {{-- <p class="text-muted small mb-4">Archive: July 2020</p> --}}
                                 </div>
 
                                 <div class="read-more-text mt-auto">

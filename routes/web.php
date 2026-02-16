@@ -27,6 +27,11 @@ Route::get('/about', function () {
 })->name("about");
 
 
+Route::get('/testimonial', function () {
+    return view('front.page.testimonial');
+})->name("testimonial");
+
+
 Route::get('/newsletter', function () {
     return view('front.page.newsletter');
 })->name("newsletter");

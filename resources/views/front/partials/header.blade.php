@@ -12,10 +12,22 @@
                 <ul>
                     <!-- <li><a href="about.php">About us</a></li> -->
                     <li><a href="{{url('/about')}}">Our History</a></li>
+                    <li><a href="{{asset('assets/pdf/ev-10th-anniversary/EV-2020-magazine.pdf')}}">EV Digital Magazine</a></li>
+                    <li><a href="{{asset('assets/pdf/ev-10th-anniversary/EV4GH-Evaluation-Exec-Summary.pdf')}}">EV External Evaluation- Executive Summary</a></li>
+                    <li><a href="{{asset('assets/pdf/ev-10th-anniversary/EV4GH-Evaluation-Report-FINAL_optimize.pdf')}}">EV External Evaluation- Full report</a></li>
+                </ul>
+            </li>
+
+             <li class="dropdown"><a href="#"><span>EV4GH 10th anniversary</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                <ul>
+                    <!-- <li><a href="about.php">About us</a></li> -->
+                    <li><a href="{{url('/testimonial')}}">Testimonial</a></li>
                     <li><a href="{{route('gb_members.index')}}">Governance Board Members</a></li>
                     <li><a href="{{route('our-funders-and-partners')}}">Our funders and partners</a></li>
                 </ul>
             </li>
+
+
             <li><a href="{{route('call-for-applications-2026')}}"><span>Call for Applications 2026</span></a></li>
             <!-- <li><a href="news.php">News and blogs</a></li> -->
             <!-- <li class="dropdown"><a href="#"><span>EV 10th anniversary</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
@@ -26,6 +38,22 @@
                     <li><a href="https://old.ev4gh.net/wp-content/uploads/2021/05/EV4GH-Evaluation-Report-FINAL_optimize.pdf">EV External Evaluation- Full report</a></li>
                 </ul>
             </li> -->
+
+
+            <li class="dropdown"><a href="#"><span>EV4GH Ventures</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                <ul>
+                    <!-- <li><a href="about.php">About us</a></li> -->
+                    <li><a target="_blank" href="https://old.ev4gh.net/emerging-voices-for-global-health-2022/">EV4GH 2022</a></li>
+                    <li><a target="_blank" href="https://old.ev4gh.net/ev4gh-2018/">EV4GH 2018</a></li>
+                    <li><a target="_blank" href="https://old.ev4gh.net/programme/">EV4GH 2016</a></li>
+                    <li><a target="_blank" href="https://old.ev4gh.net/past-editions/2014-2/">EV4GH 2014</a></li>
+                    <li><a target="_blank" href="https://old.ev4gh.net/past-editions/2013-2/">EV4GH 2013</a></li>
+                    <li><a target="_blank" href="https://old.ev4gh.net/past-editions/2012-2/">EV4GH 2012</a></li>
+                    <li><a target="_blank" href="https://old.ev4gh.net/past-editions/2010-2/">EV4GH 2010</a></li>
+                </ul>
+            </li>
+
+
              <li><a href="{{route('newsletter')}}"><span>Newsletter</span></a></li>
             {{-- <li class="dropdown"><a href="#"><span>Newsletter</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
                 <ul>
