@@ -34,7 +34,6 @@
             z-index: 2;
         }
 
-
         #main-slider-section .content.slider-style-default {
             position: absolute;
             display: flex;
@@ -93,8 +92,8 @@
 
         /* background */
         /* #main-slider-section .background[data-item="one"] {
-                                                        background-position: 50% 40%;
-                                                    } */
+                                                            background-position: 50% 40%;
+                                                        } */
         #main-slider-section .background {
             position: absolute;
             inset: 0;
@@ -385,7 +384,6 @@
             margin-bottom: 30px;
         }
 
-
         .index-page-img-1 img {
             max-height: 400px;
             min-height: 400px;
@@ -398,8 +396,6 @@
             margin-bottom: 10px !important;
         }
     </style>
-
-
     <style>
         .fb-wrapper {
             width: 100%;
@@ -422,9 +418,7 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
-
         .news-card {
-
             display: flex;
             flex-direction: column;
             padding: 30px;
@@ -437,18 +431,13 @@
             flex-direction: column;
             align-items: flex-start;
             gap: 15px;
-
         }
     </style>
 @endsection
 @section('content')
     <main id="main">
         <section id="main-slider-section" class="main-slider-section">
-
-             @include('front.page.slider')
-
-
-           
+            @include('front.page.slider')
             <div class="footer">
                 <div class="feature">
                     <a target="_blank" href="https://www.facebook.com/EV4GH/"><i class="fa-brands fa-facebook-f"></i></a>
@@ -462,8 +451,6 @@
                 <div class="feature">
                     <a href="#ev-footer"><i class="fa-solid fa-envelope"></i></a>
                 </div>
-
-
             </div>
             <a href="https://www.youtube.com/@ev4ghsecretariat298" target="_blank" class="ytb-logo"><img
                     src="https://assets.codepen.io/9868786/youtube.webp" alt="HTML tutorial"></a>
@@ -479,10 +466,10 @@
                             </h1>
                             <!-- <h4>XX XX XXXXXXXX</h4> -->
                             <!-- <div class="hero-other">
-                                                                            <span class="hero-span">PHP | Laravel</span>
-                                                                            <span class="hero-span">HTML | CSS | BOOTSTRAP | JS</span>
-                                                                            <span class="hero-span">DevOps</span>
-                                                                        </div> -->
+                                                                                <span class="hero-span">PHP | Laravel</span>
+                                                                                <span class="hero-span">HTML | CSS | BOOTSTRAP | JS</span>
+                                                                                <span class="hero-span">DevOps</span>
+                                                                            </div> -->
                         </article>
                     </div>
                 </div>
@@ -502,9 +489,7 @@
                                 interest in becoming influential global health voices and/or local change makers,
                                 particularly in LMIC.
                             </p>
-
                             <a class="btn ev-btn-1" href="{{ route('about') }}">Learn more</a>
-
                         </div>
                     </div>
                     <div class="col-md-5">
@@ -541,101 +526,100 @@
             </div>
         </section>
         <!-- <section id="ev4gh-section-news-blogs" class="ev4gh-section ev4gh-section-news-blogs">
-                                                        <div class="container">
-                                                            <div class="row mb-5">
-                                                                <div class="col-md-12 justify-item-center">
-                                                                    <div class="section-heading">
-                                                                        <h1>News <span>&</span> Blogs</h1>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="row">
-                                                                <div class="col-md-12">
-                                                                    <section class="splide" aria-label="Splide Basic HTML Example">
-                                                                        <div class="splide__track">
-                                                                            <ul class="splide__list">
-                                                                                <li class="splide__slide">
-                                                                                    <div class="card">
-                                                                                        <div class="card-body">
-                                                                                            <h5 class="card-title">Card title</h5>
-                                                                                            <p class="card-text">Some quick example text to build on the card title
-                                                                                                and make up the bulk of the card's content.</p>
-                                                                                            <a href="#" class="btn ev4gh-btn-1">Learn more ></a></a>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </li>
-                                                                                <li class="splide__slide">
-                                                                                    <div class="card">
-                                                                                        <div class="card-body">
-                                                                                            <h5 class="card-title">Card title</h5>
-                                                                                            <p class="card-text">Some quick example text to build on the card title
-                                                                                                and make up the bulk of the card's content.</p>
-                                                                                            <a href="#" class="btn ev4gh-btn-1">Learn more ></a></a>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </li>
-                                                                                <li class="splide__slide">
-                                                                                    <div class="card">
-                                                                                        <div class="card-body">
-                                                                                            <h5 class="card-title">Card title</h5>
-                                                                                            <p class="card-text">Some quick example text to build on the card title
-                                                                                                and make up the bulk of the card's content.</p>
-                                                                                            <a href="#" class="btn ev4gh-btn-1">Learn more ></a></a>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </li>
-                                                                                <li class="splide__slide">
-                                                                                    <div class="card">
-                                                                                        <div class="card-body">
-                                                                                            <h5 class="card-title">Card title</h5>
-                                                                                            <p class="card-text">Some quick example text to build on the card title
-                                                                                                and make up the bulk of the card's content.</p>
-                                                                                            <a href="#" class="btn ev4gh-btn-1">Learn more ></a></a>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </li>
-                                                                                <li class="splide__slide">
-                                                                                    <div class="card">
-                                                                                        <div class="card-body">
-                                                                                            <h5 class="card-title">Card title</h5>
-                                                                                            <p class="card-text">Some quick example text to build on the card title
-                                                                                                and make up the bulk of the card's content.</p>
-                                                                                            <a href="#" class="btn ev4gh-btn-1">Learn more ></a></a>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </li>
-                                                                            </ul>
+                                                            <div class="container">
+                                                                <div class="row mb-5">
+                                                                    <div class="col-md-12 justify-item-center">
+                                                                        <div class="section-heading">
+                                                                            <h1>News <span>&</span> Blogs</h1>
                                                                         </div>
-                                                                    </section>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-md-12">
+                                                                        <section class="splide" aria-label="Splide Basic HTML Example">
+                                                                            <div class="splide__track">
+                                                                                <ul class="splide__list">
+                                                                                    <li class="splide__slide">
+                                                                                        <div class="card">
+                                                                                            <div class="card-body">
+                                                                                                <h5 class="card-title">Card title</h5>
+                                                                                                <p class="card-text">Some quick example text to build on the card title
+                                                                                                    and make up the bulk of the card's content.</p>
+                                                                                                <a href="#" class="btn ev4gh-btn-1">Learn more ></a></a>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </li>
+                                                                                    <li class="splide__slide">
+                                                                                        <div class="card">
+                                                                                            <div class="card-body">
+                                                                                                <h5 class="card-title">Card title</h5>
+                                                                                                <p class="card-text">Some quick example text to build on the card title
+                                                                                                    and make up the bulk of the card's content.</p>
+                                                                                                <a href="#" class="btn ev4gh-btn-1">Learn more ></a></a>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </li>
+                                                                                    <li class="splide__slide">
+                                                                                        <div class="card">
+                                                                                            <div class="card-body">
+                                                                                                <h5 class="card-title">Card title</h5>
+                                                                                                <p class="card-text">Some quick example text to build on the card title
+                                                                                                    and make up the bulk of the card's content.</p>
+                                                                                                <a href="#" class="btn ev4gh-btn-1">Learn more ></a></a>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </li>
+                                                                                    <li class="splide__slide">
+                                                                                        <div class="card">
+                                                                                            <div class="card-body">
+                                                                                                <h5 class="card-title">Card title</h5>
+                                                                                                <p class="card-text">Some quick example text to build on the card title
+                                                                                                    and make up the bulk of the card's content.</p>
+                                                                                                <a href="#" class="btn ev4gh-btn-1">Learn more ></a></a>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </li>
+                                                                                    <li class="splide__slide">
+                                                                                        <div class="card">
+                                                                                            <div class="card-body">
+                                                                                                <h5 class="card-title">Card title</h5>
+                                                                                                <p class="card-text">Some quick example text to build on the card title
+                                                                                                    and make up the bulk of the card's content.</p>
+                                                                                                <a href="#" class="btn ev4gh-btn-1">Learn more ></a></a>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </li>
+                                                                                </ul>
+                                                                            </div>
+                                                                        </section>
+                                                                    </div>
                                                                 </div>
                                                             </div>
-                                                        </div>
-                                                    </section> -->
+                                                        </section> -->
         <!-- <section id="ev4gh-section-video" class="ev4gh-section left ev4gh-section-video ">
-                                                        <div class="container-fluid">
-                                                            <div class="row g-0">
-                                                                <div class="col-md-6">
-                                                                    <div class="ev4gh-text-card">
-                                                                        <img class="ten-anniversary-logo" src="assets/images/10th-Anniversary.png"
-                                                                            alt="">
-                                                                        <p class="ev4gh-section-text-para">Emerging Voices for Global Health (EV4GH) celebrates its
-                                                                            10th anniversary. Here is a glimpse at the decade past. 6 ventures of EV4Gh have been
-                                                                            successfully conducted so far. We look forward to the upcoming EV 2020 venture and many
-                                                                            more to come.
-                                                                        </p>
+                                                            <div class="container-fluid">
+                                                                <div class="row g-0">
+                                                                    <div class="col-md-6">
+                                                                        <div class="ev4gh-text-card">
+                                                                            <img class="ten-anniversary-logo" src="assets/images/10th-Anniversary.png"
+                                                                                alt="">
+                                                                            <p class="ev4gh-section-text-para">Emerging Voices for Global Health (EV4GH) celebrates its
+                                                                                10th anniversary. Here is a glimpse at the decade past. 6 ventures of EV4Gh have been
+                                                                                successfully conducted so far. We look forward to the upcoming EV 2020 venture and many
+                                                                                more to come.
+                                                                            </p>
+                                                                        </div>
                                                                     </div>
-                                                                </div>
-                                                                <div class="col-md-6">
-                                                                    <div class="ev4gh-video-card">
-                                                                        <video controls="">
-                                                                            <source type="video/mp4" src="assets/videos/Emerging Voices 10th Anniversary.mp4">
-                                                                        </video>
+                                                                    <div class="col-md-6">
+                                                                        <div class="ev4gh-video-card">
+                                                                            <video controls="">
+                                                                                <source type="video/mp4" src="assets/videos/Emerging Voices 10th Anniversary.mp4">
+                                                                            </video>
+                                                                        </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                        </div>
-                                                    </section> -->
-
+                                                        </section> -->
         <section id="ev4gh-section-latest" class="ev4gh-section ev4gh-section-latest" style="  background: #e8e8e8; ">
             <div class="container">
                 <div class="row mb-5">
@@ -654,22 +638,17 @@
                             </div>
                         </div>
                     </div>
-
                     <div class="col-md-4">
                         <div class="card h-100 ev4gh-newsletter-card ">
-
                             <div class="card-body">
                                 <img src="assets/images/newsletter-svgrepo-com.svg" class="card-img-top"
                                     alt="newsletter svg">
                                 <h5 class="card-title">Read Our Latest Newsletter:</h5>
-
                                 <a href="{{ asset('assets/pdf/newsletter/2025/News Letter Design Final Version 23 _06_2025-1.pdf') }}"
                                     class="btn ev4gh-btn-2">EV Newsletter May-June 2025</a>
                             </div>
-
                         </div>
                     </div>
-
                     <!-- News Cards -->
                     <div class="col-md-4 mb-4">
                         <div class="card mb-3 news-card">
@@ -680,7 +659,6 @@
                                 <a href="#" class="read-more-btn mt-auto">Learn more ></a>
                             </div>
                         </div>
-
                         <div class="card news-card">
                             <div class="card-body ">
                                 <h5 class="card-title">Meet our EV4GH alumna: the BMJ Global Health Grant winner</h5>
@@ -691,12 +669,10 @@
                             </div>
                         </div>
                     </div>
-
                     <div class="col-md-4">
                         <a class="twitter-timeline" data-width="500" data-height="600"
                             href="https://twitter.com/ev4gh?ref_src=twsrc%5Etfw">Tweets
                             by ev4gh</a>
-                        
                     </div>
                 </div>
             </div>
@@ -828,14 +804,16 @@
     </div>
 @endsection
 @section('scripts')
-
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     <script type="module">
         const swiper = new Swiper(".main-slider", {
             direction: "vertical",
             effect: "fade",
             speed: 1000,
+            autoplay: {
+                delay: 5000, // 5 seconds
+                disableOnInteraction: false, // keeps autoplay running after user interacts
+            },
             loop: true,
             pagination: {
                 el: ".swiper-pagination",
@@ -864,18 +842,15 @@
             },
         });
         var elms = document.getElementsByClassName('testimonial-slide');
-
         for (var i = 0; i < elms.length; i++) {
             new Splide(elms[i], {
                 arrowPath: 'm15.5 0.932-4.3 4.38 14.5 14.6-14.5 14.5 4.3 4.4 14.6-14.6 4.4-4.3-4.4-4.4-14.6-14.6z',
-
                 // General Options
                 perPage: 3,
                 gap: '2rem',
                 autoplay: true, // Added back autoplay/pauseOnHover/rewind for completeness
                 pauseOnHover: true,
                 rewind: true,
-
                 // Responsive Breakpoints
                 breakpoints: {
                     1200: { // Added 1200px breakpoint back (useful since your slides are wide)
@@ -900,10 +875,10 @@
             }).mount();
         }
     </script>
-    {{-- <script>
+    <script>
         document.addEventListener("DOMContentLoaded", function() {
             var popup = new bootstrap.Modal(document.getElementById('imagePopup'));
             popup.show();
         });
-    </script> --}}
+    </script>
 @endsection
