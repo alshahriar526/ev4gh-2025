@@ -18,7 +18,7 @@
                             class="fab fa-facebook-f"></i></a>
                     {{-- <a target="_blank" href="https://x.com/ev4gh" class="social-icon"><i
                             class="fab fa-x-twitter"></i></a> --}}
-                    <a target="_blank" href="https://assets.codepen.io/9868786/youtube.webp" class="social-icon"><i
+                    <a target="_blank" href="https://www.youtube.com/@ev4ghsecretariat298" class="social-icon"><i
                             class="fab fa-youtube"></i></a>
                 </div>
             </div>
