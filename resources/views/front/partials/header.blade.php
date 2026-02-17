@@ -22,9 +22,9 @@
                 <ul>
                     <!-- <li><a href="about.php">About us</a></li> -->
                     <li><a href="{{url('/testimonial')}}">Testimonial</a></li>
-                    <li><a href="{{asset('assets/pdf/ev-10th-anniversary/EV-2020-magazine.pdf')}}">EV Digital Magazine</a></li>
-                    <li><a href="{{asset('assets/pdf/ev-10th-anniversary/EV4GH-Evaluation-Exec-Summary.pdf')}}">EV External Evaluation- Executive Summary</a></li>
-                    <li><a href="{{asset('assets/pdf/ev-10th-anniversary/EV4GH-Evaluation-Report-FINAL_optimize.pdf')}}">EV External Evaluation- Full report</a></li>
+                    <li><a target="_blank" href="{{asset('assets/pdf/ev-10th-anniversary/EV-2020-magazine.pdf')}}">EV Digital Magazine</a></li>
+                    <li><a target="_blank" href="{{asset('assets/pdf/ev-10th-anniversary/EV4GH-Evaluation-Exec-Summary.pdf')}}">EV External Evaluation- Executive Summary</a></li>
+                    <li><a target="_blank" href="{{asset('assets/pdf/ev-10th-anniversary/EV4GH-Evaluation-Report-FINAL_optimize.pdf')}}">EV External Evaluation- Full report</a></li>
                     
                 </ul>
             </li>
