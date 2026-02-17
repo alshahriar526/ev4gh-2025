@@ -34,6 +34,23 @@
             z-index: 2;
         }
 
+
+        #main-slider-section .content.slider-style-default {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            top: 30%;
+            left: 3%;
+            width: 40%;
+            height: max-content;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 20px;
+            opacity: 0;
+            z-index: 2;
+        }
+
         #main-slider-section .content h1 {
             font-family: "Salsa", cursive;
             font-size: clamp(1.5rem, 2.5vw, 4.5rem);
@@ -427,59 +444,11 @@
 @section('content')
     <main id="main">
         <section id="main-slider-section" class="main-slider-section">
-            <div class="swiper-container main-slider">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide call-for-application-slider">
+
+             @include('front.page.slider')
 
 
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <div class="content">
-                                        <h1>CALL FOR <br> APPLICATIONS</h1>
-                                        <h5>Emerging Voices for <br> Global Health (EV4GH) 2026</h5>
-                                        <p><i class="fa-thin fa-location-dot fa-beat me-2"></i> DUBAI, UAE</p>
-                                        <a class="btn" target="_blank"
-                                            href="{{ route('call-for-applications-2026') }}">Apply Now</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="background"
-                            style="background-image: url('assets/images/index/slider/call-for-application-red.jpg'); 
-                                background-size: cover;
-                                background-position: center;
-                                background-repeat: no-repeat;">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="content">
-                            <h1 style="color: var(--color-support1);">Congratulations to the 41 Emerging Voices from 27
-                                countries participating in the EV4GH
-                                2024 programme</h1>
-                            <p></p>
-                        </div>
-                        <div class="background" style="background: url(assets/images/index/slider/Ev-slider-map-1.jpg);">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="content">
-                            <h1>EV4GH releases a statement on the destruction of Gaza’s health system and ongoing
-                                genocide</h1>
-                            <p></p>
-                            <a class="btn" target="_blank"
-                                href="https://ev4gh.net/wp-content/uploads/2024/06/EV4GH-Call-for-HSG-statement-on-Palestine-only-statement.pdf">Learn
-                                More</a>
-                        </div>
-                        <div class="background"
-                            style="background-image: url(assets/images/index/slider/pexels-photo-10010408.jpg);">
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-pagination"></div>
-            </div>
+           
             <div class="footer">
                 <div class="feature">
                     <a target="_blank" href="https://www.facebook.com/EV4GH/"><i class="fa-brands fa-facebook-f"></i></a>
@@ -931,10 +900,10 @@
             }).mount();
         }
     </script>
-    <script>
+    {{-- <script>
         document.addEventListener("DOMContentLoaded", function() {
             var popup = new bootstrap.Modal(document.getElementById('imagePopup'));
             popup.show();
         });
-    </script>
+    </script> --}}
 @endsection
