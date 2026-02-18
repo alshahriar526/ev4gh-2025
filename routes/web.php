@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\GBMemberController;
+use App\Http\Controllers\NewsEventController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,9 +19,13 @@ use App\Http\Controllers\GBMemberController;
 //     return view('welcome');
 // });
 
-Route::get('/', function () {
-    return view('front.page.index');
-});
+// Route::get('/', function () {
+//     return view('front.page.index');
+// });
+
+ Route::get('/', [NewsEventController::class, 'frontIndex'])->name('index');
+
+
 
 Route::get('/about', function () {
     return view('front.page.about');
@@ -56,5 +61,8 @@ Route::prefix('gb-members')->group(function () {
     Route::post('/import', [GBMemberController::class, 'importCsv'])->name('gb_members.import');
     Route::get('/{id}', [GBMemberController::class, 'show'])->name('gb_members.show');
     Route::delete('/{id}', [GBMemberController::class, 'destroy'])->name('gb_members.destroy');
-
 });
+
+// Admin
+Route::resource('news-events', NewsEventController::class);
+

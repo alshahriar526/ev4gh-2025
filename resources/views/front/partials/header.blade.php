@@ -18,7 +18,7 @@
                 </ul>
             </li>
 
-             <li class="dropdown"><a href="#"><span>EV4GH 10th anniversary</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+             <li class="dropdown"><a href="#"><span>EV4GH 10th Anniversary</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
                 <ul>
                     <!-- <li><a href="about.php">About us</a></li> -->
                     <li><a href="{{url('/testimonial')}}">Testimonial</a></li>
@@ -56,7 +56,7 @@
             </li>
 
 
-             <li><a href="{{route('newsletter')}}"><span>Newsletter</span></a></li>
+             <li><a href="{{route('newsletter')}}"><span>Newsletters</span></a></li>
             {{-- <li class="dropdown"><a href="#"><span>Newsletter</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
                 <ul>
                 <li><a class="dropdown-item" href="https://old.ev4gh.net/wp-content/uploads/2023/07/EV4GH-Newsletter-January-2023.pdf">EV4GH Newsletter January 2023</a></li>

@@ -92,8 +92,8 @@
 
         /* background */
         /* #main-slider-section .background[data-item="one"] {
-                                                            background-position: 50% 40%;
-                                                        } */
+                                                                            background-position: 50% 40%;
+                                                                        } */
         #main-slider-section .background {
             position: absolute;
             inset: 0;
@@ -432,6 +432,204 @@
             align-items: flex-start;
             gap: 15px;
         }
+
+
+
+        /* Card Core Style */
+        .ev4gh-news-event-card {
+            background: var(--color-white);
+            border-radius: 20px;
+            overflow: hidden;
+            position: relative;
+            transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Image Hover Zoom */
+        .card-image-wrapper {
+            position: relative;
+            width: 100%;
+            height: 240px;
+            overflow: hidden;
+        }
+
+        .card-image-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.8s ease;
+        }
+
+        /* Floating Category Tag */
+        .card-category {
+            position: absolute;
+            bottom: 15px;
+            left: 15px;
+            background: var(--color-default);
+            color: #fff;
+            padding: 5px 15px;
+            border-radius: 50px;
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            z-index: 2;
+        }
+
+        /* Card Body */
+        .card-content {
+            padding: 30px 25px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .card-title {
+            font-family: var(--text-font);
+            font-size: 1.125rem;
+            font-weight: 700;
+            color: #1a1a1a;
+            line-height: 1.2;
+            margin-bottom: 25px;
+            transition: color 0.3s ease;
+        }
+
+        .card-title p {
+            text-align: start !important;
+        }
+
+
+
+        /* Link Style */
+        .card-link {
+            color: var(--color-support1);
+            text-decoration: none;
+            font-weight: 800;
+            font-size: 14px;
+            text-transform: uppercase;
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .card-link .arrow {
+            margin-left: 8px;
+            font-size: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        /* Interaction Effects */
+        .ev4gh-news-event-card:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.12);
+        }
+
+        .ev4gh-news-event-card:hover img {
+            transform: scale(1.15);
+        }
+
+        .ev4gh-news-event-card:hover .card-title {
+            color: var(--color-default);
+        }
+
+        .ev4gh-news-event-card:hover .card-link .arrow {
+            transform: translateX(8px);
+        }
+
+
+        /* --- Visual Separator --- */
+.ev4gh-separator {
+    text-align: center;
+    position: relative;
+    border-bottom: 1px solid #dcdcdc;
+    margin-bottom: 20px;
+}
+
+.ev4gh-separator span {
+    background: #f4f4f4; /* Match section background */
+    padding: 0 20px;
+    position: relative;
+    top: 12px;
+    color: #888;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.85rem;
+}
+
+/* --- Social & Newsletter Row Styles --- */
+.social-widget-card {
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    height: 480px; /* Fixed height for symmetry */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    border: 1px solid #eee;
+}
+
+/* Specific Newsletter Design */
+.ev4gh-newsletter-card {
+    background: linear-gradient(135deg, var(--color-support1), #0a4d4e);
+    color: white;
+    padding: 40px 30px;
+    border-radius: 15px;
+    height: 480px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+.ev4gh-newsletter-card:hover {
+    transform: scale(1.02);
+}
+
+.newsletter-icon {
+    width: 80px;
+    height: 80px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 50%;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.newsletter-icon img {
+    width: 100%;
+    filter: brightness(0) invert(1);
+}
+
+.newsletter-title {
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.ev4gh-newsletter-btn {
+    background: var(--color-default);
+    color: white !important;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: 700;
+    margin-top: 20px;
+    box-shadow: 0 4px 15px rgba(228, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.ev4gh-newsletter-btn:hover {
+    background: white;
+    color: var(--color-default) !important;
+}
+
+/* Twitter/FB Wrappers to fix scrolling */
+.fb-wrapper, .twitter-wrapper {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+}
+
     </style>
 @endsection
 @section('content')
@@ -464,12 +662,7 @@
                                 Emerging Voices for<br />
                                 <span>Global Health <span>.</span> </span>
                             </h1>
-                            <!-- <h4>XX XX XXXXXXXX</h4> -->
-                            <!-- <div class="hero-other">
-                                                                                <span class="hero-span">PHP | Laravel</span>
-                                                                                <span class="hero-span">HTML | CSS | BOOTSTRAP | JS</span>
-                                                                                <span class="hero-span">DevOps</span>
-                                                                            </div> -->
+
                         </article>
                     </div>
                 </div>
@@ -492,297 +685,96 @@
                             <a class="btn ev-btn-1" href="{{ route('about') }}">Learn more</a>
                         </div>
                     </div>
-                    <div class="col-md-5">
-                        <div class="ev4gh-img-card index-page-img-1 ">
-                            <img class="rounded-pill" src="assets/images/index/2.jpg" alt="">
-                        </div>
+                    <div class="col-md-5  text-center">
+                        
+                        <img class="rounded-pill shadow-lg border border-5 border-white img-fluid" style="max-height: 450px;" src="assets/images/index/2.jpg" alt="EV4GH Image">
+                   
                     </div>
-                    {{-- <div class="col-md-6">
-                        <div class="ev4gh-img-card ">
-                            <img class="img-fluid" src="assets/images/index/Liverpool-2018-43-of-82-scaled.jpg"
-                                alt="">
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="ev4gh-text-card right">
-                            <h3 class="ev4gh-section-title">Legacy of EV4GH venture</h3>
-                            <p class="ev4gh-section-text-para">The EV4GH venture was initially conceived by the
-                                Institute of Tropical Medicine, Antwerp in 2010 with the aim of empowering health
-                                systems researchers from the global South by providing them with intensive skills
-                                training and facilitating their participation in global health symposia. After initial
-                                success with a small cohort of researchers aspiring for local change and global impact,
-                                the EV4GH venture began to involve more institutions from across several LMICs.
-                            </p>
-                            <p class="ev4gh-section-text-para">Over time, the emerging voices (EV) initiative has
-                                acquired a life of its own with over 260 EVs from 6 cohorts (2010-16) representing close
-                                to 60 countries in Africa, Asia, Australia, Europe, Latin, North, and Central America.
-                                EV4GH has reconfigured itself with a globally representative elected governance board
-                                and a secretariat based at BRAC James P Grant School of Public Health, BRAC University
-                                in Bangladesh.
-                            </p>
-                        </div>
-                    </div> --}}
+
                 </div>
             </div>
         </section>
-        <!-- <section id="ev4gh-section-news-blogs" class="ev4gh-section ev4gh-section-news-blogs">
-                                                            <div class="container">
-                                                                <div class="row mb-5">
-                                                                    <div class="col-md-12 justify-item-center">
-                                                                        <div class="section-heading">
-                                                                            <h1>News <span>&</span> Blogs</h1>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="row">
-                                                                    <div class="col-md-12">
-                                                                        <section class="splide" aria-label="Splide Basic HTML Example">
-                                                                            <div class="splide__track">
-                                                                                <ul class="splide__list">
-                                                                                    <li class="splide__slide">
-                                                                                        <div class="card">
-                                                                                            <div class="card-body">
-                                                                                                <h5 class="card-title">Card title</h5>
-                                                                                                <p class="card-text">Some quick example text to build on the card title
-                                                                                                    and make up the bulk of the card's content.</p>
-                                                                                                <a href="#" class="btn ev4gh-btn-1">Learn more ></a></a>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </li>
-                                                                                    <li class="splide__slide">
-                                                                                        <div class="card">
-                                                                                            <div class="card-body">
-                                                                                                <h5 class="card-title">Card title</h5>
-                                                                                                <p class="card-text">Some quick example text to build on the card title
-                                                                                                    and make up the bulk of the card's content.</p>
-                                                                                                <a href="#" class="btn ev4gh-btn-1">Learn more ></a></a>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </li>
-                                                                                    <li class="splide__slide">
-                                                                                        <div class="card">
-                                                                                            <div class="card-body">
-                                                                                                <h5 class="card-title">Card title</h5>
-                                                                                                <p class="card-text">Some quick example text to build on the card title
-                                                                                                    and make up the bulk of the card's content.</p>
-                                                                                                <a href="#" class="btn ev4gh-btn-1">Learn more ></a></a>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </li>
-                                                                                    <li class="splide__slide">
-                                                                                        <div class="card">
-                                                                                            <div class="card-body">
-                                                                                                <h5 class="card-title">Card title</h5>
-                                                                                                <p class="card-text">Some quick example text to build on the card title
-                                                                                                    and make up the bulk of the card's content.</p>
-                                                                                                <a href="#" class="btn ev4gh-btn-1">Learn more ></a></a>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </li>
-                                                                                    <li class="splide__slide">
-                                                                                        <div class="card">
-                                                                                            <div class="card-body">
-                                                                                                <h5 class="card-title">Card title</h5>
-                                                                                                <p class="card-text">Some quick example text to build on the card title
-                                                                                                    and make up the bulk of the card's content.</p>
-                                                                                                <a href="#" class="btn ev4gh-btn-1">Learn more ></a></a>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </li>
-                                                                                </ul>
-                                                                            </div>
-                                                                        </section>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </section> -->
-        <!-- <section id="ev4gh-section-video" class="ev4gh-section left ev4gh-section-video ">
-                                                            <div class="container-fluid">
-                                                                <div class="row g-0">
-                                                                    <div class="col-md-6">
-                                                                        <div class="ev4gh-text-card">
-                                                                            <img class="ten-anniversary-logo" src="assets/images/10th-Anniversary.png"
-                                                                                alt="">
-                                                                            <p class="ev4gh-section-text-para">Emerging Voices for Global Health (EV4GH) celebrates its
-                                                                                10th anniversary. Here is a glimpse at the decade past. 6 ventures of EV4Gh have been
-                                                                                successfully conducted so far. We look forward to the upcoming EV 2020 venture and many
-                                                                                more to come.
-                                                                            </p>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-md-6">
-                                                                        <div class="ev4gh-video-card">
-                                                                            <video controls="">
-                                                                                <source type="video/mp4" src="assets/videos/Emerging Voices 10th Anniversary.mp4">
-                                                                            </video>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </section> -->
-        <section id="ev4gh-section-latest" class="ev4gh-section ev4gh-section-latest" style="  background: #e8e8e8; ">
-            <div class="container">
-                <div class="row mb-5">
-                    <div class="col-md-12 justify-item-center">
-                        <div class="section-heading">
-                            <h1>News <span>&</span> Events</h1>
+
+        <section id="ev4gh-section-latest" class="ev4gh-section ev4gh-section-latest" style="background: #f4f4f4; padding: 80px 0;">
+    <div class="container">
+        
+        <div class="row mb-5">
+            <div class="col-md-12 text-center">
+                <div class="section-heading">
+                    <h1 style="font-weight: 900;">News <span style="color: var(--color-default);">&</span> Events</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center news-row">
+            @foreach ($newsEvents as $news)
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="ev4gh-news-event-card">
+                        <div class="card-image-wrapper">
+                            <img src="{{ asset($news->image) }}" alt="{{ $news->title }}">
+                            <div class="card-category">{{ $news->type }}</div>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">{!! $news->title !!}</h3>
+                            @if ($news->link)
+                                <a href="{{ $news->link }}" class="card-link" target="_blank">
+                                    {{ $news->button_text ?? 'Learn More' }} <span class="arrow">→</span>
+                                </a>
+                            @endif
                         </div>
                     </div>
                 </div>
-                <div class="row justify-content-center">
-                    <div class="col-md-4 ">
-                        <div class="fb-wrapper h-100">
-                            <div class="fb-page" data-href="https://www.facebook.com/EV4GH/" data-tabs="timeline"
-                                data-width="380" data-height="" data-small-header="true"
-                                data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
-                            </div>
+            @endforeach
+        </div>
+
+        <div class="row my-5">
+            <div class="col-12">
+                <div class="ev4gh-separator">
+                    <span>Stay Connected</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center default-news-row">
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="social-widget-card fb-card">
+                    <div class="fb-wrapper">
+                        <div class="fb-page" data-href="https://www.facebook.com/EV4GH/" data-tabs="timeline"
+                            data-width="500" data-height="450" data-small-header="true"
+                            data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
                         </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card h-100 ev4gh-newsletter-card ">
-                            <div class="card-body">
-                                <img src="assets/images/newsletter-svgrepo-com.svg" class="card-img-top"
-                                    alt="newsletter svg">
-                                <h5 class="card-title">Read Our Latest Newsletter:</h5>
-                                <a href="{{ asset('assets/pdf/newsletter/2025/News Letter Design Final Version 23 _06_2025-1.pdf') }}"
-                                    class="btn ev4gh-btn-2">EV Newsletter May-June 2025</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- News Cards -->
-                    <div class="col-md-4 mb-4">
-                        <div class="card mb-3 news-card">
-                            <div class="card-body">
-                                <h5 class="card-title">From EV4GH to Global Recognition: Soe Yu Naing Wins Distinguished
-                                    Award</h5>
-                                <p class="card-text">EV Newsletter January 2023</p>
-                                <a href="#" class="read-more-btn mt-auto">Learn more ></a>
-                            </div>
-                        </div>
-                        <div class="card news-card">
-                            <div class="card-body ">
-                                <h5 class="card-title">Meet our EV4GH alumna: the BMJ Global Health Grant winner</h5>
-                                <p class="card-text">EV Newsletter January 2023</p>
-                                <a target="https://gh.bmj.com/pages/bmj-global-health-grant-winners?utm_campaign=usage&utm_content=tbmj_sprout&utm_id=BMJ005&utm_medium=social&utm_source=facebook,twitter&fbclid=IwY2xjawOSJstleHRuA2FlbQIxMABicmlkETFYQ2VnSlQzSThGRjJVZzBCc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHn-SrqIt11a7fkEwNwzzQLBdNeXo4jBF1bj7sz2GMGsknYHX8TyS1DWSpBbc_aem_HL2ZDHJ7jpu-dcbTi0em7A"
-                                    href="https://gh.bmj.com/pages/bmj-global-health-grant-winners?utm_campaign=usage&utm_content=tbmj_sprout&utm_id=BMJ005&utm_medium=social&utm_source=facebook,twitter&fbclid=IwY2xjawOSJstleHRuA2FlbQIxMABicmlkETFYQ2VnSlQzSThGRjJVZzBCc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHn-SrqIt11a7fkEwNwzzQLBdNeXo4jBF1bj7sz2GMGsknYHX8TyS1DWSpBbc_aem_HL2ZDHJ7jpu-dcbTi0em7A"
-                                    class="read-more-btn mt-auto">Learn more ></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <a class="twitter-timeline" data-width="500" data-height="600"
-                            href="https://twitter.com/ev4gh?ref_src=twsrc%5Etfw">Tweets
-                            by ev4gh</a>
                     </div>
                 </div>
             </div>
-        </section>
-        {{-- <section id="ev4gh-section-ev4gh-section-testimonials" class="ev4gh-section ev4gh-section-testimonials">
-            <div class="container-fluid h-100">
-                <div class="row h-100">
-                    <div class="col-md-2 d-flex justify-content-center">
-                        <div class="section-heading-2">
-                            <h1><span>Testimonials</span></h1>
-                        </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="ev4gh-newsletter-card text-center">
+                    <div class="newsletter-icon">
+                        <img src="assets/images/newsletter-svgrepo-com.svg" alt="newsletter">
                     </div>
-                    <div class="col-md-10 d-flex align-items-end">
-                        <section class="splide testimonial-slide p-md-5" aria-label="Splide Basic HTML Example">
-                            <div class="splide__track">
-                                <ul class="splide__list">
-                                    <li class="splide__slide">
-                                        <div class="card">
-                                            <div class="card-body">
-                                                <p class="card-text description">I work at the Institute of public
-                                                    health in Bengaluru. I am health systems research working on various
-                                                    topics related to strengthening health systems . I went to the
-                                                    emerging voices training program in the year 2010. Program has
-                                                    enormously help me with trying to find a balance between focussing
-                                                    on rigorous research as well as trying to see that the research gets
-                                                    into impact.</p>
-                                            </div>
-                                            <div class="image-content">
-                                                <div class="card-image">
-                                                    <img src="https://ev4gh.net/wp-content/uploads/2017/02/Prashanth1.png"
-                                                        alt="" class="card-img">
-                                                </div>
-                                                <div class="name-designation">
-                                                    <h5 class="name">Prashanth N S</h5>
-                                                    <p>Public Health Expert</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="splide__slide">
-                                        <div class="card">
-                                            <div class="card-body">
-                                                <p class="card-text description">Being an EV has provided the platform
-                                                    to be a changemaker speak my mind right and engage differently the
-                                                    opportunities extend beyond the program and had described such
-                                                    opportunity has been critical for one’s Korea in health systems
-                                                    research from one young researcher to another.</p>
-                                            </div>
-                                            <div class="image-content">
-                                                <div class="card-image">
-                                                    <img src="https://ev4gh.net/wp-content/uploads/2016/06/shakira.png"
-                                                        alt="" class="card-img">
-                                                </div>
-                                                <div class="name-designation">
-                                                    <h5 class="name">Shakira Choonara</h5>
-                                                    <p>EV Alumni</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="splide__slide">
-                                        <div class="card">
-                                            <div class="card-body">
-                                                <p class="card-text description">Inspired set of mentors, a great
-                                                    family, the best platform to raise your voice, share ideas and
-                                                    learning from others – this is what being an EV has meant to me. It
-                                                    empowers us to take on the most important health challenges of today
-                                                    and the future.</p>
-                                            </div>
-                                            <div class="image-content">
-                                                <div class="card-image">
-                                                    <img src="https://ev4gh.net/wp-content/uploads/2016/07/erlyn.png"
-                                                        alt="" class="card-img">
-                                                </div>
-                                                <div class="name-designation">
-                                                    <h5 class="name">Erlyn Macarayan</h5>
-                                                    <p>EV Alumni</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="splide__slide">
-                                        <div class="card">
-                                            <div class="card-body">
-                                                <p class="card-text description">I was an Emerging Voice for Global
-                                                    Health in 2014. The program enabled me to gain a strong
-                                                    understanding of the macro-level trends, debates, and discussions in
-                                                    health systems research. Being a part of the EV network has given me
-                                                    an opportunity to collaborate with alumni and encouraged me to
-                                                    become a more active blogger and more effective communicator.</p>
-                                            </div>
-                                            <div class="image-content">
-                                                <div class="card-image">
-                                                    <img src="https://ev4gh.net/wp-content/uploads/2017/02/Kerry.png"
-                                                        alt="" class="card-img">
-                                                </div>
-                                                <div class="name-designation">
-                                                    <h5 class="name">Kerry Scott</h5>
-                                                    <p>Public Health Expert</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </section>
+                    <h4 class="newsletter-title">Stay Informed</h4>
+                    <p>Read Our Latest Newsletter:</p>
+                    <a href="{{ asset('assets/pdf/newsletter/2025/News Letter Design Final Version 23_06_2025-1.pdf') }}"
+                        class="btn ev4gh-newsletter-btn">
+                        EV Newsletter May-June 2025
+                    </a>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="social-widget-card tw-card">
+                    <div class="twitter-wrapper">
+                        <a class="twitter-timeline" data-width="700" data-height="400" data-theme="light" href="https://twitter.com/ev4gh?ref_src=twsrc%5Etfw">Tweets by ev4gh</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                     </div>
                 </div>
             </div>
-        </section> --}}
+        </div>
+    </div>
+</section>
+
+
+
+
     </main>
     <!-- Image Popup Modal -->
     <div class="modal fade" id="imagePopup" tabindex="-1" aria-hidden="true">
