@@ -57,12 +57,17 @@ Route::get('/call-for-applications-2026', function () {
 
 Route::prefix('gb-members')->group(function () {
     Route::get('/', [GBMemberController::class, 'index'])->name('gb_members.index');
-    Route::get('/create', [GBMemberController::class, 'create'])->name('gb_members.create');
-    Route::post('/import', [GBMemberController::class, 'importCsv'])->name('gb_members.import');
-    Route::get('/{id}', [GBMemberController::class, 'show'])->name('gb_members.show');
-    Route::delete('/{id}', [GBMemberController::class, 'destroy'])->name('gb_members.destroy');
+    // Route::get('/create', [GBMemberController::class, 'create'])->name('gb_members.create');
+    // Route::post('/import', [GBMemberController::class, 'importCsv'])->name('gb_members.import');
+    // Route::get('/{id}', [GBMemberController::class, 'show'])->name('gb_members.show');
+    // Route::delete('/{id}', [GBMemberController::class, 'destroy'])->name('gb_members.destroy');
 });
 
 // Admin
 Route::resource('news-events', NewsEventController::class);
+
+
+
+
+
 

@@ -112,6 +112,14 @@
 
                     <div class="col-6 col-md-4 col-xl-3">
                         <div class="partner-box">
+                             <img class="img-fluid" src="{{ asset('assets/images/about/Logos-Partner Institutes/ITM-logo_col_pms.png') }}"
+                                alt="">
+                            <h6>Institute of Tropical Medicine (ITM), Antwerp, Belgium</h6>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-4 col-xl-3">
+                        <div class="partner-box">
                              <img class="img-fluid" src="{{ asset('assets/images/about/Logos-Partner Institutes/Mohammad Bin Rashid.png') }}"
                                 alt="">
                             <h6>Mohammed Bin Rashid School of Government (MBRSG), Dubai, United Arab Emirates</h6>
@@ -120,11 +128,80 @@
 
                     <div class="col-6 col-md-4 col-xl-3">
                         <div class="partner-box">
-                             <img class="img-fluid" src="{{ asset('assets/images/about/Logos-Partner Institutes/ITM-logo_col_pms.png') }}"
+                             <img class="img-fluid" src="{{ asset('assets/images/about/Logos-Partner Institutes/Nagasaki University.jpg') }}"
                                 alt="">
-                            <h6>Institute of Tropical Medicine (ITM), Antwerp, Belgium</h6>
+                            <h6>Nagasaki University (NU), Nagasaki, Japan</h6>
                         </div>
                     </div>
+
+                    <div class="col-6 col-md-4 col-xl-3">
+                        <div class="partner-box">
+                             <img class="img-fluid" src="{{ asset('assets/images/about/Logos-Partner Institutes/Universidad de Antioquia.png') }}"
+                                alt="">
+                            <h6>Universidad de Antioquia (UoA), Medellín, Colombia</h6>
+                        </div>
+                    </div>
+
+
+                     <div class="col-6 col-md-4 col-xl-3">
+                        <div class="partner-box">
+                             <img class="img-fluid" src="{{ asset('assets/images/about/Logos-Partner Institutes/Liverpool_School_of_Tropical_Medicine_Logo.png') }}"
+                                alt="">
+                            <h6>Liverpool School of Tropical Medicine (LSTM), University of Liverpool, Liverpool, UK</h6>
+                        </div>
+                    </div>
+
+
+
+                    <div class="col-6 col-md-4 col-xl-3">
+                        <div class="partner-box">
+                             <img class="img-fluid" src="{{ asset('assets/images/about/Logos-Partner Institutes/UWC_logo.svg.png') }}"
+                                alt="">
+                            <h6>University of the Western Cape (UWC), Cape Town, South Africa</h6>
+                        </div>
+                    </div>
+
+                     <div class="col-6 col-md-4 col-xl-3">
+                        <div class="partner-box">
+                             <img class="img-fluid" src="{{ asset('assets/images/about/Logos-Partner Institutes/Peking University.png') }}"
+                                alt="">
+                            <h6>Peking University Health Science Centre, Beijing, China</h6>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-4 col-xl-3">
+                        <div class="partner-box">
+                             <img class="img-fluid" src="{{ asset('assets/images/about/Logos-Partner Institutes/cpi-logo_v_square_696x696_rgb.png') }}"
+                                alt="">
+                            <h6>Community Partners International (CPI)</h6>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-4 col-xl-3">
+                        <div class="partner-box">
+                             <img class="img-fluid" src="{{ asset('assets/images/about/Logos-Partner Institutes/BMJ- logo.jpeg') }}"
+                                alt="">
+                            <h6>BMJ Publishing Group Limited</h6>
+                        </div>
+                    </div>
+
+                      <div class="col-6 col-md-4 col-xl-3">
+                        <div class="partner-box">
+                             <img class="img-fluid" src="{{ asset('assets/images/about/Logos-Partner Institutes/IPH-logo-100px.png') }}"
+                                alt="">
+                            <h6>Institute of Public Health (IPH), Bengaluru, India</h6>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-4 col-xl-3">
+                        <div class="partner-box">
+                             <img class="img-fluid" src="{{ asset('assets/images/about/Logos-Partner Institutes/APHRC-logo.png') }}"
+                                alt="">
+                            <h6>African Population and Health Research Center (APHRC)</h6>
+                        </div>
+                    </div>
+
+
 
                     <div class="col-6 col-md-4 col-xl-3">
                         <div class="partner-box">
@@ -142,77 +219,22 @@
                         </div>
                     </div>
 
-                    <div class="col-6 col-md-4 col-xl-3">
-                        <div class="partner-box">
-                             <img class="img-fluid" src="{{ asset('assets/images/about/Logos-Partner Institutes/BMJ- logo.jpeg') }}"
-                                alt="">
-                            <h6>BMJ Publishing Group Limited</h6>
-                        </div>
-                    </div>
+                    
 
-                    <div class="col-6 col-md-4 col-xl-3">
-                        <div class="partner-box">
-                             <img class="img-fluid" src="{{ asset('assets/images/about/Logos-Partner Institutes/Nagasaki University.jpg') }}"
-                                alt="">
-                            <h6>Nagasaki University (NU), Nagasaki, Japan</h6>
-                        </div>
-                    </div>
+                    
 
-                    <div class="col-6 col-md-4 col-xl-3">
-                        <div class="partner-box">
-                             <img class="img-fluid" src="{{ asset('assets/images/about/Logos-Partner Institutes/Liverpool_School_of_Tropical_Medicine_Logo.png') }}"
-                                alt="">
-                            <h6>Liverpool School of Tropical Medicine (LSTM), University of Liverpool, Liverpool, UK</h6>
-                        </div>
-                    </div>
+                   
 
-                    <div class="col-6 col-md-4 col-xl-3">
-                        <div class="partner-box">
-                             <img class="img-fluid" src="{{ asset('assets/images/about/Logos-Partner Institutes/IPH-logo-100px.png') }}"
-                                alt="">
-                            <h6>Institute of Public Health (IPH), Bengaluru, India</h6>
-                        </div>
-                    </div>
+                  
+                   
 
-                    <div class="col-6 col-md-4 col-xl-3">
-                        <div class="partner-box">
-                             <img class="img-fluid" src="{{ asset('assets/images/about/Logos-Partner Institutes/Peking University.png') }}"
-                                alt="">
-                            <h6>Peking University Health Science Centre, Beijing, China</h6>
-                        </div>
-                    </div>
+                    
 
-                    <div class="col-6 col-md-4 col-xl-3">
-                        <div class="partner-box">
-                             <img class="img-fluid" src="{{ asset('assets/images/about/Logos-Partner Institutes/UWC_logo.svg.png') }}"
-                                alt="">
-                            <h6>University of the Western Cape (UWC), Cape Town, South Africa</h6>
-                        </div>
-                    </div>
+                    
 
-                    <div class="col-6 col-md-4 col-xl-3">
-                        <div class="partner-box">
-                             <img class="img-fluid" src="{{ asset('assets/images/about/Logos-Partner Institutes/Universidad de Antioquia.png') }}"
-                                alt="">
-                            <h6>Universidad de Antioquia (UoA), Medellín, Colombia</h6>
-                        </div>
-                    </div>
+                    
 
-                    <div class="col-6 col-md-4 col-xl-3">
-                        <div class="partner-box">
-                             <img class="img-fluid" src="{{ asset('assets/images/about/Logos-Partner Institutes/cpi-logo_v_square_696x696_rgb.png') }}"
-                                alt="">
-                            <h6>Community Partners International (CPI)</h6>
-                        </div>
-                    </div>
-
-                    <div class="col-6 col-md-4 col-xl-3">
-                        <div class="partner-box">
-                             <img class="img-fluid" src="{{ asset('assets/images/about/Logos-Partner Institutes/APHRC-logo.png') }}"
-                                alt="">
-                            <h6>African Population and Health Research Center (APHRC)</h6>
-                        </div>
-                    </div>
+                    
 
                 </div>
 
