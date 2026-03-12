@@ -247,13 +247,16 @@
 
         <div class="container">
             <div class="row p-5">
-                <p>We remain grateful to all individuals and teams within these organisations who have accompanied
-                    EV4GH’s journey and contributed to strengthening a more inclusive and equitable global health
-                    discourse.</p>
 
                 <p><em>The logos of our funders and partners are displayed below as a visual acknowledgement of their
                         contribution to the EV4GH journey.
                     </em></p>
+
+                <p>We remain grateful to all individuals and teams within these organisations who have accompanied
+                    EV4GH’s journey and contributed to strengthening a more inclusive and equitable global health
+                    discourse.</p>
+
+                
             </div>
 
         </div>
