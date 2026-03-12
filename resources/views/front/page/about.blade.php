@@ -1134,7 +1134,7 @@
                     <div class="col-md-12 justify-item-center">
                         <div class="section-heading">
                             <h1>Activities <span>and</span> Achievements</h1>
-                            <p class="my-3">Since its inception, Emerging Voices has trained and mentored over 300
+                            <p class="my-3">Since its inception, Emerging Voices has trained and mentored over 350+
                                 health researchers and professionals from more than 70 countries in the Global South.
                                 The program has provided them with the opportunity to develop their research,
                                 communication, and leadership skills, and to network with like-minded peers and experts

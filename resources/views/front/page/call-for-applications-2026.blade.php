@@ -281,7 +281,7 @@
                                 Research in Bogotá, Colombia (2022), 8th Global Symposium on Health Systems Research in
                                 Nagasaki, Japan (2024). See the EV4GH website for more information on previous editions.
                                 Until
-                                now, 365 EVs from over 70 countries have participated in the EV4GH program. Many EVs are now
+                                now, 350+ EVs from over 70 countries have participated in the EV4GH program. Many EVs are now
                                 in
                                 different leadership positions in their countries, regions, and globally.</p>
                         </div>
