@@ -393,8 +393,8 @@
         </section>
         <section id="our-history-section" class="our-history-section" style="background:#fdf1e5">
             <div class="container p-5">
-                <div class="row">
-                    <div class="col-md-12">
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
                         <div class="about-text">
                             <h2 class="about-sec-title" style="color:black">The EV4GH 2018 Venture: Timeline</h2>
                             <img src="{{ asset('assets/images/past-venture/2022/2022-timeline.png') }}" class="img-fluid"

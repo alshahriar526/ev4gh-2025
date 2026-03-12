@@ -1,6 +1,7 @@
 <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between h-100">
 
+        
         <a href="{{url('/')}}" class="logo d-flex align-items-center h-100">
             <img src="{{asset("assets/images/logo/EV4GH-NEW-Logo.png")}}" alt="Ev4gh logo" />
         </a>
@@ -46,7 +47,7 @@
                     <!-- <li><a href="about.php">About us</a></li> -->
                     <li><a href="{{route('past-venture.2022')}}">EV4GH 2022</a></li>
                     <li><a href="{{route('past-venture.2018')}}">EV4GH 2018</a></li>
-                    <li><a href="{{route('past-venture.2016')}}">EV4GH 2016</a></li>
+                    <li><a target="_blank" href="https://old.ev4gh.net/programme/">EV4GH 2016</a></li>
                     <li><a target="_blank" href="https://old.ev4gh.net/past-editions/2014-2/">EV4GH 2014</a></li>
                     <li><a target="_blank" href="https://old.ev4gh.net/past-editions/2013-2/">EV4GH 2013</a></li>
                     <li><a target="_blank" href="https://old.ev4gh.net/past-editions/2012-2/">EV4GH 2012</a></li>

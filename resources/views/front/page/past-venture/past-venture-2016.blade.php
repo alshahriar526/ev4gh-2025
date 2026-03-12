@@ -258,28 +258,28 @@
                                 makers and other health system actors with an interest to become influential global health
                                 voices and/or local change makers. EV4GH coaches “Emerging Voices” to participate actively
                                 in international conferences where global health issues are addressed and to raise their
-                                voice in scientific and policy debates. EV4GH 2016 tracks for young researchers and other
+                                voice in scientific and policy debates. EV4GH 2018 tracks for young researchers and other
                                 health system actors The EV4GH programme is managed by an internationally representative
                                 governance committee consisting of EV alumni elected by previous EV4GH participants and a
                                 few invited members from academia (from EV partner institutes, mostly). What is the EV4GH
-                                training? For both tracks, the full EV4GH 2016 venture consists of:</p>
+                                training? For both tracks, the full EV4GH 2018 venture consists of:</p>
                             <h2 class="about-sec-title">What is the EV4GH 2022 training program?</h2>
                             <ol>
                                 <li>&nbsp;E-coaching and distance learning in preparation of a face-to-face training (July –
-                                    Sept 2016)</li>
+                                    Sept 2018)</li>
                                 <li>Face-to-face training: scientific presentation, networking and communication skills
                                     coaching using innovative formats, and content training &amp; field visit to the
-                                    National Health Service (Liverpool, end of September – 5 October 2016)</li>
-                                <li>Young researchers (&amp; other changemakers’) pre-conference (6 October 2016)</li>
+                                    National Health Service (Liverpool, end of September – 5 October 2018)</li>
+                                <li>Young researchers (&amp; other changemakers’) pre-conference (6 October 2018)</li>
                                 <li>Participation in the Fifth Global Symposium on Health Systems Research (Liverpool, 8-12
-                                    October 2016)</li>
-                                <li>Wrap-up – focusing on Emerging ‘beyond Liverpool’ (Liverpool, 13 October 2016)</li>
+                                    October 2018)</li>
+                                <li>Wrap-up – focusing on Emerging ‘beyond Liverpool’ (Liverpool, 13 October 2018)</li>
                                 <li>Membership of EV4GH network and other thematic working groups of Health Systems Global
                                 </li>
                             </ol>
                             <h2 class="about-sec-title">Who can apply?</h2>
                             <p style="text-align: justify;">There will be two tracks for which participants can apply to be
-                                an EV 2016. While one track is reserved for researchers involved in health policy and
+                                an EV 2018. While one track is reserved for researchers involved in health policy and
                                 systems research, the other track seeks to attract health professionals, activists, decision
                                 or policy-makers and/or other health systems actors.</p>
                         </div>
@@ -329,7 +329,7 @@
                     <!-- Program Information -->
                     <div class="col-lg-3 col-md-6">
                         <div class="card info-card text-center">
-                            <a href="https://old.ev4gh.net/wp-content/uploads/2016/02/Emerging-voices-for-global-health-2016.pdf"
+                            <a href="https://old.ev4gh.net/wp-content/uploads/2018/02/Emerging-voices-for-global-health-2018.pdf"
                                 target="_blank">
                                 <div class="info-icon">
                                     <i class="fa-solid fa-circle-info"></i>
@@ -354,7 +354,7 @@
                     <!-- Download Call -->
                     <div class="col-lg-3 col-md-6">
                         <div class="card info-card text-center">
-                            <a href="https://old.ev4gh.net/wp-content/uploads/2017/11/Call-for-Emerging-Voices-for-Global-Health-2016.pdf"
+                            <a href="https://old.ev4gh.net/wp-content/uploads/2017/11/Call-for-Emerging-Voices-for-Global-Health-2018.pdf"
                                 target="_blank">
                                 <div class="info-icon">
                                     <i class="fa-solid fa-download"></i>
@@ -373,8 +373,8 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="about-text">
-                            <h2 class="about-sec-title" style="color:black">The EV4GH 2016 Venture: Timeline</h2>
-                            <img src="{{ asset('assets/images/past-venture/2016/2016-timeline.png') }}" class="img-fluid"
+                            <h2 class="about-sec-title" style="color:black">The EV4GH 2018 Venture: Timeline</h2>
+                            <img src="{{ asset('assets/images/past-venture/2018/2018-timeline.png') }}" class="img-fluid"
                                 alt="...">
                         </div>
                     </div>
@@ -435,21 +435,21 @@
                                 <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
                                     <div class="accordion-body">
 
-                                        <p>The full EV4GH 2016 venture consists of:</p>
+                                        <p>The full EV4GH 2018 venture consists of:</p>
 
                                         <ul>
                                             <li>E-coaching and distance learning in preparation of a face-to-face training
-                                                (July – Sept 2016)</li>
+                                                (July – Sept 2018)</li>
                                             <li>Face-to-face training: scientific presentation, networking and communication
                                                 skills coaching using innovative formats, and content training & field visit
                                                 to the National Health Service (Liverpool, end of September – 5 October
-                                                2016)</li>
-                                            <li>Young researchers (& other changemakers’) pre-conference (6 October 2016)
+                                                2018)</li>
+                                            <li>Young researchers (& other changemakers’) pre-conference (6 October 2018)
                                             </li>
                                             <li>Participation in the Fifth Global Symposium on Health Systems Research
-                                                (Liverpool, 8-12 October 2016)</li>
+                                                (Liverpool, 8-12 October 2018)</li>
                                             <li>Wrap-up – focusing on Emerging ‘beyond Liverpool’ (Liverpool, 13 October
-                                                2016)</li>
+                                                2018)</li>
                                             <li>Membership of EV4GH network and other thematic working groups of Health
                                                 Systems Global</li>
                                         </ul>
@@ -471,7 +471,7 @@
                                 <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
                                     <div class="accordion-body">
 
-                                        There will be two tracks for which participants can apply to be an EV 2016. While
+                                        There will be two tracks for which participants can apply to be an EV 2018. While
                                         one track
                                         is reserved for researchers involved in health policy and systems research, the
                                         other track

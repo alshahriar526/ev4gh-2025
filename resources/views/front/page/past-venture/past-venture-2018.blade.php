@@ -44,9 +44,9 @@
         }
 
         /* .about-text {
-                                                padding-right: 50px;
-                                                text-align: justify;
-                                            } */
+                                                    padding-right: 50px;
+                                                    text-align: justify;
+                                                } */
         .about-text {
             display: flex;
             flex-direction: column;
@@ -125,83 +125,7 @@
             font-size: 20px;
             color: #003651;
         }
-    </style>
-    <style>
-        .ev-box {
-            background: #eef4f8;
-            /* Light muted blue-grey background */
-            /* border: 1px solid rgba(0, 0, 0, 0.12); */
-            padding: 30px;
-            border-radius: 14px;
-            box-shadow: 0 4px 10px rgb(0 0 0 / 40%);
-            /* margin-bottom: 40px; */
-        }
-
-        /* Title styles */
-        .about-sec-title,
-        .about-sec-title-h3 {
-            margin-bottom: 18px;
-            font-weight: 600;
-        }
-
-        /* Main list */
-        .ev-check-list {
-            list-style: none;
-            padding-left: 0;
-            margin-left: 0;
-        }
-
-        .ev-check-list>li {
-            position: relative;
-            padding-left: 28px;
-            margin-bottom: 14px;
-            font-size: 15px;
-            line-height: 20px;
-        }
-
-        .ev-check-list>li>i {
-            position: absolute;
-            left: 0;
-            top: 3px;
-            font-size: 18px;
-        }
-
-        /* Nested list icons */
-        .ev-icon i {
-            color: #3ba4d7;
-            font-size: 18px;
-            margin-right: 6px;
-        }
-
-        /* Sub list */
-        .ev-sub-list {
-            list-style: none;
-            margin-top: 12px;
-            padding-left: 20px;
-        }
-
-        .ev-sub-list li {
-            position: relative;
-            padding-left: 22px;
-            margin-bottom: 12px;
-            font-size: 15px;
-            line-height: 20px;
-        }
-
-        .ev-sub-list li i {
-            position: absolute;
-            left: 0;
-            top: 3px;
-            font-size: 14px;
-            color: #3ba4d7;
-        }
-
-        /* Add spacing between columns on desktop */
-        @media (min-width: 768px) {
-            .col-md-6 .ev-box {
-                height: 100%;
-            }
-        }
+        
 
         .accordion-button:not(.collapsed) {
             background: #a12d2d;
@@ -288,8 +212,6 @@
             </div>
             </div>
         </section>
-
-
         <section id="application-materials" class="our-history-section" style=" background: var(--color-ev4gh-gray); ">
             <style>
                 .info-card {
@@ -338,7 +260,6 @@
                             </a>
                         </div>
                     </div>
-
                     <!-- FAQs -->
                     <div class="col-lg-3 col-md-6">
                         <div class="card info-card text-center">
@@ -350,7 +271,6 @@
                             </a>
                         </div>
                     </div>
-
                     <!-- Download Call -->
                     <div class="col-lg-3 col-md-6">
                         <div class="card info-card text-center">
@@ -363,15 +283,14 @@
                             </a>
                         </div>
                     </div>
-
                 </div>
             </div>
             </div>
         </section>
         <section id="our-history-section" class="our-history-section" style="background:#fdf1e5">
             <div class="container p-5">
-                <div class="row">
-                    <div class="col-md-12">
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
                         <div class="about-text">
                             <h2 class="about-sec-title" style="color:black">The EV4GH 2018 Venture: Timeline</h2>
                             <img src="{{ asset('assets/images/past-venture/2018/2018-timeline.png') }}" class="img-fluid"
@@ -381,20 +300,15 @@
                 </div>
             </div>
         </section>
-
         <div class="modal fade" id="faqModal" tabindex="-1">
             <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
                 <div class="modal-content">
-
                     <div class="modal-header">
                         <h4 class="modal-title fw-bold" style="color:#a12d2d;">EV4GH Frequently Asked Questions</h4>
                         <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                     </div>
-
                     <div class="modal-body">
-
                         <div class="accordion" id="faqAccordion">
-
                             <!-- FAQ 1 -->
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
@@ -403,10 +317,8 @@
                                         What is the Emerging voices for global health?
                                     </button>
                                 </h2>
-
                                 <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
                                     <div class="accordion-body">
-
                                         Emerging Voices for Global Health (EV4GH) is an innovative multi-partner blended
                                         training
                                         program for young, promising and emerging health policy & systems researchers,
@@ -417,12 +329,9 @@
                                         actively in international conferences where global health issues are addressed and
                                         to raise
                                         their voice in scientific and policy debates.
-
                                     </div>
                                 </div>
                             </div>
-
-
                             <!-- FAQ 2 -->
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
@@ -431,12 +340,9 @@
                                         What is the EV4GH training?
                                     </button>
                                 </h2>
-
                                 <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
                                     <div class="accordion-body">
-
                                         <p>The full EV4GH 2018 venture consists of:</p>
-
                                         <ul>
                                             <li>E-coaching and distance learning in preparation of a face-to-face training
                                                 (July – Sept 2018)</li>
@@ -453,12 +359,9 @@
                                             <li>Membership of EV4GH network and other thematic working groups of Health
                                                 Systems Global</li>
                                         </ul>
-
                                     </div>
                                 </div>
                             </div>
-
-
                             <!-- FAQ 3 -->
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
@@ -467,10 +370,8 @@
                                         Who can apply?
                                     </button>
                                 </h2>
-
                                 <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
                                     <div class="accordion-body">
-
                                         There will be two tracks for which participants can apply to be an EV 2018. While
                                         one track
                                         is reserved for researchers involved in health policy and systems research, the
@@ -479,12 +380,9 @@
                                         other
                                         health systems actors.
                                         All applicants must have been born on or after 1 January 1978
-
                                     </div>
                                 </div>
                             </div>
-
-
                             <!-- FAQ 4 -->
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
@@ -493,17 +391,12 @@
                                         Can I apply for both the tracks?
                                     </button>
                                 </h2>
-
                                 <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
                                     <div class="accordion-body">
-
                                         No! You need to choose only one track that best suits your profile
-
                                     </div>
                                 </div>
                             </div>
-
-
                             <!-- FAQ 5 -->
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
@@ -512,13 +405,10 @@
                                         Who is eligible for track – 1?
                                     </button>
                                 </h2>
-
                                 <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
                                     <div class="accordion-body">
-
                                         <p>Applicants must submit an abstract for the Liverpool conference and have at least
                                             two of the following:</p>
-
                                         <ul>
                                             <li>A Master’s degree in health or a health-related field</li>
                                             <li>Be enrolled in a doctoral-level programme in health or a health-related
@@ -527,12 +417,9 @@
                                                 development</li>
                                             <li>Experience and/or knowledge from working in LMICs</li>
                                         </ul>
-
                                     </div>
                                 </div>
                             </div>
-
-
                             <!-- FAQ 6 -->
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
@@ -541,12 +428,9 @@
                                         Who is eligible for track – 2?
                                     </button>
                                 </h2>
-
                                 <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
                                     <div class="accordion-body">
-
                                         <p>Applicants must fulfil one of the following:</p>
-
                                         <ul>
                                             <li>Be involved in a decision-making, implementation or practitioner role within
                                                 health services or systems</li>
@@ -555,12 +439,9 @@
                                                 or patient advocates or otherwise involved in advancing health equity and
                                                 social justice in their regions.</li>
                                         </ul>
-
                                     </div>
                                 </div>
                             </div>
-
-
                             <!-- FAQ 7 -->
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
@@ -569,19 +450,14 @@
                                         What should my application focus on?
                                     </button>
                                 </h2>
-
                                 <div id="faq7" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
                                     <div class="accordion-body">
-
                                         For both tracks, special consideration will be given to people who explicitly
                                         include the political dimension of health systems and services in their work, and
                                         challenge power in whatever form, based on good evidence.
-
                                     </div>
                                 </div>
                             </div>
-
-
                             <!-- FAQ 8 -->
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
@@ -590,20 +466,15 @@
                                         I am from a high-income country, am I still eligible to apply?
                                     </button>
                                 </h2>
-
                                 <div id="faq8" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
                                     <div class="accordion-body">
-
                                         Yes! EV4GH is open to all. Focus will be on applicants from the Global South
                                         especially LMICs, but candidates from the global north can also apply (they need to
                                         have relevant field experience in the global South, though, and work on health
                                         policy & systems research in the South).
-
                                     </div>
                                 </div>
                             </div>
-
-
                             <!-- FAQ 9 -->
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
@@ -612,18 +483,13 @@
                                         I have just enrolled for a PhD, am I still eligible to apply?
                                     </button>
                                 </h2>
-
                                 <div id="faq9" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
                                     <div class="accordion-body">
-
                                         Yes! Please refer to question 6 and if you fulfil at least 2 of the points mentioned
                                         there you are eligible to apply
-
                                     </div>
                                 </div>
                             </div>
-
-
                             <!-- FAQ 10 -->
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
@@ -632,27 +498,21 @@
                                         What is covered in the scholarship?
                                     </button>
                                 </h2>
-
                                 <div id="faq10" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
                                     <div class="accordion-body">
-
                                         <p>
                                             In case of a full scholarship the travel, accommodation and living expenses for
                                             the duration of the course is covered and participation in the Health systems
                                             global symposia from the 8 – 12 October will be covered.
                                         </p>
-
                                         <p>
                                             In case of partial scholarships, some of the above aspects will be covered on
                                             case to case basis.
                                         </p>
-
                                     </div>
                                 </div>
                             </div>
-
                         </div>
-
                     </div>
                 </div>
             </div>
