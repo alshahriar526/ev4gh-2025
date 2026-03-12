@@ -15,6 +15,7 @@
             background-position: center;
             position: relative;
         }
+
         .breadcrumbs .page-header h2 {
             font-size: 40px;
             font-weight: 500;
@@ -25,6 +26,7 @@
             margin-bottom: 20px;
             word-spacing: 2px;
         }
+
         /* Particles background */
         #particles-js {
             position: absolute;
@@ -34,15 +36,17 @@
             left: 0;
             z-index: 1;
         }
+
         /* Content must stay above particles */
         .header-content {
             position: relative;
             z-index: 2;
         }
+
         /* .about-text {
-                                padding-right: 50px;
-                                text-align: justify;
-                            } */
+                                    padding-right: 50px;
+                                    text-align: justify;
+                                } */
         .about-text {
             display: flex;
             flex-direction: column;
@@ -51,12 +55,14 @@
             transition: .3s;
             height: 100%
         }
+
         .about-sec-title {
             font-size: 24px;
             color: var(--color-default);
             font-family: 'nerissemibold';
             margin-bottom: 20px;
         }
+
         h3.about-sec-title-h3 {
             font-size: 20px;
             color: #000;
@@ -64,6 +70,7 @@
             margin-bottom: 20px;
             text-align: left;
         }
+
         .about-text p {
             font-family: var(--text-font);
             font-size: 15px !important;
@@ -71,10 +78,12 @@
             line-height: 20px;
             color: #6a6f78;
         }
+
         .ev-check-list {
             list-style: none;
             padding-left: 0;
         }
+
         .ev-check-list li {
             display: flex;
             /* Align icon and text properly */
@@ -86,9 +95,11 @@
             color: #6a6f78;
             margin-bottom: 20px;
         }
+
         .ev-check-list li:last-child {
             margin-bottom: 0px !important;
         }
+
         .ev-check-list li i,
         .ev-check-list li svg {
             flex-shrink: 0;
@@ -101,12 +112,15 @@
             margin-top: 3px;
             /* Small adjustment to align with text */
         }
+
         .call-for-application-hero {}
+
         .call-for-application-hero h5 {
             font-size: 25px;
             font-weight: 600;
             margin-bottom: 20px;
         }
+
         .call-for-application-hero span {
             font-size: 20px;
             color: #003651;
@@ -122,18 +136,21 @@
             box-shadow: 0 4px 10px rgb(0 0 0 / 40%);
             /* margin-bottom: 40px; */
         }
+
         /* Title styles */
         .about-sec-title,
         .about-sec-title-h3 {
             margin-bottom: 18px;
             font-weight: 600;
         }
+
         /* Main list */
         .ev-check-list {
             list-style: none;
             padding-left: 0;
             margin-left: 0;
         }
+
         .ev-check-list>li {
             position: relative;
             padding-left: 28px;
@@ -141,24 +158,28 @@
             font-size: 15px;
             line-height: 20px;
         }
+
         .ev-check-list>li>i {
             position: absolute;
             left: 0;
             top: 3px;
             font-size: 18px;
         }
+
         /* Nested list icons */
         .ev-icon i {
             color: #3ba4d7;
             font-size: 18px;
             margin-right: 6px;
         }
+
         /* Sub list */
         .ev-sub-list {
             list-style: none;
             margin-top: 12px;
             padding-left: 20px;
         }
+
         .ev-sub-list li {
             position: relative;
             padding-left: 22px;
@@ -166,6 +187,7 @@
             font-size: 15px;
             line-height: 20px;
         }
+
         .ev-sub-list li i {
             position: absolute;
             left: 0;
@@ -173,6 +195,7 @@
             font-size: 14px;
             color: #3ba4d7;
         }
+
         /* Add spacing between columns on desktop */
         @media (min-width: 768px) {
             .col-md-6 .ev-box {
@@ -281,49 +304,93 @@
             </div>
             </div>
         </section>
-        {{-- <section id="our-history-section" class="our-history-section" style="background:#f0f6f8">
-            <div class="container p-5">
-                <div class="row g-5">
-                    <div class="col-md-8">
-                        <div class="about-text d-flex justify-content-center ">
-                            <h2 class="about-sec-title ">What is the EV4GH 2026 venture?</h2>
-                            <p>The EV4GH 2026 venture aims to expand the global network with new Emerging Voices from across
-                                the
-                                world, specifically, historically underrepresented countries and regions. The 2026 call
-                                comes at
-                                a moment when global health is shaped by overlapping crises that undermine hard-won gains
-                                and
-                                expose the limits of established expertise. We are seeking applicants with diverse
-                                experiential
-                                and disciplinary backgrounds who can bring grounded, context-sensitive perspectives and who
-                                are
-                                prepared to question prevailing assumptions in order to reimagine how global health problems
-                                are
-                                framed and addressed. </p>
-                            <p>The venture is a blended learning program and consists of a 4-week distance learning phase,
-                                followed by a 2-week face-to-face phase held prior to the 9th Global Symposium on Health
-                                Systems
-                                Research to be held in Dubai, United Arab Emirates (UAE), in November 2026. It uses
-                                innovative
-                                methods and activities to enable emerging global health change agents, including health
-                                systems
-                                and policy researchers, policymakers and implementers, practitioners and other actors to not
-                                only to elevate emerging voices but to support them in generating concrete ideas for reform
-                                and
-                                practical solutions to persistent global health challenges.</p>
-                            <p>In addition, the global EV alumni and facilitator network provides opportunities for
-                                networking
-                                and learning across contexts and regions. After the venture, EVs become members of the EV4GH
-                                thematic working group and can then join other thematic working groups of HSG.</p>
+
+
+       <section id="application-materials" class="our-history-section" style=" background: var(--color-ev4gh-gray); ">
+            <style>
+                .info-card {
+                    border: none;
+                    border-radius: 12px;
+                    transition: all .3s ease;
+                    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+                    height: 100%;
+                }
+
+                .info-card:hover {
+                    transform: translateY(-6px);
+                    box-shadow: 0 18px 35px rgba(0, 0, 0, 0.12);
+                }
+
+                .info-card a {
+                    text-decoration: none;
+                    color: inherit;
+                    display: block;
+                    padding: 30px 20px;
+                }
+
+                .info-icon {
+                    font-size: 42px;
+                    color: #a12d2d;
+                    margin-bottom: 15px;
+                }
+
+                .info-title {
+                    font-weight: 600;
+                    font-size: 18px;
+                    color: #333;
+                }
+            </style>
+            <div class="container py-4">
+                <div class="row g-4">
+                    <!-- Program Information -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card info-card text-center">
+                            <a href="https://old.ev4gh.net/wp-content/uploads/2021/11/Call-info-2022.pdf" target="_blank">
+                                <div class="info-icon">
+                                    <i class="fa-solid fa-circle-info"></i>
+                                </div>
+                                <div class="info-title">Program Information</div>
+                            </a>
                         </div>
                     </div>
-                    <div class="col-md-4" style=" display: flex; flex-direction: column; flex-wrap: nowrap; align-content: center; justify-content: center; align-items: center;">
-                        <img src="{{ asset('assets/images/call4application2025/img2.jpg') }}" class="rounded-pill"
-                            alt="..." style="max-height: 400px;max-width: 400px;min-width: 400px;min-height: 400px;">
+                    <!-- FAQs -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card info-card text-center">
+                            <a href="https://old.ev4gh.net/faq2022" target="_blank">
+                                <div class="info-icon">
+                                    <i class="fa-solid fa-circle-question"></i>
+                                </div>
+                                <div class="info-title">FAQs</div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Download Call -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card info-card text-center">
+                            <a href="https://old.ev4gh.net/wp-content/uploads/2021/11/EV4GH_2022_Call_November_ENG.pdf"
+                                target="_blank">
+                                <div class="info-icon">
+                                    <i class="fa-solid fa-download"></i>
+                                </div>
+                                <div class="info-title">Download Call</div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Apply Now -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card info-card text-center">
+                            <a href="https://redcap.aphrc.org/redcap/surveys/?s=EY7WWYNYNRJ3WDXP" target="_blank">
+                                <div class="info-icon">
+                                    <i class="fa-solid fa-paper-plane"></i>
+                                </div>
+                                <div class="info-title">Apply Now</div>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section> --}}
+            </div>
+        </section>
         <section id="our-history-section" class="our-history-section" style="background:#fdf1e5">
             <div class="container p-5">
                 <div class="row">
@@ -334,112 +401,11 @@
                                 alt="...">
                         </div>
                     </div>
-                    {{-- <div class="col-md-8">
-                        <div class="about-text ms-5">
-                            <h2 class="about-sec-title">Stages of EV4GH 2026 venture (dates may be subject to change )</h2>
-                            <ul class="ev-check-list">
-                                <li><i class="fa fa-check-circle"></i>2025: Call for applications launch
-                                </li>
-                                <li><i class="fa fa-check-circle"></i>10 April 2026: Deadline for applications (11 pm GMT
-                                    +6)
-                                </li>
-                                <li><i class="fa fa-check-circle"></i>21 March - 31 May 2026: Review and Selection of new
-                                    EVs
-                                </li>
-                                <li><i class="fa fa-check-circle"></i>June - July 2026: Notification of acceptance to the
-                                    program
-                                </li>
-                                <li><i class="fa fa-check-circle"></i>September - October 2026: E-coaching and distance
-                                    learning phase</li>
-                                <li><i class="fa fa-check-circle"></i>Two weeks before the HSR2026 symposium: Face-to-face
-                                    phase in Dubai, UAE. This will
-                                    include
-                                    scientific presentations, networking and communication skills, content training, and
-                                    field
-                                    visit to local health system facilities in Dubai, UAE</li>
-                                <li><i class="fa fa-check-circle"></i>Last day of the Face-to-face training: Emerging
-                                    researchers and other changemakers’
-                                    pre-conference (/TWG event)</li>
-                                <li><i class="fa fa-check-circle"></i>Early November 2026: Participation in the 9th Global
-                                    Symposium on Health Systems
-                                    Research,
-                                    Dubai, UAE (HSR 2026 dates will be announced soon)</li>
-                                <li><i class="fa fa-check-circle"></i>The day after the HSR2026 symposium: Wrap-up session
-                                    focusing on emerging beyond Dubai,
-                                    UAE
-                                </li>
-                                <li><i class="fa fa-check-circle"></i>Beyond November 2026: Participation in the EV4GH
-                                    network (and other HSG thematic working
-                                    groups) with other emerging researchers, professionals, peers, senior researchers,
-                                    policymakers, and experts in health systems and global health. Some of the activities of
-                                    the
-                                    EV4GH network include regular discussion and information sharing in the Google group;
-                                    webinars; regional meetings; residencies; blog writing etc.
-                                </li>
-                            </ul>
-                        </div>
-                    </div> --}}
                 </div>
             </div>
         </section>
-        <!-- ======= Application Materials, Selection, and Scholarship Section ======= -->
-        <section id="application-materials" class="our-history-section" style=" background: var(--color-ev4gh-gray); ">
-            <div class="container p-5">
-                <div class="row">
-    <div class="col-md-3">
-        <div class="et_pb_module et_pb_blurb et_pb_blurb_0 et_clickable  et_pb_text_align_center  et_pb_blurb_position_top et_pb_bg_layout_light">
-            <div class="et_pb_blurb_content">
-                <div class="et_pb_main_blurb_image"><span class="et_pb_image_wrap"><span
-                            class="et-waypoint et_pb_animation_top et_pb_animation_top_tablet et_pb_animation_top_phone et-pb-icon et-animated">h</span></span>
-                </div>
-                <div class="et_pb_blurb_container">
-                    <h4 class="et_pb_module_header"><span>Program Information</span></h4>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-3">
-        <div
-            class="et_pb_module et_pb_blurb et_pb_blurb_1 et_clickable  et_pb_text_align_center  et_pb_blurb_position_top et_pb_bg_layout_light">
-            <div class="et_pb_blurb_content">
-                <div class="et_pb_main_blurb_image"><span class="et_pb_image_wrap"><span
-                            class="et-waypoint et_pb_animation_top et_pb_animation_top_tablet et_pb_animation_top_phone et-pb-icon et-animated">l</span></span>
-                </div>
-                <div class="et_pb_blurb_container">
-                    <h4 class="et_pb_module_header"><span>FAQs</span></h4>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-3">
-        <div
-            class="et_pb_module et_pb_blurb et_pb_blurb_2 et_clickable  et_pb_text_align_center  et_pb_blurb_position_top et_pb_bg_layout_light">
-            <div class="et_pb_blurb_content">
-                <div class="et_pb_main_blurb_image"><span class="et_pb_image_wrap"><span
-                            class="et-waypoint et_pb_animation_top et_pb_animation_top_tablet et_pb_animation_top_phone et-pb-icon et-animated"></span></span>
-                </div>
-                <div class="et_pb_blurb_container">
-                    <h4 class="et_pb_module_header"><span>Download Call</span></h4>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="col-md3">
-        <div
-            class="et_pb_module et_pb_blurb et_pb_blurb_3 et_clickable  et_pb_text_align_center  et_pb_blurb_position_top et_pb_bg_layout_light">
-            <div class="et_pb_blurb_content">
-                <div class="et_pb_main_blurb_image"><span class="et_pb_image_wrap"><span
-                            class="et-waypoint et_pb_animation_top et_pb_animation_top_tablet et_pb_animation_top_phone et-pb-icon et-animated"></span></span>
-                </div>
-                <div class="et_pb_blurb_container">
-                    <h4 class="et_pb_module_header"><span>Apply Now</span></h4>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-            </div>
-        </section>
+       
+        
     </main>
 @endsection
 @section('scripts')
