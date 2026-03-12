@@ -217,6 +217,10 @@
                      New Deadline: Friday, 10 April 2026 (11 pm GMT+6)
                  </div>
 
+                 <p>
+                    This decision reflects our commitment to supporting applicants experiencing instability and to ensuring equitable consideration. We will continue to monitor the situation closely and keep the network informed of any further updates.
+                 </p>
+
                  <div class="text-center mt-4">
                      <button class="btn btn-announcement" data-bs-dismiss="modal">
                          Close
