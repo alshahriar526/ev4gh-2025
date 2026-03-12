@@ -45,8 +45,8 @@
             <li class="dropdown"><a href="#"><span>EV4GH Ventures</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
                 <ul>
                     <!-- <li><a href="about.php">About us</a></li> -->
-                    <li><a target="_blank" href="{{route('past-venture.2022')}}">EV4GH 2022</a></li>
-                    <li><a target="_blank" href="https://old.ev4gh.net/ev4gh-2018/">EV4GH 2018</a></li>
+                    <li><a href="{{route('past-venture.2022')}}">EV4GH 2022</a></li>
+                    <li><a href="{{route('past-venture.2018')}}">EV4GH 2018</a></li>
                     <li><a target="_blank" href="https://old.ev4gh.net/programme/">EV4GH 2016</a></li>
                     <li><a target="_blank" href="https://old.ev4gh.net/past-editions/2014-2/">EV4GH 2014</a></li>
                     <li><a target="_blank" href="https://old.ev4gh.net/past-editions/2013-2/">EV4GH 2013</a></li>
@@ -73,7 +73,7 @@
             <!-- <li><a href="#contact">Contact</a></li> -->
             </ul>
         </nav><!-- .navbar -->
-        <i class="mobile-nav-toggle mobile-nav-show bi bi-list">rrr</i>
-        <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x">rrr</i>
+        {{-- <i class="mobile-nav-toggle mobile-nav-show bi bi-list">rrr</i>
+        <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x">rrr</i> --}}
     </div>
 </header>

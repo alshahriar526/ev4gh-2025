@@ -396,7 +396,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="about-text">
-                            <h2 class="about-sec-title" style="color:black">The EV4GH 2026 Venture: Timeline</h2>
+                            <h2 class="about-sec-title" style="color:black">The EV4GH 2018 Venture: Timeline</h2>
                             <img src="{{ asset('assets/images/past-venture/2022/2022-timeline.png') }}" class="img-fluid"
                                 alt="...">
                         </div>
