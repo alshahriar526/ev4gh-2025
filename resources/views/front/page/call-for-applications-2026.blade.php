@@ -357,7 +357,7 @@
                             <ul class="ev-check-list">
                                 <li><i class="fa fa-check-circle"></i>2025: Call for applications launch
                                 </li>
-                                <li><i class="fa fa-check-circle"></i>20 March 2026: Deadline for applications (11 pm GMT
+                                <li><i class="fa fa-check-circle"></i>10 April 2026: Deadline for applications (11 pm GMT
                                     +6)
                                 </li>
                                 <li><i class="fa fa-check-circle"></i>21 March - 31 May 2026: Review and Selection of new
@@ -724,8 +724,8 @@
             <div class="container p-5">
                 <div class="row g-5">
                     <div class="col-md-12">
-                        <p><strong>Application Submission Deadline:</strong> All the above should be completed by 20
-                            March 2026 (11 pm GMT+6) at the latest. If you have any queries/ questions, please contact
+                        <p><strong>Application Submission Deadline:</strong> All the above should be completed by 10
+                            April 2026 (11 pm GMT+6) at the latest. If you have any queries/ questions, please contact
                             the EV4GH Secretariat at <a
                                 href="mailto:ev_secretariat@bracu.ac.bd">ev_secretariat@bracu.ac.bd</a>.</p>
 

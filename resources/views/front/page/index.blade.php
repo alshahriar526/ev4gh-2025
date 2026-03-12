@@ -803,7 +803,7 @@
             effect: "fade",
             speed: 1000,
             autoplay: {
-                delay: 5000, // 5 seconds
+                delay: 15000, // 5 seconds
                 disableOnInteraction: false, // keeps autoplay running after user interacts
             },
             loop: true,

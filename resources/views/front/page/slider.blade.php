@@ -5,7 +5,9 @@
                  <div class="row">
                      <div class="col-md-4">
                          <div class="content">
-                             <h1>CALL FOR <br> APPLICATIONS</h1>
+                             <h1 style="margin-bottom:0px">DEADLINE EXTENDED</h1>
+                             <p style="color:#36a3d6; margin-bottom:40px">10 APRIL 2026</p>
+                             <h3 style="color:#d21b22">CALL FOR APPLICATIONS</h3>
                              <h5>Emerging Voices for <br> Global Health (EV4GH) 2026</h5>
                              <p><i class="fa-thin fa-location-dot fa-beat me-2"></i> DUBAI, UAE</p>
                              <a class="btn" target="_blank" href="{{ route('call-for-applications-2026') }}">Apply

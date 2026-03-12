@@ -39,7 +39,7 @@
                                 <div class="form-group mb-3">
                                     <label>Image (19:6 Ratio)</label>
                                     <input type="file" name="image" class="form-control" required>
-                                    <small class="text-muted">Recommended: 1900x600 px</small>
+                                    <small class="text-muted">Recommended: 600x400 px</small>
                                 </div>
 
                                 {{-- Row: Type + Title --}}

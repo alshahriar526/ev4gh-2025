@@ -26,70 +26,84 @@ class NewsEventController extends Controller
     }
 
     public function store(Request $request)
-    {
-        $request->validate([
-            'image' => 'required|image',
-            'type' => 'required|string|max:100',
-            'title' => 'required|max:500',
-            'description' => 'required',
-            'link' => 'nullable|url',
-            'button_text' => 'nullable|string|max:100',
-        ]);
+{
+    $request->validate([
+        'image' => 'required|image|mimes:jpg,jpeg,png,webp|max:2048',
+        'type' => 'required|string|max:100',
+        'title' => 'required|max:500',
+        'description' => 'required',
+        'link' => 'nullable|url',
+        'button_text' => 'nullable|string|max:100',
+    ]);
 
-        $imageName = time() . '.' . $request->image->extension();
-        $request->image->move(public_path('assets/images/news'), $imageName);
+    $image = $request->file('image');
 
-        NewsEvent::create([
-            'image' => 'assets/images/news/' . $imageName,
-            'title' => $request->title,
-            'description' => $request->description,
-            'link' => $request->link,
-            'type' => $request->type,
-            'button_text' => $request->button_text,
-        ]);
+    $destinationPath = 'assets/images/news/';
+    $imageName = time() . '_' . uniqid() . '.' . $image->getClientOriginalExtension();
 
-        return redirect()->route('news-events.index')->with('success', 'Created Successfully');
-    }
+    $image->move($destinationPath, $imageName);
+
+    NewsEvent::create([
+        'image' => $destinationPath . $imageName,
+        'title' => $request->title,
+        'description' => $request->description,
+        'link' => $request->link,
+        'type' => $request->type,
+        'button_text' => $request->button_text,
+    ]);
+
+    return redirect()
+        ->route('news-events.index')
+        ->with('success', 'Created Successfully');
+}
+
+
 
     public function edit(NewsEvent $news_event)
     {
         return view('admin.news.edit', compact('news_event'));
     }
 
-    public function update(Request $request, NewsEvent $news_event)
-    {
-        $request->validate([
-            'image' => 'nullable|image|mimes:jpg,jpeg,png',
-            'type' => 'required|string|max:100',
-            'title' => 'required|max:500',
-            'description' => 'required',
-            'link' => 'nullable|url',
-            'button_text' => 'nullable|string|max:100',
-        ]);
+public function update(Request $request, NewsEvent $news_event)
+{
+    $request->validate([
+        'image' => 'nullable|image|mimes:jpg,jpeg,png,webp|max:2048',
+        'type' => 'required|string|max:100',
+        'title' => 'required|max:500',
+        'description' => 'required',
+        'link' => 'nullable|url',
+        'button_text' => 'nullable|string|max:100',
+    ]);
 
-        // Handle image upload
-        if ($request->hasFile('image')) {
-            // Delete old image if exists
-            if ($news_event->image && file_exists(public_path($news_event->image))) {
-                unlink(public_path($news_event->image));
-            }
+    if ($request->hasFile('image')) {
 
-            $imageName = time() . '.' . $request->image->extension();
-            $request->image->move(public_path('uploads/news'), $imageName);
-            $news_event->image = 'assets/images/news' . $imageName;
+        // Delete old image
+        if ($news_event->image && file_exists($news_event->image)) {
+            unlink($news_event->image);
         }
 
-        // Update other fields
-        $news_event->title = $request->title;
-        $news_event->description = $request->description;
-        $news_event->link = $request->link;
-        $news_event->type = $request->type;
-        $news_event->button_text = $request->button_text;
+        $image = $request->file('image');
+        $destinationPath = 'assets/images/news/';
+        $imageName = time() . '_' . uniqid() . '.' . $image->getClientOriginalExtension();
 
-        $news_event->save();
-
-        return redirect()->route('news-events.index')->with('success', 'Updated Successfully');
+        $image->move($destinationPath, $imageName);
+        $news_event->image = $destinationPath . $imageName;
     }
+
+    $news_event->update([
+        'title' => $request->title,
+        'description' => $request->description,
+        'link' => $request->link,
+        'type' => $request->type,
+        'button_text' => $request->button_text,
+    ]);
+
+    return redirect()
+        ->route('news-events.index')
+        ->with('success', 'Updated Successfully');
+}
+
+
 
     public function destroy(NewsEvent $news_event)
     {
