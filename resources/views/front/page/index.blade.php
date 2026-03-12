@@ -357,13 +357,14 @@
         .call-for-application-slider {}
 
         .call-for-application-slider h1 {
-            font-size: 50px !important;
+            font-size: 45px !important;
             color: var(--color-default);
             text-align: left;
             font-weight: 900;
             font-family: Poppins, sans-serif !important;
             margin-bottom: 30px;
             text-shadow: 2px 2px 0 #bcbcbc, 4px 4px 0 #9c9c9c;
+            line-height: 1.3;
         }
 
         .call-for-application-slider h5 {
@@ -761,13 +762,13 @@
                 </div>
             </div>
             
-            <div class="col-lg-4 col-md-6 mb-4">
+            {{-- <div class="col-lg-4 col-md-6 mb-4">
                 <div class="social-widget-card tw-card">
                     <div class="twitter-wrapper">
                         <a class="twitter-timeline" data-width="700" data-height="400" data-theme="light" href="https://twitter.com/ev4gh?ref_src=twsrc%5Etfw">Tweets by ev4gh</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                     </div>
                 </div>
-            </div>
+            </div> --}}
         </div>
     </div>
 </section>

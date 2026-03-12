@@ -68,6 +68,32 @@ Route::resource('news-events', NewsEventController::class);
 
 
 
+// Past Venture
+Route::get('/past-venture/2022', function () {
+    return view('front.page.past-venture.past-venture-2022');
+})->name("past-venture.2022");
 
+Route::get('/past-venture/2018', function () {
+    return view('front.page.past-venture.past-venture-2018');
+})->name("past-venture.2018");
 
+Route::get('/past-venture/2016', function () {
+    return view('front.page.past-venture.past-venture-2016');
+})->name("past-venture.2016");
+
+Route::get('/past-venture/2014', function () {
+    return view('front.page.past-venture.past-venture-2014');
+})->name("past-venture.2014");
+
+Route::get('/past-venture/2013', function () {
+    return view('front.page.past-venture.past-venture-2013');
+})->name("past-venture.2013");
+
+Route::get('/past-venture/2012', function () {
+    return view('front.page.past-venture.past-venture-2012');
+})->name("past-venture.2012");
+
+Route::get('/past-venture/2010', function () {
+    return view('front.page.past-venture.past-venture-2010');
+})->name("past-venture.2010");
 
