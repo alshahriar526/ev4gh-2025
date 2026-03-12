@@ -242,7 +242,7 @@
                         <li><a href="index.html">Home</a></li>
                         <li>EV4GH Ventures</li>
                         <li>About</li>
-                        <li>EV4GH 2022</li>
+                        <li>EV4GH 2018</li>
                     </ol>
                 </div>
             </nav>

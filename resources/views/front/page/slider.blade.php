@@ -213,7 +213,7 @@
                      for Global Health has extended the application deadline for the 2026 cohort.
                  </p>
 
-                 <div class="deadline-box">
+                 <div class="deadline-box mb-2">
                      New Deadline: Friday, 10 April 2026 (11 pm GMT+6)
                  </div>
 
