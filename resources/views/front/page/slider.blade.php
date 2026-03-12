@@ -21,7 +21,7 @@
                  </div>
              </div>
              <div class="background"
-                 style="background-image: url('assets/images/index/slider/StatementAnnouncement2.png'); 
+                 style="background-image: url('assets/images/index/slider/StatementAnnouncement3.png'); 
                                 background-size: cover;
                                 background-position: center;
                                 background-repeat: no-repeat;">
