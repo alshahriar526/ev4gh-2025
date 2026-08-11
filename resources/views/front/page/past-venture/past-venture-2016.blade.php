@@ -15,7 +15,6 @@
             background-position: center;
             position: relative;
         }
-
         .breadcrumbs .page-header h2 {
             font-size: 40px;
             font-weight: 500;
@@ -26,7 +25,6 @@
             margin-bottom: 20px;
             word-spacing: 2px;
         }
-
         /* Particles background */
         #particles-js {
             position: absolute;
@@ -36,180 +34,71 @@
             left: 0;
             z-index: 1;
         }
-
         /* Content must stay above particles */
         .header-content {
             position: relative;
             z-index: 2;
         }
-
-        /* .about-text {
-                                                padding-right: 50px;
-                                                text-align: justify;
-                                            } */
-        .about-text {
-            display: flex;
-            flex-direction: column;
-            border-radius: 18px;
-            /* border: 1px solid #eee; */
-            transition: .3s;
-            height: 100%
+        .venue-section {
+            background: #fafafa;
         }
-
-        .about-sec-title {
-            font-size: 24px;
-            color: var(--color-default);
-            font-family: 'nerissemibold';
-            margin-bottom: 20px;
+        .venue-title {
+            font-size: 32px;
+            font-weight: 700;
+            color: #222;
         }
-
-        h3.about-sec-title-h3 {
-            font-size: 20px;
-            color: #000;
-            font-family: 'nerissemibold';
-            margin-bottom: 20px;
-            text-align: left;
-        }
-
-        .about-text p {
-            font-family: var(--text-font);
-            font-size: 15px !important;
-            font-weight: 300;
-            line-height: 20px;
-            color: #6a6f78;
-        }
-
-        .ev-check-list {
-            list-style: none;
-            padding-left: 0;
-        }
-
-        .ev-check-list li {
-            display: flex;
-            /* Align icon and text properly */
-            align-items: flex-start;
-            /* Align icon with the top of the text block */
-            font-size: 16px;
-            line-height: 26px;
-            font-weight: 300;
-            color: #6a6f78;
-            margin-bottom: 20px;
-        }
-
-        .ev-check-list li:last-child {
-            margin-bottom: 0px !important;
-        }
-
-        .ev-check-list li i,
-        .ev-check-list li svg {
-            flex-shrink: 0;
-            /* Prevent icon from shrinking */
-            width: 20px;
-            height: 20px;
-            margin-right: 10px;
-            /* color: #6a6f78; */
-            color: var(--color-default);
-            margin-top: 3px;
-            /* Small adjustment to align with text */
-        }
-
-        .call-for-application-hero {}
-
-        .call-for-application-hero h5 {
-            font-size: 25px;
-            font-weight: 600;
-            margin-bottom: 20px;
-        }
-
-        .call-for-application-hero span {
-            font-size: 20px;
-            color: #003651;
-        }
-    </style>
-    <style>
-        .ev-box {
-            background: #eef4f8;
-            /* Light muted blue-grey background */
-            /* border: 1px solid rgba(0, 0, 0, 0.12); */
-            padding: 30px;
-            border-radius: 14px;
-            box-shadow: 0 4px 10px rgb(0 0 0 / 40%);
-            /* margin-bottom: 40px; */
-        }
-
-        /* Title styles */
-        .about-sec-title,
-        .about-sec-title-h3 {
-            margin-bottom: 18px;
-            font-weight: 600;
-        }
-
-        /* Main list */
-        .ev-check-list {
-            list-style: none;
-            padding-left: 0;
-            margin-left: 0;
-        }
-
-        .ev-check-list>li {
-            position: relative;
-            padding-left: 28px;
-            margin-bottom: 14px;
-            font-size: 15px;
-            line-height: 20px;
-        }
-
-        .ev-check-list>li>i {
-            position: absolute;
-            left: 0;
-            top: 3px;
+        .venue-date {
+            color: #777;
             font-size: 18px;
+            margin-top: 5px;
         }
-
-        /* Nested list icons */
-        .ev-icon i {
-            color: #3ba4d7;
-            font-size: 18px;
-            margin-right: 6px;
-        }
-
-        /* Sub list */
-        .ev-sub-list {
-            list-style: none;
-            margin-top: 12px;
-            padding-left: 20px;
-        }
-
-        .ev-sub-list li {
-            position: relative;
-            padding-left: 22px;
-            margin-bottom: 12px;
-            font-size: 15px;
-            line-height: 20px;
-        }
-
-        .ev-sub-list li i {
-            position: absolute;
-            left: 0;
-            top: 3px;
-            font-size: 14px;
-            color: #3ba4d7;
-        }
-
-        /* Add spacing between columns on desktop */
-        @media (min-width: 768px) {
-            .col-md-6 .ev-box {
-                height: 100%;
-            }
-        }
-
-        .accordion-button:not(.collapsed) {
+        .venue-divider {
+            width: 70px;
+            height: 4px;
             background: #a12d2d;
-            color: #fff;
+            margin: 15px auto 0;
+            border-radius: 5px;
         }
-
-        .accordion-button:focus {
-            box-shadow: none;
+        .venue-card {
+            background: white;
+            padding: 35px;
+            border-radius: 12px;
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+        }
+        .venue-name {
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: #a12d2d;
+        }
+        .venue-info li {
+            margin-bottom: 10px;
+        }
+        .venue-links {
+            margin-top: 20px;
+        }
+        .venue-btn {
+            background: #a12d2d;
+            color: white;
+            border: none;
+            margin-right: 10px;
+            padding: 10px 20px;
+        }
+        .venue-btn:hover {
+            background: #7e1f1f;
+            color: white;
+        }
+        .venue-btn-outline {
+            border: 2px solid #a12d2d;
+            color: #a12d2d;
+            padding: 10px 20px;
+        }
+        .venue-btn-outline:hover {
+            background: #a12d2d;
+            color: white;
+        }
+        .venue-map iframe {
+            border-radius: 10px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
         }
     </style>
 @endsection
@@ -241,422 +130,105 @@
                     <ol>
                         <li><a href="index.html">Home</a></li>
                         <li>EV4GH Ventures</li>
-                        <li>About</li>
                         <li>EV4GH 2016</li>
                     </ol>
                 </div>
             </nav>
         </div>
-        <section id="our-history-section" class="our-history-section">
-            <div class="container p-5">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="about-text">
-                            <h2 class="about-sec-title">About the Emerging Voices for Global Health</h2>
-                            <p>Emerging Voices for Global Health (EV4GH) is an innovative multi-partner blended training
-                                program for young, promising and emerging health policy & systems researchers, decision
-                                makers and other health system actors with an interest to become influential global health
-                                voices and/or local change makers. EV4GH coaches “Emerging Voices” to participate actively
-                                in international conferences where global health issues are addressed and to raise their
-                                voice in scientific and policy debates. EV4GH 2018 tracks for young researchers and other
-                                health system actors The EV4GH programme is managed by an internationally representative
-                                governance committee consisting of EV alumni elected by previous EV4GH participants and a
-                                few invited members from academia (from EV partner institutes, mostly). What is the EV4GH
-                                training? For both tracks, the full EV4GH 2018 venture consists of:</p>
-                            <h2 class="about-sec-title">What is the EV4GH 2022 training program?</h2>
-                            <ol>
-                                <li>&nbsp;E-coaching and distance learning in preparation of a face-to-face training (July –
-                                    Sept 2018)</li>
-                                <li>Face-to-face training: scientific presentation, networking and communication skills
-                                    coaching using innovative formats, and content training &amp; field visit to the
-                                    National Health Service (Liverpool, end of September – 5 October 2018)</li>
-                                <li>Young researchers (&amp; other changemakers’) pre-conference (6 October 2018)</li>
-                                <li>Participation in the Fifth Global Symposium on Health Systems Research (Liverpool, 8-12
-                                    October 2018)</li>
-                                <li>Wrap-up – focusing on Emerging ‘beyond Liverpool’ (Liverpool, 13 October 2018)</li>
-                                <li>Membership of EV4GH network and other thematic working groups of Health Systems Global
-                                </li>
-                            </ol>
-                            <h2 class="about-sec-title">Who can apply?</h2>
-                            <p style="text-align: justify;">There will be two tracks for which participants can apply to be
-                                an EV 2018. While one track is reserved for researchers involved in health policy and
-                                systems research, the other track seeks to attract health professionals, activists, decision
-                                or policy-makers and/or other health systems actors.</p>
-                        </div>
+        <section class="venue-section py-5">
+            <div class="container">
+                <!-- Section Title -->
+                <!-- Section Title -->
+                <div class="row mb-5">
+                    <div class="col-lg-8 mx-auto text-center d-flex flex-column align-items-center justify-content-center">
+                        <h2 class="venue-title">Emerging Voices Training Venue</h2>
+                        <p class="venue-date mt-2" style="color:#800080;"><strong>3 – 11 November 2016</strong></p>
+                        <div class="venue-divider"></div>
                     </div>
                 </div>
-            </div>
-            </div>
-        </section>
-
-
-        <section id="application-materials" class="our-history-section" style=" background: var(--color-ev4gh-gray); ">
-            <style>
-                .info-card {
-                    border: none;
-                    border-radius: 12px;
-                    transition: all .3s ease;
-                    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
-                    height: 100%;
-                }
-
-                .info-card:hover {
-                    transform: translateY(-6px);
-                    box-shadow: 0 18px 35px rgba(0, 0, 0, 0.12);
-                }
-
-                .info-card a {
-                    text-decoration: none;
-                    color: inherit;
-                    display: block;
-                    padding: 30px 20px;
-                }
-
-                .info-icon {
-                    font-size: 42px;
-                    color: #a12d2d;
-                    margin-bottom: 15px;
-                }
-
-                .info-title {
-                    font-weight: 600;
-                    font-size: 18px;
-                    color: #333;
-                }
-            </style>
-            <div class="container py-4">
-                <div class="row justify-content-center g-4">
-                    <!-- Program Information -->
-                    <div class="col-lg-3 col-md-6">
-                        <div class="card info-card text-center">
-                            <a href="https://old.ev4gh.net/wp-content/uploads/2018/02/Emerging-voices-for-global-health-2018.pdf"
-                                target="_blank">
-                                <div class="info-icon">
-                                    <i class="fa-solid fa-circle-info"></i>
-                                </div>
-                                <div class="info-title">Program Information</div>
-                            </a>
+                <div class="row align-items-center g-4">
+                    <!-- Venue Info -->
+                    <div class="col-lg-5">
+                        <div class="venue-card">
+                            <h4 class="venue-name">SANDMAN HOTEL VANCOUVER CITY CENTRE</h4>
+                            <p>
+                                Emerging Voices 2016 will take place at <strong>SANDMAN HOTEL VANCOUVER CITY
+                                    CENTRE</strong>.
+                                This hotel is 9 minutes’ walk from the historic Gastown district’s shopping and dining.
+                            </p>
+                            <ul class="venue-info list-unstyled">
+                                <li><strong>Address:</strong> 180 West Georgia Street, Vancouver BC, V6B 4P4, Canada</li>
+                                <li><strong>Telephone:</strong> +1 604-681-2211</li>
+                            </ul>
+                            <div class="venue-links">
+                                <a target="_blank"
+                                    href="https://www.sandmanhotels.com/locations/british-columbia/vancouver/hotels/vancouver-city-centre-vcc?property=VCC&currency=CAD"
+                                    class="btn venue-btn">Hotel Website</a>
+                                <a target="_blank"
+                                    href="https://www.google.com/maps/place/49%C2%B016'44.3%22N+123%C2%B006'47.4%22W/@49.278974,-123.1153577,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d49.278974!4d-123.113169"
+                                    class="btn venue-btn-outline">Directions from Airport</a>
+                            </div>
                         </div>
                     </div>
-
-                    <!-- FAQs -->
-                    <div class="col-lg-3 col-md-6">
-                        <div class="card info-card text-center">
-                            <a data-bs-toggle="modal" data-bs-target="#faqModal">
-                                <div class="info-icon">
-                                    <i class="fa-solid fa-circle-question"></i>
-                                </div>
-                                <div class="info-title">FAQs</div>
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- Download Call -->
-                    <div class="col-lg-3 col-md-6">
-                        <div class="card info-card text-center">
-                            <a href="https://old.ev4gh.net/wp-content/uploads/2017/11/Call-for-Emerging-Voices-for-Global-Health-2018.pdf"
-                                target="_blank">
-                                <div class="info-icon">
-                                    <i class="fa-solid fa-download"></i>
-                                </div>
-                                <div class="info-title">Download Call</div>
-                            </a>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-            </div>
-        </section>
-        <section id="our-history-section" class="our-history-section" style="background:#fdf1e5">
-            <div class="container p-5">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="about-text">
-                            <h2 class="about-sec-title" style="color:black">The EV4GH 2018 Venture: Timeline</h2>
-                            <img src="{{ asset('assets/images/past-venture/2018/2018-timeline.png') }}" class="img-fluid"
-                                alt="...">
+                    <!-- Map -->
+                    <div class="col-lg-7">
+                        <div class="venue-map">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2602.864104470128!2d-123.11316669999998!3d49.278972200000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDnCsDE2JzQ0LjMiTiAxMjPCsDA2JzQ3LjQiVw!5e0!3m2!1sen!2sbd!4v1773326642477!5m2!1sen!2sbd"
+                                width="100%" height="420" style="border:0;" allowfullscreen="" loading="lazy">
+                            </iframe>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-
-        <div class="modal fade" id="faqModal" tabindex="-1">
-            <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
-                <div class="modal-content">
-
-                    <div class="modal-header">
-                        <h4 class="modal-title fw-bold" style="color:#a12d2d;">EV4GH Frequently Asked Questions</h4>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        <section class="venue-section py-5" style="background:#f9f9f9;">
+            <div class="container">
+                <!-- Section Title -->
+                <div class="row mb-5">
+                    <div class="col-lg-8 mx-auto text-center d-flex flex-column align-items-center justify-content-center">
+                        <h2 class="venue-title">Emerging Voices Pre-conference Venue</h2>
+                        <p class="venue-date mt-2" style="color:#800080;"><strong>12 November 2016</strong></p>
+                        <div class="venue-divider"></div>
                     </div>
-
-                    <div class="modal-body">
-
-                        <div class="accordion" id="faqAccordion">
-
-                            <!-- FAQ 1 -->
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#faq1">
-                                        What is the Emerging voices for global health?
-                                    </button>
-                                </h2>
-
-                                <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
-                                    <div class="accordion-body">
-
-                                        Emerging Voices for Global Health (EV4GH) is an innovative multi-partner blended
-                                        training
-                                        program for young, promising and emerging health policy & systems researchers,
-                                        decision
-                                        makers and other health system actors with an interest to become influential global
-                                        health
-                                        voices and/or local change makers. EV4GH coaches “Emerging Voices” to participate
-                                        actively in international conferences where global health issues are addressed and
-                                        to raise
-                                        their voice in scientific and policy debates.
-
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <!-- FAQ 2 -->
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#faq2">
-                                        What is the EV4GH training?
-                                    </button>
-                                </h2>
-
-                                <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                                    <div class="accordion-body">
-
-                                        <p>The full EV4GH 2018 venture consists of:</p>
-
-                                        <ul>
-                                            <li>E-coaching and distance learning in preparation of a face-to-face training
-                                                (July – Sept 2018)</li>
-                                            <li>Face-to-face training: scientific presentation, networking and communication
-                                                skills coaching using innovative formats, and content training & field visit
-                                                to the National Health Service (Liverpool, end of September – 5 October
-                                                2018)</li>
-                                            <li>Young researchers (& other changemakers’) pre-conference (6 October 2018)
-                                            </li>
-                                            <li>Participation in the Fifth Global Symposium on Health Systems Research
-                                                (Liverpool, 8-12 October 2018)</li>
-                                            <li>Wrap-up – focusing on Emerging ‘beyond Liverpool’ (Liverpool, 13 October
-                                                2018)</li>
-                                            <li>Membership of EV4GH network and other thematic working groups of Health
-                                                Systems Global</li>
-                                        </ul>
-
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <!-- FAQ 3 -->
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#faq3">
-                                        Who can apply?
-                                    </button>
-                                </h2>
-
-                                <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                                    <div class="accordion-body">
-
-                                        There will be two tracks for which participants can apply to be an EV 2018. While
-                                        one track
-                                        is reserved for researchers involved in health policy and systems research, the
-                                        other track
-                                        seeks to attract health professionals, activists, decision or policy-makers and/or
-                                        other
-                                        health systems actors.
-                                        All applicants must have been born on or after 1 January 1978
-
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <!-- FAQ 4 -->
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#faq4">
-                                        Can I apply for both the tracks?
-                                    </button>
-                                </h2>
-
-                                <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                                    <div class="accordion-body">
-
-                                        No! You need to choose only one track that best suits your profile
-
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <!-- FAQ 5 -->
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#faq5">
-                                        Who is eligible for track – 1?
-                                    </button>
-                                </h2>
-
-                                <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                                    <div class="accordion-body">
-
-                                        <p>Applicants must submit an abstract for the Liverpool conference and have at least
-                                            two of the following:</p>
-
-                                        <ul>
-                                            <li>A Master’s degree in health or a health-related field</li>
-                                            <li>Be enrolled in a doctoral-level programme in health or a health-related
-                                                field</li>
-                                            <li>At least two-year work or research experience in public health or
-                                                development</li>
-                                            <li>Experience and/or knowledge from working in LMICs</li>
-                                        </ul>
-
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <!-- FAQ 6 -->
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#faq6">
-                                        Who is eligible for track – 2?
-                                    </button>
-                                </h2>
-
-                                <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                                    <div class="accordion-body">
-
-                                        <p>Applicants must fulfil one of the following:</p>
-
-                                        <ul>
-                                            <li>Be involved in a decision-making, implementation or practitioner role within
-                                                health services or systems</li>
-                                            <li>Be a passionate voice for strengthening health systems within their
-                                                local/national health systems in the role of activists, health journalists
-                                                or patient advocates or otherwise involved in advancing health equity and
-                                                social justice in their regions.</li>
-                                        </ul>
-
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <!-- FAQ 7 -->
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#faq7">
-                                        What should my application focus on?
-                                    </button>
-                                </h2>
-
-                                <div id="faq7" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                                    <div class="accordion-body">
-
-                                        For both tracks, special consideration will be given to people who explicitly
-                                        include the political dimension of health systems and services in their work, and
-                                        challenge power in whatever form, based on good evidence.
-
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <!-- FAQ 8 -->
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#faq8">
-                                        I am from a high-income country, am I still eligible to apply?
-                                    </button>
-                                </h2>
-
-                                <div id="faq8" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                                    <div class="accordion-body">
-
-                                        Yes! EV4GH is open to all. Focus will be on applicants from the Global South
-                                        especially LMICs, but candidates from the global north can also apply (they need to
-                                        have relevant field experience in the global South, though, and work on health
-                                        policy & systems research in the South).
-
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <!-- FAQ 9 -->
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#faq9">
-                                        I have just enrolled for a PhD, am I still eligible to apply?
-                                    </button>
-                                </h2>
-
-                                <div id="faq9" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                                    <div class="accordion-body">
-
-                                        Yes! Please refer to question 6 and if you fulfil at least 2 of the points mentioned
-                                        there you are eligible to apply
-
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <!-- FAQ 10 -->
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#faq10">
-                                        What is covered in the scholarship?
-                                    </button>
-                                </h2>
-
-                                <div id="faq10" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                                    <div class="accordion-body">
-
-                                        <p>
-                                            In case of a full scholarship the travel, accommodation and living expenses for
-                                            the duration of the course is covered and participation in the Health systems
-                                            global symposia from the 8 – 12 October will be covered.
-                                        </p>
-
-                                        <p>
-                                            In case of partial scholarships, some of the above aspects will be covered on
-                                            case to case basis.
-                                        </p>
-
-                                    </div>
-                                </div>
-                            </div>
-
+                </div>
+                <div class="row align-items-center g-4">
+                    <!-- Venue Info -->
+                    <div class="col-lg-5">
+                        <div class="venue-card">
+                            <h4 class="venue-name">SIMON FRASER UNIVERSITY at HARBOUR CENTRE</h4>
+                            <p>515 West Hastings Street, Vancouver, British Columbia V6B 5K3</p>
+                            <p>Telephone: 778.782.5800 <br> Facsimile: 778.782.7621</p>
+                            <p>
+                                <strong>Website: </strong>
+                                <a href="http://www.sfu.ca/mecs/facilities/harbour-centre.html" target="_blank"
+                                    style="color:#00ccff;">Click here</a>
+                            </p>
+                            <p>
+                                For directions to the university:
+                                <a href="https://www.google.com/maps/place/Simon+Fraser+University/@49.2843204,-123.1142917,17z/data=!3m1!4b1!4m5!3m4!1s0x548673e7bde5acdf:0x9f179f886a077be4!8m2!3d49.2843204!4d-123.112103"
+                                    target="_blank" style="color:#00ccff;">click here</a>
+                            </p>
                         </div>
-
+                    </div>
+                    <!-- Venue Image -->
+                    {{-- <div class="col-lg-4">
+                        <div class="venue-image">
+                            <img src="https://old.ev4gh.net/wp-content/uploads/2016/10/Simon-university.jpg"
+                                class="img-fluid rounded shadow" alt="Simon Fraser University">
+                        </div>
+                    </div> --}}
+                    <!-- Google Map -->
+                    <div class="col-lg-7">
+                        <div class="venue-map">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2602.567636541518!2d-123.11146!3d49.284589399999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5486717860837f99%3A0xca38b70b0694419a!2sSimon%20Fraser%20University%20-%20Vancouver%20Campus!5e0!3m2!1sen!2sbd!4v1773327523777!5m2!1sen!2sbd"
+                                width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     </main>
 @endsection
 @section('scripts')

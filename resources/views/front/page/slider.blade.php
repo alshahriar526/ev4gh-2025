@@ -139,6 +139,11 @@
     }
 </style>
 
+
+@section('styles')
+    
+@endsection
+
 <div class="swiper-container main-slider">
     <div class="swiper-wrapper">
         <div class="swiper-slide call-for-application-slider slider1">
@@ -329,8 +334,7 @@
                     </div>
                 </div>
             </div>
-            <div
-                class="background"
+            <div class="background"
                 style="
                     background-image: url(&quot;assets/images/index/slider/call-for-application-red.jpg&quot;);
                     background-size: cover;
@@ -407,8 +411,12 @@
             ></div>
         </div>
     </div>
-
+    <!-- Right Side Vertical Pagination -->
     <div class="swiper-pagination"></div>
+
+    <!-- Left Side Navigation Buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
 </div>
 
 <div class="slider-modal modal fade" id="slider-modal-1" tabindex="-1">

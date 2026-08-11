@@ -1,184 +1,7 @@
 @extends('front.layout.front-master')
 @section('styles')
     <style>
-        @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Salsa&display=swap");
-
-        .swiper-container {
-            width: 100%;
-            height: 100vh;
-            overflow: hidden;
-            background: var(--color-default);
-        }
-
-        .swiper-slide {
-            position: relative;
-            width: 100%;
-            height: 100vh;
-        }
-
-        /* content */
-        #main-slider-section .content {
-            position: absolute;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            top: 30%;
-            /* left: 3%; */
-            width: 40%;
-            height: max-content;
-            color: #f2f2f2;
-            text-align: center;
-            padding-top: 20px;
-            padding-bottom: 20px;
-            opacity: 0;
-            z-index: 2;
-        }
-
-        #main-slider-section .content.slider-style-default {
-            position: absolute;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            top: 30%;
-            left: 3%;
-            width: 40%;
-            height: max-content;
-            color: #f2f2f2;
-            text-align: center;
-            padding: 20px;
-            opacity: 0;
-            z-index: 2;
-        }
-
-        #main-slider-section .content h1 {
-            font-family: "Salsa", cursive;
-            font-size: clamp(1.5rem, 2.5vw, 4.5rem);
-            margin-bottom: 20px;
-            opacity: 0;
-        }
-
-        #main-slider-section .content p {
-            font-family: inherit;
-            font-size: 1.2rem;
-            line-height: 1.4;
-            font-weight: 500;
-            opacity: 0;
-        }
-
-        #main-slider-section .swiper-slide-active .content {
-            opacity: 1;
-        }
-
-        #main-slider-section .swiper-slide-active .content h1 {
-            animation: moveDown 0.8s ease-in forwards;
-        }
-
-        #main-slider-section .swiper-slide-active .content p {
-            animation: moveDown 1s ease-in forwards;
-            animation-delay: 1s;
-        }
-
-        @keyframes moveDown {
-            0% {
-                transform: translateY(-20px);
-                opacity: 0;
-            }
-
-            100% {
-                transform: translateY(0);
-                opacity: 1;
-            }
-        }
-
-        /* background */
-        /* #main-slider-section .background[data-item="one"] {
-                                                                                    background-position: 50% 40%;
-                                                                                } */
-        #main-slider-section .background {
-            position: absolute;
-            inset: 0;
-            width: 100%;
-            height: 100%;
-            clip-path: circle(5%);
-            filter: brightness(90%);
-            overflow: hidden;
-            opacity: 0;
-            z-index: 1;
-            background-size: cover !important;
-            background-repeat: no-repeat !important;
-        }
-
-        #main-slider-section .animation {
-            animation: resizeClipPath 3s ease-in-out forwards;
-        }
-
-        @keyframes resizeClipPath {
-            0% {
-                clip-path: circle(5%);
-                opacity: 0;
-            }
-
-            100% {
-                clip-path: circle(71%);
-                opacity: 1;
-            }
-        }
-
-        /* pagination bullet */
-        #main-slider-section .swiper-pagination-bullet {
-            width: 16px;
-            height: 16px;
-            background-color: #a3a6a3;
-            border-radius: 50%;
-            transition: all 0.6s ease-in-out;
-        }
-
-        #main-slider-section .swiper-pagination-bullet-active {
-            height: 32px;
-            background-image: linear-gradient(180deg, var(--color-support1) 0%, var(--color-default) 100%);
-            border-radius: 14px;
-        }
-
-        /* footer */
-        #main-slider-section .footer {
-            position: absolute;
-            display: flex;
-            justify-content: space-between;
-            column-gap: 20px;
-            bottom: 0;
-            left: 50%;
-            -ms-transform: translate(-50%, 0);
-            transform: translate(-50%, 0);
-            width: max-content;
-            padding: 20px;
-            color: #f2f2f2;
-            border-radius: 8px 8px 0 0;
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            background: rgba(255, 255, 255, 0.1);
-            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-            -webkit-backdrop-filter: blur(20px);
-            backdrop-filter: blur(20px);
-            z-index: 2;
-        }
-
-        #main-slider-section .feature {
-            display: flex;
-            align-items: center;
-            column-gap: 12px;
-        }
-
-        #main-slider-section .feature i {
-            font-size: 1.4rem;
-        }
-
-        #main-slider-section .feature a {
-            color: #f0f8ff;
-            font-size: 1.4rem;
-        }
-
-        #main-slider-section .feature p {
-            font-weight: 700;
-        }
+        
 
         #main-slider-section .btn {
             display: block;
@@ -215,7 +38,7 @@
             right: 30px;
             bottom: 30px;
             z-index: 10;
-            
+
         }
 
         #main-slider-section .ytb-logo img {
@@ -233,170 +56,7 @@
                 width: 80px;
             }
         }
-
-        /* media queries */
-        @media (max-width: 1200px) {
-            #main-slider-section .content {
-                top: 18%;
-            }
-
-            #main-slider-section .content[data-content="two"],
-            #main-slider-section .content[data-content="three"] {
-                top: 5%;
-                width: 50%;
-            }
-        }
-
-        @media (max-width: 900px) {
-
-            #main-slider-section .content,
-            #main-slider-section .content[data-content="three"] {
-                top: 55%;
-                left: 2%;
-                width: 60%;
-            }
-
-            #main-slider-section .content[data-content="two"] {
-                top: 10%;
-            }
-
-            #main-slider-section .content h1 {
-                margin-bottom: 14px;
-            }
-
-            #main-slider-section .content p {
-                font-size: 1rem;
-                line-height: 1.4;
-            }
-
-            #main-slider-section .feature i {
-                font-size: 1.3rem;
-            }
-
-            #main-slider-section .feature p {
-                font-size: 1rem;
-            }
-
-            #main-slider-section .btn {
-                padding: 8px 16px;
-            }
-        }
-
-        @media (max-width: 790px) {
-            #main-slider-section .footer {
-                column-gap: 10px;
-            }
-
-            #main-slider-section .feature i {
-                font-size: 1.1rem;
-            }
-
-            #main-slider-section .feature p {
-                font-size: 0.9rem;
-            }
-
-            #main-slider-section .feature small {
-                font-size: 0.8rem;
-            }
-
-            #main-slider-section .btn {
-                font-size: 0.8rem;
-                padding: 8px 12px;
-            }
-        }
-
-        @media (max-width: 660px) {
-
-            #main-slider-section .content,
-            #main-slider-section .content[data-content="two"],
-            #main-slider-section .content[data-content="three"] {
-                top: unset;
-                left: 2%;
-                bottom: 3%;
-                width: 80%;
-            }
-
-            #main-slider-section .content p {
-                font-size: 0.9rem;
-                line-height: 1.2;
-            }
-
-            #main-slider-section .background[data-item="two"] {
-                background-position: 40% 50%;
-            }
-
-            #main-slider-section .swiper-pagination-bullet {
-                width: 12px;
-                height: 12px;
-            }
-
-            #main-slider-section .swiper-pagination-bullet-active {
-                height: 24px;
-            }
-
-            #main-slider-section .footer {
-                column-gap: 0;
-                left: unset;
-                bottom: unset;
-                top: 20px;
-                right: -30px;
-                padding: 0;
-                border-radius: 0;
-                border: 0;
-                background-color: transparent;
-                box-shadow: unset;
-                -webkit-backdrop-filter: blur(0);
-                backdrop-filter: blur(0);
-            }
-
-            #main-slider-section .feature,
-            hr {
-                display: none;
-            }
-        }
-
-        .call-for-application-slider {}
-
-        .call-for-application-slider h1 {
-            font-size: 32px !important;
-            color: var(--color-default);
-            text-align: left;
-            font-weight: 900;
-            font-family: Poppins, sans-serif !important;
-            margin-bottom: 30px;
-            text-shadow: 2px 2px 0 #bcbcbc, 4px 4px 0 #9c9c9c;
-            line-height: 1;
-        }
-
-        .call-for-application-slider h5 {
-            font-size: 30px !important;
-            color: #000000;
-            text-align: left;
-            font-weight: 500;
-            font-family: Poppins, sans-serif !important;
-            margin-bottom: 30px;
-        }
-
-        .call-for-application-slider p {
-            font-size: 25px !important;
-            color: var(--color-support);
-            text-align: left;
-            font-weight: 900 !important;
-            font-family: Poppins, sans-serif !important;
-            margin-bottom: 30px;
-        }
-
-        .index-page-img-1 img {
-            max-height: 400px;
-            min-height: 400px;
-            max-width: 400px;
-            min-width: 400px;
-        }
-
-        .ev4gh-text-card .ev-btn-1 {
-            margin-top: 10px !important;
-            margin-bottom: 10px !important;
-        }
+        
     </style>
     <style>
         .fb-wrapper {
@@ -640,7 +300,7 @@
     <main id="main">
         <section id="main-slider-section" class="main-slider-section">
             @include('front.page.slider')
-            <div class="footer">
+            {{-- <div class="footer">
                 <div class="feature">
                     <a target="_blank" href="https://www.facebook.com/EV4GH/"><i class="fa-brands fa-facebook-f"></i></a>
                 </div>
@@ -653,9 +313,8 @@
                 <div class="feature">
                     <a href="#ev-footer"><i class="fa-solid fa-envelope"></i></a>
                 </div>
-            </div>
-            <a href="https://www.youtube.com/@ev4ghsecretariat298" target="_blank" class="ytb-logo"><img
-                    src="assets/images/logo/youtube.png" alt="Youtube"></a>
+            </div> --}}
+            <a href="https://www.youtube.com/@ev4ghsecretariat298" target="_blank" class="ytb-logo"><img src="assets/images/logo/youtube.png" alt="Youtube"></a>
         </section>
         <section id="main-hero" class="main-hero">
             <div class="hero-inner-content container">
@@ -761,7 +420,8 @@
                             </div>
                             <h4 class="newsletter-title">Stay Informed</h4>
                             <p>Read Our Latest Newsletter:</p>
-                            <a target="_blank" href="{{ asset('assets/pdf/newsletter/2026/EV4GH Newsletter Spring 2026.pdf') }}"
+                            <a target="_blank"
+                                href="{{ asset('assets/pdf/newsletter/2026/EV4GH Newsletter Spring 2026.pdf') }}"
                                 class="btn ev4gh-newsletter-btn">
                                 Spring 2026
                             </a>
@@ -868,25 +528,33 @@
     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     <script type="module">
         const swiper = new Swiper(".main-slider", {
-            direction: "vertical",
+            // direction: "vertical",
             effect: "fade",
+            fadeEffect: {
+                crossFade: true
+            },
             speed: 1000,
             autoplay: {
-                delay: 15000, // 5 seconds
-                disableOnInteraction: false, // keeps autoplay running after user interacts
+                delay: 15000,
+                disableOnInteraction: false,
             },
             loop: true,
             pagination: {
                 el: ".swiper-pagination",
                 clickable: true,
             },
-            // mousewheel: {
-            //     invert: false,
-            //     forceToAxis: false,
-            //     thresholdDelta: 50,
-            //     sensitivity: 1,
-            // },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
             on: {
+                init: function() {
+                    let activeSlide = this.slides[this.activeIndex];
+                    let background = activeSlide.querySelector(".background");
+                    if (background) {
+                        background.classList.add("animation");
+                    }
+                },
                 slideChange: function() {
                     this.slides.forEach((slide) => {
                         let background = slide.querySelector(".background");
@@ -898,7 +566,7 @@
                     let background = activeSlide.querySelector(".background");
                     if (background) {
                         background.classList.add("animation");
-                    } 
+                    }
                 },
             },
         });
