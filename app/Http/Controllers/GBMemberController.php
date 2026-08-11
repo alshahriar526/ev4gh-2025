@@ -10,12 +10,35 @@ class GBMemberController extends Controller
     /**
      * List all members
      */
-    public function index()
-    {
-        $members = GBMember::orderByRaw("full_name = 'Bachera Aktar, PhD' DESC")->orderBy('full_name', 'ASC')->get();
 
-        return view('front.page.gb_members.index', compact('members'));
+    
+    
+    public function index()
+{
+    $priority = [
+        "Bachera Aktar, PhD",
+        "Germán Andrés Alarcón Garavito",
+        "Soe Yu Naing"
+    ];
+
+    $cases = [];
+    foreach ($priority as $index => $name) {
+        $cases[] = "WHEN full_name = ? THEN $index";
     }
+
+    $caseSql = implode(' ', $cases);
+
+    $members = GBMember::orderByRaw(
+        "CASE $caseSql ELSE " . count($priority) . " END",
+        $priority
+    )
+    ->orderBy('full_name', 'ASC')
+    ->get();
+
+    return view('front.page.gb_members.index', compact('members'));
+}
+    
+    
 
     /**
      * Show one member

@@ -11,7 +11,7 @@
                     BRAC James P Grant School of Public Health, BRAC University.  
                 </p> --}}
 
-                <div class="footer-social">
+                <div class="footer-social mb-4">
                     <a target="_blank" href="https://www.linkedin.com/company/ev4gh" class="social-icon"><i
                             class="fab fa-linkedin-in"></i></a>
                     <a target="_blank" href="https://www.facebook.com/EV4GH/" class="social-icon"><i
@@ -21,7 +21,10 @@
                     <a target="_blank" href="https://www.youtube.com/@ev4ghsecretariat298" class="social-icon"><i
                             class="fab fa-youtube"></i></a>
                 </div>
+                <!--<a href="#XUEXSECN" class="my-navbar-donate-btn my-2">Donate Now</a>-->
             </div>
+            
+            
 
             <!-- Contact -->
             <div class="col-md-6 mb-4">

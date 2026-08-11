@@ -92,8 +92,8 @@
 
         /* background */
         /* #main-slider-section .background[data-item="one"] {
-                                                                            background-position: 50% 40%;
-                                                                        } */
+                                                                                    background-position: 50% 40%;
+                                                                                } */
         #main-slider-section .background {
             position: absolute;
             inset: 0;
@@ -212,13 +212,14 @@
 
         #main-slider-section .ytb-logo {
             position: fixed;
-            right: 0px;
-            bottom: 0px;
+            right: 30px;
+            bottom: 30px;
             z-index: 10;
+            
         }
 
         #main-slider-section .ytb-logo img {
-            width: 110px;
+            width: 50px;
             filter: drop-shadow(5px 6px 6px #000000);
         }
 
@@ -357,14 +358,14 @@
         .call-for-application-slider {}
 
         .call-for-application-slider h1 {
-            font-size: 45px !important;
+            font-size: 32px !important;
             color: var(--color-default);
             text-align: left;
             font-weight: 900;
             font-family: Poppins, sans-serif !important;
             margin-bottom: 30px;
             text-shadow: 2px 2px 0 #bcbcbc, 4px 4px 0 #9c9c9c;
-            line-height: 1.3;
+            line-height: 1;
         }
 
         .call-for-application-slider h5 {
@@ -541,96 +542,98 @@
 
 
         /* --- Visual Separator --- */
-.ev4gh-separator {
-    text-align: center;
-    position: relative;
-    border-bottom: 1px solid #dcdcdc;
-    margin-bottom: 20px;
-}
+        .ev4gh-separator {
+            text-align: center;
+            position: relative;
+            border-bottom: 1px solid #dcdcdc;
+            margin-bottom: 20px;
+        }
 
-.ev4gh-separator span {
-    background: #f4f4f4; /* Match section background */
-    padding: 0 20px;
-    position: relative;
-    top: 12px;
-    color: #888;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-size: 0.85rem;
-}
+        .ev4gh-separator span {
+            background: #f4f4f4;
+            /* Match section background */
+            padding: 0 20px;
+            position: relative;
+            top: 12px;
+            color: #888;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 0.85rem;
+        }
 
-/* --- Social & Newsletter Row Styles --- */
-.social-widget-card {
-    background: #fff;
-    border-radius: 15px;
-    overflow: hidden;
-    height: 480px; /* Fixed height for symmetry */
-    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-    border: 1px solid #eee;
-}
+        /* --- Social & Newsletter Row Styles --- */
+        .social-widget-card {
+            background: #fff;
+            border-radius: 15px;
+            overflow: hidden;
+            height: 480px;
+            /* Fixed height for symmetry */
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            border: 1px solid #eee;
+        }
 
-/* Specific Newsletter Design */
-.ev4gh-newsletter-card {
-    background: linear-gradient(135deg, var(--color-support1), #0a4d4e);
-    color: white;
-    padding: 40px 30px;
-    border-radius: 15px;
-    height: 480px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transition: transform 0.3s ease;
-}
+        /* Specific Newsletter Design */
+        .ev4gh-newsletter-card {
+            background: linear-gradient(135deg, var(--color-support1), #0a4d4e);
+            color: white;
+            padding: 40px 30px;
+            border-radius: 15px;
+            height: 480px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.3s ease;
+        }
 
-.ev4gh-newsletter-card:hover {
-    transform: scale(1.02);
-}
+        .ev4gh-newsletter-card:hover {
+            transform: scale(1.02);
+        }
 
-.newsletter-icon {
-    width: 80px;
-    height: 80px;
-    background: rgba(255,255,255,0.1);
-    border-radius: 50%;
-    padding: 15px;
-    margin-bottom: 20px;
-}
+        .newsletter-icon {
+            width: 80px;
+            height: 80px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
 
-.newsletter-icon img {
-    width: 100%;
-    filter: brightness(0) invert(1);
-}
+        .newsletter-icon img {
+            width: 100%;
+            filter: brightness(0) invert(1);
+        }
 
-.newsletter-title {
-    font-weight: 800;
-    margin-bottom: 10px;
-}
+        .newsletter-title {
+            font-weight: 800;
+            margin-bottom: 10px;
+        }
 
-.ev4gh-newsletter-btn {
-    background: var(--color-default);
-    color: white !important;
-    border: none;
-    padding: 12px 20px;
-    border-radius: 8px;
-    font-weight: 700;
-    margin-top: 20px;
-    box-shadow: 0 4px 15px rgba(228, 0, 0, 0.3);
-    transition: all 0.3s ease;
-}
+        .ev4gh-newsletter-btn {
+            background: var(--color-default);
+            color: white !important;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 8px;
+            font-weight: 700;
+            margin-top: 20px;
+            box-shadow: 0 4px 15px rgba(228, 0, 0, 0.3);
+            transition: all 0.3s ease;
+        }
 
-.ev4gh-newsletter-btn:hover {
-    background: white;
-    color: var(--color-default) !important;
-}
+        .ev4gh-newsletter-btn:hover {
+            background: white;
+            color: var(--color-default) !important;
+        }
 
-/* Twitter/FB Wrappers to fix scrolling */
-.fb-wrapper, .twitter-wrapper {
-    width: 100%;
-    height: 100%;
-    overflow-y: auto;
-}
-
+        /* Twitter/FB Wrappers to fix scrolling */
+        .fb-wrapper,
+        .twitter-wrapper {
+            width: 100%;
+            height: 100%;
+            overflow-y: auto;
+        }
     </style>
 @endsection
 @section('content')
@@ -652,7 +655,7 @@
                 </div>
             </div>
             <a href="https://www.youtube.com/@ev4ghsecretariat298" target="_blank" class="ytb-logo"><img
-                    src="https://assets.codepen.io/9868786/youtube.webp" alt="HTML tutorial"></a>
+                    src="assets/images/logo/youtube.png" alt="Youtube"></a>
         </section>
         <section id="main-hero" class="main-hero">
             <div class="hero-inner-content container">
@@ -687,91 +690,156 @@
                         </div>
                     </div>
                     <div class="col-md-5  text-center">
-                        
-                        <img class="rounded-pill shadow-lg border border-5 border-white img-fluid" style="max-height: 450px;" src="assets/images/index/2.jpg" alt="EV4GH Image">
-                   
+
+                        <img class="rounded-pill shadow-lg border border-5 border-white img-fluid"
+                            style="max-height: 450px;" src="assets/images/index/2.jpg" alt="EV4GH Image">
+
                     </div>
 
                 </div>
             </div>
         </section>
 
-        <section id="ev4gh-section-latest" class="ev4gh-section ev4gh-section-latest" style="background: #f4f4f4; padding: 80px 0;">
-    <div class="container">
-        
-        <div class="row mb-5">
-            <div class="col-md-12 text-center">
-                <div class="section-heading">
-                    <h1 style="font-weight: 900;">News <span style="color: var(--color-default);">&</span> Events</h1>
-                </div>
-            </div>
-        </div>
+        <section id="ev4gh-section-latest" class="ev4gh-section ev4gh-section-latest"
+            style="background: #f4f4f4; padding: 80px 0;">
+            <div class="container">
 
-        <div class="row justify-content-center news-row">
-            @foreach ($newsEvents as $news)
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="ev4gh-news-event-card">
-                        <div class="card-image-wrapper">
-                            <img src="{{ asset($news->image) }}" alt="{{ $news->title }}">
-                            <div class="card-category">{{ $news->type }}</div>
-                        </div>
-                        <div class="card-content">
-                            <h3 class="card-title">{!! $news->title !!}</h3>
-                            @if ($news->link)
-                                <a href="{{ $news->link }}" class="card-link" target="_blank">
-                                    {{ $news->button_text ?? 'Learn More' }} <span class="arrow">→</span>
-                                </a>
-                            @endif
+                <div class="row mb-5">
+                    <div class="col-md-12 text-center">
+                        <div class="section-heading">
+                            <h1 style="font-weight: 900;">News <span style="color: var(--color-default);">&</span> Events
+                            </h1>
                         </div>
                     </div>
                 </div>
-            @endforeach
-        </div>
 
-        <div class="row my-5">
-            <div class="col-12">
-                <div class="ev4gh-separator">
-                    <span>Stay Connected</span>
+                <div class="row justify-content-center news-row">
+                    @foreach ($newsEvents as $news)
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="ev4gh-news-event-card">
+                                <div class="card-image-wrapper">
+                                    <img src="{{ asset($news->image) }}" alt="{{ $news->title }}">
+                                    <div class="card-category">{{ $news->type }}</div>
+                                </div>
+                                <div class="card-content">
+                                    <h3 class="card-title">{!! $news->title !!}</h3>
+                                    @if ($news->link)
+                                        <a href="{{ $news->link }}" class="card-link" target="_blank">
+                                            {{ $news->button_text ?? 'Learn More' }} <span class="arrow">→</span>
+                                        </a>
+                                    @endif
+                                </div>
+                            </div>
+                        </div>
+                    @endforeach
                 </div>
-            </div>
-        </div>
 
-        <div class="row justify-content-center default-news-row">
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="social-widget-card fb-card">
-                    <div class="fb-wrapper">
-                        <div class="fb-page" data-href="https://www.facebook.com/EV4GH/" data-tabs="timeline"
-                            data-width="500" data-height="450" data-small-header="true"
-                            data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                <div class="row my-5">
+                    <div class="col-12">
+                        <div class="ev4gh-separator">
+                            <span>Stay Connected</span>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="ev4gh-newsletter-card text-center">
-                    <div class="newsletter-icon">
-                        <img src="assets/images/newsletter-svgrepo-com.svg" alt="newsletter">
+                <div class="row justify-content-center default-news-row">
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="social-widget-card fb-card">
+                            <div class="fb-wrapper">
+                                <div class="fb-page" data-href="https://www.facebook.com/EV4GH/" data-tabs="timeline"
+                                    data-width="500" data-height="450" data-small-header="true"
+                                    data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <h4 class="newsletter-title">Stay Informed</h4>
-                    <p>Read Our Latest Newsletter:</p>
-                    <a href="{{ asset('assets/pdf/newsletter/2025/News Letter Design Final Version 23_06_2025-1.pdf') }}"
-                        class="btn ev4gh-newsletter-btn">
-                        EV Newsletter May-June 2025
-                    </a>
-                </div>
-            </div>
-            
-            {{-- <div class="col-lg-4 col-md-6 mb-4">
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="ev4gh-newsletter-card text-center">
+                            <div class="newsletter-icon">
+                                <img src="assets/images/newsletter-svgrepo-com.svg" alt="newsletter">
+                            </div>
+                            <h4 class="newsletter-title">Stay Informed</h4>
+                            <p>Read Our Latest Newsletter:</p>
+                            <a target="_blank" href="{{ asset('assets/pdf/newsletter/2026/EV4GH Newsletter Spring 2026.pdf') }}"
+                                class="btn ev4gh-newsletter-btn">
+                                Spring 2026
+                            </a>
+                        </div>
+                    </div>
+
+                    {{-- <div class="col-lg-4 col-md-6 mb-4">
                 <div class="social-widget-card tw-card">
                     <div class="twitter-wrapper">
                         <a class="twitter-timeline" data-width="700" data-height="400" data-theme="light" href="https://twitter.com/ev4gh?ref_src=twsrc%5Etfw">Tweets by ev4gh</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                     </div>
                 </div>
             </div> --}}
-        </div>
-    </div>
-</section>
+                </div>
+            </div>
+        </section>
+
+        <section id="ev4gh-alumni" class="ev4gh-section py-5" style="background:#fff;">
+            <div class="container">
+
+                <!-- Heading -->
+                <div class="row mb-5">
+                    <div class="col-md-12 text-center">
+                        <h1 style="font-weight:900;">
+                            Hear From Our <span style="color: var(--color-default);">Alumni</span>
+                        </h1>
+
+                    </div>
+                </div>
+
+                <!-- Video Cards -->
+                <div class="row justify-content-center">
+
+                    <!-- Video 1 -->
+
+                    <div class="col-lg-5 col-md-6 mb-4">
+                        <div class="card shadow-sm border-0 h-100" style="border-radius:15px; overflow:hidden;">
+
+                            <div class="ratio ratio-16x9">
+                                <iframe
+                                    src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fweb.facebook.com%2Freel%2F1688215995506167%2F&show_text=false&width=560&t=0"
+                                    width="560" height="314" style="border:none;overflow:hidden" scrolling="no"
+                                    frameborder="0" allowfullscreen="true"
+                                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                                    allowFullScreen="true"></iframe>
+                            </div>
+
+                            <div class="p-3">
+                                <h5 style="font-weight:700;">Sara Dada</h5>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Video 2 -->
+                    <div class="col-lg-5 col-md-6 mb-4">
+                        <div class="card shadow-sm border-0 h-100" style="border-radius:15px; overflow:hidden;">
+
+                            <div class="ratio ratio-16x9">
+                                <iframe
+                                    src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fweb.facebook.com%2Freel%2F1253921536137435%2F&show_text=false&width=560&t=0"
+                                    width="560" height="314" style="border:none;overflow:hidden" scrolling="no"
+                                    frameborder="0" allowfullscreen="true"
+                                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                                    allowFullScreen="true"></iframe>
+                            </div>
+
+                            <div class="p-3">
+                                <h5 style="font-weight:700;">Motto Nganda</h5>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
 
 
@@ -830,7 +898,7 @@
                     let background = activeSlide.querySelector(".background");
                     if (background) {
                         background.classList.add("animation");
-                    }
+                    } 
                 },
             },
         });
@@ -867,11 +935,11 @@
                 },
             }).mount();
         }
-    </script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
+
+
+        /* document.addEventListener("DOMContentLoaded", function() {
             var popup = new bootstrap.Modal(document.getElementById('imagePopup'));
             popup.show();
-        });
+        }); */
     </script>
 @endsection

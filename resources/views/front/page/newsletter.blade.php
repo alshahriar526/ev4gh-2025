@@ -199,6 +199,29 @@
         <section class="newsletter-section">
             <div class="container">
                 <div class="row justify-content-center g-4">
+                    
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="newsletter-card card h-100">
+                            <div class="card-body text-center p-5 d-flex flex-column">
+                                <div>
+                                    <div class="icon-box">
+                                        <i class="fa-regular fa-envelope env-icon env-closed"></i>
+                                        <i class="fa-solid fa-envelope-open-text env-icon env-open"></i>
+                                    </div>
+                                    <h5 class="card-title">Spring 2026</h5>
+                                  
+                                </div>
+                                
+                                <div class="read-more-text mt-auto">
+                                    <span>Read PDF</span>
+                                    <i class="fa-solid fa-arrow-right arrow-icon"></i>
+                                </div>
+                                <a class="stretched-link" target="_blank"  href="{{asset('assets/pdf/newsletter/2026/EV4GH Newsletter Spring 2026.pdf')}}">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
                     <div class="col-12 col-md-6 col-lg-4">
                         <div class="newsletter-card card h-100">
                             <div class="card-body text-center p-5 d-flex flex-column">

@@ -809,7 +809,7 @@
                             </div>
                         </div>
                         <div class="timeline-content">
-                            <p class="description">Navigating through the challenges posed by COVIS-19 pandemic in
+                            <p class="description">Navigating through the challenges posed by COVID-19 pandemic in
                                 2020, the EV2020 venture took place in 2021 in Dubai in November 2021 with support from
                                 Mohammed Bin Rashid School of Government, Dubai. 14 new Emerging Voices from around the
                                 world travelled to Dubai to attend the EV4GH 2020 edition in person, with others joined

@@ -80,6 +80,12 @@
             width: 100%;
         }
 
+
+        .member-content .bio_info p{
+             margin-bottom: 20px !important; 
+        }
+        
+        
         #board-members .member-info .member-name {
             font-size: 22px;
             color: var(--color-default);
@@ -236,7 +242,7 @@
                                             <div class="member-content">
 
                                                 <hr style="border-color: rgba(255,255,255,0.4);">
-                                                <p style=" font-size:16px; line-height:1.7;">{{ $m->short_bio }}</p>
+                                                <p class="bio_info" style=" font-size:16px; line-height:1.7;">{!! $m->short_bio !!}</p>
                                             </div>
 
                                         </div>

@@ -71,6 +71,10 @@
                 </ul>
             </li> --}}
             <!-- <li><a href="#contact">Contact</a></li> -->
+             <li><a href="#XUEXSECN" style="display: none"></a></li> 
+             
+            
+            
             </ul>
         </nav><!-- .navbar -->
         {{-- <i class="mobile-nav-toggle mobile-nav-show bi bi-list">rrr</i>
