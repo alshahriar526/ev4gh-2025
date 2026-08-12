@@ -739,34 +739,6 @@ section#main-hero .hero-inner-content .figure {
   filter: drop-shadow(5px 6px 6px #000000);
 }
 
-.call-for-application-slider h1 {
-  font-size: 32px !important;
-  color: var(--color-default);
-  text-align: left;
-  font-weight: 900;
-  font-family: var(--font-primary) !important;
-  margin-bottom: 30px;
-  text-shadow: 2px 2px 0 #bcbcbc, 4px 4px 0 #9c9c9c;
-  line-height: 1;
-}
-
-.call-for-application-slider h5 {
-  font-size: 30px !important;
-  color: #000;
-  text-align: left;
-  font-weight: 500;
-  font-family: var(--font-primary) !important;
-  margin-bottom: 30px;
-}
-
-.call-for-application-slider p {
-  font-size: 25px !important;
-  color: var(--color-support);
-  text-align: left;
-  font-weight: 900 !important;
-  font-family: var(--font-primary) !important;
-  margin-bottom: 30px;
-}
 
 .index-page-img-1 img {
   max-height: 400px;

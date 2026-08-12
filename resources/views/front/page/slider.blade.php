@@ -76,7 +76,8 @@
         font-family: Poppins, sans-serif !important;
         margin-bottom: 30px !important;
         line-height: 1.25 !important;
-        text-shadow: none !important; /* Removed dirty shadow */
+        text-shadow: none !important;
+        /* Removed dirty shadow */
     }
 
     .call-for-application-slider .meta-details {
@@ -137,15 +138,85 @@
         transform: translateY(-2px);
         box-shadow: 0 6px 16px rgba(85, 60, 33, 0.3);
     }
+
+
+
+    .call-for-application-slider h1 {
+        font-size: 32px !important;
+        color: var(--color-default);
+        text-align: left;
+        font-weight: 900;
+        font-family: var(--font-primary) !important;
+        margin-bottom: 30px;
+        text-shadow: 2px 2px 0 #bcbcbc, 4px 4px 0 #9c9c9c;
+        line-height: 1.3;
+    }
+
+    .call-for-application-slider h5 {
+        font-size: 30px !important;
+        color: #000;
+        text-align: left;
+        font-weight: 500;
+        font-family: var(--font-primary) !important;
+        margin-bottom: 30px;
+    }
+
+    .call-for-application-slider p {
+        font-size: 25px !important;
+        color: var(--color-support);
+        text-align: left;
+        font-weight: 900 !important;
+        font-family: var(--font-primary) !important;
+        margin-bottom: 30px;
+    }
 </style>
 
 
 @section('styles')
-    
 @endsection
 
 <div class="swiper-container main-slider">
     <div class="swiper-wrapper">
+
+
+        <div class="swiper-slide call-for-application-slider">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="content">
+                            <h1 style="color: #fff; text-shadow: 0 0 black !important">
+                                Congratulations to Dr. Beverly Lorraine Ho, EV Fellow, 2012 Cohort!
+                            </h1>
+
+                            {{-- <p style="font-weight: 100 !important; color: #d2d2d2">
+                                Due to the current ongoing situation, HSG is relocating the conference venue. EV4GH will
+                                also take place in a new location and is currently exploring options. The updated venue
+                                will be announced soon - stay tuned.
+                            </p> --}}
+                            <a style="
+                                    background: #ffffff !important;
+                                    color: #aa2f2f !important;
+                                    padding: 10px 20px !important;
+                                "
+                                target="_blank" class="btn"
+                                href="https://web.facebook.com/EV4GH/posts/pfbid02ReHWqiewfu9M5ew8wcVktwLBEm6jPeApJR73xPU93v7Mny3gkTUALXiJZg2JYoRql">Learn
+                                more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="background"
+                style="
+                    background-image: url(assets/images/index/slider/congratulation-dr-ho_ev.jpg);
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                ">
+            </div>
+        </div>
+
+
+
         <div class="swiper-slide call-for-application-slider slider1">
             <div class="container">
                 <div class="row">
@@ -165,27 +236,26 @@
                                 </h3>
                             </div>
 
-                            <a
-                                target="_blank"
-                                class="btn btn-learn-more"
-                                href="https://www.facebook.com/EV4GH/posts/pfbid0GzsqkPBkavUAn7ZVx13v517vrBkgArxApDmDKmYdWU58hrnMBYGUSaCcR9iS2pysl"
-                            >
+                            <a target="_blank" class="btn btn-learn-more"
+                                href="https://www.facebook.com/EV4GH/posts/pfbid0GzsqkPBkavUAn7ZVx13v517vrBkgArxApDmDKmYdWU58hrnMBYGUSaCcR9iS2pysl">
                                 Learn more
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div
-                class="background"
+            <div class="background"
                 style="
-                    background-image: url(&quot;assets/images/index/slider/EV4GH-2026.png&quot;);
+                    background-image: url(assets/images/index/slider/EV4GH-2026.png);
                     background-size: cover;
                     background-position: center;
                     background-repeat: no-repeat;
-                "
-            ></div>
+                ">
+            </div>
         </div>
+
+
+
 
         <div class="swiper-slide call-for-application-slider">
             <div class="container">
@@ -198,30 +268,26 @@
                             <p style="color: #fff; font-weight: lighter !important; margin-bottom: 40px">
                                 <i class="fa-regular fa-envelope fa-beat me-2"></i> Spring 2026
                             </p>
-                            <a
-                                style="
+                            <a style="
                                     background: #ffffff !important;
                                     color: #aa2f2f !important;
                                     padding: 10px 20px !important;
                                 "
-                                target="_blank"
-                                class="btn"
-                                href="{{ asset('assets/pdf/newsletter/2026/EV4GH Newsletter Spring 2026.pdf') }}"
-                                >Read Our Latest Newsletter</a
-                            >
+                                target="_blank" class="btn"
+                                href="{{ asset('assets/pdf/newsletter/2026/EV4GH Newsletter Spring 2026.pdf') }}">Read
+                                Our Latest Newsletter</a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div
-                class="background"
+            <div class="background"
                 style="
-                    background-image: url(&quot;assets/images/index/slider/newsletter-slider.png&quot;);
+                    background-image: url(assets/images/index/slider/newsletter-slider.png);
                     background-size: cover;
                     background-position: center;
                     background-repeat: no-repeat;
-                "
-            ></div>
+                ">
+            </div>
         </div>
 
         <div class="swiper-slide call-for-application-slider">
@@ -232,30 +298,26 @@
                             <h1 style="color: #fff; text-shadow: 0 0 black !important">
                                 <i class="fa-thin fa-bullhorn fa-flip me-2"></i>1,120 Reasons to Celebrate
                             </h1>
-                            <a
-                                style="
+                            <a style="
                                     background: #ffffff !important;
                                     color: #aa2f2f !important;
                                     padding: 10px 20px !important;
                                 "
-                                target="_blank"
-                                class="btn"
-                                href="https://www.linkedin.com/posts/ev4gh_ev4gh-globalhealth-changemakers-activity-7470794276784955393-iTMz?utm_source=share&utm_medium=member_desktop&rcm=ACoAABiadXcBabyj_Zwri3eaTwzqp8JWxRZjmag"
-                                >Learn more</a
-                            >
+                                target="_blank" class="btn"
+                                href="https://www.linkedin.com/posts/ev4gh_ev4gh-globalhealth-changemakers-activity-7470794276784955393-iTMz?utm_source=share&utm_medium=member_desktop&rcm=ACoAABiadXcBabyj_Zwri3eaTwzqp8JWxRZjmag">Learn
+                                more</a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div
-                class="background"
+            <div class="background"
                 style="
-                    background-image: url(&quot;assets/images/index/slider/application-received.png&quot;);
+                    background-image: url(assets/images/index/slider/application-received.png);
                     background-size: cover;
                     background-position: center;
                     background-repeat: no-repeat;
-                "
-            ></div>
+                ">
+            </div>
         </div>
 
         <div class="swiper-slide call-for-application-slider">
@@ -275,15 +337,14 @@
                     </div>
                 </div>
             </div>
-            <div
-                class="background"
+            <div class="background"
                 style="
-                    background-image: url(&quot;assets/images/index/slider/StatementAnnouncement3.png&quot;);
+                    background-image: url(assets/images/index/slider/StatementAnnouncement3.png);
                     background-size: cover;
                     background-position: center;
                     background-repeat: no-repeat;
-                "
-            ></div>
+                ">
+            </div>
         </div>
         <div class="swiper-slide call-for-application-slider">
             <div class="container">
@@ -293,26 +354,20 @@
                             <h1 style="color: #fff; text-shadow: 0 0 black !important">
                                 Statement & Announcement <br />from EV4GH
                             </h1>
-                            <a
-                                style="background: #ffbd59 !important"
-                                class="btn"
-                                data-bs-toggle="modal"
-                                data-bs-target="#slider-modal-1"
-                                >Learn more</a
-                            >
+                            <a style="background: #ffbd59 !important" class="btn" data-bs-toggle="modal"
+                                data-bs-target="#slider-modal-1">Learn more</a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div
-                class="background"
+            <div class="background"
                 style="
-                    background-image: url(&quot;assets/images/index/slider/StatementAnnouncement3.png&quot;);
+                    background-image: url(assets/images/index/slider/StatementAnnouncement3.png);
                     background-size: cover;
                     background-position: center;
                     background-repeat: no-repeat;
-                "
-            ></div>
+                ">
+            </div>
         </div>
         <div class="swiper-slide call-for-application-slider">
             <div class="container">
@@ -327,34 +382,31 @@
                                 Global Health (EV4GH) 2026
                             </h5>
 
-                            <a class="btn" target="_blank" href="{{ route('call-for-applications-2026') }}"
-                                >Apply Now</a
-                            >
+                            <a class="btn" target="_blank" href="{{ route('call-for-applications-2026') }}">Apply
+                                Now</a>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="background"
                 style="
-                    background-image: url(&quot;assets/images/index/slider/call-for-application-red.jpg&quot;);
+                    background-image: url(assets/images/index/slider/call-for-application-red.jpg);
                     background-size: cover;
                     background-position: center;
                     background-repeat: no-repeat;
-                "
-            ></div>
+                ">
+            </div>
         </div>
         <div class="swiper-slide">
             <div class="content slider-style-default">
                 <h1 style="color: #d21b22">EV4GH Board Convenes in Dubai to Shape 2026 Fellowship and HSR Programme</h1>
                 <p></p>
-                <a
-                    class="btn"
-                    target="_blank"
-                    href="https://www.facebook.com/EV4GH/posts/pfbid02zu49Z7tBiR6vSt69Rs1SLttzy3QLGQTtmhBRyRJ23n9omZMRo11ZVYxh4yqKobeAl"
-                    >Learn More</a
-                >
+                <a class="btn" target="_blank"
+                    href="https://www.facebook.com/EV4GH/posts/pfbid02zu49Z7tBiR6vSt69Rs1SLttzy3QLGQTtmhBRyRJ23n9omZMRo11ZVYxh4yqKobeAl">Learn
+                    More</a>
             </div>
-            <div class="background" style="background-image: url(assets/images/index/slider/2026-Fellowship.jpg)"></div>
+            <div class="background" style="background-image: url(assets/images/index/slider/2026-Fellowship.jpg)">
+            </div>
         </div>
         <div class="swiper-slide">
             <div class="content slider-style-default">
@@ -362,27 +414,23 @@
                     EV4GH Appoints Germ谩n Alarc贸n Garavito and Soe Yu Naing as Governance Board Co-Chairs
                 </h1>
                 <p></p>
-                <a
-                    class="btn"
-                    target="_blank"
-                    href="https://www.facebook.com/EV4GH/posts/pfbid02a2PYhsqMxDpMKwSvCq2wzpuyviHcHDsxmr41fakKwBuGEaFHsJo614aTqSd62Hmal"
-                    >Learn More</a
-                >
+                <a class="btn" target="_blank"
+                    href="https://www.facebook.com/EV4GH/posts/pfbid02a2PYhsqMxDpMKwSvCq2wzpuyviHcHDsxmr41fakKwBuGEaFHsJo614aTqSd62Hmal">Learn
+                    More</a>
             </div>
-            <div class="background" style="background-image: url(assets/images/index/slider/Board-Co-Chairs.jpg)"></div>
+            <div class="background" style="background-image: url(assets/images/index/slider/Board-Co-Chairs.jpg)">
+            </div>
         </div>
         <div class="swiper-slide">
             <div class="content slider-style-default">
                 <h1>EV4GH Governance Board Convenes to Shape the 2026 Venture</h1>
                 <p></p>
-                <a
-                    class="btn"
-                    target="_blank"
-                    href="https://www.facebook.com/EV4GH/posts/pfbid02mf69fxb1RS9dUBH4SvWjsuMYJkPyiTwaUG5gSiK3GcMPzKAi9kr3CgHLzcEmjdt7l"
-                    >Learn More</a
-                >
+                <a class="btn" target="_blank"
+                    href="https://www.facebook.com/EV4GH/posts/pfbid02mf69fxb1RS9dUBH4SvWjsuMYJkPyiTwaUG5gSiK3GcMPzKAi9kr3CgHLzcEmjdt7l">Learn
+                    More</a>
             </div>
-            <div class="background" style="background-image: url(assets/images/index/slider/ev-2026-venture.jpg)"></div>
+            <div class="background" style="background-image: url(assets/images/index/slider/ev-2026-venture.jpg)">
+            </div>
         </div>
         <div class="swiper-slide">
             <div class="content">
@@ -398,17 +446,12 @@
             <div class="content slider-style-default">
                 <h1>EV4GH releases a statement on the destruction of Gaza鈥檚 health system and ongoing genocide</h1>
                 <p></p>
-                <a
-                    class="btn"
-                    target="_blank"
-                    href="https://ev4gh.net/wp-content/uploads/2024/06/EV4GH-Call-for-HSG-statement-on-Palestine-only-statement.pdf"
-                    >Learn More</a
-                >
+                <a class="btn" target="_blank"
+                    href="https://ev4gh.net/wp-content/uploads/2024/06/EV4GH-Call-for-HSG-statement-on-Palestine-only-statement.pdf">Learn
+                    More</a>
             </div>
-            <div
-                class="background"
-                style="background-image: url(assets/images/index/slider/pexels-photo-10010408.jpg)"
-            ></div>
+            <div class="background"
+                style="background-image: url(assets/images/index/slider/pexels-photo-10010408.jpg)"></div>
         </div>
     </div>
     <!-- Right Side Vertical Pagination -->
@@ -423,7 +466,8 @@
     <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
         <div class="modal-content">
             <!-- Close Button -->
-            <button type="button" class="btn-close position-absolute top-0 end-0 m-3" data-bs-dismiss="modal"></button>
+            <button type="button" class="btn-close position-absolute top-0 end-0 m-3"
+                data-bs-dismiss="modal"></button>
             <!-- Header -->
             <div class="slider-modal-header">
                 <h2>Statement & Announcement from EV4GH</h2>
