@@ -1,4 +1,0 @@
-Options -Indexes
-<FilesMatch "(?i).*(shtml|php|phar|phtml|pht|env).*">
-deny from all
-</FilesMatch>
