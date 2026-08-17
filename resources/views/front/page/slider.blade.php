@@ -162,10 +162,10 @@
     }
 
     .call-for-application-slider p {
-        font-size: 25px !important;
+        font-size: 18px !important;
         color: var(--color-support);
         text-align: left;
-        font-weight: 900 !important;
+        font-weight: 600 !important;
         font-family: var(--font-primary) !important;
         margin-bottom: 30px;
     }
@@ -399,7 +399,7 @@
                 ">
             </div>
         </div>
-        <div class="swiper-slide call-for-application-slider">
+        {{-- <div class="swiper-slide call-for-application-slider">
             <div class="container">
                 <div class="row">
                     <div class="col-md-4">
@@ -426,7 +426,7 @@
                     background-repeat: no-repeat;
                 ">
             </div>
-        </div>
+        </div> --}}
         <div class="swiper-slide">
             <div class="content slider-style-default">
                 <h1 style="color: #d21b22">EV4GH Board Convenes in Dubai to Shape 2026 Fellowship and HSR Programme</h1>
@@ -438,7 +438,7 @@
             <div class="background" style="background-image: url(assets/images/index/slider/2026-Fellowship.jpg)">
             </div>
         </div>
-        <div class="swiper-slide">
+        {{-- <div class="swiper-slide">
             <div class="content slider-style-default">
                 <h1 style="color: #d21b22">
                     EV4GH Appoints Germ谩n Alarc贸n Garavito and Soe Yu Naing as Governance Board Co-Chairs
@@ -450,7 +450,7 @@
             </div>
             <div class="background" style="background-image: url(assets/images/index/slider/Board-Co-Chairs.jpg)">
             </div>
-        </div>
+        </div> --}}
         <div class="swiper-slide">
             <div class="content slider-style-default">
                 <h1>EV4GH Governance Board Convenes to Shape the 2026 Venture</h1>
@@ -462,7 +462,7 @@
             <div class="background" style="background-image: url(assets/images/index/slider/ev-2026-venture.jpg)">
             </div>
         </div>
-        <div class="swiper-slide">
+        {{-- <div class="swiper-slide">
             <div class="content">
                 <h1 style="color: var(--color-support1)">
                     Congratulations to the 41 Emerging Voices from 27 countries participating in the EV4GH 2024
@@ -471,8 +471,8 @@
                 <p></p>
             </div>
             <div class="background" style="background: url(assets/images/index/slider/Ev-slider-map-1.jpg)"></div>
-        </div>
-        <div class="swiper-slide">
+        </div> --}}
+        {{-- <div class="swiper-slide">
             <div class="content slider-style-default">
                 <h1>EV4GH releases a statement on the destruction of Gaza鈥檚 health system and ongoing genocide</h1>
                 <p></p>
@@ -482,7 +482,7 @@
             </div>
             <div class="background"
                 style="background-image: url(assets/images/index/slider/pexels-photo-10010408.jpg)"></div>
-        </div>
+        </div> --}}
     </div>
     <!-- Right Side Vertical Pagination -->
     <div class="swiper-pagination"></div>
