@@ -177,6 +177,38 @@
 
 <div class="swiper-container main-slider">
     <div class="swiper-wrapper">
+        
+        
+        <div class="swiper-slide call-for-application-slider">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="content">
+                            <h1 style="color: #fff; text-shadow: 0 0 black !important">
+                               Donation Request for Emerging Voices for Global Health
+                            </h1>
+
+                             <p style="font-weight: 100 !important; color: #d2d2d2">For 14 years, EV4GH has connected, mentored, and empowered emerging health leaders around the world. Now, the community is coming together to keep that momentum going. Your contribution helps ensure the next EV4GH generations can grow, connect, and amplify their voices for years to come.</p>
+                             <a style="
+                                    background: #ffffff !important;
+                                    color: #aa2f2f !important;
+                                    padding: 10px 20px !important;
+                                "
+                                target="_blank" class="btn"
+                                href="https://bracusa.donorsupport.co/page/EV4GH">Click to Donete</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="background"
+                style="
+                    background-image: url(assets/images/index/slider/donation-bannar-22.png);
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                ">
+            </div>
+        </div>
 
 
         <div class="swiper-slide call-for-application-slider">
@@ -188,11 +220,9 @@
                                 Congratulations to Dr. Beverly Lorraine Ho, EV Fellow, 2012 Cohort!
                             </h1>
 
-                            {{-- <p style="font-weight: 100 !important; color: #d2d2d2">
-                                Due to the current ongoing situation, HSG is relocating the conference venue. EV4GH will
-                                also take place in a new location and is currently exploring options. The updated venue
-                                will be announced soon - stay tuned.
-                            </p> --}}
+                             <p style="font-weight: 100 !important; color: #d2d2d2">
+                                We are delighted to celebrate the appointment of Dr. Beverly Lorraine Ho, an EV Fellow from the 2012 cohort, as the newly appointed President and CEO of the Philippine Health Insurance Corporation (PhilHealth).
+                            </p>
                             <a style="
                                     background: #ffffff !important;
                                     color: #aa2f2f !important;
