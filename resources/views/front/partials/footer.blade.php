@@ -44,9 +44,4 @@
         </div>
     </div>
 </footer>
-
-        
-
-
-@include('front.partials.bottom-inc')
 @yield('scripts')

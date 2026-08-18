@@ -195,7 +195,7 @@
                                     padding: 10px 20px !important;
                                 "
                                 target="_blank" class="btn"
-                                href="https://bracusa.donorsupport.co/page/EV4GH">Click to Donete</a>
+                                href="https://bracusa.donorsupport.co/page/EV4GH">Click to Donate</a>
                         </div>
                     </div>
                 </div>
