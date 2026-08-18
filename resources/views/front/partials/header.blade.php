@@ -1,45 +1,54 @@
 <div class="top_header_banner">
     <!-- START TOPBAR (Contact Info + Social Media) -->
-    <section class="topbar-section">
-        <div class="container-fluid container-xl">
-            <div class="row align-items-center">
-                <!-- Contact Details -->
-                <div class="col-lg-8 col-md-9 col-12">
-                    <div class="top-contact-wrapper d-flex flex-wrap align-items-center">
-                        <div class="single-top-contact me-4">
-                            <i class="bi bi-telephone-fill"></i>
-                            <a href="tel:+880248812213">+880-2-48812213-18</a>
-                        </div>
-                        <div class="single-top-contact me-4">
-                            <i class="bi bi-envelope-fill"></i>
-                            <a href="mailto:ev_secretariat@bracu.ac.bd">ev_secretariat@bracu.ac.bd</a>
-                        </div>
-                        {{-- <div class="single-top-contact d-none d-lg-block">
-                            <i class="bi bi-clock-fill"></i>
-                            <span>Mon - Sat: 9:00 AM - 6:00 PM</span>
-                        </div> --}}
+<section class="topbar-section">
+    <div class="container-fluid container-xl">
+        <div class="row align-items-center">
+            
+            <!-- Contact Details -->
+            <div class="col-lg-8 col-md-9 col-12">
+                <div class="top-contact-wrapper d-flex flex-wrap align-items-center">
+                    <!-- Phone (Top-Right on Mobile) -->
+                    <div class="single-top-contact order-2 order-sm-1">
+                        <i class="bi bi-telephone-fill"></i>
+                        <a href="tel:+880248812213">+880-2-48812213-18</a>
                     </div>
-                </div>
-
-                <!-- Social Profile Links -->
-                <div class="col-lg-4 col-md-3 col-12 text-md-end text-center">
-                    <div class="top_social_profile">
-                        <ul class="list-inline m-0">
-
-                            <li class="list-inline-item"><a target="_blank"
-                                    href="https://www.linkedin.com/company/ev4gh" aria-label="LinkedIn"><i
-                                        class="fa-brands fa-linkedin-in"></i></a></li>
-                            <li class="list-inline-item"><a target="_blank" href="https://www.facebook.com/EV4GH/"
-                                    aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
-                            <li class="list-inline-item"><a target="_blank"
-                                    href="https://www.youtube.com/@ev4ghsecretariat298" aria-label="Youtube"><i
-                                        class="fa-brands fa-youtube"></i></a></li>
-                        </ul>
+                    <!-- Email (Top-Left on Mobile) -->
+                    <div class="single-top-contact order-1 order-sm-2">
+                        <i class="bi bi-envelope-fill"></i>
+                        <a href="mailto:ev_secretariat@bracu.ac.bd">ev_secretariat@bracu.ac.bd</a>
                     </div>
                 </div>
             </div>
+
+            <!-- Mobile Divider Line (Hidden on Desktop) -->
+            <div class="mobile-topbar-divider d-block d-sm-none"></div>
+
+            <!-- Social Profile Links -->
+            <div class="col-lg-4 col-md-3 col-12 text-md-end text-center">
+                <div class="top_social_profile">
+                    <ul class="list-inline m-0">
+                        <li class="list-inline-item">
+                            <a target="_blank" href="https://www.linkedin.com/company/ev4gh" aria-label="LinkedIn">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a target="_blank" href="https://www.facebook.com/EV4GH/" aria-label="Facebook">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a target="_blank" href="https://www.youtube.com/@ev4ghsecretariat298" aria-label="Youtube">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
         </div>
-    </section>
+    </div>
+</section>
     <!-- END TOPBAR -->
 
     <!-- START NAVBAR (Logo + Dynamic Menu + Donation Button) -->

@@ -4,6 +4,8 @@
 <head>
     @include('front.partials.head')
     @stack('styles')
+
+    
 </head>
 
 <body>

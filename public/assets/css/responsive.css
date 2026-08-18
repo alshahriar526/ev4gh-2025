@@ -12,12 +12,13 @@ body.mobile-nav-active::before {
   background: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
-  z-index: 9997; /* Sits directly behind the mobile drawer */
+  z-index: 9997;
+  /* Sits directly behind the mobile drawer */
   transition: opacity 0.3s ease;
 }
 
-.main-slider{
-    background-color: var(--color-default);
+.main-slider {
+  background-color: var(--color-default);
 }
 
 
@@ -26,138 +27,289 @@ body.mobile-nav-active::before {
    ========================================================= */
 @media (max-width: 575.98px) {
 
-.slider-background {
-    height: 1000%;
-    max-width: 100%;
-}
+  /* =======================================================
+     MODULE 1: MAIN SLIDER CONTAINER
+     ======================================================= */
 
-.main-slider .swiper-slide {
+     h1{
+      font-size: 20px !important;
+      line-height: 1.25 !important;
+     }
+
+     p{
+      font-size: 14px !important;
+      line-height: 1.35 !important;
+     }
+
+
+
+  .main-slider,
+  #main-slider-section {
     position: relative;
     width: 100%;
-    height: var(--slider-height);
-    min-height: 450px;
+    height: auto !important;
+    min-height: auto !important;
     overflow: hidden;
-}
-
-.main-slider .swiper-slide .background {
-    position: absolute;
-    inset: 0;
-
-    width: 100%;
-    height: 100%;
-
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
-    z-index: 1;
-}
-
-.main-slider .slider-content .content {
-    padding: 0 10px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-
-.main-slider .slider-content .content h1.slider-heading {
-    font-size: 20px !important;
-    line-height: 1.2 !important;
-    color: var(--color-white);
-}
-
-
-.main-slider .slider-content .content p.slider-description {
-    font-size: 14px !important;
-    line-height: 1.2 !important;
-    color: var(--color-white);
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  /* --- Topbar --- */
-  .topbar-section {
-    height: auto;
-    padding: 10px 12px;
-    flex-direction: column;
-    justify-content: center;
-    gap: 10px;
-    background: linear-gradient(135deg, var(--color-default) 0%, var(--color-default-hover) 100%);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
   }
 
+  /* Slide vertical stacking layout */
+  .main-slider .swiper-slide.call-for-application-slider {
+    display: flex !important;
+    flex-direction: column !important;
+    flex-wrap: nowrap;
+    align-content: center !important;
+    justify-content: center !important;
+    align-items: center !important;
+    height: auto !important;
+    min-height: auto !important;
+  }
+
+
+  /* =======================================================
+     MODULE 2: SLIDER CONTENT & TYPOGRAPHY
+     ======================================================= */
+  .main-slider .slider-content,
+  #main-slider-section .slider-content {
+    height: auto !important;
+    min-height: auto !important;
+  }
+
+  .main-slider .swiper-slide.call-for-application-slider .slider-content {
+    position: relative !important;
+    z-index: 2 !important;
+    width: 100% !important;
+  }
+
+  .main-slider .slider-content .content {
+    padding: 10px !important;
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+  }
+
+  /* Headings */
+  .main-slider .content h1,
+  #main-slider-section .content h1 {
+    font-size: 20px !important;
+    line-height: 1.25 !important;
+    color: var(--color-white) !important;
+    margin-bottom: 12px !important;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3) !important;
+  }
+
+  /* Paragraphs */
+  .main-slider .content p,
+  #main-slider-section .content p {
+    font-size: 14px !important;
+    line-height: 1.35 !important;
+    color: var(--color-white) !important;
+    margin-bottom: 15px !important;
+  }
+
+  /* Slider Buttons */
+  .main-slider .content .btn,
+  #main-slider-section .content .btn {
+    padding: 6px 14px !important;
+    font-size: 13px !important;
+    font-weight: 600 !important;
+    border-radius: 6px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 6px !important;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+
+  /* =======================================================
+     MODULE 3: RESPONSIVE SLIDER IMAGE
+     ======================================================= */
+  .main-slider .swiper-slide.call-for-application-slider .mobile-image-wrapper {
+    width: 100% !important;
+    padding: 0 10px !important;
+    margin-bottom: 15px !important;
+  }
+
+  .main-slider .swiper-slide.call-for-application-slider .mobile-slider-img {
+    width: 100% !important;
+    height: auto !important;
+    display: block !important;
+    border-radius: 12px !important;
+    object-fit: contain !important;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15) !important;
+  }
+
+
+  /* =======================================================
+     MODULE 4: SWIPER CONTROLS (PAGINATION & ARROWS)
+     ======================================================= */
+  /* Pagination Container */
+  .main-slider .swiper-pagination,
+  #main-slider-section .swiper-pagination {
+    bottom: 12px !important;
+    gap: 6px !important;
+    z-index: 10 !important;
+  }
+
+  /* Inactive Dots */
+  #main-slider-section .swiper-pagination-bullet,
+  .main-slider .swiper-pagination-bullet {
+    width: 8px !important;
+    height: 8px !important;
+    margin: 0 !important;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  /* Active Dot Pill */
+  #main-slider-section .swiper-pagination-bullet-active,
+  .main-slider .swiper-pagination-bullet-active {
+    width: 22px !important;
+    height: 8px !important;
+    border-radius: 10px !important;
+  }
+
+  /* Navigation Arrows Base */
+  .main-slider .swiper-button-prev,
+  .main-slider .swiper-button-next {
+    bottom: 28px !important;
+    width: 28px !important;
+    height: 28px !important;
+    border-radius: 50% !important;
+    z-index: 10 !important;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  /* Centered Horizontal Positioning (28px button + 8px spacing offset) */
+  .main-slider .swiper-button-prev {
+    left: calc(50% - 32px) !important;
+    right: auto !important;
+  }
+
+  .main-slider .swiper-button-next {
+    left: calc(50% + 4px) !important;
+    right: auto !important;
+  }
+
+  /* Arrow Icon Font Size */
+  .main-slider .swiper-button-prev::after,
+  .main-slider .swiper-button-next::after {
+    font-size: 11px !important;
+  }
+
+
+
+  /* =======================================================
+     MODULE 5: TOPBAR SECTION
+     ======================================================= */
+  /* =======================================================
+   MODULE 5: TOPBAR SECTION (MOBILE < 576px)
+   ======================================================= */
+@media (max-width: 575.98px) {
+
+  .topbar-section {
+    height: auto !important;
+    padding: 6px 12px 8px !important;
+    background: linear-gradient(135deg, var(--color-default) 0%, var(--color-default-hover, #1a237e) 100%) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+  }
+
+  /* 1. Top Row: Email (Left) & Phone (Right) */
   .top-contact-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 8px 14px;
-    width: 100%;
-    text-align: center;
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    width: 100% !important;
+    margin-bottom: 0 !important;
+    gap: 6px !important;
   }
 
   .top-contact-wrapper .single-top-contact {
-    background: rgba(255, 255, 255, 0.08);
-    padding: 4px 10px;
-    border-radius: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    font-size: 12px;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 4px !important;
+    background: transparent !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    padding: 0 !important;
+    border: none !important;
+    margin: 0 !important;
   }
 
   .top-contact-wrapper .single-top-contact i {
-    font-size: 13px;
-    color: var(--color-support);
+    font-size: 10px !important;
+    color: var(--color-support, #ffbd59) !important;
+    flex-shrink: 0 !important;
   }
 
-  .top-contact-wrapper .single-top-contact a,
-  .top-contact-wrapper .single-top-contact span {
-    font-size: 12px;
-    font-weight: 500;
-    letter-spacing: 0.2px;
+  .top-contact-wrapper .single-top-contact a {
+    font-size: 10px !important;
+    font-weight: 500 !important;
+    color: #ffffff !important;
+    text-decoration: none !important;
+    white-space: nowrap !important;
   }
 
+  /* Truncate long email on ultra-small screens to prevent wrap */
+  .top-contact-wrapper .single-top-contact:nth-child(2) a {
+    max-width: 160px !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    display: inline-block !important;
+  }
+
+  /* 2. Middle Divider Line */
+  .mobile-topbar-divider {
+    display: block !important;
+    width: 100% !important;
+    height: 1px !important;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 100%) !important;
+    margin: 5px 0 6px !important;
+  }
+
+  /* 3. Bottom Row: Centered Social Profiles */
   .top_social_profile {
-    width: 100%;
+    width: 100% !important;
   }
 
   .top_social_profile ul {
-    justify-content: center;
-    gap: 10px;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 12px !important;
+    padding: 0 !important;
+    margin: 0 !important;
   }
 
   .top_social_profile ul li a {
-    width: 30px;
-    height: 30px;
-    font-size: 12px;
-    background-color: rgba(255, 255, 255, 0.12);
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    width: 24px !important;
+    height: 24px !important;
+    font-size: 10px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    border-radius: 50% !important;
+    color: #ffffff !important;
+    background: rgba(255, 255, 255, 0.12) !important;
+    border: 1px solid rgba(255, 255, 255, 0.15) !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
+    transition: transform 0.2s ease !important;
+    -webkit-tap-highlight-color: transparent !important;
   }
 
   .top_social_profile ul li a:active {
-    transform: scale(0.92);
-    background-color: var(--color-support);
+    transform: scale(0.88) !important;
+    background-color: var(--color-support, #ffbd59) !important;
+    color: #1e293b !important;
   }
 
-  /* --- Header & Navbar --- */
+}
+
+  /* =======================================================
+     MODULE 6: HEADER & MOBILE NAVIGATION DRAWER
+     ======================================================= */
   #header.site-navigation {
     height: 60px;
     padding: 0 12px;
@@ -165,18 +317,21 @@ body.mobile-nav-active::before {
 
   #header .logo img {
     max-height: 36px;
+    width: auto;
   }
 
+  /* Mobile Slide-out Menu Drawer */
   .navbar {
     position: fixed;
     top: 0;
     right: -100%;
     width: 85%;
+    max-width: 320px;
     height: 100vh;
     background: #ffffff;
-    padding: 70px 20px 30px;
-    box-shadow: -8px 0 24px rgba(0, 0, 0, 0.15);
-    transition: right 0.35s ease-in-out;
+    padding: 75px 20px 30px;
+    box-shadow: -10px 0 30px rgba(0, 0, 0, 0.18);
+    transition: right 0.35s cubic-bezier(0.16, 1, 0.3, 1);
     overflow-y: auto;
     z-index: 9998;
   }
@@ -188,44 +343,61 @@ body.mobile-nav-active::before {
   .navbar ul {
     flex-direction: column;
     align-items: stretch;
-    gap: 4px;
+    gap: 6px;
   }
 
-  .navbar a, 
+  .navbar a,
   .navbar a:focus {
-    padding: 10px 14px;
+    padding: 12px 16px;
     font-size: 15px;
+    font-weight: 500;
     border-radius: 8px;
+    display: flex;
+    align-items: center;
     justify-content: space-between;
+    transition: background-color 0.2s ease, color 0.2s ease;
   }
 
+  .navbar a:active {
+    background-color: rgba(0, 0, 0, 0.04);
+  }
+
+  /* Hamburger Toggle Icon */
   .mobile-nav-toggle {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 38px;
-    height: 38px;
+    width: 40px;
+    height: 40px;
     font-size: 22px;
     background: transparent;
     border: none;
     color: var(--color-dark, #1e293b);
     cursor: pointer;
     z-index: 9999;
-    transition: color 0.3s ease;
+    transition: color 0.3s ease, transform 0.2s ease;
+    -webkit-tap-highlight-color: transparent;
   }
 
+  .mobile-nav-toggle:active {
+    transform: scale(0.92);
+  }
+
+  /* Hide header CTA button on small screens */
   .header-action-btn .btn-donate {
-    display: none; /* Hide top CTA on small phones to save space */
+    display: none !important;
   }
-
 
 }
+
+
 
 
 /* =========================================================
    2. SMALL DEVICES (576px - 767.98px)
    ========================================================= */
 @media (min-width: 576px) and (max-width: 767.98px) {
+
   /* --- Topbar --- */
   .topbar-section {
     height: auto;
@@ -242,6 +414,8 @@ body.mobile-nav-active::before {
     display: flex;
     align-items: center;
     gap: 16px;
+    flex-direction: row;
+        align-content: center;
   }
 
   .top-contact-wrapper .single-top-contact {
@@ -254,13 +428,13 @@ body.mobile-nav-active::before {
   }
 
   .top-contact-wrapper .single-top-contact i {
-    font-size: 14px;
+    font-size: 12px;
     color: var(--color-support);
   }
 
   .top-contact-wrapper .single-top-contact a,
   .top-contact-wrapper .single-top-contact span {
-    font-size: 13px;
+    font-size: 11px;
     font-weight: 500;
   }
 
@@ -271,7 +445,7 @@ body.mobile-nav-active::before {
   .top_social_profile ul li a {
     width: 32px;
     height: 32px;
-    font-size: 13px;
+    font-size: 11px;
     background-color: rgba(255, 255, 255, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.18);
     transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -319,7 +493,7 @@ body.mobile-nav-active::before {
     gap: 6px;
   }
 
-  .navbar a, 
+  .navbar a,
   .navbar a:focus {
     padding: 11px 16px;
     font-size: 15px;
@@ -383,7 +557,7 @@ body.mobile-nav-active::before {
     gap: 8px;
   }
 
-  .navbar a, 
+  .navbar a,
   .navbar a:focus {
     padding: 12px 18px;
     font-size: 16px;
@@ -439,14 +613,15 @@ body.mobile-nav-active::before {
     gap: 4px;
   }
 
-  .navbar a, 
+  .navbar a,
   .navbar a:focus {
     padding: 8px 12px;
     font-size: 14px;
   }
 
   .mobile-nav-toggle {
-    display: none; /* Hide drawer trigger on desktop */
+    display: none;
+    /* Hide drawer trigger on desktop */
   }
 
   .header-action-btn .btn-donate {
@@ -485,7 +660,7 @@ body.mobile-nav-active::before {
     gap: 8px;
   }
 
-  .navbar a, 
+  .navbar a,
   .navbar a:focus {
     padding: 8px 16px;
     font-size: 15px;

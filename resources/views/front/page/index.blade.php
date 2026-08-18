@@ -1,63 +1,6 @@
 @extends('front.layout.front-master')
 @section('styles')
-    <style>
-        
 
-        #main-slider-section .btn {
-            display: block;
-            font-weight: 700;
-            text-align: center;
-            text-transform: uppercase;
-            color: #fff;
-            padding: 15px 20px;
-            border: 0;
-            border-radius: 10px;
-            box-shadow: 0px 0px 14px -7px #f09819;
-            background-image: linear-gradient(45deg,
-                    var(--color-default) 0%,
-                    var(--color-support1) 51%,
-                    var(--color-default) 100%);
-            background-size: 200% auto;
-            cursor: pointer;
-            user-select: none;
-            -webkit-user-select: none;
-            touch-action: manipulation;
-            transition: 0.5s;
-        }
-
-        #main-slider-section .btn:hover {
-            background-position: right center;
-        }
-
-        #main-slider-section .btn:active {
-            transform: scale(0.95);
-        }
-
-        #main-slider-section .ytb-logo {
-            position: fixed;
-            right: 30px;
-            bottom: 30px;
-            z-index: 10;
-
-        }
-
-        #main-slider-section .ytb-logo img {
-            width: 50px;
-            filter: drop-shadow(5px 6px 6px #000000);
-        }
-
-        @media (max-width: 890px) {
-            #main-slider-section .ytb-logo {
-                right: -10px;
-                bottom: -20px;
-            }
-
-            #main-slider-section .ytb-logo img {
-                width: 80px;
-            }
-        }
-        
-    </style>
     <style>
         .fb-wrapper {
             width: 100%;
@@ -337,7 +280,7 @@
                     <div class="col-md-7">
                         <div class="ev4gh-text-card"
                             style="    display: flex; flex-direction: column; align-items: flex-start; justify-content: center;">
-                            <h3 class="ev4gh-section-title">Be the next Global Health Changemaker.</h3>
+                            <h1 class="ev4gh-section-title">Be the next Global Health Changemaker.</h1>
                             <p class="ev4gh-section-text-para">Emerging Voices for Global Health (EV4GH) is an
                                 innovative multi-partner blended training program that includes face-to-face training
                                 and virtual training components, for young, promising, and emerging health policy &

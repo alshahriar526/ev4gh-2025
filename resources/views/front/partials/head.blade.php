@@ -10,6 +10,8 @@
 
 <title>EV4GH</title>
 
+@vite(['resources/css/app.css', 'resources/js/app.js'])
+
 <!-- Fundraise Up: the new standard for online giving -->
 <script>(function(w,d,s,n,a){if(!w[n]){var l='call,catch,on,once,set,then,track,openCheckout'
 .split(','),i,o=function(n){return'function'==typeof n?o.l.push([arguments])&&o

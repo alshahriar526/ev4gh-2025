@@ -1,67 +1,99 @@
-/* ==========================================
-TOPBAR
-========================================== */
-.topbar-section {
-    background-color: var(--color-default);
-    height: var(--topbar-height);
-    padding: 0 15px;
-    display: flex;
-    align-items: center;
-    font-size: 14px;
-    color: var(--color-white);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-}
 
-.top-contact-wrapper .single-top-contact {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-}
+/* =======================================================
+     MODULE 5: TOPBAR SECTION (MODERN GLASS DESIGN)
+     ======================================================= */
+  .topbar-section {
+    height: auto !important;
+    padding: 8px 12px !important;
+    background: linear-gradient(135deg, var(--color-default) 0%, var(--color-default-hover, #1a237e) 100%) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08) !important;
+  }
 
-.top-contact-wrapper .single-top-contact i {
-    color: var(--color-support);
-    font-size: 15px;
-}
+  /* Contact Chips Wrapper */
+  .top-contact-wrapper {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 6px 12px !important;
+    width: 100% !important;
+    margin-bottom: 0px !important;
+  }
 
-.top-contact-wrapper .single-top-contact a,
-.top-contact-wrapper .single-top-contact span {
-    color: var(--color-white);
-    font-size: 14px;
-}
+  /* Individual Pill Contact Chips */
+  .top-contact-wrapper .single-top-contact {
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 6px !important;
+    background: rgba(255, 255, 255, 0.1) !important;
+    backdrop-filter: blur(8px) !important;
+    -webkit-backdrop-filter: blur(8px) !important;
+    padding: 4px 10px !important;
+    border-radius: 20px !important;
+    border: 1px solid rgba(255, 255, 255, 0.15) !important;
+    margin: 0 !important;
+    transition: all 0.25s ease !important;
+  }
 
-.top-contact-wrapper .single-top-contact a:hover {
-    color: var(--color-default-lite);
-    text-decoration: underline;
-}
+  /* Icons */
+  .top-contact-wrapper .single-top-contact i {
+    font-size: 11px !important;
+    color: var(--color-support, #ffbd59) !important;
+  }
 
-.top_social_profile ul {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 12px;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-}
+  /* Links & Text */
+  .top-contact-wrapper .single-top-contact a,
+  .top-contact-wrapper .single-top-contact span {
+    font-size: 11px !important;
+    font-weight: 500 !important;
+    color: #ffffff !important;
+    letter-spacing: 0.2px !important;
+    text-decoration: none !important;
+    white-space: nowrap !important;
+  }
 
-.top_social_profile ul li a {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 28px;
-    height: 28px;
-    border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.15);
-    color: var(--color-white);
-    font-size: 13px;
-}
+  .top-contact-wrapper .single-top-contact a:hover {
+    color: var(--color-support, #ffbd59) !important;
+  }
 
-.top_social_profile ul li a:hover {
-    background-color: var(--color-default);
-    color: var(--color-white);
-    transform: translateY(-2px);
-}
+  /* Social Profiles Wrapper */
+  .top_social_profile {
+    width: 100% !important;
+  }
 
+  .top_social_profile ul {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 10px !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  /* Compact Social Buttons */
+  .top_social_profile ul li a {
+    width: 28px !important;
+    height: 28px !important;
+    font-size: 11px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    border-radius: 50% !important;
+    color: #ffffff !important;
+    background: rgba(255, 255, 255, 0.12) !important;
+    border: 1px solid rgba(255, 255, 255, 0.18) !important;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1) !important;
+    transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .top_social_profile ul li a:active {
+    transform: scale(0.9) !important;
+    background-color: var(--color-support, #ffbd59) !important;
+    color: #1e293b !important;
+  }
 /* ==========================================
 HEADER & NAVBAR: Base Desktop Styles
 ========================================== */
@@ -202,25 +234,7 @@ HEADER & NAVBAR: Base Desktop Styles
     gap: 15px;
 }
 
-.btn-donate {
-    background-color: var(--color-default, #a62527);
-    color: #ffffff !important;
-    padding: 10px 24px;
-    border-radius: 30px;
-    font-weight: 600;
-    font-size: 14px;
-    letter-spacing: 0.3px;
-    display: inline-flex;
-    align-items: center;
-    box-shadow: 0 4px 14px rgba(166, 37, 39, 0.25);
-    transition: all 0.3s ease;
-}
 
-.btn-donate:hover {
-    background-color: var(--color-default-hover, #831d1f);
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(166, 37, 39, 0.35);
-}
 
 .mobile-nav-toggle-btn {
     display: none;
@@ -461,6 +475,463 @@ section#main-hero .hero-inner-content .figure {
 }
 
 
+
+
+
+/* =========================================================
+SWIPER / MAIN SLIDER
+========================================================= */
+.swiper-container {
+    background: var(--color-default);
+}
+
+.main-slider,
+#main-slider-section {
+    position: relative;
+    width: 100%;
+    height: var(--slider-height);
+    min-height: 450px;
+    background-color: #1a1a1a;
+    overflow: hidden;
+}
+
+/* =========================================================
+SWIPER SLIDE
+========================================================= */
+.main-slider .swiper-slide,
+#main-slider-section .swiper-slide {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 450px;
+    overflow: hidden;
+}
+
+/* =========================================================
+FULL SLIDE BACKGROUND
+========================================================= */
+.main-slider .swiper-slide>.background,
+#main-slider-section .swiper-slide>.background {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    clip-path: none !important;
+    opacity: 1 !important;
+    /*
+* Slight darkening so white text remains readable.
+*/
+    filter: brightness(90%);
+    overflow: hidden;
+    animation: none !important;
+    transform: none !important;
+}
+
+/* =========================================================
+SLIDER CONTENT WRAPPER
+========================================================= */
+.main-slider .slider-content,
+#main-slider-section .slider-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: inherit;
+    z-index: 2;
+    pointer-events: none;
+}
+
+/*
+* Allow links/buttons inside content to work.
+*/
+.main-slider .slider-content .content,
+#main-slider-section .slider-content .content {
+    pointer-events: auto;
+}
+
+/* =========================================================
+CONTENT
+========================================================= */
+.main-slider .content,
+#main-slider-section .content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 680px;
+    height: max-content;
+    /*
+* Vertical positioning.
+*/
+    padding-top: 185px;
+    color: #f2f2f2;
+    text-align: left;
+    opacity: 1 !important;
+    z-index: 3;
+}
+
+/* =========================================================
+DEFAULT SLIDER CONTENT
+========================================================= */
+#main-slider-section .content.slider-style-default {
+    align-items: flex-start;
+    left: auto;
+    padding: 185px 0 20px;
+}
+
+/* =========================================================
+HEADINGS
+========================================================= */
+.main-slider .content h1,
+#main-slider-section .content h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #fff !important;
+    font-family: var(--font-primary);
+    font-size: clamp(1.375rem, 2vw, 2rem) !important;
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: left;
+    text-shadow: none !important;
+    opacity: 1 !important;
+    animation: none !important;
+}
+
+/* =========================================================
+PARAGRAPH
+========================================================= */
+.main-slider .content p,
+#main-slider-section .content p {
+    margin-top: 0;
+    margin-bottom: 25px;
+    color: #f2f2f2 !important;
+    font-family: inherit;
+    font-size: clamp(0.875rem, 1.2vw, 1.25rem) !important;
+    line-height: 1.35 !important;
+    font-weight: 400 !important;
+    text-align: left;
+    opacity: 1 !important;
+    animation: none !important;
+}
+
+/* =========================================================
+SLIDER BUTTON
+========================================================= */
+.main-slider .content .btn,
+#main-slider-section .content .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    min-width: 140px;
+    padding: 10px 20px !important;
+    color: var(--color-default);
+    border: 0;
+    border-radius: 8px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: none;
+    background-image: linear-gradient(45deg,
+            var(--color-default) 0,
+            var(--color-support1) 51%,
+            var(--color-default) 100%);
+    background-size: 200% auto;
+    box-shadow: 0 0 14px -7px #f09819;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    transition: background-position 0.5s ease, transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.main-slider .content .btn:hover,
+#main-slider-section .content .btn:hover {
+    background-position: right center;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    color: var(--color-white);
+}
+
+.main-slider .content .btn:active,
+#main-slider-section .content .btn:active {
+    transform: scale(0.95);
+}
+
+/* =========================================================
+WHITE BUTTON
+For your donation / newsletter style buttons
+========================================================= */
+.main-slider .content .slider-btn {
+    color: #aa2f2f !important;
+    background: #fff !important;
+    background-image: none !important;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.18);
+}
+
+.main-slider .content .slider-btn:hover {
+    color: #fff !important;
+    background: var(--color-default) !important;
+    transform: translateY(-2px);
+}
+
+/* =========================================================
+EVENT SLIDE
+========================================================= */
+.main-slider .slider1 .content {
+    padding-top: 175px;
+}
+
+.main-slider .badge-tag {
+    display: inline-block;
+    margin-bottom: 15px;
+    padding: 7px 13px;
+    color: #fff;
+    background: rgba(166, 37, 39, 0.9);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    backdrop-filter: blur(5px);
+}
+
+.main-slider .meta-details {
+    margin-bottom: 25px;
+}
+
+.main-slider .meta-details p,
+.main-slider .meta-details h3 {
+    margin-bottom: 10px;
+    color: #fff !important;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.main-slider .meta-details i {
+    margin-right: 8px;
+}
+
+/* =========================================================
+NEWSLETTER
+========================================================= */
+.main-slider .newsletter-date {
+    color: #fff !important;
+    font-weight: 300 !important;
+}
+
+
+
+
+
+
+/* Container alignment to center controls */
+.main-slider .swiper-pagination,
+#main-slider-section .swiper-pagination {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 10px !important;
+    z-index: 10 !important;
+    bottom: 25px !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    right: auto !important;
+    width: auto !important;
+}
+
+#main-slider-section .swiper-pagination-bullet,
+.main-slider .swiper-pagination-bullet {
+    width: 12px !important;
+    height: 12px !important;
+    background-color: rgba(255, 255, 255, 0.4) !important;
+    backdrop-filter: blur(4px) !important;
+    -webkit-backdrop-filter: blur(4px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.3) !important;
+    border-radius: 50% !important;
+    opacity: 0.7 !important;
+    transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1) !important;
+    cursor: pointer !important;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25) !important;
+    margin: 0 !important;
+}
+
+#main-slider-section .swiper-pagination-bullet:hover,
+.main-slider .swiper-pagination-bullet:hover {
+    opacity: 1 !important;
+    background-color: rgba(255, 255, 255, 0.8) !important;
+    transform: scale(1.2) !important;
+}
+
+#main-slider-section .swiper-pagination-bullet-active,
+.main-slider .swiper-pagination-bullet-active {
+    width: 38px !important;
+    height: 12px !important;
+    border-radius: 20px !important;
+    opacity: 1 !important;
+    background: linear-gradient(135deg,
+            var(--color-white) 0%,
+            var(--color-default) 100%) !important;
+    border: 1px solid rgba(255, 255, 255, 0.6) !important;
+    box-shadow: 0 0 15px rgba(166, 37, 39, 0.6), 0 4px 10px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* Swiper Navigation Buttons - Centered Side-by-Side (Row 1) */
+.main-slider .swiper-button-prev,
+.main-slider .swiper-button-next {
+    position: absolute !important;
+    top: auto !important;
+    bottom: 50px !important; /* Stacked above pagination */
+    width: 50px !important;
+    height: 50px !important;
+    background: rgba(255, 255, 255, 0.12) !important;
+    backdrop-filter: blur(12px) !important;
+    -webkit-backdrop-filter: blur(12px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.25) !important;
+    border-radius: 50% !important;
+    color: #ffffff !important;
+    transition: all 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
+    z-index: 10 !important;
+    margin-top: 0 !important;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2) !important;
+}
+
+/* Left/Prev Arrow (Left side of center) */
+.main-slider .swiper-button-prev {
+    left: calc(50% - 55px) !important;
+    right: auto !important;
+}
+
+/* Right/Next Arrow (Right side of center) */
+.main-slider .swiper-button-next {
+    left: calc(50% + 5px) !important;
+    right: auto !important;
+}
+
+.main-slider .swiper-button-prev::after,
+.main-slider .swiper-button-next::after {
+    font-size: 16px !important;
+    font-weight: 800 !important;
+    transition: transform 0.3s ease !important;
+}
+
+.main-slider .swiper-button-prev:hover,
+.main-slider .swiper-button-next:hover {
+    background: var(--color-default) !important;
+    border-color: rgba(255, 255, 255, 0.6) !important;
+    color: #ffffff !important;
+    transform: scale(1.12) !important;
+    box-shadow: 0 10px 25px rgba(166, 37, 39, 0.5) !important;
+}
+
+.main-slider .swiper-button-prev:hover::after {
+    transform: translateX(-2px) !important;
+}
+
+.main-slider .swiper-button-next:hover::after {
+    transform: translateX(2px) !important;
+}
+
+.main-slider .swiper-button-prev:active,
+.main-slider .swiper-button-next:active {
+    transform: scale(0.95) !important;
+}
+
+
+
+
+
+#main-slider-section .footer {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 20px;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: max-content;
+    padding: 20px;
+    color: #f2f2f2;
+    border-radius: 8px 8px 0 0;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    z-index: 2;
+}
+
+#main-slider-section .feature {
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+}
+
+#main-slider-section .feature i,
+#main-slider-section .feature a {
+    font-size: 1.4rem;
+    color: #f0f8ff;
+}
+
+#main-slider-section .feature p {
+    font-weight: 700;
+}
+
+#main-slider-section .btn {
+    display: block;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 15px 20px;
+    border: 0;
+    border-radius: 10px;
+    box-shadow: 0 0 14px -7px #f09819;
+    background-image: linear-gradient(45deg,
+            var(--color-default) 0,
+            var(--color-support1) 51%,
+            var(--color-default) 100%);
+    background-size: 200% auto;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    transition: 0.5s;
+}
+
+#main-slider-section .btn:hover {
+    background-position: right center;
+}
+
+#main-slider-section .btn:active {
+    transform: scale(0.95);
+}
+
+#main-slider-section .ytb-logo {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    z-index: 10;
+}
+
+#main-slider-section .ytb-logo img {
+    width: 50px;
+    filter: drop-shadow(5px 6px 6px #000000);
+}
+
+.index-page-img-1 img {
+    max-height: 400px;
+    min-height: 400px;
+    max-width: 400px;
+    min-width: 400px;
+    object-fit: cover;
+}
+
 /* ==========================================
 SECTIONS & CARDS
 ========================================== */
@@ -472,9 +943,18 @@ SECTIONS & CARDS
     display: block;
 }
 
+.ev4gh-section-1 p.ev4gh-section-text-para  {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    color: var(--color-dark);
+    margin-bottom: 20px;
+}
+
 .ev4gh-text-card .ev-btn-1 {
     margin-top: 10px !important;
     margin-bottom: 10px !important;
+    background: var(--color-default);
+    color: var(--color-white);
 }
 
 .ev4gh-section-news-blogs {
@@ -750,6 +1230,11 @@ SECTIONS & CARDS
 
 section.ev4gh-section-latest {
     padding: 60px 0;
+}
+
+section.ev4gh-section-latest .ev4gh-news-event-card h3.card-title p{
+    font-size: 1.125rem;
+    line-height: 1.4;
 }
 
 /* ==========================================
@@ -1102,6 +1587,8 @@ BREADCRUMBS
 
 .breadcrumbs .page-header p {
     color: rgba(255, 255, 255, 0.8);
+    font-size: 16px;
+    font-weight: 400;
 }
 
 .breadcrumbs nav {
@@ -1140,3 +1627,7 @@ BREADCRUMBS
     color: var(--color-support1);
     content: "/";
 }
+
+
+
+

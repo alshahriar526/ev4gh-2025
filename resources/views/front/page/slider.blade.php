@@ -1,260 +1,323 @@
-
-
 <div class="swiper-container main-slider">
     <div class="swiper-wrapper">
-        
-        
+
+
         <div class="swiper-slide call-for-application-slider">
-
-
-            <div class="background" style=" background-image: url('{{ asset('assets/images/index/slider/donation-bannar-22.png') }}'); ">
-            </div>
             <div class="slider-content">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-6 col-md-7 col-12">
-
                             <div class="content">
-
                                 <h1 class="slider-heading">
                                     Donation Request for Emerging Voices for Global Health
                                 </h1>
-
                                 <p class="slider-description">
                                     For 14 years, EV4GH has connected, mentored,
                                     and empowered emerging health leaders around
-                                    the world. Now, the community is coming together
-                                    to keep that momentum going. Your contribution
-                                    helps ensure the next EV4GH generations can grow,
-                                    connect, and amplify their voices for years to come.
+                                    the world.
                                 </p>
-
-                                <a
-                                    target="_blank"
-                                    class="btn slider-btn"
+                                <a target="_blank" class="btn slider-btn"
                                     href="https://bracusa.donorsupport.co/page/EV4GH">
                                     Click to Donate
                                 </a>
-
                             </div>
-
                         </div>
                     </div>
                 </div>
+            </div>
+
+            <!-- Desktop Background -->
+            <div class="background d-none d-lg-block"
+                style="background-image: url('{{ asset('assets/images/index/slider/donation-bannar-22.png') }}');">
+            </div>
+
+            <!-- Mobile Image -->
+            <div class="mobile-image-wrapper d-block d-lg-none">
+                <img src="{{ asset('assets/images/index/slider/donation-bannar-22.png') }}" alt="Donation Banner"
+                    class="mobile-slider-img" />
             </div>
         </div>
 
-        {{-- <div class="swiper-slide call-for-application-slider">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="content">
-                            <h1 style="color: #fff; text-shadow: 0 0 black !important">
-                                Congratulations to Dr. Beverly Lorraine Ho, EV Fellow, 2012 Cohort!
-                            </h1>
 
-                             <p style="font-weight: 100 !important; color: #d2d2d2">
-                                We are delighted to celebrate the appointment of Dr. Beverly Lorraine Ho, an EV Fellow from the 2012 cohort, as the newly appointed President and CEO of the Philippine Health Insurance Corporation (PhilHealth).
-                            </p>
-                            <a style="
-                                    background: #ffffff !important;
-                                    color: #aa2f2f !important;
-                                    padding: 10px 20px !important;
-                                "
-                                target="_blank" class="btn"
-                                href="https://web.facebook.com/EV4GH/posts/pfbid02ReHWqiewfu9M5ew8wcVktwLBEm6jPeApJR73xPU93v7Mny3gkTUALXiJZg2JYoRql">Learn
-                                more</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="background"
-                style="
-                    background-image: url(assets/images/index/slider/congratulation-dr-ho_ev.jpg);
-                    background-size: cover;
-                    background-position: center;
-                    background-repeat: no-repeat;
-                ">
-            </div>
-        </div> --}}
-
-
-        {{-- 
-
-        <div class="swiper-slide call-for-application-slider slider1">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="content">
-                            <span class="badge-tag">New location and dates</span>
-                            <h1>EV4GH 2026 Face-to-face venture</h1>
-
-                            <div class="meta-details">
-                                <p class="event-date">
-                                    <i class="fa-regular fa-calendar-days"></i>
-                                    23 November 2026 - 5 December 2026
+        <!-- Slide 1: Dr. Beverly Lorraine Ho -->
+        <div class="swiper-slide call-for-application-slider">
+            <div class="slider-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-7 col-12">
+                            <div class="content">
+                                <h1 class="slider-heading">
+                                    Congratulations to Dr. Beverly Lorraine Ho, EV Fellow, 2012 Cohort!
+                                </h1>
+                                <p class="slider-description">
+                                    We are delighted to celebrate the appointment of Dr. Beverly Lorraine Ho, an EV
+                                    Fellow from the 2012 cohort, as the newly appointed President and CEO of the
+                                    Philippine Health Insurance Corporation (PhilHealth).
                                 </p>
-                                <h3 class="event-location">
-                                    <i class="fa-solid fa-location-dot"></i>
-                                    Cairo, Egypt
-                                </h3>
+                                <a target="_blank" class="btn slider-btn"
+                                    href="https://web.facebook.com/EV4GH/posts/pfbid02ReHWqiewfu9M5ew8wcVktwLBEm6jPeApJR73xPU93v7Mny3gkTUALXiJZg2JYoRql">
+                                    Learn more
+                                </a>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-                            <a target="_blank" class="btn btn-learn-more"
-                                href="https://www.facebook.com/EV4GH/posts/pfbid0GzsqkPBkavUAn7ZVx13v517vrBkgArxApDmDKmYdWU58hrnMBYGUSaCcR9iS2pysl">
-                                Learn more
-                            </a>
-                        </div>
-                    </div>
-                </div>
+            <!-- Desktop Background -->
+            <div class="background d-none d-lg-block"
+                style="background-image: url('{{ asset('assets/images/index/slider/congratulation-dr-ho_ev.jpg') }}');">
             </div>
-            <div class="background"
-                style="
-                    background-image: url(assets/images/index/slider/EV4GH-2026.png);
-                    background-size: cover;
-                    background-position: center;
-                    background-repeat: no-repeat;
-                ">
-            </div>
-        </div>
-        <div class="swiper-slide call-for-application-slider">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="content">
-                            <h1 style="color: #fff; font-size: 36px !important; text-shadow: 0 0 black !important">
-                                THE EMERGING VOICES FOR GLOBAL HEALTH NEWSLETTER
-                            </h1>
-                            <p style="color: #fff; font-weight: lighter !important; margin-bottom: 40px">
-                                <i class="fa-regular fa-envelope fa-beat me-2"></i> Spring 2026
-                            </p>
-                            <a style="
-                                    background: #ffffff !important;
-                                    color: #aa2f2f !important;
-                                    padding: 10px 20px !important;
-                                "
-                                target="_blank" class="btn"
-                                href="{{ asset('assets/pdf/newsletter/2026/EV4GH Newsletter Spring 2026.pdf') }}">Read
-                                Our Latest Newsletter</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="background"
-                style="
-                    background-image: url(assets/images/index/slider/newsletter-slider.png);
-                    background-size: cover;
-                    background-position: center;
-                    background-repeat: no-repeat;
-                ">
+
+            <!-- Mobile Image -->
+            <div class="mobile-image-wrapper d-block d-lg-none">
+                <img src="{{ asset('assets/images/index/slider/congratulation-dr-ho_ev.jpg') }}"
+                    alt="Congratulations to Dr. Beverly Lorraine Ho" class="mobile-slider-img" />
             </div>
         </div>
 
-        <div class="swiper-slide call-for-application-slider">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="content">
-                            <h1 style="color: #fff; text-shadow: 0 0 black !important">
-                                <i class="fa-thin fa-bullhorn fa-flip me-2"></i>1,120 Reasons to Celebrate
-                            </h1>
-                            <a style="
-                                    background: #ffffff !important;
-                                    color: #aa2f2f !important;
-                                    padding: 10px 20px !important;
-                                "
-                                target="_blank" class="btn"
-                                href="https://www.linkedin.com/posts/ev4gh_ev4gh-globalhealth-changemakers-activity-7470794276784955393-iTMz?utm_source=share&utm_medium=member_desktop&rcm=ACoAABiadXcBabyj_Zwri3eaTwzqp8JWxRZjmag">Learn
-                                more</a>
+        <!-- Slide 2: EV4GH 2026 Face-to-face venture -->
+        <div class="swiper-slide call-for-application-slider slider1">
+            <div class="slider-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-7 col-12">
+                            <div class="content">
+                                <span class="badge-tag">New location and dates</span>
+                                <h1 class="slider-heading">EV4GH 2026 Face-to-face venture</h1>
+
+                                <div class="meta-details">
+                                    <p class="event-date">
+                                        <i class="fa-regular fa-calendar-days"></i>
+                                        23 November 2026 - 5 December 2026
+                                    </p>
+                                    <h3 class="event-location">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                        Cairo, Egypt
+                                    </h3>
+                                </div>
+
+                                <a target="_blank" class="btn slider-btn btn-learn-more"
+                                    href="https://www.facebook.com/EV4GH/posts/pfbid0GzsqkPBkavUAn7ZVx13v517vrBkgArxApDmDKmYdWU58hrnMBYGUSaCcR9iS2pysl">
+                                    Learn more
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="background"
-                style="
-                    background-image: url(assets/images/index/slider/application-received.png);
-                    background-size: cover;
-                    background-position: center;
-                    background-repeat: no-repeat;
-                ">
+
+            <!-- Desktop Background -->
+            <div class="background d-none d-lg-block"
+                style="background-image: url('{{ asset('assets/images/index/slider/EV4GH-2026.png') }}');">
+            </div>
+
+            <!-- Mobile Image -->
+            <div class="mobile-image-wrapper d-block d-lg-none">
+                <img src="{{ asset('assets/images/index/slider/EV4GH-2026.png') }}"
+                    alt="EV4GH 2026 Face-to-face venture" class="mobile-slider-img" />
             </div>
         </div>
 
+        <!-- Slide 3: EV4GH Newsletter -->
         <div class="swiper-slide call-for-application-slider">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="content">
-                            <h1 style="color: #fff; text-shadow: 0 0 black !important">
-                                <i class="fa-thin fa-triangle-exclamation fa-flip"></i> Important Update
-                            </h1>
-                            <p style="font-weight: 100 !important; color: #d2d2d2">
-                                Due to the current ongoing situation, HSG is relocating the conference venue. EV4GH will
-                                also take place in a new location and is currently exploring options. The updated venue
-                                will be announced soon - stay tuned.
-                            </p>
+            <div class="slider-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-7 col-12">
+                            <div class="content">
+                                <h1 class="slider-heading">
+                                    THE EMERGING VOICES FOR GLOBAL HEALTH NEWSLETTER
+                                </h1>
+                                <p class="slider-description">
+                                    <i class="fa-regular fa-envelope fa-beat me-2"></i> Spring 2026
+                                </p>
+                                <a target="_blank" class="btn slider-btn"
+                                    href="{{ asset('assets/pdf/newsletter/2026/EV4GH Newsletter Spring 2026.pdf') }}">
+                                    Read Our Latest Newsletter
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="background"
-                style="
-                    background-image: url(assets/images/index/slider/StatementAnnouncement3.png);
-                    background-size: cover;
-                    background-position: center;
-                    background-repeat: no-repeat;
-                ">
+
+            <!-- Desktop Background -->
+            <div class="background d-none d-lg-block"
+                style="background-image: url('{{ asset('assets/images/index/slider/newsletter-slider.png') }}');">
+            </div>
+
+            <!-- Mobile Image -->
+            <div class="mobile-image-wrapper d-block d-lg-none">
+                <img src="{{ asset('assets/images/index/slider/newsletter-slider.png') }}" alt="EV4GH Newsletter"
+                    class="mobile-slider-img" />
             </div>
         </div>
+
+        <!-- Slide 4: 1,120 Reasons to Celebrate -->
         <div class="swiper-slide call-for-application-slider">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="content">
-                            <h1 style="color: #fff; text-shadow: 0 0 black !important">
-                                Statement & Announcement <br />from EV4GH
-                            </h1>
-                            <a style="background: #ffbd59 !important" class="btn" data-bs-toggle="modal"
-                                data-bs-target="#slider-modal-1">Learn more</a>
+            <div class="slider-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-7 col-12">
+                            <div class="content">
+                                <h1 class="slider-heading">
+                                    <i class="fa-thin fa-bullhorn fa-flip me-2"></i>1,120 Reasons to Celebrate
+                                </h1>
+                                <a target="_blank" class="btn slider-btn"
+                                    href="https://www.linkedin.com/posts/ev4gh_ev4gh-globalhealth-changemakers-activity-7470794276784955393-iTMz?utm_source=share&utm_medium=member_desktop&rcm=ACoAABiadXcBabyj_Zwri3eaTwzqp8JWxRZjmag">
+                                    Learn more
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="background"
-                style="
-                    background-image: url(assets/images/index/slider/StatementAnnouncement3.png);
-                    background-size: cover;
-                    background-position: center;
-                    background-repeat: no-repeat;
-                ">
+
+            <!-- Desktop Background -->
+            <div class="background d-none d-lg-block"
+                style="background-image: url('{{ asset('assets/images/index/slider/application-received.png') }}');">
+            </div>
+
+            <!-- Mobile Image -->
+            <div class="mobile-image-wrapper d-block d-lg-none">
+                <img src="{{ asset('assets/images/index/slider/application-received.png') }}"
+                    alt="1,120 Reasons to Celebrate" class="mobile-slider-img" />
             </div>
         </div>
-      
-        <div class="swiper-slide">
-            <div class="content slider-style-default">
-                <h1 style="color: #d21b22">EV4GH Board Convenes in Dubai to Shape 2026 Fellowship and HSR Programme</h1>
-                <p></p>
-                <a class="btn" target="_blank"
-                    href="https://www.facebook.com/EV4GH/posts/pfbid02zu49Z7tBiR6vSt69Rs1SLttzy3QLGQTtmhBRyRJ23n9omZMRo11ZVYxh4yqKobeAl">Learn
-                    More</a>
+
+        <!-- Slide 5: Important Update -->
+        <div class="swiper-slide call-for-application-slider">
+            <div class="slider-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-7 col-12">
+                            <div class="content">
+                                <h1 class="slider-heading">
+                                    <i class="fa-thin fa-triangle-exclamation fa-flip me-2"></i> Important Update
+                                </h1>
+                                <p class="slider-description">
+                                    Due to the current ongoing situation, HSG is relocating the conference venue. EV4GH
+                                    will
+                                    also take place in a new location and is currently exploring options. The updated
+                                    venue
+                                    will be announced soon - stay tuned.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="background" style="background-image: url(assets/images/index/slider/2026-Fellowship.jpg)">
+
+            <!-- Desktop Background -->
+            <div class="background d-none d-lg-block"
+                style="background-image: url('{{ asset('assets/images/index/slider/StatementAnnouncement3.png') }}');">
+            </div>
+
+            <!-- Mobile Image -->
+            <div class="mobile-image-wrapper d-block d-lg-none">
+                <img src="{{ asset('assets/images/index/slider/StatementAnnouncement3.png') }}"
+                    alt="Important Update" class="mobile-slider-img" />
             </div>
         </div>
-       
-        <div class="swiper-slide">
-            <div class="content slider-style-default">
-                <h1>EV4GH Governance Board Convenes to Shape the 2026 Venture</h1>
-                <p></p>
-                <a class="btn" target="_blank"
-                    href="https://www.facebook.com/EV4GH/posts/pfbid02mf69fxb1RS9dUBH4SvWjsuMYJkPyiTwaUG5gSiK3GcMPzKAi9kr3CgHLzcEmjdt7l">Learn
-                    More</a>
+
+        <!-- Slide 6: Statement & Announcement (Modal Trigger) -->
+        <div class="swiper-slide call-for-application-slider">
+            <div class="slider-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-7 col-12">
+                            <div class="content">
+                                <h1 class="slider-heading">
+                                    Statement & Announcement <br />from EV4GH
+                                </h1>
+                                <a class="btn slider-btn" data-bs-toggle="modal" data-bs-target="#slider-modal-1">
+                                    Learn more
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="background" style="background-image: url(assets/images/index/slider/ev-2026-venture.jpg)">
+
+            <!-- Desktop Background -->
+            <div class="background d-none d-lg-block"
+                style="background-image: url('{{ asset('assets/images/index/slider/StatementAnnouncement3.png') }}');">
             </div>
-        </div> --}}
-      
-       
+
+            <!-- Mobile Image -->
+            <div class="mobile-image-wrapper d-block d-lg-none">
+                <img src="{{ asset('assets/images/index/slider/StatementAnnouncement3.png') }}"
+                    alt="Statement & Announcement" class="mobile-slider-img" />
+            </div>
+        </div>
+
+        <!-- Slide 7: Dubai Convenes -->
+        <div class="swiper-slide call-for-application-slider">
+            <div class="slider-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-7 col-12">
+                            <div class="content">
+                                <h1 class="slider-heading">
+                                    EV4GH Board Convenes in Dubai to Shape 2026 Fellowship and HSR Programme
+                                </h1>
+                                <p class="slider-description"></p>
+                                <a target="_blank" class="btn slider-btn"
+                                    href="https://www.facebook.com/EV4GH/posts/pfbid02zu49Z7tBiR6vSt69Rs1SLttzy3QLGQTtmhBRyRJ23n9omZMRo11ZVYxh4yqKobeAl">
+                                    Learn More
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Desktop Background -->
+            <div class="background d-none d-lg-block"
+                style="background-image: url('{{ asset('assets/images/index/slider/2026-Fellowship.jpg') }}');">
+            </div>
+
+            <!-- Mobile Image -->
+            <div class="mobile-image-wrapper d-block d-lg-none">
+                <img src="{{ asset('assets/images/index/slider/2026-Fellowship.jpg') }}"
+                    alt="EV4GH Board Convenes in Dubai" class="mobile-slider-img" />
+            </div>
+        </div>
+
+        <!-- Slide 8: Governance Board Convenes -->
+        <div class="swiper-slide call-for-application-slider">
+            <div class="slider-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-7 col-12">
+                            <div class="content">
+                                <h1 class="slider-heading">
+                                    EV4GH Governance Board Convenes to Shape the 2026 Venture
+                                </h1>
+                                <p class="slider-description"></p>
+                                <a target="_blank" class="btn slider-btn"
+                                    href="https://www.facebook.com/EV4GH/posts/pfbid02mf69fxb1RS9dUBH4SvWjsuMYJkPyiTwaUG5gSiK3GcMPzKAi9kr3CgHLzcEmjdt7l">
+                                    Learn More
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Desktop Background -->
+            <div class="background d-none d-lg-block"
+                style="background-image: url('{{ asset('assets/images/index/slider/ev-2026-venture.jpg') }}');">
+            </div>
+
+            <!-- Mobile Image -->
+            <div class="mobile-image-wrapper d-block d-lg-none">
+                <img src="{{ asset('assets/images/index/slider/ev-2026-venture.jpg') }}"
+                    alt="EV4GH Governance Board Convenes" class="mobile-slider-img" />
+            </div>
+        </div>
+
     </div>
     <!-- Right Side Vertical Pagination -->
     <div class="swiper-pagination"></div>
