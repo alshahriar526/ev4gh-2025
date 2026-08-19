@@ -1476,6 +1476,142 @@ TESTIMONIALS
     margin: 0;
 }
 
+
+/* =========================================================
+   FLASHY & ANIMATED NEWSLETTER SECTION
+   ========================================================= */
+.ev-newsletter-section {
+    position: relative;
+    background-color: var(--color-default, #f8fafc);
+    padding: 80px 0;
+    overflow: hidden;
+}
+
+/* Floating Icon Animations */
+.newsletter-bg-icons {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.newsletter-bg-icons .bg-icon {
+    position: absolute;
+    color: #fff;
+    opacity: 0.3;
+    user-select: none;
+    animation: floatIcon 6s ease-in-out infinite alternate;
+}
+
+/* Staggered Floating Delays */
+.newsletter-bg-icons .icon-1 { top: 15%; left: 5%; font-size: 32px; animation-duration: 5s; }
+.newsletter-bg-icons .icon-2 { top: 60%; left: 10%; font-size: 42px; animation-duration: 7s; animation-delay: 1s; }
+.newsletter-bg-icons .icon-3 { top: 20%; right: 8%; font-size: 36px; animation-duration: 6s; animation-delay: 2s; }
+.newsletter-bg-icons .icon-4 { top: 65%; right: 12%; font-size: 30px; animation-duration: 8s; animation-delay: 0.5s; }
+.newsletter-bg-icons .icon-5 { top: 12%; left: 48%; font-size: 26px; animation-duration: 5.5s; }
+.newsletter-bg-icons .icon-6 { bottom: 12%; right: 42%; font-size: 32px; animation-duration: 6.5s; animation-delay: 1.5s; }
+
+@keyframes floatIcon {
+    0% { transform: translateY(0px) rotate(0deg); }
+    100% { transform: translateY(-18px) rotate(12deg); }
+}
+
+/* Flashy Glassmorphism Card + Hover Effect */
+.newsletter-card {
+    position: relative;
+    z-index: 1;
+    border: none !important;
+    border-top: 4px solid #aa2f2f !important;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.newsletter-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(170, 47, 47, 0.12) !important;
+}
+
+/* Pulsing Badge */
+.newsletter-badge {
+    display: inline-block;
+    align-self: center;
+    background-color: rgba(170, 47, 47, 0.1);
+    color: #aa2f2f;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    padding: 6px 18px;
+    border-radius: 50px;
+    margin-bottom: 14px;
+    animation: pulseBadge 2.5s infinite;
+}
+
+@keyframes pulseBadge {
+    0% { box-shadow: 0 0 0 0 rgba(170, 47, 47, 0.3); }
+    70% { box-shadow: 0 0 0 10px rgba(170, 47, 47, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(170, 47, 47, 0); }
+}
+
+/* Form Group & Glowing Input Focus */
+.newsletter-form .input-group {
+    background: #ffffff;
+    border: 2px solid #e2e8f0;
+    border-radius: 50px;
+    padding: 4px;
+    transition: all 0.3s ease;
+}
+
+.newsletter-form .input-group:focus-within {
+    border-color: #aa2f2f;
+    box-shadow: 0 0 15px rgba(170, 47, 47, 0.2);
+}
+
+.newsletter-form .form-control {
+    border: none;
+    box-shadow: none;
+    font-size: 15px;
+    padding: 12px 14px;
+}
+
+/* Interactive Button Hover */
+.newsletter-form .btn-subscribe {
+    background: linear-gradient(135deg, #aa2f2f 0%, #882323 100%);
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 15px;
+    padding: 12px 30px;
+    border-radius: 50px !important;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.newsletter-form .btn-subscribe:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(170, 47, 47, 0.35);
+}
+
+.newsletter-form .btn-subscribe:active {
+    transform: scale(0.98);
+}
+
+/* Animated Alert Messages */
+.newsletter-alert-anim {
+    animation: slideDownFade 0.4s ease forwards;
+}
+
+@keyframes slideDownFade {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
 /* ==========================================
 FOOTER
 ========================================== */

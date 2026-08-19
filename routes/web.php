@@ -97,3 +97,8 @@ Route::get('/past-venture/2010', function () {
     return view('front.page.past-venture.past-venture-2010');
 })->name("past-venture.2010");
 
+
+
+use App\Http\Controllers\NewsletterController;
+
+Route::post('/subscribe-newsletter', [NewsletterController::class, 'store'])->name('newsletter.subscribe');
