@@ -12,7 +12,7 @@
                                     Donation Request for Emerging Voices for Global Health
                                 </h1>
                                 <p class="slider-description">
-                                    For 14 years, EV4GH has connected, mentored,
+                                    For 16 years, EV4GH has connected, mentored,
                                     and empowered emerging health leaders around
                                     the world.
                                 </p>
