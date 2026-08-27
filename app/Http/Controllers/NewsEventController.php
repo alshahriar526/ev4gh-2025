@@ -11,7 +11,15 @@ class NewsEventController extends Controller
     public function frontIndex()
     {
         $newsEvents = NewsEvent::orderBy('created_at', 'desc')->get();
-        return view('front.page.index', compact('newsEvents'));
+
+        return response()
+        ->view('front.index', compact('newsEvents')) // Replace with your actual view name
+        ->header('Cache-Control', 'no-cache, no-store, max-age=0, must-revalidate')
+        ->header('Pragma', 'no-cache')
+        ->header('Expires', 'Sat, 01 Jan 1990 00:00:00 GMT');
+
+
+        // return view('front.page.indexpage', compact('newsEvents'));
     }
 
     public function index()

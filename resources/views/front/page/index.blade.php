@@ -242,7 +242,7 @@
 @section('content')
     <main id="main">
         <section id="main-slider-section" class="main-slider-section">
-            @include('front.page.slider')
+            @include('front.page.sliderpage')
             {{-- <div class="footer">
                 <div class="feature">
                     <a target="_blank" href="https://www.facebook.com/EV4GH/"><i class="fa-brands fa-facebook-f"></i></a>
