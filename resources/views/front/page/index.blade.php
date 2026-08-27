@@ -1,6 +1,5 @@
 @extends('front.layout.front-master')
 @section('styles')
-
     <style>
         .fb-wrapper {
             width: 100%;
@@ -237,12 +236,33 @@
             height: 100%;
             overflow-y: auto;
         }
+
+        /* Hide pointer interactions on cloned duplicate slides when they are not active */
+        .swiper-slide-duplicate:not(.swiper-slide-active) {
+            pointer-events: none !important;
+            visibility: hidden;
+        }
+
+        /* Ensure active clone or normal slide is interactive */
+        .swiper-slide-active,
+        .swiper-slide-duplicate-active {
+            pointer-events: auto !important;
+            visibility: visible !important;
+            z-index: 10 !important;
+        }
+
+        .swiper-slide-active .slider-btn,
+        .swiper-slide-duplicate-active .slider-btn {
+            position: relative;
+            z-index: 20 !important;
+            pointer-events: auto !important;
+        }
     </style>
 @endsection
 @section('content')
     <main id="main">
         <section id="main-slider-section" class="main-slider-section">
-            @include('front.page.sliderpage')
+            @include('front.page.slider')
             {{-- <div class="footer">
                 <div class="feature">
                     <a target="_blank" href="https://www.facebook.com/EV4GH/"><i class="fa-brands fa-facebook-f"></i></a>
@@ -257,7 +277,8 @@
                     <a href="#ev-footer"><i class="fa-solid fa-envelope"></i></a>
                 </div>
             </div> --}}
-            <a href="https://www.youtube.com/@ev4ghsecretariat298" target="_blank" class="ytb-logo"><img src="assets/images/logo/youtube.png" alt="Youtube"></a>
+            <a href="https://www.youtube.com/@ev4ghsecretariat298" target="_blank" class="ytb-logo"><img
+                    src="assets/images/logo/youtube.png" alt="Youtube"></a>
         </section>
         <section id="main-hero" class="main-hero">
             <div class="hero-inner-content container">
@@ -482,6 +503,8 @@
                 disableOnInteraction: false,
             },
             loop: true,
+            loopAdditionalSlides: 2, // Forces clean clone offsets for fade effect
+            watchSlidesProgress: true,
             pagination: {
                 el: ".swiper-pagination",
                 clickable: true,
