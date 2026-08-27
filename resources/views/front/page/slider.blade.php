@@ -16,10 +16,12 @@
                                     and empowered emerging health leaders around
                                     the world.
                                 </p>
-                                <a target="_blank" class="btn slider-btn"
-                                    href="https://bracusa.donorsupport.co/page/EV4GH">
+                                <a 
+                                   class="btn slider-btn issue-btn"
+                                   href="https://bracusa.donorsupport.co/page/EV4GH">
                                     Click to Donate
                                 </a>
+                                
                             </div>
                         </div>
                     </div>

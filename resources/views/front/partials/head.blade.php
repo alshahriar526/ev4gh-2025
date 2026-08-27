@@ -2,6 +2,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- CSRF Token -->
 <meta name="csrf-token" content="{{ csrf_token() }}">
+
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+
+
 <!-- meta -->
 <meta name="description"  content="BRAC James P Grant School of Public Health, BRAC University was founded in 2004 in Dhaka, Bangladesh to address the unmet public health challenges particular to Asia, Africa and South America.
 ">
@@ -11,6 +17,30 @@
 <title>EV4GH</title>
 
 {{-- @vite(['resources/css/app.css', 'resources/js/app.js']) --}}
+
+<script>
+    // 1. Unregister all active Service Workers (Primary cause of sticky cached links)
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.getRegistrations().then(function(registrations) {
+            for (let registration of registrations) {
+                registration.unregister();
+            }
+        });
+    }
+
+    // 2. Clear Browser Cache Storage API
+    if ('caches' in window) {
+        caches.keys().then(function(names) {
+            for (let name of names) {
+                caches.delete(name);
+            }
+        });
+    }
+
+    // 3. Optional: Clear local and session storage
+    // localStorage.clear();
+    // sessionStorage.clear();
+</script>
 
 <!-- Fundraise Up: the new standard for online giving -->
 <script>(function(w,d,s,n,a){if(!w[n]){var l='call,catch,on,once,set,then,track,openCheckout'
