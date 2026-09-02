@@ -105,7 +105,9 @@
             margin: 0;
         }
 
-        .member-designation {
+        .member-designation,
+        .member-designation p,
+        .member-content p{
             color: #777;
             font-size: 16px;
         }
@@ -196,7 +198,7 @@
                                 <div class="member-content">
                                     <h5 class="member-name">{{ $m->full_name }}</h5>
                                     <p class="member-role">{!! $m->role_ev_gb !!}</p>
-                                    <p class="member-designation">{{ $m->designatation_org }}</p>
+                                    <p class="member-designation">{!! $m->designatation_org !!}</p>
                                     {{-- <button class="read-more-btn" data-bs-toggle="modal"
                                         data-bs-target="#memberModal{{ $m->id }}">
                                         Read More →
