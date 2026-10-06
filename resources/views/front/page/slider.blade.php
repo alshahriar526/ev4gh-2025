@@ -4,6 +4,57 @@
 {{--  --}}
 {{--  --}}
 {{--  --}}
+
+<div class="swiper-slide call-for-application-slider">
+            <div class="slider-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-7 col-12">
+                            <div class="content">
+                                <h1 class="slider-heading">
+                                     <i class="fa-thin fa-bullhorn fa-flip me-2"></i> Eager to meet the EV4GH 2026 Fellows ?
+                                </h1>
+
+                                <p style="color:#ffa0a0 !important">Get ready to meet the inspiring Emerging Voices for Global Health (EV4GH) 2026 Fellows!</p>
+                                <p style="color:#ffa0a0 !important">Selected from 1,120+ applications from passionate changemakers around the world, this remarkable group is about to begin their EV4GH journey.</p>
+                                <p style="color:#ffa0a0 !important" class="slider-description">
+                                    <i class="fa-solid fa-calendar-days me-2"></i> Coming up in mid-October
+                                </p>
+
+                                <p style="color:#ffa0a0 !important" class="slider-description">
+
+                                    <i class="fa-solid fa-users me-2"></i>Who will be part of the EV4GH 2026 journey?
+                                    
+                                </p>
+
+                                <p style="color:#ffa0a0 !important" class="slider-description">
+                                    <i class="fa-regular fa-hourglass fa-spin me-2"></i>The countdown is on.
+                                    
+                                </p>
+                                <a target="_blank"
+                                   class="btn slider-btn issue-btn"
+                                   href="https://www.facebook.com/photo/?fbid=1595228072649629&set=a.598099475695832">
+                                    Learn more
+                                </a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Desktop Background -->
+            <div class="background d-none d-lg-block"
+                style="background-image: url('{{ asset('assets/images/index/slider/EV4GH-2026-Fellows.png') }}');">
+            </div>
+
+            <!-- Mobile Image -->
+            <div class="mobile-image-wrapper d-block d-lg-none">
+                <img src="{{ asset('assets/images/index/slider/EV4GH-2026-Fellows.png') }}" alt="Follow-up Banner"
+                    class="mobile-slider-img" />
+            </div>
+        </div>
+
         <div class="swiper-slide call-for-application-slider">
             <div class="slider-content">
                 <div class="container">

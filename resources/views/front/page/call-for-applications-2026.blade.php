@@ -217,7 +217,7 @@
                                 <span>Linked to the 9th Global Health Symposium on Health Systems Research (HSR 2026)
                                     in</span>
                                 <br>
-                                <span><i class="fa-thin fa-location-dot fa-beat me-2"></i> Dubai, UAE, November 2026</span>
+                                <span><i class="fa-thin fa-location-dot fa-beat me-2"></i> Cairo, Egypt, November 2026</span>
                             </div>
 
                         </div>
