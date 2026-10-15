@@ -260,6 +260,8 @@
     </style>
 @endsection
 @section('content')
+
+@include('front.page.modal')
     <main id="main">
         <section id="main-slider-section" class="main-slider-section">
             @include('front.page.slider')

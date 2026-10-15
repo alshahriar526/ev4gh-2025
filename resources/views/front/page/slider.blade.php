@@ -1,22 +1,204 @@
 <div class="swiper-container main-slider">
     <div class="swiper-wrapper">
 
-{{--  --}}
-{{--  --}}
-{{--  --}}
+        {{--  --}}
+        {{--  --}}
+        {{--  --}}
 
-<div class="swiper-slide call-for-application-slider">
+<div class="swiper-slide call-for-application-slider ev2026-banner-slide">
+    <div class="slider-content w-100 h-100 d-flex flex-column justify-content-between py-2">
+        <div class="container-fluid px-3 px-lg-5 h-100 d-flex flex-column justify-content-between">
+            <div class="row g-0 h-100 align-content-between">
+                <div class="col-12 d-flex flex-column justify-content-between h-100">
+                    
+                    <!-- 1. TOP HEADER SECTION -->
+                    <div class="banner-header text-center pt-2">
+                        <div class="mb-1">
+                            <img src="https://ev4gh.net/assetsassets/assets/images/logo/EV4GH-NEW-Logo.png" alt="EV4GH 2026" class="banner-emblem-logo">
+                        </div>
+                        <h1 class="banner-main-title m-0">Welcome, EV4GH 2026 Fellows</h1>
+                    </div>
+
+                    <!-- 2. FELLOWS PORTRAIT GRID (2 Rows matching design) -->
+                    <div class="banner-fellows-wrapper flex-grow-1 my-2">
+                        <div class="banner-fellows-grid">
+                            
+                            <!-- 23 Fellows Mapped -->
+                            <div class="fellow-portrait-card">
+                                <div class="portrait-img-box"><img src="assets/images/fellows-2026/EV4GH2026_AlenChandyAlexander - Alen Alexander.png" alt="Alen Chandy Alexander"></div>
+                                <span class="fellow-card-name">Alen Chandy Alexander</span>
+                                <span class="fellow-card-country">India</span>
+                            </div>
+
+                            <div class="fellow-portrait-card">
+                                <div class="portrait-img-box"><img src="assets/images/fellows-2026/EV4GH2026_AshikBarua - Ashik Barua.png" alt="Ashik Barua"></div>
+                                <span class="fellow-card-name">Ashik Barua</span>
+                                <span class="fellow-card-country">Bangladesh</span>
+                            </div>
+
+                            <div class="fellow-portrait-card">
+                                <div class="portrait-img-box"><img src="assets/images/fellows-2026/Aswathy_photo - Aswathy Ram.jpg" alt="Aswathy Ram"></div>
+                                <span class="fellow-card-name">Aswathy Ram</span>
+                                <span class="fellow-card-country">India</span>
+                            </div>
+
+                            <div class="fellow-portrait-card">
+                                <div class="portrait-img-box"><img src="assets/images/fellows-2026/EV4GH2026_Basma.Mohamed.Saleh - Basma saleh.jpg" alt="Basma Mohamed Saleh"></div>
+                                <span class="fellow-card-name">Basma Mohamed Saleh</span>
+                                <span class="fellow-card-country">Egypt</span>
+                            </div>
+
+                            <div class="fellow-portrait-card">
+                                <div class="portrait-img-box"><img src="assets/images/fellows-2026/EV4GH2026_FabianSchlumberger - Fabian Schlumberger.jpg" alt="Fabian Schlumberger"></div>
+                                <span class="fellow-card-name">Fabian Schlumberger</span>
+                                <span class="fellow-card-country">Germany</span>
+                            </div>
+
+                            <div class="fellow-portrait-card">
+                                <div class="portrait-img-box"><img src="assets/images/fellows-2026/Hashim Hounkpatin (2) - Hashim Hounkpatin.jpg" alt="Hashim Hounkpatin"></div>
+                                <span class="fellow-card-name">Hashim Hounkpatin</span>
+                                <span class="fellow-card-country">Benin</span>
+                            </div>
+
+                            <div class="fellow-portrait-card">
+                                <div class="portrait-img-box"><img src="assets/images/fellows-2026/EV4GH2026_Hein Thu - Hein Thu.jpg" alt="Hein Thu"></div>
+                                <span class="fellow-card-name">Hein Thu</span>
+                                <span class="fellow-card-country">Myanmar</span>
+                            </div>
+
+                            <div class="fellow-portrait-card">
+                                <div class="portrait-img-box"><img src="assets/images/fellows-2026/EV4GH2026_Israel_Herrera_Ramirez - Israel H.jpeg" alt="Israel Herrera Ramirez"></div>
+                                <span class="fellow-card-name">Israel Herrera Ramirez</span>
+                                <span class="fellow-card-country">Mexico</span>
+                            </div>
+
+                            <div class="fellow-portrait-card">
+                                <div class="portrait-img-box"><img src="assets/images/fellows-2026/EV4GH2026_[Jared Odaro] - Jared Odaro.jpeg" alt="Jared Odaro"></div>
+                                <span class="fellow-card-name">Jared Odaro</span>
+                                <span class="fellow-card-country">Kenya</span>
+                            </div>
+
+                            <div class="fellow-portrait-card">
+                                <div class="portrait-img-box"><img src="assets/images/fellows-2026/EV4GH2026_[ Jemima Nyamekye Puni] - Jemima puni.png" alt="Jemima Nyamekye Puni"></div>
+                                <span class="fellow-card-name">Jemima Nyamekye Puni</span>
+                                <span class="fellow-card-country">Ghana</span>
+                            </div>
+
+                            <div class="fellow-portrait-card">
+                                <div class="portrait-img-box"><img src="assets/images/fellows-2026/EV4GH2026_Joyce O. Abel - Joyce Abel.png" alt="Joyce O. Abel"></div>
+                                <span class="fellow-card-name">Joyce O. Abel</span>
+                                <span class="fellow-card-country">Liberia</span>
+                            </div>
+
+                            <div class="fellow-portrait-card">
+                                <div class="portrait-img-box"><img src="assets/images/fellows-2026/EV4GH2026_Krizelle Cleo Fowler - Krizelle Fowler.jpg" alt="Krizelle Cleo Fowler"></div>
+                                <span class="fellow-card-name">Krizelle Cleo Fowler</span>
+                                <span class="fellow-card-country">Philippines</span>
+                            </div>
+
+                            <div class="fellow-portrait-card">
+                                <div class="portrait-img-box"><img src="assets/images/fellows-2026/small - Kusum Moray.jpg" alt="Kusum Moray"></div>
+                                <span class="fellow-card-name">Kusum Moray</span>
+                                <span class="fellow-card-country">India</span>
+                            </div>
+
+                            <div class="fellow-portrait-card">
+                                <div class="portrait-img-box"><img src="assets/images/fellows-2026/EV4GH2026_Lamisa_Rahman - Dr. Lamisa Rahman.JPG" alt="Lamisa Rahman"></div>
+                                <span class="fellow-card-name">Lamisa Rahman</span>
+                                <span class="fellow-card-country">Bangladesh</span>
+                            </div>
+
+                            <div class="fellow-portrait-card">
+                                <div class="portrait-img-box"><img src="assets/images/fellows-2026/EV4GH2026_M Tasdik Hasan - Tasdik Hasan.jpeg" alt="M Tasdik Hasan"></div>
+                                <span class="fellow-card-name">M Tasdik Hasan</span>
+                                <span class="fellow-card-country">Bangladesh</span>
+                            </div>
+
+                            <div class="fellow-portrait-card">
+                                <div class="portrait-img-box"><img src="assets/images/fellows-2026/EV4GH2026_Maria Jeriesa P. Osorio - Jeriesa Osorio.jpg" alt="Maria Jeriesa P. Osorio"></div>
+                                <span class="fellow-card-name">Maria Jeriesa P. Osorio</span>
+                                <span class="fellow-card-country">Philippines</span>
+                            </div>
+
+                            <div class="fellow-portrait-card">
+                                <div class="portrait-img-box"><img src="assets/images/fellows-2026/EV4GH2026_Mostafa SHAKSHAK - Mostafa Shakshak.JPG" alt="Mostafa Shakshak"></div>
+                                <span class="fellow-card-name">Mostafa Shakshak</span>
+                                <span class="fellow-card-country">Egypt</span>
+                            </div>
+
+                            <div class="fellow-portrait-card">
+                                <div class="portrait-img-box"><img src="assets/images/fellows-2026/EV4GH2026_Neti Triwinanti - Neti Triwinanti.JPG" alt="Neti Triwinanti"></div>
+                                <span class="fellow-card-name">Neti Triwinanti</span>
+                                <span class="fellow-card-country">Indonesia</span>
+                            </div>
+
+                            <div class="fellow-portrait-card">
+                                <div class="portrait-img-box"><img src="assets/images/fellows-2026/EV4GH2026_Obaida Karim - Obaida karim.png" alt="Obaida Karim"></div>
+                                <span class="fellow-card-name">Obaida Karim</span>
+                                <span class="fellow-card-country">Bangladesh</span>
+                            </div>
+
+                            <div class="fellow-portrait-card">
+                                <div class="portrait-img-box"><img src="assets/images/fellows-2026/Koiri Photo _1 - Ranjan Koiri.jpeg" alt="Ranjan Koiri"></div>
+                                <span class="fellow-card-name">Ranjan Koiri</span>
+                                <span class="fellow-card-country">Bangladesh</span>
+                            </div>
+
+                            <div class="fellow-portrait-card">
+                                <div class="portrait-img-box"><img src="assets/images/fellows-2026/EV4GH2026_Rodrigo Karlop Arce Cardozo - Rodrigo K. Arce C..jpg" alt="Rodrigo Karlop Arce Cardozo"></div>
+                                <span class="fellow-card-name">Rodrigo Karlop Arce Cardozo</span>
+                                <span class="fellow-card-country">Bolivia</span>
+                            </div>
+
+                            <div class="fellow-portrait-card">
+                                <div class="portrait-img-box"><img src="assets/images/fellows-2026/EV4GH2026_Vanessa Thulisile Mukundwa - Vanessa Thulisile Mukundwa.png" alt="Vanessa Thulisile Mukundwa"></div>
+                                <span class="fellow-card-name">Vanessa Thulisile Mukundwa</span>
+                                <span class="fellow-card-country">Zimbabwe</span>
+                            </div>
+
+                            <div class="fellow-portrait-card">
+                                <div class="portrait-img-box"><img src="assets/images/fellows-2026/Webby Phiri - Bio Picture - Webby Phiri.png" alt="Webby Phiri"></div>
+                                <span class="fellow-card-name">Webby Phiri</span>
+                                <span class="fellow-card-country">Zambia</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- 3. ORGANIZER LOGO BAR (BRAC JPGSPH, HSG, HSR 2026) -->
+                    <div class="banner-organizers-footer py-2 text-center">
+                        <div class="d-flex align-items-center justify-content-center gap-4 gap-md-5">
+                            <img src="https://bracjpgsph.org/assetsassets/images/fellows-2026/main-logo-56586a.png" alt="BRAC JPGSPH" class="banner-partner-logo">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDRwxc8-K4ZY3Mb5MnjmwQyULZ5OO70m3tAr97vtDA4DsaEtpTUahcxWRT&s=10" alt="HSG Logo" class="banner-partner-logo">
+                            <img src="https://abstracts.healthsystemsresearch.org/assetsassets/images/fellows-2026/EN-hsr2026-full-colour-logo.png" alt="HSR 2026" class="banner-partner-logo">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+        <div class="swiper-slide call-for-application-slider">
             <div class="slider-content">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-6 col-md-7 col-12">
                             <div class="content">
                                 <h1 class="slider-heading">
-                                     <i class="fa-thin fa-bullhorn fa-flip me-2"></i> Eager to meet the EV4GH 2026 Fellows ?
+                                    <i class="fa-thin fa-bullhorn fa-flip me-2"></i> Eager to meet the EV4GH 2026
+                                    Fellows ?
                                 </h1>
 
-                                <p style="color:#ffa0a0 !important">Get ready to meet the inspiring Emerging Voices for Global Health (EV4GH) 2026 Fellows!</p>
-                                <p style="color:#ffa0a0 !important">Selected from 1,120+ applications from passionate changemakers around the world, this remarkable group is about to begin their EV4GH journey.</p>
+                                <p style="color:#ffa0a0 !important">Get ready to meet the inspiring Emerging Voices for
+                                    Global Health (EV4GH) 2026 Fellows!</p>
+                                <p style="color:#ffa0a0 !important">Selected from 1,120+ applications from passionate
+                                    changemakers around the world, this remarkable group is about to begin their EV4GH
+                                    journey.</p>
                                 <p style="color:#ffa0a0 !important" class="slider-description">
                                     <i class="fa-solid fa-calendar-days me-2"></i> Coming up in mid-October
                                 </p>
@@ -24,19 +206,18 @@
                                 <p style="color:#ffa0a0 !important" class="slider-description">
 
                                     <i class="fa-solid fa-users me-2"></i>Who will be part of the EV4GH 2026 journey?
-                                    
+
                                 </p>
 
                                 <p style="color:#ffa0a0 !important" class="slider-description">
                                     <i class="fa-regular fa-hourglass fa-spin me-2"></i>The countdown is on.
-                                    
+
                                 </p>
-                                <a target="_blank"
-                                   class="btn slider-btn issue-btn"
-                                   href="https://www.facebook.com/photo/?fbid=1595228072649629&set=a.598099475695832">
+                                <a target="_blank" class="btn slider-btn issue-btn"
+                                    href="https://www.facebook.com/photo/?fbid=1595228072649629&set=a.598099475695832">
                                     Learn more
                                 </a>
-                                
+
                             </div>
                         </div>
                     </div>
@@ -69,12 +250,11 @@
                                     and empowered emerging health leaders around
                                     the world.
                                 </p>
-                                <a target="_blank"
-                                   class="btn slider-btn issue-btn"
-                                   href="https://bracusa.donorsupport.co/page/EV4GH">
+                                <a target="_blank" class="btn slider-btn issue-btn"
+                                    href="https://bracusa.donorsupport.co/page/EV4GH">
                                     Click to Donate
                                 </a>
-                                
+
                             </div>
                         </div>
                     </div>
