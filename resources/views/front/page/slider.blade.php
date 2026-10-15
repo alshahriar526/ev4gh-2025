@@ -21,7 +21,7 @@
 
                         <div class="ev26-card">
                             <div class="ev26-avatar"><img
-                                    src="assets/images/fellows-2026/EV4GH2026_AlenChandyAlexander - Alen Alexander.png"
+                                    src="assets/images/fellows-2026/EV4GH2026_AlenChandyAlexander---Alen-Alexander.jpg"
                                     alt="Alen Chandy Alexander" loading="lazy"></div>
                             <div class="ev26-text"><span class="ev26-name">Alen Chandy Alexander</span><span
                                     class="ev26-country">India</span></div>
@@ -29,7 +29,7 @@
 
                         <div class="ev26-card">
                             <div class="ev26-avatar"><img
-                                    src="assets/images/fellows-2026/EV4GH2026_AshikBarua - Ashik Barua.png"
+                                    src="assets/images/fellows-2026/EV4GH2026_AshikBarua---Ashik-Barua.jpg"
                                     alt="Ashik Barua" loading="lazy"></div>
                             <div class="ev26-text"><span class="ev26-name">Ashik Barua</span><span
                                     class="ev26-country">Bangladesh</span></div>
@@ -37,7 +37,7 @@
 
                         <div class="ev26-card">
                             <div class="ev26-avatar"><img
-                                    src="assets/images/fellows-2026/Aswathy_photo - Aswathy Ram.jpg" alt="Aswathy Ram"
+                                    src="assets/images/fellows-2026/Aswathy_photo---Aswathy-Ram.jpg" alt="Aswathy Ram"
                                     loading="lazy"></div>
                             <div class="ev26-text"><span class="ev26-name">Aswathy Ram</span><span
                                     class="ev26-country">India</span></div>
@@ -45,7 +45,7 @@
 
                         <div class="ev26-card">
                             <div class="ev26-avatar"><img
-                                    src="assets/images/fellows-2026/EV4GH2026_Basma.Mohamed.Saleh - Basma saleh.jpg"
+                                    src="assets/images/fellows-2026/EV4GH2026_Basma.Mohamed.Saleh---Basma-saleh.jpg"
                                     alt="Basma Mohamed Saleh" loading="lazy"></div>
                             <div class="ev26-text"><span class="ev26-name">Basma Mohamed Saleh</span><span
                                     class="ev26-country">Egypt</span></div>
@@ -53,7 +53,7 @@
 
                         <div class="ev26-card">
                             <div class="ev26-avatar"><img
-                                    src="assets/images/fellows-2026/EV4GH2026_FabianSchlumberger - Fabian Schlumberger.jpg"
+                                    src="assets/images/fellows-2026/EV4GH2026_FabianSchlumberger---Fabian-Schlumberger.jpg"
                                     alt="Fabian Schlumberger" loading="lazy"></div>
                             <div class="ev26-text"><span class="ev26-name">Fabian Schlumberger</span><span
                                     class="ev26-country">Germany</span></div>
@@ -61,7 +61,7 @@
 
                         <div class="ev26-card">
                             <div class="ev26-avatar"><img
-                                    src="assets/images/fellows-2026/Hashim Hounkpatin (2) - Hashim Hounkpatin.jpg"
+                                    src="assets/images/fellows-2026/Hashim-Hounkpatin-(2)---Hashim-Hounkpatin.jpg"
                                     alt="Hashim Hounkpatin" loading="lazy"></div>
                             <div class="ev26-text"><span class="ev26-name">Hashim Hounkpatin</span><span
                                     class="ev26-country">Benin</span></div>
@@ -69,7 +69,7 @@
 
                         <div class="ev26-card">
                             <div class="ev26-avatar"><img
-                                    src="assets/images/fellows-2026/EV4GH2026_Hein Thu - Hein Thu.jpg" alt="Hein Thu"
+                                    src="assets/images/fellows-2026/EV4GH2026_Hein-Thu---Hein-Thu.jpg" alt="Hein Thu"
                                     loading="lazy"></div>
                             <div class="ev26-text"><span class="ev26-name">Hein Thu</span><span
                                     class="ev26-country">Myanmar</span></div>
@@ -77,7 +77,7 @@
 
                         <div class="ev26-card">
                             <div class="ev26-avatar"><img
-                                    src="assets/images/fellows-2026/EV4GH2026_Israel_Herrera_Ramirez - Israel H.jpeg"
+                                    src="assets/images/fellows-2026/EV4GH2026_Israel_Herrera_Ramirez---Israel-H.jpg"
                                     alt="Israel Herrera Ramirez" loading="lazy"></div>
                             <div class="ev26-text"><span class="ev26-name">Israel Herrera Ramirez</span><span
                                     class="ev26-country">Mexico</span></div>
@@ -85,7 +85,7 @@
 
                         <div class="ev26-card">
                             <div class="ev26-avatar"><img
-                                    src="assets/images/fellows-2026/EV4GH2026_[Jared Odaro] - Jared Odaro.jpeg"
+                                    src="assets/images/fellows-2026/EV4GH2026_[Jared-Odaro]---Jared-Odaro.jpg"
                                     alt="Jared Odaro" loading="lazy"></div>
                             <div class="ev26-text"><span class="ev26-name">Jared Odaro</span><span
                                     class="ev26-country">Kenya</span></div>
@@ -93,7 +93,7 @@
 
                         <div class="ev26-card">
                             <div class="ev26-avatar"><img
-                                    src="assets/images/fellows-2026/EV4GH2026_[ Jemima Nyamekye Puni] - Jemima puni.png"
+                                    src="assets/images/fellows-2026/EV4GH2026_[-Jemima-Nyamekye-Puni]---Jemima-puni.jpg"
                                     alt="Jemima Nyamekye Puni" loading="lazy"></div>
                             <div class="ev26-text"><span class="ev26-name">Jemima Nyamekye Puni</span><span
                                     class="ev26-country">Ghana</span></div>
@@ -101,7 +101,7 @@
 
                         <div class="ev26-card">
                             <div class="ev26-avatar"><img
-                                    src="assets/images/fellows-2026/EV4GH2026_Joyce O. Abel - Joyce Abel.png"
+                                    src="assets/images/fellows-2026/EV4GH2026_Joyce-O.-Abel---Joyce-Abel.jpg"
                                     alt="Joyce O. Abel" loading="lazy"></div>
                             <div class="ev26-text"><span class="ev26-name">Joyce O. Abel</span><span
                                     class="ev26-country">Liberia</span></div>
@@ -109,14 +109,14 @@
 
                         <div class="ev26-card">
                             <div class="ev26-avatar"><img
-                                    src="assets/images/fellows-2026/EV4GH2026_Krizelle Cleo Fowler - Krizelle Fowler.jpg"
+                                    src="assets/images/fellows-2026/EV4GH2026_Krizelle-Cleo-Fowler---Krizelle-Fowler.jpg"
                                     alt="Krizelle Cleo Fowler" loading="lazy"></div>
                             <div class="ev26-text"><span class="ev26-name">Krizelle Cleo Fowler</span><span
                                     class="ev26-country">Philippines</span></div>
                         </div>
 
                         <div class="ev26-card">
-                            <div class="ev26-avatar"><img src="assets/images/fellows-2026/small - Kusum Moray.jpg"
+                            <div class="ev26-avatar"><img src="assets/images/fellows-2026/small---Kusum-Moray.png"
                                     alt="Kusum Moray" loading="lazy"></div>
                             <div class="ev26-text"><span class="ev26-name">Kusum Moray</span><span
                                     class="ev26-country">India</span></div>
@@ -124,7 +124,7 @@
 
                         <div class="ev26-card">
                             <div class="ev26-avatar"><img
-                                    src="assets/images/fellows-2026/EV4GH2026_Lamisa_Rahman - Dr. Lamisa Rahman.JPG"
+                                    src="assets/images/fellows-2026/EV4GH2026_Lamisa_Rahman---Dr.-Lamisa-Rahman.jpg"
                                     alt="Lamisa Rahman" loading="lazy"></div>
                             <div class="ev26-text"><span class="ev26-name">Lamisa Rahman</span><span
                                     class="ev26-country">Bangladesh</span></div>
@@ -132,7 +132,7 @@
 
                         <div class="ev26-card">
                             <div class="ev26-avatar"><img
-                                    src="assets/images/fellows-2026/EV4GH2026_M Tasdik Hasan - Tasdik Hasan.jpeg"
+                                    src="assets/images/fellows-2026/EV4GH2026_M-Tasdik-Hasan---Tasdik-Hasan.jpg"
                                     alt="M Tasdik Hasan" loading="lazy"></div>
                             <div class="ev26-text"><span class="ev26-name">M Tasdik Hasan</span><span
                                     class="ev26-country">Bangladesh</span></div>
@@ -140,7 +140,7 @@
 
                         <div class="ev26-card">
                             <div class="ev26-avatar"><img
-                                    src="assets/images/fellows-2026/EV4GH2026_Maria Jeriesa P. Osorio - Jeriesa Osorio.jpg"
+                                    src="assets/images/fellows-2026/EV4GH2026_Maria-Jeriesa-P.-Osorio---Jeriesa-Osorio.jpg"
                                     alt="Maria Jeriesa P. Osorio" loading="lazy"></div>
                             <div class="ev26-text"><span class="ev26-name">Maria Jeriesa P. Osorio</span><span
                                     class="ev26-country">Philippines</span></div>
@@ -148,7 +148,7 @@
 
                         <div class="ev26-card">
                             <div class="ev26-avatar"><img
-                                    src="assets/images/fellows-2026/EV4GH2026_Mostafa SHAKSHAK - Mostafa Shakshak.JPG"
+                                    src="assets/images/fellows-2026/EV4GH2026_Mostafa-SHAKSHAK---Mostafa-Shakshak.jpg"
                                     alt="Mostafa Shakshak" loading="lazy"></div>
                             <div class="ev26-text"><span class="ev26-name">Mostafa Shakshak</span><span
                                     class="ev26-country">Egypt</span></div>
@@ -156,7 +156,7 @@
 
                         <div class="ev26-card">
                             <div class="ev26-avatar"><img
-                                    src="assets/images/fellows-2026/EV4GH2026_Neti Triwinanti - Neti Triwinanti.JPG"
+                                    src="assets/images/fellows-2026/EV4GH2026_Neti-Triwinanti---Neti-Triwinanti.jpg"
                                     alt="Neti Triwinanti" loading="lazy"></div>
                             <div class="ev26-text"><span class="ev26-name">Neti Triwinanti</span><span
                                     class="ev26-country">Indonesia</span></div>
@@ -164,7 +164,7 @@
 
                         <div class="ev26-card">
                             <div class="ev26-avatar"><img
-                                    src="assets/images/fellows-2026/EV4GH2026_Obaida Karim - Obaida karim.png"
+                                    src="assets/images/fellows-2026/EV4GH2026_Obaida-Karim---Obaida-karim.jpg"
                                     alt="Obaida Karim" loading="lazy"></div>
                             <div class="ev26-text"><span class="ev26-name">Obaida Karim</span><span
                                     class="ev26-country">Bangladesh</span></div>
@@ -172,7 +172,7 @@
 
                         <div class="ev26-card">
                             <div class="ev26-avatar"><img
-                                    src="assets/images/fellows-2026/Koiri Photo _1 - Ranjan Koiri.jpeg"
+                                    src="assets/images/fellows-2026/Koiri-Photo-_1---Ranjan-Koiri.jpg"
                                     alt="Ranjan Koiri" loading="lazy"></div>
                             <div class="ev26-text"><span class="ev26-name">Ranjan Koiri</span><span
                                     class="ev26-country">Bangladesh</span></div>
@@ -180,7 +180,7 @@
 
                         <div class="ev26-card">
                             <div class="ev26-avatar"><img
-                                    src="assets/images/fellows-2026/EV4GH2026_Rodrigo Karlop Arce Cardozo - Rodrigo K. Arce C..jpg"
+                                    src="assets/images/fellows-2026/EV4GH2026_Rodrigo-Karlop-Arce-Cardozo---Rodrigo-K.-Arce-C..jpg"
                                     alt="Rodrigo Karlop Arce Cardozo" loading="lazy"></div>
                             <div class="ev26-text"><span class="ev26-name">Rodrigo Karlop Arce Cardozo</span><span
                                     class="ev26-country">Bolivia</span></div>
@@ -188,7 +188,7 @@
 
                         <div class="ev26-card">
                             <div class="ev26-avatar"><img
-                                    src="assets/images/fellows-2026/EV4GH2026_Vanessa Thulisile Mukundwa - Vanessa Thulisile Mukundwa.png"
+                                    src="assets/images/fellows-2026/EV4GH2026_Vanessa-Thulisile-Mukundwa---Vanessa-Thulisile-Mukundwa.jpg"
                                     alt="Vanessa Thulisile Mukundwa" loading="lazy"></div>
                             <div class="ev26-text"><span class="ev26-name">Vanessa Thulisile Mukundwa</span><span
                                     class="ev26-country">Zimbabwe</span></div>
@@ -196,7 +196,7 @@
 
                         <div class="ev26-card">
                             <div class="ev26-avatar"><img
-                                    src="assets/images/fellows-2026/Webby Phiri - Bio Picture - Webby Phiri.png"
+                                    src="assets/images/fellows-2026/Webby-Phiri---Bio-Picture---Webby-Phiri.png"
                                     alt="Webby Phiri" loading="lazy"></div>
                             <div class="ev26-text"><span class="ev26-name">Webby Phiri</span><span
                                     class="ev26-country">Zambia</span></div>
@@ -578,7 +578,7 @@
                 </div>
             </div>
 
-            <!-- Desktop Background -->
+            <!-- Desktop Background -->¬
             <div class="background d-none d-lg-block"
                 style="background-image: url('{{ asset('assets/images/index/slider/ev-2026-venture.jpg') }}');">
             </div>
