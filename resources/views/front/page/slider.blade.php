@@ -1,6 +1,219 @@
 <div class="swiper-container main-slider">
     <div class="swiper-wrapper">
 
+        <div class="swiper-slide call-for-application-slider ev26-slide">
+            <div class="ev26-inner">
+
+                <!-- Header -->
+                <div class="ev26-header">
+                    <img src="https://ev4gh.net/assets/images/logo/EV4GH-NEW-Logo.png" alt="EV4GH 2026" class="ev26-logo">
+                    <div>
+                        {{-- <span class="ev26-eyebrow">Evidence for Global Health · 2026 Cohort</span> --}}
+                        <h1 class="ev26-title">Welcome, EV4GH 2026 Fellows</h1>
+                        {{-- <hr style="margin:0"> --}}
+                    </div>
+                </div>
+
+
+                <!-- Fellows (23) -->
+                <div class="ev26-grid-wrap">
+                    <div class="ev26-grid">
+
+                        <div class="ev26-card">
+                            <div class="ev26-avatar"><img
+                                    src="assets/images/fellows-2026/EV4GH2026_AlenChandyAlexander - Alen Alexander.png"
+                                    alt="Alen Chandy Alexander" loading="lazy"></div>
+                            <div class="ev26-text"><span class="ev26-name">Alen Chandy Alexander</span><span
+                                    class="ev26-country">India</span></div>
+                        </div>
+
+                        <div class="ev26-card">
+                            <div class="ev26-avatar"><img
+                                    src="assets/images/fellows-2026/EV4GH2026_AshikBarua - Ashik Barua.png"
+                                    alt="Ashik Barua" loading="lazy"></div>
+                            <div class="ev26-text"><span class="ev26-name">Ashik Barua</span><span
+                                    class="ev26-country">Bangladesh</span></div>
+                        </div>
+
+                        <div class="ev26-card">
+                            <div class="ev26-avatar"><img
+                                    src="assets/images/fellows-2026/Aswathy_photo - Aswathy Ram.jpg" alt="Aswathy Ram"
+                                    loading="lazy"></div>
+                            <div class="ev26-text"><span class="ev26-name">Aswathy Ram</span><span
+                                    class="ev26-country">India</span></div>
+                        </div>
+
+                        <div class="ev26-card">
+                            <div class="ev26-avatar"><img
+                                    src="assets/images/fellows-2026/EV4GH2026_Basma.Mohamed.Saleh - Basma saleh.jpg"
+                                    alt="Basma Mohamed Saleh" loading="lazy"></div>
+                            <div class="ev26-text"><span class="ev26-name">Basma Mohamed Saleh</span><span
+                                    class="ev26-country">Egypt</span></div>
+                        </div>
+
+                        <div class="ev26-card">
+                            <div class="ev26-avatar"><img
+                                    src="assets/images/fellows-2026/EV4GH2026_FabianSchlumberger - Fabian Schlumberger.jpg"
+                                    alt="Fabian Schlumberger" loading="lazy"></div>
+                            <div class="ev26-text"><span class="ev26-name">Fabian Schlumberger</span><span
+                                    class="ev26-country">Germany</span></div>
+                        </div>
+
+                        <div class="ev26-card">
+                            <div class="ev26-avatar"><img
+                                    src="assets/images/fellows-2026/Hashim Hounkpatin (2) - Hashim Hounkpatin.jpg"
+                                    alt="Hashim Hounkpatin" loading="lazy"></div>
+                            <div class="ev26-text"><span class="ev26-name">Hashim Hounkpatin</span><span
+                                    class="ev26-country">Benin</span></div>
+                        </div>
+
+                        <div class="ev26-card">
+                            <div class="ev26-avatar"><img
+                                    src="assets/images/fellows-2026/EV4GH2026_Hein Thu - Hein Thu.jpg" alt="Hein Thu"
+                                    loading="lazy"></div>
+                            <div class="ev26-text"><span class="ev26-name">Hein Thu</span><span
+                                    class="ev26-country">Myanmar</span></div>
+                        </div>
+
+                        <div class="ev26-card">
+                            <div class="ev26-avatar"><img
+                                    src="assets/images/fellows-2026/EV4GH2026_Israel_Herrera_Ramirez - Israel H.jpeg"
+                                    alt="Israel Herrera Ramirez" loading="lazy"></div>
+                            <div class="ev26-text"><span class="ev26-name">Israel Herrera Ramirez</span><span
+                                    class="ev26-country">Mexico</span></div>
+                        </div>
+
+                        <div class="ev26-card">
+                            <div class="ev26-avatar"><img
+                                    src="assets/images/fellows-2026/EV4GH2026_[Jared Odaro] - Jared Odaro.jpeg"
+                                    alt="Jared Odaro" loading="lazy"></div>
+                            <div class="ev26-text"><span class="ev26-name">Jared Odaro</span><span
+                                    class="ev26-country">Kenya</span></div>
+                        </div>
+
+                        <div class="ev26-card">
+                            <div class="ev26-avatar"><img
+                                    src="assets/images/fellows-2026/EV4GH2026_[ Jemima Nyamekye Puni] - Jemima puni.png"
+                                    alt="Jemima Nyamekye Puni" loading="lazy"></div>
+                            <div class="ev26-text"><span class="ev26-name">Jemima Nyamekye Puni</span><span
+                                    class="ev26-country">Ghana</span></div>
+                        </div>
+
+                        <div class="ev26-card">
+                            <div class="ev26-avatar"><img
+                                    src="assets/images/fellows-2026/EV4GH2026_Joyce O. Abel - Joyce Abel.png"
+                                    alt="Joyce O. Abel" loading="lazy"></div>
+                            <div class="ev26-text"><span class="ev26-name">Joyce O. Abel</span><span
+                                    class="ev26-country">Liberia</span></div>
+                        </div>
+
+                        <div class="ev26-card">
+                            <div class="ev26-avatar"><img
+                                    src="assets/images/fellows-2026/EV4GH2026_Krizelle Cleo Fowler - Krizelle Fowler.jpg"
+                                    alt="Krizelle Cleo Fowler" loading="lazy"></div>
+                            <div class="ev26-text"><span class="ev26-name">Krizelle Cleo Fowler</span><span
+                                    class="ev26-country">Philippines</span></div>
+                        </div>
+
+                        <div class="ev26-card">
+                            <div class="ev26-avatar"><img src="assets/images/fellows-2026/small - Kusum Moray.jpg"
+                                    alt="Kusum Moray" loading="lazy"></div>
+                            <div class="ev26-text"><span class="ev26-name">Kusum Moray</span><span
+                                    class="ev26-country">India</span></div>
+                        </div>
+
+                        <div class="ev26-card">
+                            <div class="ev26-avatar"><img
+                                    src="assets/images/fellows-2026/EV4GH2026_Lamisa_Rahman - Dr. Lamisa Rahman.JPG"
+                                    alt="Lamisa Rahman" loading="lazy"></div>
+                            <div class="ev26-text"><span class="ev26-name">Lamisa Rahman</span><span
+                                    class="ev26-country">Bangladesh</span></div>
+                        </div>
+
+                        <div class="ev26-card">
+                            <div class="ev26-avatar"><img
+                                    src="assets/images/fellows-2026/EV4GH2026_M Tasdik Hasan - Tasdik Hasan.jpeg"
+                                    alt="M Tasdik Hasan" loading="lazy"></div>
+                            <div class="ev26-text"><span class="ev26-name">M Tasdik Hasan</span><span
+                                    class="ev26-country">Bangladesh</span></div>
+                        </div>
+
+                        <div class="ev26-card">
+                            <div class="ev26-avatar"><img
+                                    src="assets/images/fellows-2026/EV4GH2026_Maria Jeriesa P. Osorio - Jeriesa Osorio.jpg"
+                                    alt="Maria Jeriesa P. Osorio" loading="lazy"></div>
+                            <div class="ev26-text"><span class="ev26-name">Maria Jeriesa P. Osorio</span><span
+                                    class="ev26-country">Philippines</span></div>
+                        </div>
+
+                        <div class="ev26-card">
+                            <div class="ev26-avatar"><img
+                                    src="assets/images/fellows-2026/EV4GH2026_Mostafa SHAKSHAK - Mostafa Shakshak.JPG"
+                                    alt="Mostafa Shakshak" loading="lazy"></div>
+                            <div class="ev26-text"><span class="ev26-name">Mostafa Shakshak</span><span
+                                    class="ev26-country">Egypt</span></div>
+                        </div>
+
+                        <div class="ev26-card">
+                            <div class="ev26-avatar"><img
+                                    src="assets/images/fellows-2026/EV4GH2026_Neti Triwinanti - Neti Triwinanti.JPG"
+                                    alt="Neti Triwinanti" loading="lazy"></div>
+                            <div class="ev26-text"><span class="ev26-name">Neti Triwinanti</span><span
+                                    class="ev26-country">Indonesia</span></div>
+                        </div>
+
+                        <div class="ev26-card">
+                            <div class="ev26-avatar"><img
+                                    src="assets/images/fellows-2026/EV4GH2026_Obaida Karim - Obaida karim.png"
+                                    alt="Obaida Karim" loading="lazy"></div>
+                            <div class="ev26-text"><span class="ev26-name">Obaida Karim</span><span
+                                    class="ev26-country">Bangladesh</span></div>
+                        </div>
+
+                        <div class="ev26-card">
+                            <div class="ev26-avatar"><img
+                                    src="assets/images/fellows-2026/Koiri Photo _1 - Ranjan Koiri.jpeg"
+                                    alt="Ranjan Koiri" loading="lazy"></div>
+                            <div class="ev26-text"><span class="ev26-name">Ranjan Koiri</span><span
+                                    class="ev26-country">Bangladesh</span></div>
+                        </div>
+
+                        <div class="ev26-card">
+                            <div class="ev26-avatar"><img
+                                    src="assets/images/fellows-2026/EV4GH2026_Rodrigo Karlop Arce Cardozo - Rodrigo K. Arce C..jpg"
+                                    alt="Rodrigo Karlop Arce Cardozo" loading="lazy"></div>
+                            <div class="ev26-text"><span class="ev26-name">Rodrigo Karlop Arce Cardozo</span><span
+                                    class="ev26-country">Bolivia</span></div>
+                        </div>
+
+                        <div class="ev26-card">
+                            <div class="ev26-avatar"><img
+                                    src="assets/images/fellows-2026/EV4GH2026_Vanessa Thulisile Mukundwa - Vanessa Thulisile Mukundwa.png"
+                                    alt="Vanessa Thulisile Mukundwa" loading="lazy"></div>
+                            <div class="ev26-text"><span class="ev26-name">Vanessa Thulisile Mukundwa</span><span
+                                    class="ev26-country">Zimbabwe</span></div>
+                        </div>
+
+                        <div class="ev26-card">
+                            <div class="ev26-avatar"><img
+                                    src="assets/images/fellows-2026/Webby Phiri - Bio Picture - Webby Phiri.png"
+                                    alt="Webby Phiri" loading="lazy"></div>
+                            <div class="ev26-text"><span class="ev26-name">Webby Phiri</span><span
+                                    class="ev26-country">Zambia</span></div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Footer logos -->
+                <div class="ev26-footer">
+                    <img src="assets/images/fellows-2026/bracjpgsph.png" alt="BRAC JPGSPH" class="ev26-partner">
+                    <img src="assets/images/fellows-2026/hsg.png" alt="HSG Logo" class="ev26-partner">
+                    <img src="assets/images/fellows-2026/hsg2026.webp" alt="HSR 2026" class="ev26-partner">
+                </div>
+
+            </div>
+        </div>
 
 
 
@@ -376,6 +589,8 @@
                     alt="EV4GH Governance Board Convenes" class="mobile-slider-img" />
             </div>
         </div>
+
+
 
     </div>
     <!-- Right Side Vertical Pagination -->

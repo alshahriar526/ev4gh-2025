@@ -257,11 +257,290 @@
             z-index: 20 !important;
             pointer-events: auto !important;
         }
+
+/* =========================================================
+   EV4GH 2026 – Welcome Fellows Banner (clean cream + soft glass)
+   Fits inside: --slider-height: calc(100vh - var(--topbar-height) - var(--navbar-height));
+   ========================================================= */
+
+.main-slider .ev26-slide {
+    --ev26-navy: #0f2847;
+    --ev26-blue: #1f7fb0;
+    --ev26-red: #a62527;
+    --ev26-gold: #d9a441;
+
+    /* Keep clear of slider controls – tweak to match your arrows/dots */
+    --ev26-ctrl-bottom: 76px;
+    --ev26-ctrl-side: 84px;
+
+    /* One consistent vertical rhythm between header / grid / footer */
+    --ev26-section-gap: clamp(14px, 2.6vh, 30px);
+
+    --ev26-cols: 8;
+    --ev26-rows: 3;
+
+    height: var(--slider-height, calc(100vh - var(--topbar-height, 0px) - var(--navbar-height, 0px))) !important;
+    max-height: var(--slider-height, calc(100vh - var(--topbar-height, 0px) - var(--navbar-height, 0px))) !important;
+    position: relative;
+    overflow: hidden;
+    color: var(--ev26-navy);
+    isolation: isolate;
+    /* Layered cream "mesh": soft light top-left, warm gold bottom-right, gentle blue tint top-right */
+    background:
+        radial-gradient(60% 75% at 6% 0%, rgba(255, 255, 255, .75) 0%, rgba(255, 255, 255, 0) 60%),
+        radial-gradient(45% 60% at 100% 0%, rgba(59, 164, 215, .16) 0%, rgba(59, 164, 215, 0) 65%),
+        radial-gradient(55% 70% at 100% 100%, rgba(217, 164, 65, .45) 0%, rgba(217, 164, 65, 0) 65%),
+        radial-gradient(40% 55% at 0% 100%, rgba(166, 37, 39, .10) 0%, rgba(166, 37, 39, 0) 65%),
+        linear-gradient(135deg, #f1e3c9 0%, #efd199 55%, #fce4b8 100%) !important;
+}
+
+/* subtle dotted texture (fades out toward the edges) */
+.ev26-slide::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    background-image: radial-gradient(rgba(15, 40, 71, .14) 1.2px, transparent 1.4px);
+    background-size: 22px 22px;
+    -webkit-mask-image: radial-gradient(ellipse at center, #000 35%, rgba(0, 0, 0, .35) 100%);
+    mask-image: radial-gradient(ellipse at center, #000 35%, rgba(0, 0, 0, .35) 100%);
+}
+
+/* soft concentric rings in the corners for depth */
+.ev26-slide::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    background:
+        repeating-radial-gradient(circle at 100% 0%, rgba(15, 40, 71, .07) 0 1px, transparent 1px 38px),
+        repeating-radial-gradient(circle at 0% 100%, rgba(166, 37, 39, .07) 0 1px, transparent 1px 38px);
+    -webkit-mask-image:
+        radial-gradient(circle at 100% 0%, #000 0, transparent 38%),
+        radial-gradient(circle at 0% 100%, #000 0, transparent 38%);
+    mask-image:
+        radial-gradient(circle at 100% 0%, #000 0, transparent 38%),
+        radial-gradient(circle at 0% 100%, #000 0, transparent 38%);
+    -webkit-mask-composite: source-over;
+    mask-composite: add;
+}
+
+.ev26-inner {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: var(--ev26-section-gap);
+    padding: clamp(10px, 2vh, 22px) var(--ev26-ctrl-side) var(--ev26-ctrl-bottom);
+}
+
+/* ---------- Header ---------- */
+.ev26-header {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: clamp(14px, 2vw, 28px);
+    border-bottom: 1px solid rgba(15, 40, 71, .15);
+    padding: 20px;
+}
+
+
+.ev26-logo {
+    height: clamp(44px, 9vh, 84px);
+    width: auto;
+    object-fit: contain;
+    background: #fff;
+    padding: 6px 10px;
+    border-radius: 16px;
+    box-shadow: 0 6px 18px rgba(15, 40, 71, .15);
+}
+
+.ev26-header > div {
+    padding-left: clamp(14px, 2vw, 28px);
+    border-left: 3px solid var(--ev26-gold);
+}
+
+.ev26-eyebrow {
+    display: block;
+    font-size: clamp(.6rem, 1.3vh, .75rem);
+    letter-spacing: .28em;
+    text-transform: uppercase;
+    color: var(--ev26-red);
+    font-weight: 700;
+    margin-bottom: 2px;
+}
+
+.ev26-title {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    line-height: 1.1;
+    font-size: clamp(1.3rem, 3.8vh, 2.2rem);
+    letter-spacing: -.3px;
+    color: var(--ev26-navy);
+}
+
+/* ---------- Fellows grid ---------- */
+.ev26-grid-wrap {
+    flex: 1 1 auto;
+    min-height: 0;
+    container-type: size;
+}
+
+.ev26-grid {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(var(--ev26-cols), minmax(0, 1fr));
+    grid-template-rows: repeat(var(--ev26-rows), minmax(0, 1fr));
+    gap: clamp(8px, 1.4vh, 14px) clamp(8px, 1vw, 14px);
+}
+
+/* Soft glass tile, big round photo */
+.ev26-card {
+    --avatar: clamp(
+        56px, 
+        min(
+            calc(100cqh / var(--ev26-rows) - 42px), 
+            calc(100cqw / var(--ev26-cols) - 20px)
+        ), 
+        220px
+    );
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    min-width: 0;
+    min-height: 0;
+    padding: 8px 8px 10px;
+    text-align: center;
+    /* background: rgba(255, 255, 255, .55); */
+    /* border: 1px solid rgba(255, 255, 255, .85); */
+    /* border-radius: 20px; */
+    /* box-shadow: 0 6px 18px rgba(15, 40, 71, .09), inset 0 1px 0 rgba(255, 255, 255, .9); */
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    transition: transform .25s ease, box-shadow .25s ease, background .25s ease;
+}
+
+.ev26-card:hover {
+    transform: translateY(-4px);
+    background: rgba(255, 255, 255, .85);
+    box-shadow: 0 14px 28px rgba(15, 40, 71, .18), inset 0 1px 0 #fff;
+}
+
+.ev26-avatar {
+    flex: 0 0 auto;
+    width: var(--avatar);
+    height: var(--avatar);
+    border-radius: 50%;
+    padding: 3px;
+    background: linear-gradient(135deg, var(--color-default), #2e9bd9);
+    box-shadow: 0 6px 14px rgba(15, 40, 71, .22);
+}
+
+.ev26-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 25%;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    background: #e2d7c1;
+    display: block;
+}
+
+.ev26-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+    width: 100%;
+    min-width: 0;
+    line-height: 1.2;
+}
+
+.ev26-name {
+    font-size: clamp(.7rem, 1.7vh, .8rem);
+    font-weight: 500;
+    color: var(--ev26-navy);
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.ev26-country {
+    max-width: 100%;
+    padding: 1px 8px;
+    border-radius: 999px;
+    background: rgba(31, 127, 176, .12);
+    font-size: clamp(.56rem, 1.3vh, .7rem);
+    font-weight: 700;
+    color: var(--color-default);
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* ---------- Footer ---------- */
+.ev26-footer {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+        justify-content: flex-end;
+    gap: clamp(14px, 2vw, 32px);
+    padding-top: var(--ev26-section-gap);
+    border-top: 1px solid rgba(15, 40, 71, .15);
+}
+
+.ev26-partner {
+    height: clamp(26px, 5vh, 42px);
+    max-width: 170px;
+    object-fit: contain;
+    /* background: #fff; */
+    padding: 4px 12px;
+    border-radius: 10px;
+    /* box-shadow: 0 3px 10px rgba(15, 40, 71, .12); */
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 1100px) {
+    .main-slider .ev26-slide { --ev26-cols: 6; --ev26-rows: 4; --ev26-ctrl-side: 64px; }
+}
+
+@media (max-width: 820px) {
+    .main-slider .ev26-slide { --ev26-cols: 4; --ev26-rows: 6; --ev26-ctrl-side: 40px; }
+}
+
+@media (max-width: 640px) {
+    .main-slider .ev26-slide { --ev26-cols: 3; --ev26-ctrl-side: 14px; --ev26-ctrl-bottom: 56px; }
+    .ev26-header { flex-direction: column; text-align: center; gap: 8px; }
+    .ev26-header > div { border-left: 0; padding-left: 0; }
+    .ev26-grid-wrap { container-type: normal; overflow-y: auto; scrollbar-width: none; }
+    .ev26-grid-wrap::-webkit-scrollbar { display: none; }
+    .ev26-grid { height: auto; grid-template-rows: none; }
+    .ev26-card { --avatar: 64px; }
+    .ev26-country { display: none; }
+}
+
+@media (max-width: 420px) {
+    .main-slider .ev26-slide { --ev26-cols: 2; }
+    .ev26-card { --avatar: 72px; }
+}
+
+
+
     </style>
 @endsection
 @section('content')
 
-@include('front.page.modal')
+{{-- @include('front.page.modal') --}}
     <main id="main">
         <section id="main-slider-section" class="main-slider-section">
             @include('front.page.slider')
