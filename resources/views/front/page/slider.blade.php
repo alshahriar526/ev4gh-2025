@@ -1,12 +1,43 @@
 <div class="swiper-container main-slider">
     <div class="swiper-wrapper">
 
+<div class="swiper-slide call-for-application-slider">
+            <div class="slider-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-7 col-12">
+                            <div class="content">
+                                <h1 class="slider-heading" style="color:#3b2c0b !important">
+                                    EV4GH 2026 Distance Learning Phase Kicks Off!
+                                </h1>
+
+                                <p style="color:#3b2c0b !important">The EV4GH 2026 journey is underway! Selected Emerging Voices, Facilitators, and Secretariat members came together for a kick-off meeting to connect, get to know one another, and embark on a shared journey of learning and collaboration in global health </p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Desktop Background -->
+            <div class="background d-none d-lg-block"
+                style="background-image: url('{{ asset('assets/images/index/slider/SLIDER.JPG') }}');">
+            </div>
+
+            <!-- Mobile Image -->
+            <div class="mobile-image-wrapper d-block d-lg-none">
+                <img src="{{ asset('assets/images/index/slider/SLIDER.JPG') }}" alt="Follow-up Banner"
+                    class="mobile-slider-img" />
+            </div>
+        </div>
+        
+
         <div class="swiper-slide call-for-application-slider ev26-slide">
             <div class="ev26-inner">
 
                 <!-- Header -->
                 <div class="ev26-header">
-                    <img src="https://ev4gh.net/assets/images/logo/EV4GH-NEW-Logo.png" alt="EV4GH 2026" class="ev26-logo">
+                    <img src="assets/images/logo/EV4GH-NEW-Logo.png" alt="EV4GH 2026" class="ev26-logo">
                     <div>
                         {{-- <span class="ev26-eyebrow">Evidence for Global Health · 2026 Cohort</span> --}}
                         <h1 class="ev26-title">Welcome, EV4GH 2026 Fellows</h1>
