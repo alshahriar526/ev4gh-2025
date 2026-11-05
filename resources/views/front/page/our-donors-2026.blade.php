@@ -1,11 +1,11 @@
 @extends('front.layout.front-master')
 @section('styles')
     <!-- Bootstrap 5 CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    {{-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"> --}}
     <style>
         /* ================= EV4GH 2026 donors - version 2 (light, glass, colourful) =================
-           Uses your site tokens (--color-default, --color-support, --color-support1 ...).
-           Fallback values are included in case a token is not loaded on this page. */
+                   Uses your site tokens (--color-default, --color-support, --color-support1 ...).
+                   Fallback values are included in case a token is not loaded on this page. */
         .evd2 {
             --c-red: var(--color-default, #a62527);
             --c-red-hover: var(--color-default-hover, #831d1f);
@@ -555,7 +555,7 @@
 @section('content')
     <main id="main">
         <!-- ======= Breadcrumbs ======= -->
-        <div class="breadcrumbs">
+        {{-- <div class="breadcrumbs">
 
             <nav>
                 <div class="container">
@@ -566,23 +566,48 @@
                     </ol>
                 </div>
             </nav>
-        </div>
+        </div> --}}
 
         {{-- ================= EV4GH 2026 donor acknowledgement (v2) =================
              Put the donor logos in: public/assets/images/about/Logos-Donors/
              Then edit only the $donors list below (logo file name + donor name). --}}
         @php
             $donors = [
-                ['name' => 'BRAC James P Grant School of Public Health, BRAC University', 'logo' => 'BRACJPGSPH_New-logo.png'],
-                ['name' => 'Belgian Directorate-General for Development Co-operation (DGD)', 'logo' => 'DGD_CBD_logo_EN_RGB.jpg'],
+                [
+                    'name' => 'Belgian Directorate-General for Development Co-operation (DGD)',
+                    'logo' => 'DGD_CBD_logo_EN_RGB.jpg',
+                ],
+
                 ['name' => 'Institute of Tropical Medicine Antwerp', 'logo' => 'ITM-logo_col_rgb.jpg'],
+
+                [
+                    'name' => 'BRAC James P Grant School of Public Health, BRAC University',
+                    'logo' => 'BRACJPGSPH_New-logo.png',
+                ],
+
                 ['name' => 'Institute of Public Health, Bengaluru', 'logo' => 'IPH-logo-100px.png'],
                 ['name' => 'Liverpool School of Tropical Medicine (LSTM)', 'logo' => 'LSTM Logo.png'],
                 ['name' => 'Lvcthealth', 'logo' => 'LVCT_Health_Logo.webp'],
                 ['name' => 'World Health Organization (WPRO)', 'logo' => 'WHO WPRO_Logo.jpeg'],
                 ['name' => 'Health Systems Global (HSG)', 'logo' => 'HSG Logo.png'],
             ];
-            $thanks = ['Thank you', 'ধন্যবাদ', 'Merci', 'Gracias', 'Obrigado', 'Asante', 'شكرا', 'Danke', '谢谢', 'ありがとう'];
+            $thanks = [
+                'ধন্যবাদ', // Bangladesh (Bengali)
+                'धन्यवाद', // India (Hindi)
+                'Merci', // Benin (French)
+                'Medaase', // Ghana (Twi)
+                'Salamat', // Philippines (Filipino)
+                'ကျေးဇူးတင်ပါတယ်', // Myanmar (Burmese)
+                'Gracias', // Bolivia (Spanish)
+                'Danke', // Germany (German)
+                'شكراً', // Egypt (Arabic)
+                'Thank you', // Liberia (English)
+                'Asante', // Kenya (Swahili)
+                'Ndatenda', // Zimbabwe (Shona)
+                'Muchas gracias', // Mexico (Spanish)
+                'Terima kasih', // Indonesia (Indonesian)
+                'Zikomo', // Zambia (Nyanja)
+            ];
         @endphp
         <section id="donors" class="evd2" aria-labelledby="evd2-title">
             <span class="evd2__blob evd2__blob--1"></span>
@@ -674,7 +699,9 @@
             /* scroll reveal */
             root.classList.add('evd2-js');
             if (!('IntersectionObserver' in window) || reduce) {
-                items.forEach(function(el) { el.classList.add('is-visible'); });
+                items.forEach(function(el) {
+                    el.classList.add('is-visible');
+                });
             } else {
                 var io = new IntersectionObserver(function(entries) {
                     entries.forEach(function(e) {
@@ -683,8 +710,12 @@
                             io.unobserve(e.target);
                         }
                     });
-                }, { threshold: 0.15 });
-                items.forEach(function(el) { io.observe(el); });
+                }, {
+                    threshold: 0.15
+                });
+                items.forEach(function(el) {
+                    io.observe(el);
+                });
             }
 
             /* count-up for the donor count */

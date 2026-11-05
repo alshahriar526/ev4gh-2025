@@ -2,118 +2,129 @@
     <div class="swiper-wrapper">
 
 
-            <div class="swiper-slide call-for-application-slider ev26-slide ev26-dslide">
+        
 
-        @php
-            $donors = [
-                [
-                    'name' => 'BRAC James P Grant School of Public Health, BRAC University',
-                    'logo' => 'BRACJPGSPH_New-logo.png',
-                ],
-                [
-                    'name' => 'Belgian Directorate-General for Development Co-operation (DGD)',
-                    'logo' => 'DGD_CBD_logo_EN_RGB.jpg',
-                ],
-                ['name' => 'Institute of Tropical Medicine Antwerp', 'logo' => 'ITM-logo_col_rgb.jpg'],
-                ['name' => 'Institute of Public Health, Bengaluru', 'logo' => 'IPH-logo-100px.png'],
-                ['name' => 'Liverpool School of Tropical Medicine (LSTM)', 'logo' => 'LSTM Logo.png'],
-                ['name' => 'Lvcthealth', 'logo' => 'LVCT_Health_Logo.webp'],
-                ['name' => 'World Health Organization (WPRO)', 'logo' => 'WHO WPRO_Logo.jpeg'],
-                ['name' => 'Health Systems Global (HSG)', 'logo' => 'HSG Logo.png'],
-            ];
+        <div class="swiper-slide call-for-application-slider ev26-slide ev26-dslide">
 
-            $thanks = [
-                'Thank you',
-                'ধন্যবাদ',
-                'Merci',
-                'Gracias',
-                'Obrigado',
-                'Asante',
-                'شكرا',
-                'Danke',
-                '谢谢',
-                'ありがとう',
-            ];
+            @php
+                $donors = [
+                    [
+                        'name' => 'Belgian Directorate-General for Development Co-operation (DGD)',
+                        'logo' => 'DGD_CBD_logo_EN_RGB.jpg',
+                    ],
 
-            // [top %, left %, size, tilt deg, opacity]
-            $spots = [
-                [5, 3, 3.2, -8, 0.1],
-                [9, 68, 2.4, 6, 0.09],
-                [3, 38, 1.8, -3, 0.08],
-                [26, 86, 3.6, 10, 0.1],
-                [33, 1, 2.6, -12, 0.09],
-                [50, 90, 2.0, -6, 0.08],
-                [56, 5, 3.4, 7, 0.1],
-                [70, 78, 2.8, -9, 0.09],
-                [79, 20, 2.2, 5, 0.08],
-                [86, 52, 3.8, -4, 0.1],
-                [66, 42, 1.7, 12, 0.07],
-                [19, 22, 2.0, 9, 0.08],
-                [43, 58, 1.6, -10, 0.07],
-                [90, 88, 2.4, 6, 0.09],
-            ];
-        @endphp
+                    ['name' => 'Institute of Tropical Medicine Antwerp', 'logo' => 'ITM-logo_col_rgb.jpg'],
+
+                    [
+                        'name' => 'BRAC James P Grant School of Public Health, BRAC University',
+                        'logo' => 'BRACJPGSPH_New-logo.png',
+                    ],
+
+                    ['name' => 'Institute of Public Health, Bengaluru', 'logo' => 'IPH-logo-100px.png'],
+                    ['name' => 'Liverpool School of Tropical Medicine (LSTM)', 'logo' => 'LSTM Logo.png'],
+                    ['name' => 'Lvcthealth', 'logo' => 'LVCT_Health_Logo.webp'],
+                    ['name' => 'World Health Organization (WPRO)', 'logo' => 'WHO WPRO_Logo.jpeg'],
+                    ['name' => 'Health Systems Global (HSG)', 'logo' => 'HSG Logo.png'],
+                ];
+
+                $thanks = [
+                    'ধন্যবাদ', // Bangladesh (Bengali)
+                    'धन्यवाद', // India (Hindi)
+                    'Merci', // Benin (French)
+                    'Medaase', // Ghana (Twi)
+                    'Salamat', // Philippines (Filipino)
+                    'ကျေးဇူးတင်ပါတယ်', // Myanmar (Burmese)
+                    'Gracias', // Bolivia (Spanish)
+                    'Danke', // Germany (German)
+                    'شكراً', // Egypt (Arabic)
+                    'Thank you', // Liberia (English)
+                    'Asante', // Kenya (Swahili)
+                    'Ndatenda', // Zimbabwe (Shona)
+                    'Muchas gracias', // Mexico (Spanish)
+                    'Terima kasih', // Indonesia (Indonesian)
+                    'Zikomo', // Zambia (Nyanja)
+                ];
+
+                // [top %, left %, size, tilt deg, opacity]
+                $spots = [
+                    [5, 3, 3.2, -8, 0.1],
+                    [9, 68, 2.4, 6, 0.09],
+                    [3, 38, 1.8, -3, 0.08],
+                    [26, 86, 3.6, 10, 0.1],
+                    [33, 1, 2.6, -12, 0.09],
+                    [50, 90, 2.0, -6, 0.08],
+                    [56, 5, 3.4, 7, 0.1],
+                    [70, 78, 2.8, -9, 0.09],
+                    [79, 20, 2.2, 5, 0.08],
+                    [86, 52, 3.8, -4, 0.1],
+                    [66, 42, 1.7, 12, 0.07],
+                    [19, 22, 2.0, 9, 0.08],
+                    [43, 58, 1.6, -10, 0.07],
+                    [90, 88, 2.4, 6, 0.09],
+                    [38, 76, 2.2, -7, 0.08],
+                ];
+            @endphp
 
 
-        <div class="ev26-dbg" aria-hidden="true">
+            <div class="ev26-dbg" aria-hidden="true">
 
-            @foreach ($spots as $k => $s)
-                <span class="ev26-dword ev26-dword--{{ $k % 3 }}"
-                    style="top:{{ $s[0] }}%; left:{{ $s[1] }}%; --s:{{ $s[2] }}; --r:{{ $s[3] }}deg; --o:{{ $s[4] }}; --dur:{{ 9 + ($k % 5) * 2 }}s; --dl:-{{ $k * 1.3 }}s">{{ $thanks[$k % count($thanks)] }}</span>
-            @endforeach
-        </div>
+                @foreach ($spots as $k => $s)
+                    <span class="ev26-dword ev26-dword--{{ $k % 3 }}"
+                        style="top:{{ $s[0] }}%; left:{{ $s[1] }}%; --s:{{ $s[2] }}; --r:{{ $s[3] }}deg; --o:{{ $s[4] }}; --dur:{{ 9 + ($k % 5) * 2 }}s; --dl:-{{ $k * 1.3 }}s">{{ $thanks[$k % count($thanks)] }}</span>
+                @endforeach
+            </div>
 
-        <div class="ev26-inner">
+            <div class="ev26-inner">
 
-            <!-- Header (same as the Fellows slide) -->
-            <div class="ev26-header">
-                <img src="assets/images/logo/EV4GH-NEW-Logo.png" alt="EV4GH 2026" class="ev26-logo">
-                <div>
-                    <h1 class="ev26-title">Thank You to Our EV4GH 2026 <span class="ev26-dgrad">Supporters</span>
-                    </h1>
+                <!-- Header (same as the Fellows slide) -->
+                <div class="ev26-header">
+                    <img src="assets/images/logo/EV4GH-NEW-Logo.png" alt="EV4GH 2026" class="ev26-logo">
+                    <div>
+                        <h1 class="ev26-title">Thank You to Our EV4GH 2026 <span class="ev26-dgrad">Supporters</span>
+                        </h1>
+                    </div>
                 </div>
-            </div>
 
-            <!-- Short note -->
-            <div class="ev26-donors-note">
-                <p>We extend our sincere gratitude to all our donors and partners for their generous support of the
-                    Emerging Voices for Global Health (EV4GH) 2026 Venture.</p>
-                <span class="ev26-donors-thanks">
-                    <svg viewBox="0 0 24 24" aria-hidden="true">
-                        <path
-                            d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
-                    </svg>
-                    Thank you for being part of the EV4GH 2026 journey!
-                </span>
-            </div>
+                <!-- Short note -->
+                <div class="ev26-donors-note">
+                    <p>We extend our sincere gratitude to all our donors and partners for their generous support of the
+                        Emerging Voices for Global Health (EV4GH) 2026 Venture.</p>
+                    <span class="ev26-donors-thanks">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path
+                                d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                        </svg>
+                        Thank you for being part of the EV4GH 2026 journey!
+                    </span>
+                </div>
 
-            <!-- Donor logos -->
-            <div class="ev26-grid-wrap">
-                <div class="ev26-donors-grid">
-                    @foreach ($donors as $i => $donor)
-                        <div class="ev26-dcard" style="--i: {{ $i }}">
-                            <div class="ev26-dlogo">
-                                <img src="{{ asset('assets/images/about/Logos-Donors/' . rawurlencode($donor['logo'])) }}"
-                                    alt="{{ $donor['name'] }}" loading="lazy">
+                <!-- Donor logos -->
+                <div class="ev26-grid-wrap">
+                    <div class="ev26-donors-grid">
+                        @foreach ($donors as $i => $donor)
+                            <div class="ev26-dcard" style="--i: {{ $i }}">
+                                <div class="ev26-dlogo">
+                                    <img src="{{ asset('assets/images/about/Logos-Donors/' . rawurlencode($donor['logo'])) }}"
+                                        alt="{{ $donor['name'] }}" loading="lazy">
+                                </div>
+                                <span class="ev26-dname">{{ $donor['name'] }}</span>
                             </div>
-                            <span class="ev26-dname">{{ $donor['name'] }}</span>
-                        </div>
-                    @endforeach
+                        @endforeach
+                    </div>
+                    <!-- Call to action -->
+                    <div class="ev26-donors-cta">
+                        {{-- TODO: replace with your real donors page route/URL --}}
+                        <a href="{{ url('our-donors-2026') }}" class="ev26-donors-btn">Read full acknowledgement <span
+                                aria-hidden="true">&rarr;</span></a>
+                    </div>
                 </div>
-                <!-- Call to action -->
-            <div class="ev26-donors-cta">
-                {{-- TODO: replace with your real donors page route/URL --}}
-                <a href="{{ url('our-donors-2026') }}" class="ev26-donors-btn">Read full acknowledgement <span
-                        aria-hidden="true">&rarr;</span></a>
-            </div>
+
+
+
             </div>
 
-            
 
         </div>
-
-
-    </div>
 
 
 

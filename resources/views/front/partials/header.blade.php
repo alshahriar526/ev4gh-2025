@@ -83,6 +83,9 @@
                             <li><a href="{{ route('our-funders-and-partners') }}"
                                     class="{{ request()->routeIs('our-funders-and-partners') ? 'active' : '' }}">Our
                                     Funders & Partners</a></li>
+
+                            <li><a href="{{ route('our-donors-2026') }}"
+                                    class="{{ request()->routeIs('our-donors-2026') ? 'active' : '' }}">Our Donors 2026</a></li>
                         </ul>
                     </li>
 

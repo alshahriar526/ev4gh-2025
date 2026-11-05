@@ -49,7 +49,7 @@ Route::get('/our-funders-and-partners', function () {
 
 
 Route::get('/our-donors-2026', function () {
-    return view('front.page.ev-donors-2026');
+    return view('front.page.our-donors-2026');
 })->name("our-donors-2026");
 
 

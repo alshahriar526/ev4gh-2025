@@ -14,13 +14,11 @@
     <!-- Vendor CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="assets/vendor/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="assets/vendor/splide/dist/css/splide.min.css">
 
     <!-- Local Modular CSS Architecture -->
-    <link rel="stylesheet" href="{{ asset('assets/css/main.css') }}">
+
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/responsive.css') }}">
-
-
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="{{ asset('assets/css/main.css') }}">
